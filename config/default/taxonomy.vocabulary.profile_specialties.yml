@@ -1,0 +1,11 @@
+uuid: f897d9ac-8f4e-46d4-9800-caf0983739ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Qi-jPX4vnpx_UIqKTs_HEAMPGWwuA6Hks65HF5AuYZs
+name: 'Profile Specialties'
+vid: profile_specialties
+description: ''
+hierarchy: 0
+weight: 0

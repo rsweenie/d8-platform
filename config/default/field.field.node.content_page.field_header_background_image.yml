@@ -1,0 +1,29 @@
+uuid: d688fc87-57e8-425a-b291-cf7bff246c3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_background_image
+    - node.type.content_page
+_core:
+  default_config_hash: WSM3kctenkc_hSbDMOjX5cF6pUNktvsBB9za4reLYiM
+id: node.content_page.field_header_background_image
+field_name: field_header_background_image
+entity_type: node
+bundle: content_page
+label: 'Header Background Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 83b04a95-ec82-453d-9e08-cdb9c2f693e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_link
+    - paragraphs.paragraphs_type.ief_link
+_core:
+  default_config_hash: U5S8mLOP4ODnBTTIj3s-87hD35nsNrAJt3q2voKIU1I
+id: paragraph.ief_link.field_file_link
+field_name: field_file_link
+entity_type: paragraph
+bundle: ief_link
+label: 'File Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

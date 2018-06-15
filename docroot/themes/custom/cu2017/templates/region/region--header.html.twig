@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+<div class="header_bg_wrapper">
+    <div class="header_inner_wrapper">
+        <div class="header_logo_section">
+            {{ drupal_block('cu2017_branding') }}
+        </div>
+        <div id="header_nav" class="header_nav_section">
+            {{ drupal_menu('header-menu') }}
+        </div>
+    </div>
+</div>

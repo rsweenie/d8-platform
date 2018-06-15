@@ -1,0 +1,24 @@
+uuid: 3a9e462c-b82f-49a5-a2f5-593bf7162647
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.copy_box
+  module:
+    - text
+_core:
+  default_config_hash: Bp3Q074B0lSrWVuDYJhde_gI4Gk2DvdR8puvR7FjCMU
+id: node.copy_box.body
+field_name: body
+entity_type: node
+bundle: copy_box
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

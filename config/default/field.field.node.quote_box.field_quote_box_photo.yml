@@ -1,0 +1,29 @@
+uuid: 93da87a4-fa2b-4278-b2df-e8b3a78c8ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_box_photo
+    - node.type.quote_box
+_core:
+  default_config_hash: 67mqbonMf2OClmy1cMrIJ9HT-iJt2AXq3r8zqWf88Qs
+id: node.quote_box.field_quote_box_photo
+field_name: field_quote_box_photo
+entity_type: node
+bundle: quote_box
+label: Photo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

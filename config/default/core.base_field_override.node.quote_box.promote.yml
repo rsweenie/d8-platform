@@ -1,0 +1,24 @@
+uuid: e38ca867-549e-4230-8536-d875a530793b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quote_box
+_core:
+  default_config_hash: qUnZLEUVEh5DgEmWe744pk_0oqFLX3zaEXC1gAVniIw
+id: node.quote_box.promote
+field_name: promote
+entity_type: node
+bundle: quote_box
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

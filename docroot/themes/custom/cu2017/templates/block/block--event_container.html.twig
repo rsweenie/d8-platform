@@ -1,0 +1,42 @@
+<div class="eventbox_header">
+    <!-- <h2>{# events.title | Upcoming Events #}</h2> -->
+</div>
+
+<div class="eventbox_wrapper">
+    {# for event in events %}
+        <div class="eventbox">
+            <div class="left_col">
+                <div class="eventbox_calendar">
+                    <div class="eventbox_calendar_month">
+                        {{ event.month }}
+                    </div>
+                    <div class="eventbox_calendar_day">
+                        {{ event.day }}
+                    </div>
+                </div>
+                <a href="{{ event.action_link }}" class="eventbox_link_action">{{ event.cta }}</a>
+            </div>
+            <div class="right_col">
+                <div class="eventbox_description">
+
+                    <div class="eventbox_description_event_name">
+                        <a href="{{ event.link }}">{{ event.title }}</a>
+                    </div>
+                    <div class="eventbox_description_event_date">
+                        {{ event.fulldate }}
+                    </div>
+                    <div class="eventbox_description_event_time">
+                        {{ event.time }}
+                    </div>
+
+                    <div class="eventbox_description_event_text">
+                        <p>{{ event.description }}</p>
+                        <div class="eventbox_moreinfo_link">
+                            <a href="{{ event.link }}">More Information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor #}
+</div>

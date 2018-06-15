@@ -1,0 +1,23 @@
+uuid: 249d33c1-d1bc-4e94-ad45-385bae9ddd36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_alertemergency_type
+    - node.type.header_alert
+  module:
+    - options
+_core:
+  default_config_hash: 0GL59xEP4uMf2YS-AHBvFg2LHE2tQ7rlTDE1loh9OMU
+id: node.header_alert.field_header_alertemergency_type
+field_name: field_header_alertemergency_type
+entity_type: node
+bundle: header_alert
+label: 'Emergency Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,42 @@
+.promo_box_wrapper {
+	background-color: $blue;
+	display: block;
+	padding: 0.875em;
+	padding-bottom: 1.5em;
+
+	a {
+		color: $white;
+		font-family: $condensedFont;
+		font-size: 24px;
+		font-weight: $bold;
+		line-height: 1.05;
+		text-decoration: none;
+
+
+		.promo_text {
+			.field--name-field-promo-box-promo-text {
+				margin-bottom: 28px;
+			}
+		}
+
+		.promo_btn {
+			background-image: url(../images/png/white-arrow.png);
+			background-position: right;
+			background-repeat: no-repeat;
+			font-family: $condensedFont;
+			font-size: 17px;
+			letter-spacing: 1px;
+			padding: 2px 27px 2px 0;
+		}
+	}
+	&:hover {
+		a {
+			color: $darkBlue;
+			
+			.promo_btn {
+				background-image: url(../images/png/dkblue-arrow.png);
+			}
+		}
+		cursor: pointer;
+	}
+}

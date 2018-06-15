@@ -1,0 +1,31 @@
+uuid: 9db2218b-69fa-4eda-bc7d-0c2ec9449907
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_type
+    - node.type.profile
+    - taxonomy.vocabulary.profile_type
+_core:
+  default_config_hash: 6JP7bVC1pcLT5CGKiUoL2o0YLOEFCJrDyn7NSEGY64I
+id: node.profile.field_profile_type
+field_name: field_profile_type
+entity_type: node
+bundle: profile
+label: 'Profile Tag'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      profile_type: profile_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,92 @@
+
+@media (max-width: 65.625em) {
+	.view-spotlight {
+		img {
+			margin-bottom: 22px;
+		}
+	}
+}
+
+@media (max-width: 47.9375em) {
+	.view-spotlight {
+		img {
+			float: none;
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Spotlight [by Christian] and updated [by Kikki]
+
+.view-spotlight {
+	.view-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.views-row {
+		.sptlt-text-wrapper {
+			display: flex;
+			flex-direction: column;
+
+			.sptlt-title {
+				color: $darkBlue;
+				font-family: $condensedFont;
+				font-size: 24px;
+				font-weight: $semiBold;
+			}
+
+			.sptlt-body {
+				margin-bottom: 24px;
+			}
+
+			a {
+				@include green-arrow-link(true);
+			}
+	  	}
+  	}
+
+	img {
+		float: left;
+		margin: 0 30px 65px;
+
+		@include respond-to(null , tablet-max) {
+			margin-bottom: 22px;
+		}
+		@media all and (max-width: 599px) {
+			float: none;
+			margin-bottom: 0;
+		}
+	}
+
+	h2 {
+		@include respond-to(null , tablet-max) {
+			margin-top: 22px;
+			width: 100%;
+		}
+	}
+}
+
+.spotlight_summary {
+	display: flex;
+
+	.spotlight_image {
+		margin: 0 30px 0 0;
+
+		img {
+			max-height: 220px;
+			max-width: 175px;
+		}
+	}
+
+	h2 {
+		margin-bottom: 8px;
+		margin-top: 0;
+	}
+}
+
+.spotlight_body {
+	.field--name-body > :first-child {
+		margin-top: 20px;
+	}
+}

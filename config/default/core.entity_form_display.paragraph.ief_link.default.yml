@@ -1,0 +1,68 @@
+uuid: 9992f3c8-099a-479d-9a03-d59472ca62f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.paragraph.ief_link.field_file_link
+    - field.field.paragraph.ief_link.field_internal_or_external_link
+    - field.field.paragraph.ief_link.field_link_text
+    - field.field.paragraph.ief_link.field_open_in_new_window
+    - paragraphs.paragraphs_type.ief_link
+  module:
+    - entity_browser
+    - link
+_core:
+  default_config_hash: EVypHop1r64EggTu84zzkNXWD8YaIboRG8231kxCquw
+id: paragraph.ief_link.default
+targetEntityType: paragraph
+bundle: ief_link
+mode: default
+content:
+  field_file_link:
+    type: entity_browser_entity_reference
+    weight: 2
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      open: false
+    region: content
+    third_party_settings: {  }
+  field_internal_or_external_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_link_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_open_in_new_window:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  scheduled_publication: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

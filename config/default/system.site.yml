@@ -1,0 +1,14 @@
+uuid: 2600fe31-56c9-4e2d-8b6c-bfc7b4f28fea
+name: 'Mother Clone 2'
+mail: webteam@creighton.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

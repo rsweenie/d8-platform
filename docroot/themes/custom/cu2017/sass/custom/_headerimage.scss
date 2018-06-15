@@ -1,0 +1,17 @@
+.header_image {
+	box-shadow: 0 0 8px $boxShadowBlack;
+	margin-top: 0;
+	max-height: $headerMobileImageHeight;
+	overflow: hidden;
+	width: 100%;
+	z-index: -1;
+
+	@include respond-to(desktop-min , null) {
+		margin-top: -$headerInnerDesktopHeight;
+		max-height: $headerDesktopImageHeight;
+	}
+	@include respond-to(lg-tablet-min , lg-tablet-max) {
+		margin-top: -$headerInnerLgTabletHeight;
+		max-height: $headerTabletImageHeight;
+	}
+}

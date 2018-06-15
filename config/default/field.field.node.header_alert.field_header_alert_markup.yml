@@ -1,0 +1,24 @@
+uuid: fab24dfd-f8ce-41c5-98a3-8b5af32537d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_alert_markup
+    - node.type.header_alert
+  module:
+    - text
+_core:
+  default_config_hash: U2DAxCgC1v_cpB_pbr3oHVpAMIPxg1pfkz0934ngnYY
+id: node.header_alert.field_header_alert_markup
+field_name: field_header_alert_markup
+entity_type: node
+bundle: header_alert
+label: 'Header Alert Markup'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

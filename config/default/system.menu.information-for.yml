@@ -1,0 +1,10 @@
+uuid: d429679b-6e02-4045-b9ec-61ec24dc51f8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: FhTwZ1GUGcNafgKn6Cna0T7rCiWYnvGYEuW_yg0YUq4
+id: information-for
+label: 'Information for'
+description: 'Information for is a custom per site menu'
+locked: false

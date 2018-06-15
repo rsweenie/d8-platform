@@ -1,0 +1,23 @@
+// Base styles
+html {
+	body {
+		color: $baseGray;
+		font-family: $baseFont;
+		font-size: $baseFontSize;
+		height: 100%;
+		margin: 0;
+	}
+
+	h2 {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		font-size: $h2FontSize;
+		font-weight: $bold;
+	}
+
+	h3 {
+		color: $darkBlue;
+		font-size: $h3FontSize;
+		font-weight: $bold;
+	}
+}

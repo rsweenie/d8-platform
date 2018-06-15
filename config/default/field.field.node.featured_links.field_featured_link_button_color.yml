@@ -1,0 +1,25 @@
+uuid: c100716f-44ff-49c2-922a-b9f3012e86f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_link_button_color
+    - node.type.featured_links
+  module:
+    - options
+_core:
+  default_config_hash: RXMZwJNEP3Ocdt_vTcfSP7ANRyktUQPprumpBl5yIkE
+id: node.featured_links.field_featured_link_button_color
+field_name: field_featured_link_button_color
+entity_type: node
+bundle: featured_links
+label: 'Button Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: btn-featured
+default_value_callback: ''
+settings: {  }
+field_type: list_string

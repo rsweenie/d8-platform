@@ -1,0 +1,93 @@
+@mixin button {
+	background-image: url(../images/png/white-arrow.png);
+	background-position: 95%;
+	background-repeat: no-repeat;
+	padding: 8px 80px 8px 10px;
+}
+
+@mixin link {
+	color: $white;
+	font-family: $condensedFont;
+	font-size: 24px;
+	font-weight: $bold;
+	text-transform: capitalize;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
+@mixin text-decoration {
+	&:link,
+	&:visited,
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+@mixin color-transition {
+	@include transition-property(color);
+	@include transition-duration(0.2s);
+	color: $darkBlue;
+}
+
+@mixin background-transition {
+	@include transition-property(background-color);
+	@include transition-duration(0.2s);
+}
+
+.featured_links_wrapper {
+	ul {
+		list-style-type: none;
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+
+	.field--item {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.featured_links_blue {
+		li {
+			@include button;
+			background-color: $mediumBlue;
+
+			&:hover {
+				@include background-transition;
+				background-color: $darkBlue;
+			}
+		}
+
+		a {
+			@include link;
+			@include text-decoration;
+		}
+	}
+
+	.featured_links_orange {
+		a {
+			@include link;
+			@include text-decoration;
+
+			&:hover {
+				@include color-transition;
+			}
+		}
+
+		li {
+			@include button;
+			background-color: $orange;
+
+			&:hover {
+				background-image: url(../images/png/dkblue-arrow.png);
+			}
+		}
+	}
+}

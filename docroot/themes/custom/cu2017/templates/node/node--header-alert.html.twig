@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Header Alert template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'header_alert_wrapper').setAttribute('id', 'header_alert_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    {% set header_alert_attributes = create_attribute() %}
+    {% set classes = ['alert_type_wrapper'] %}
+
+    {% if content.field_header_alertemergency_type[0]|render|lower|trim == 'dangerous (red with "!" icon)' %}
+        {% set classes = classes|merge(['header_alert_type_dangerous']) %}
+        {% set src = '/themes/custom/cu2017/images/alert-header/alert-symbol.png' %}
+        {% set alert_symbol = 'alert_symbol_regular' %}
+    {% elseif content.field_header_alertemergency_type[0]|render|lower|trim == 'weather-related (orange with snowflake icon)' %}
+        {% set classes = classes|merge(['header_alert_type_weather']) %}
+        {% set src = '/themes/custom/cu2017/images/alert-header/alert-snow.png' %}
+        {% set alert_symbol = 'alert_symbol_weather' %}
+    {% else %}
+        {% set classes = classes|merge(['header_alert_type_regular']) %}
+        {% set src = '/themes/custom/cu2017/images/alert-header/alert-symbol.png' %}
+        {% set alert_symbol = 'alert_symbol_regular' %}
+    {% endif %}
+
+    <div{{ header_alert_attributes.addClass(classes) }}>
+        <div class="header_alert">
+            <img class="{{ alert_symbol }}" src="{{ src }}">
+            <div class="header_alert_content">
+                <div class="header_alert_headline">
+                    {{ content.field_emergency_headline.0 }}
+                </div>
+                {{ content.field_header_alert_markup.0 }}
+                {% if content.field_alert_link %}
+                    <div class="header_alert_link">
+                        {{ content.field_alert_link }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

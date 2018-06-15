@@ -1,0 +1,78 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_region()
+ */
+#}
+<div class="header_top_section">
+    <div class="header_top_section_wrapper">
+        <div class="header_top_section_wrapper_inner">
+            <div class="transaction_menu_wrapper">
+               {{ drupal_menu('transaction-menu') }}
+            </div>
+            <div class="header_top_section_search_wrapper">
+                <form  method="get" action="https://search.creighton.edu/s/search.html"> 
+                    <input  type="hidden" name="collection" value="creighton-search">
+                    <input type="text" name="query" class="cu-query" placeholder="Search">
+                </form>
+            </div>
+            <div class="header_top_section_menu_wrapper">
+                <a class="header_top_section_menu" href="#" title="Menu" data-main-menu-ico="main-hamburger-menu-ico" id="mega_menu_toggle">
+                    MENU
+                </a>
+            </div>
+
+            <div class="header_top_section_mega_menu" id="mega_menu">
+                <div class="mega_menu_top_wrapper">
+                    <div class="mega_menu_internal_main_nav">
+                        <div class="header_nav_section">
+                            {{ drupal_menu('header-menu') }}
+                        </div>
+                    </div>
+
+                    <div class="menu_icons">
+                        {{ drupal_menu('menu-icons') }}
+                    </div>
+                </div>
+
+                <div class="two_menu_columns">
+                    <div class="mega_menu_column_left">
+                        <div class="mega_menu_schools_wrapper">
+                            <div class="schools_and_colleges_menu_wrapper">
+                                <h2 id="schools_and_colleges_menu">9 Schools and Colleges</h2>
+                                {{ drupal_menu('9-schools-and-colleges') }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mega_menu_column_right">
+                        <div class="mega_menu_information_for_wrapper">
+                            <div class="information_for_menu_wrapper">
+                                {{ drupal_block('informationfor') }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mega_menu_bottom_wrapper">
+                    <div class="mega_menu_bottom_wrapper_label">
+                        <h2>Resources</h2>
+                        <p>for Current Students, Faculty and Staff</p>
+                    </div>
+                    <div class="resources_menu">
+                        {{ drupal_menu('college-resources') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

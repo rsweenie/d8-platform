@@ -1,0 +1,25 @@
+uuid: e7d31f68-4510-4784-b228-7cfa3fffd889
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_open_in_new_window
+    - paragraphs.paragraphs_type.ief_link
+_core:
+  default_config_hash: 1ryN_mlksrKCwVa9E34KsfB0Ja9qs_wF_0syDlzm-8o
+id: paragraph.ief_link.field_open_in_new_window
+field_name: field_open_in_new_window
+entity_type: paragraph
+bundle: ief_link
+label: 'Open in New Window'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Open in a new window'
+  off_label: 'Off'
+field_type: boolean

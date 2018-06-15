@@ -1,0 +1,39 @@
+uuid: 7d661f99-4d0b-4dc1-b127-f4586359612a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tabbed_acc_content
+    - node.type.tabbed_accordion
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: keMzNDUfFgFA9179Wl_6l0IWbWdHMS0q_rJDijMtV9c
+id: node.tabbed_accordion.field_tabbed_acc_content
+field_name: field_tabbed_acc_content
+entity_type: node
+bundle: tabbed_accordion
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 4
+      ief_link:
+        weight: 5
+        enabled: false
+      tabbed_accordion:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

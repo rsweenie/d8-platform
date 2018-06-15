@@ -1,0 +1,104 @@
+.eventbox_header {
+	border-bottom: 4px dotted $yellow;
+	margin-bottom: 23px;
+	padding-bottom: 2px;
+
+	h2 {
+		background-color: $white;
+		color: $mediumBlue;
+		display: block;
+		font-size: 24px;
+		margin-left: 10px;
+	}
+}
+
+.eventbox_wrapper {
+	margin-bottom: 30px;
+
+	.eventbox {
+		background: $white;
+		display: flex;
+
+		.left_col {
+			float: left;
+			height: 100%;
+			padding-right: 10px;
+			width: 75px;
+
+			.eventbox_calendar {
+				border: 2px solid $blue;
+				font-family: $condensedFont;
+				height: initial;
+				text-align: center;
+				width: 65px;
+
+				.eventbox_calendar_month {
+					background: $blue;
+					color: $white;
+					font-size: 24px;
+					line-height: 26px;
+					padding: 0;
+					width: 100%;
+				}
+
+				.eventbox_calendar_day {
+					color: $black;
+					font-size: 32px;
+					line-height: 36px;
+				}
+			}
+
+			.eventbox_link_action {
+				background-color: $green;
+				background-image: url(../images/png/white-arrow.png);
+				background-position: 90%;
+				background-repeat: no-repeat;
+				background-size: 10px;
+				color: $white;
+				display: block;
+				font-family: $condensedFont;
+				font-size: 18px;
+				height: 25px;
+				margin-top: 10px;
+				min-width: 57px;
+				padding: 2px 4px;
+				text-decoration: none;
+				width: auto;
+
+				&:hover {
+					color: $darkBlue;
+				}
+			}
+		}
+
+		.right_col {
+			height: 100%;
+			width: auto;
+
+			.eventbox_description {
+				.eventbox_description_event_name {
+					a {
+						color: $darkBlue;
+						font-family: $condensedFont;
+						font-size: 22px;
+						line-height: 18px;
+						text-decoration: none;
+					}
+				}
+
+				.eventbox_description_event_text {
+					color: $baseGray;
+					line-height: 14px;
+					padding-top: 12px;
+				}
+
+				.eventbox_moreinfo_link {
+					a {
+						color: $blue;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

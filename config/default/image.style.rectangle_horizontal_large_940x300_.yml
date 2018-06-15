@@ -1,0 +1,24 @@
+uuid: c788e37a-8c06-4768-9d27-8fcdf94eaa8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point
+  module:
+    - crop
+name: rectangle_horizontal_large_940x300_
+label: 'Rectangle Horizontal Large (940x300)'
+effects:
+  2ff6ca54-dba7-47dc-9920-f445c0e3730b:
+    uuid: 2ff6ca54-dba7-47dc-9920-f445c0e3730b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  4c4c012f-d8b0-48e2-a88f-ed3646df7f68:
+    uuid: 4c4c012f-d8b0-48e2-a88f-ed3646df7f68
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 940
+      height: 300

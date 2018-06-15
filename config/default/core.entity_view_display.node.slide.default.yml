@@ -1,0 +1,56 @@
+uuid: d7b5fc38-b053-4870-a00f-2c799eac8bef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slide.field_slide_caption
+    - field.field.node.slide.field_slide_image
+    - field.field.node.slide.field_slide_link
+    - node.type.slide
+  module:
+    - media
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: hR3XiN8kAPwhiA-9L6XkNBiaU5mxBZO4rovp7cjIg94
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  field_slide_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_slide_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_slide_link:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  links: true
+  private: true
+  scheduled_publication: true

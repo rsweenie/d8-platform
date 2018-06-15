@@ -1,0 +1,25 @@
+uuid: 36332897-0e12-469c-8ffb-40cfc2883d3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: RXgu3INcGLX_Fz4jkfFee8ltKmX9D2aN8urlsnZtg24
+id: node.field_content_page_headline
+field_name: field_content_page_headline
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

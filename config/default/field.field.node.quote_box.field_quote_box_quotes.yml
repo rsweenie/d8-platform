@@ -1,0 +1,25 @@
+uuid: 69f93a77-5a15-4eee-aee2-b879b4897078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_box_quotes
+    - node.type.quote_box
+  module:
+    - options
+_core:
+  default_config_hash: IoKojGllc0JoJEYzRX6Mh2GuF8_VOtczvYUo4WMcCy4
+id: node.quote_box.field_quote_box_quotes
+field_name: field_quote_box_quotes
+entity_type: node
+bundle: quote_box
+label: 'Quotes?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: noquotes
+default_value_callback: ''
+settings: {  }
+field_type: list_string

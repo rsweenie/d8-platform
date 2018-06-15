@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ *
+ * @ingroup themeable
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, level) %}
+    {% import _self as menus %}
+
+	{% set main_nav_ul_attributes = create_attribute() %}
+	{% set ul_classes = ['main_nav'] %}
+
+	{% if level == 1 %}
+		{% set ul_classes = ul_classes|merge(['child_menu']) %} 
+	{% elseif level == 2 %}	
+		{% set ul_classes = ul_classes|merge(['grandchild_menu']) %} 
+	{% endif %}
+
+    <ul {{ main_nav_ul_attributes.addClass(ul_classes) }}>
+        {% for item in items %}
+			{% set main_nav_li_attributes = create_attribute() %}
+			{% set li_classes = [] %}
+			{% if item.in_active_trail %}
+				{% set li_classes = li_classes|merge(['active']) %}
+			{% endif %}
+			{% if level == 1 %}
+				{% set li_classes = li_classes|merge(['child_menu_item']) %} 
+			{% elseif level == 2 %}	
+				{% set li_classes = li_classes|merge(['grandchild_menu_item']) %} 
+			{% endif %}
+			<li>
+				<a href="{{ item.url }}" title="{{ item.title }}" {{ main_nav_li_attributes.addClass(li_classes) }}>{{ item.title }}</a>
+				{% if item.below and item.in_active_trail %}
+					{% set nextLevel = level + 1 %}
+					{{ _self.menu_links(item.below, attributes, nextLevel) }}
+				{% endif %}
+			</li>
+        {% endfor %}
+    </ul>
+{% endmacro %}

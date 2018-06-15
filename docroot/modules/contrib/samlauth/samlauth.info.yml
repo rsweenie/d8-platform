@@ -1,0 +1,12 @@
+name: "SAML Authentication"
+type: module
+description: "Allows users to authenticate against an external SAML identity provider."
+# core: 8.x
+package: "User authentication"
+configure: samlauth.samlauth_configure_form
+
+# Information added by Drupal.org packaging script on 2015-11-13
+version: '8.x-1.3'
+core: '8.x'
+project: 'samlauth'
+datestamp: 1447386030

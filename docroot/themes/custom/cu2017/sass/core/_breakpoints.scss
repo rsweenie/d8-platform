@@ -1,0 +1,38 @@
+$screen-mobile-max: 480px;
+$screen-tablet-min: ($screen-mobile-max + 1);
+$screen-tablet-max: 768px;
+$screen-lg-tablet-min: ($screen-tablet-max + 1);
+$screen-lg-tablet-max: 1050px;
+$screen-desktop-min: ($screen-lg-tablet-max + 1);
+
+$breakpoints: (
+	'mobile-max': $screen-mobile-max,
+	'tablet-min': $screen-tablet-min,
+	'tablet-max': $screen-tablet-max,
+	'lg-tablet-min': $screen-lg-tablet-min,
+	'lg-tablet-max': $screen-lg-tablet-max,
+	'desktop-min': $screen-desktop-min
+);
+
+@mixin respond-to($min-breakpoint, $max-breakpoint) {
+	// Retrieves the value from the key
+	$min-value: map-get($breakpoints, $min-breakpoint);
+	$max-value: map-get($breakpoints, $max-breakpoint);
+	// If the key exists in the map
+	@if $min-value != null and $max-value != null {
+		// Prints a media query based on the value
+		@media all and (min-width: $min-value) and (max-width: $max-value) {
+			@content;
+		}
+	} @else if $min-value == null and $max-value != null {
+		// Prints a media query based on the value
+		@media all and (max-width: $max-value) {
+			@content;
+		}
+	} @else if $min-value != null and $max-value == null {
+		// Prints a media query based on the value
+		@media all and (min-width: $min-value) {
+			@content;
+		}
+	}
+}

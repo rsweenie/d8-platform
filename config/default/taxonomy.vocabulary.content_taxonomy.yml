@@ -1,0 +1,11 @@
+uuid: e93267c8-13eb-4fd0-814f-a532fe12eae9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jZ2GKOSyI6Mlyi5k6TwkrZRPJukKbI5Sgmba_hqXaMo
+name: 'Content Taxonomy'
+vid: content_taxonomy
+description: ''
+hierarchy: 0
+weight: 0

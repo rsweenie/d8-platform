@@ -1,0 +1,10 @@
+uuid: 0dd496e9-c69a-45d1-aa1a-baf3b397847f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: trQhk9VQyI9SqKTFFf5ZaSPPN7ojtqXGchx5XRt52lU
+id: menu-icons
+label: 'Menu Icons'
+description: 'Includes "Make a Gift", "Campus Maps", and "A-Z Index" icons.'
+locked: false

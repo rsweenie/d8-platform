@@ -1,0 +1,95 @@
+uuid: 4dcf0d92-2dce-4b5c-8cdb-66df82dc6590
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.node.featured_content.body
+    - field.field.node.featured_content.field_fc_additional_links
+    - field.field.node.featured_content.field_featured_content_image
+    - field.field.node.featured_content.field_featured_content_link
+    - node.type.featured_content
+  module:
+    - entity_browser
+    - entity_browser_entity_form
+    - inline_entity_form
+    - text
+id: node.featured_content.default
+targetEntityType: node
+bundle: featured_content
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+      summary_rows: 3
+    third_party_settings: {  }
+    region: content
+  field_fc_additional_links:
+    weight: 4
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Link
+      label_plural: Links
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_featured_content_image:
+    type: entity_browser_entity_reference
+    weight: 2
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      open: true
+    region: content
+    third_party_settings: {  }
+  field_featured_content_link:
+    weight: 3
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Link
+      label_plural: Links
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  private: true
+  promote: true
+  publish_on: true
+  scheduled_publication: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  url_redirects: true

@@ -1,0 +1,11 @@
+uuid: 6a791be2-c718-4701-844b-9b02363b05ed
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AXFQEPmOcrDgYnWhHF3yo5_9RiBdOeVjt_AkFruoaRM
+name: 'Profile Type'
+vid: profile_type
+description: ''
+hierarchy: 0
+weight: 0

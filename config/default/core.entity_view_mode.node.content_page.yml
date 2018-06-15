@@ -1,0 +1,14 @@
+uuid: 0071d62d-c387-449f-ae78-a4b8739cb53f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.content_page
+label: 'Panelized Content Page'
+targetEntityType: node
+cache: true

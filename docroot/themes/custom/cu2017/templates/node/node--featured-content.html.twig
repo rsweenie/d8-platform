@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Featured Content template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'featured_content_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+
+    <div class="featured_content_image">
+        {{ content.field_featured_content_image }}
+    </div>
+    <div class="featured_content_content">
+        <div class="featured_content_link">
+            {{ content.field_featured_content_link }}
+        </div>
+        <div class="featured_content_body">
+            {{ content.body }}
+        </div>
+        <div class="featured_content_additional_links">
+            {{ content.field_fc_additional_links }}
+        </div>
+    </div>
+</div>

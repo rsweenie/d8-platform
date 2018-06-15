@@ -1,0 +1,24 @@
+uuid: 61f77266-1853-46c2-94f5-b60473d9fa2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabbed_acc_body
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+_core:
+  default_config_hash: A7c8hpVZ5AgC1YzUQvYZJSsqKXsqwXxHNNiFD9h4NOU
+id: paragraph.accordion.field_tabbed_acc_body
+field_name: field_tabbed_acc_body
+entity_type: paragraph
+bundle: accordion
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

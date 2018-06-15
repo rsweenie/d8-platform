@@ -1,0 +1,21 @@
+uuid: 333c2452-c801-4a44-a726-577159c55b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promo_box_promo_text
+    - node.type.promo_box
+_core:
+  default_config_hash: B7ld2pe0-9z9CsN0R7Ycb8kAY8TRK3NCIi1gons_DyY
+id: node.promo_box.field_promo_box_promo_text
+field_name: field_promo_box_promo_text
+entity_type: node
+bundle: promo_box
+label: 'Promo Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

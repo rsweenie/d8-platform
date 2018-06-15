@@ -1,0 +1,21 @@
+uuid: 1b17edb3-a0b3-4187-a431-416f33d872a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_box_affiliation
+    - node.type.quote_box
+_core:
+  default_config_hash: 0yf07fIqvzoBO4JHAA1VPfRF-ih62r8dDnL5vKXCMLk
+id: node.quote_box.field_quote_box_affiliation
+field_name: field_quote_box_affiliation
+entity_type: node
+bundle: quote_box
+label: Affiliation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

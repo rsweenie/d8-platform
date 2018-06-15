@@ -1,0 +1,16 @@
+uuid: 4dcf37ba-be01-4082-a4e6-c98d54f88899
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: hHyOa_V45EAy0JPUOPE8tHg9pd1bJ_y7zu__Cdpfxm8
+id: node.spotlight
+label: Spotlight
+targetEntityType: node
+cache: true

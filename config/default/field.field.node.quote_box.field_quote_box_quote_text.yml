@@ -1,0 +1,21 @@
+uuid: c482a140-48cb-4fd4-a448-3219ab59007d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_box_quote_text
+    - node.type.quote_box
+_core:
+  default_config_hash: 3vNZuTWSPGxH753f-W5KR_33Vb5EMFPeVY5RKJVM2Nk
+id: node.quote_box.field_quote_box_quote_text
+field_name: field_quote_box_quote_text
+entity_type: node
+bundle: quote_box
+label: 'Quote Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

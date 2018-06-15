@@ -1,0 +1,8 @@
+uuid: 44d5b553-45b6-4775-91c8-3b66085e7f62
+langcode: en
+status: true
+dependencies: {  }
+id: cu_news_alt
+label: 'CU News Alt'
+locked: false
+pattern: 'M Y'

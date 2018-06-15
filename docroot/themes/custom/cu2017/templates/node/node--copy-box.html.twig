@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Copy Box template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'copy_box_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    {% set copy_box_attributes = create_attribute() %}
+    {% set classes = [] %}
+
+    {% if content.field_copy_box_display_type.0|render|lower|trim == "callout green" %} 
+        {% set classes = classes|merge(['callout_green']) %}
+    {% elseif content.field_copy_box_display_type.0|render|lower|trim  == "college about" %}
+        {% set classes = classes|merge(['college_about']) %}
+    {% elseif content.field_copy_box_display_type.0|render|lower|trim  == "contact us" %}
+        {% set classes = classes|merge(['contact_us']) %}
+    {% elseif content.field_copy_box_display_type.0|render|lower|trim  == "upcoming events" %}
+        {% set classes = classes|merge(['upcoming_events']) %}
+    {% endif %}
+
+    <div{{ copy_box_attributes.addClass(classes) }}>
+        {{ content }}
+    </div>
+</div>

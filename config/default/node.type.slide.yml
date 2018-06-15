@@ -1,0 +1,19 @@
+uuid: ead1570d-ef6d-4716-a2f5-8a127065350a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: 5AsDVqV6GJtouT9uzuCiEP0ELgVw3IolsOwGun54p8U
+name: Slide
+type: slide
+description: 'Slides works in combination with the slideshow content type.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

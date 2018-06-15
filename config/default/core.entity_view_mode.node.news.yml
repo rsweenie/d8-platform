@@ -1,0 +1,14 @@
+uuid: 96ccf80d-9ae9-427c-b34c-5ce2fe1ff59a
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.news
+label: News
+targetEntityType: node
+cache: true

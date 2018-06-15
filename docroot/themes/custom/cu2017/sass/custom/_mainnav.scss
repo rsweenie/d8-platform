@@ -1,0 +1,64 @@
+@mixin active-link {
+	background: $lightGray;
+	color: $mediumBlue;
+}
+
+.main_nav {
+	padding-left: 0;
+
+	.child_menu {
+		margin-left: 10px;
+	}
+
+	.grandchild_menu {
+		margin-left: 10px;
+	}
+
+	li {
+		display: block;
+		line-height: 1;
+		list-style-image: none;
+		list-style-type: none;
+		margin-left: 0;
+
+		a {
+			color: $darkBlue;
+			display: block;
+			font-family: $condensedFont;
+			font-size: 17px;
+			font-weight: $bold;
+			line-height: normal;
+			margin-left: 0;
+			padding: 6px 4px 6px 10px;
+			text-decoration: none;
+
+			&.active {
+				@include active-link;
+			}
+
+			&:hover {
+				color: $darkBlue;
+			}
+
+			&.child_menu_item {
+				color: $darkBlue;
+				margin: 4px 0;
+
+				&.active {
+					@include active-link;
+				}
+			}
+
+			&.grandchild_menu_item {
+				border-bottom: 0;
+				color: $darkBlue;
+				font-size: 15px;
+				padding: 5px 4px 5px 10px;
+
+				&.active {
+					@include active-link;
+				}
+			}
+		}
+	}
+}

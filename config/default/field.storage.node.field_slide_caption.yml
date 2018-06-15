@@ -1,0 +1,25 @@
+uuid: 89c0f56d-0198-481a-b3f3-a3fbe7446667
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: vAzDn3j6d-47cjr3vLH4o3caYnca_wcVqlevB-kD9VA
+id: node.field_slide_caption
+field_name: field_slide_caption
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

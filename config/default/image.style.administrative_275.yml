@@ -1,0 +1,15 @@
+uuid: c644af75-5fbf-49e4-a99d-6ae9b806da6f
+langcode: en
+status: true
+dependencies: {  }
+name: administrative_275
+label: 'Administrative (275)'
+effects:
+  a33874f0-954a-41fb-9ad8-cef697a01753:
+    uuid: a33874f0-954a-41fb-9ad8-cef697a01753
+    id: image_scale
+    weight: 2
+    data:
+      width: 275
+      height: null
+      upscale: false

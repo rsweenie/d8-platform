@@ -1,0 +1,23 @@
+uuid: a0e79019-6140-4da9-843d-8ff845d6f271
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accordion_display_type
+    - node.type.tabbed_accordion
+  module:
+    - options
+_core:
+  default_config_hash: uwdAbJ5iCiswrqIrszoEL-W0DL_Ga8NrF18R3_DQZu0
+id: node.tabbed_accordion.field_accordion_display_type
+field_name: field_accordion_display_type
+entity_type: node
+bundle: tabbed_accordion
+label: 'Display Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

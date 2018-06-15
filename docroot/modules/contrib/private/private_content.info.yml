@@ -1,0 +1,11 @@
+name: Private
+description: Allows users to mark content as private, and hide that content from visitors.
+# core: 8.x
+package: Access control
+type: module
+
+# Information added by Drupal.org packaging script on 2017-11-22
+version: '8.x-2.0-alpha2'
+core: '8.x'
+project: 'private'
+datestamp: 1511376192

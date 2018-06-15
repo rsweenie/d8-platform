@@ -1,0 +1,21 @@
+uuid: a973bbda-85f5-4a5f-bdd9-b7ea16fb0bb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_emergency_headline
+    - node.type.header_alert
+_core:
+  default_config_hash: e_w_h83w9AUN-4WPwPtxyEGhc9iC85-9gyjSlsQeMAk
+id: node.header_alert.field_emergency_headline
+field_name: field_emergency_headline
+entity_type: node
+bundle: header_alert
+label: 'Emergency Headline'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

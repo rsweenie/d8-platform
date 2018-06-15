@@ -1,0 +1,101 @@
+@mixin dash($position) {
+	background: url(../images/png/dash.png);
+	color: $mediumBlue;
+	content: '';
+	height: 32px;
+	left: 0;
+	position: absolute;
+	#{$position}: 0;
+	width: 100%;
+}
+
+@mixin white-arrow-link {
+	background-color: $darkBlue;
+	display: initial;
+	font-family: $condensedFont;
+	font-size: 20px;
+	font-weight: $bold;
+	padding: 7px 15px 5px 10px;
+	text-transform: uppercase;
+
+	&::after {
+		content: url(../images/svgs/white-arrow.svg);
+		margin-left: 20px;
+		vertical-align: middle;
+	}
+
+	&:hover {
+		color: $darkBlue;
+		text-decoration: none;
+
+		&::after {
+			content: url(../images/svgs/white-arrow.svg);
+			margin-left: 20px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.front_page_callout_green {
+	color: $green;
+	font-family: $condensedFont;
+	font-size: 26px;
+	font-weight: $bold;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	padding: 36px 0;
+	position: relative;
+	text-transform: uppercase;
+
+	p {
+		margin: 0 0 5px;
+	}
+
+	&::before {
+		@include dash(top);
+	}
+
+	&::after {
+		@include dash(bottom);
+	}
+
+	a {
+		color: $green;
+		text-decoration: underline;
+	}
+}
+
+.front_page_college_about {
+	margin-bottom: 20px;
+
+	h2 {
+		display: block;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.button {
+		@include white-arrow-link;
+
+		a {
+			color: $white;
+			text-decoration: none;
+
+			&:hover {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.flexbox_three_section_wrapper {
+	.responsive_flex {
+		@include respond-to(null , mobile-max) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+}

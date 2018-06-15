@@ -1,0 +1,103 @@
+uuid: 1505b6ac-8190-4524-ab21-9ed58b6180e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.promo_box.field_promo_box_promo_text
+    - field.field.node.promo_box.field_promo_link
+    - node.type.promo_box
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser_entity_form
+    - inline_entity_form
+    - scheduler
+_core:
+  default_config_hash: AHtIJGFUtJNtQ6qSP5fGU8XLhWOBj4X7dnUHsllgsdY
+id: node.promo_box.default
+targetEntityType: node
+bundle: promo_box
+mode: default
+content:
+  field_promo_box_promo_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_promo_btn:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_promo_link:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Link
+      label_plural: Links
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: creighton_link_bros
+    type: inline_entity_form_complex
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 8
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  private:
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

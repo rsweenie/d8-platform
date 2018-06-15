@@ -1,0 +1,93 @@
+uuid: ba3df4d4-2427-495a-9366-5a4c2c9332b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.featured_links.field_featured_link
+    - field.field.node.featured_links.field_featured_link_button_color
+    - node.type.featured_links
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser_entity_form
+    - inline_entity_form
+    - scheduler
+_core:
+  default_config_hash: iSyNQrbMLfBOJqyCTz9bQ_RWuKfOuhJLSUSQthRAdLk
+id: node.featured_links.default
+targetEntityType: node
+bundle: featured_links
+mode: default
+content:
+  field_featured_link:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Link
+      label_plural: Links
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: creighton_link_bros
+    type: inline_entity_form_complex
+    region: content
+  field_featured_link_button_color:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 8
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  private:
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

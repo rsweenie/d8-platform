@@ -1,0 +1,25 @@
+uuid: f7b9a42b-931a-4968-95f9-5b1f297b62f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point
+  module:
+    - crop
+name: administrative_mc275
+label: 'Administrative (mc275)'
+effects:
+  a33874f0-954a-41fb-9ad8-cef697a01753:
+    uuid: a33874f0-954a-41fb-9ad8-cef697a01753
+    id: image_scale
+    weight: 2
+    data:
+      width: 275
+      height: null
+      upscale: false
+  7fe35431-5671-43fd-afbd-8200d6d06a7c:
+    uuid: 7fe35431-5671-43fd-afbd-8200d6d06a7c
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: focal_point

@@ -1,0 +1,58 @@
+uuid: 75f7f020-8a55-436f-8053-9c78a7f85d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.image
+    - image.style.administrative_mc275
+    - media.type.image
+  module:
+    - image_widget_crop
+    - lightning_media
+_core:
+  default_config_hash: kyoAHlZTGIuGTaQuBblGBk8EhfnVKOl19_0j5WbpQqM
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  image:
+    type: image_widget_crop
+    weight: 0
+    settings:
+      show_crop_area: true
+      show_default_crop: true
+      preview_image_style: administrative_mc275
+      crop_preview_image_style: administrative_275
+      crop_list:
+        - focal_point
+      progress_indicator: throbber
+      warn_multiple_usages: false
+    third_party_settings:
+      lightning_media:
+        file_links: true
+        remove_button: true
+    region: content
+  name:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_in_library: true
+  moderation_state: true
+  path: true
+  scheduled_publication: true
+  uid: true

@@ -1,0 +1,24 @@
+uuid: 68f4d83c-521b-4840-b4c1-b26b57f71a7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point
+  module:
+    - crop
+name: rectangle_horizontal_front_slider_1440x480_
+label: 'Rectangle Horizontal Front Slider (1440x480)'
+effects:
+  7cef5d05-0b2b-462c-a240-8a9a6985cdf1:
+    uuid: 7cef5d05-0b2b-462c-a240-8a9a6985cdf1
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  512f059b-c103-4b7c-8642-fa1ea7d2f3c1:
+    uuid: 512f059b-c103-4b7c-8642-fa1ea7d2f3c1
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1440
+      height: 480

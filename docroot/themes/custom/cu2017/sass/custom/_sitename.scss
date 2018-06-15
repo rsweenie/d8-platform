@@ -1,0 +1,24 @@
+.site_name {
+	background-color: $siteNameBackground;
+	width: 100%;
+
+	.cu2017_site_name {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		font-size: $baseFontSize;
+		margin: auto;
+		max-width: $maxContentWidth;
+		padding: 5px 15px;
+		text-align: center;
+		text-transform: uppercase;
+
+		@include respond-to(tablet-min , lg-tablet-max) {
+			font-size: 20px;
+		}
+
+		@include respond-to(desktop-min , null) {
+			font-size: 20px;
+			text-align: right;
+		}
+	}
+}

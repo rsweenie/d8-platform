@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Promo Box template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'promo_box_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    {% if node.field_promo_link.entity.field_links_open_in_new_window.0.value|render == 0 %}      
+        <a href="{{ node.field_promo_link.entity.field_links_link.0.uri }}">
+    {% else %}
+        <a href="{{ node.field_promo_link.entity.field_links_link.0.uri }}" target="_blank">
+    {% endif %}
+        <span class="promo_text">{{ content.field_promo_box_promo_text }}</span>
+        <div class="promo_btn">{{ node.field_promo_link.entity.field_links_link_text.0.value }}</div>
+    </a> 
+</div>

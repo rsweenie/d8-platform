@@ -1,0 +1,35 @@
+@mixin green-arrow-link($leftAlign) {
+	color: $green;
+	display: block;
+	font-family: $condensedFont;
+	font-size: 17px;
+	padding-right: 50px;
+	text-transform: uppercase;
+
+	$placement: null;
+
+	@if $leftAlign == true {
+		$placement: 'after';
+	} @else {
+		$placement: 'before';
+	}
+
+	&::#{$placement} {
+		content: url(../images/svgs/green-arrow.svg);
+		display: inline-flex;
+		margin-left: 10px;
+		vertical-align: middle;
+	}
+
+	&:hover {
+		color: $darkBlue;
+		text-decoration: none;
+
+		&::#{$placement} {
+			content: url(../images/svgs/dkblue-arrow.svg);
+			display: inline-flex;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	}
+}

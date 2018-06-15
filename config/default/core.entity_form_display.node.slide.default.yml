@@ -1,0 +1,111 @@
+uuid: 5bf0619f-c83c-4cb7-bc8b-04a7bc350f39
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.node.slide.field_slide_caption
+    - field.field.node.slide.field_slide_image
+    - field.field.node.slide.field_slide_link
+    - node.type.slide
+  module:
+    - entity_browser
+    - entity_browser_entity_form
+    - field_group
+    - inline_entity_form
+    - scheduler
+    - text
+third_party_settings:
+  field_group:
+    group_links:
+      children: {  }
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Links
+_core:
+  default_config_hash: eWY4KprDzt4kLr9BEBdPxRmfjrhQRB0oYyS0sqhDenc
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  field_slide_caption:
+    weight: 3
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_slide_image:
+    type: entity_browser_entity_reference
+    weight: 1
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+    region: content
+    third_party_settings: {  }
+  field_slide_link:
+    weight: 4
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Link
+      label_plural: Links
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: creighton_link_bros
+    type: inline_entity_form_complex
+    region: content
+  private:
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  scheduled_publication: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

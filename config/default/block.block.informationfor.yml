@@ -1,0 +1,27 @@
+uuid: 8def8d94-b17b-4625-b2aa-3df6863a79d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.information-for
+  module:
+    - menu_block
+  theme:
+    - cu2017
+id: informationfor
+theme: cu2017
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'menu_block:information-for'
+settings:
+  id: 'menu_block:information-for'
+  label: Pollywog
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'information-for:'
+  suggestion: information_for
+visibility: {  }

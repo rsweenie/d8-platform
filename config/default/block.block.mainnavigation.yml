@@ -1,0 +1,29 @@
+uuid: 918c6cc4-255e-48a3-ae5f-a9ca2e80c673
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - cu2017
+_core:
+  default_config_hash: DZnHGcVB_w9jT1aRIIHFlIQWkFB6aq1cJAYxe-j7ObA
+id: mainnavigation
+theme: cu2017
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

@@ -1,0 +1,38 @@
+uuid: 1b33ff7e-c9a0-4d13-90ca-21537f0e9e54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_page_sidebar_items
+    - node.type.copy_box
+    - node.type.featured_links
+    - node.type.news_spotlight
+    - node.type.promo_box
+    - node.type.quote_box
+    - node.type.related_links
+_core:
+  default_config_hash: NFyW9Xc1fcApnba3K10RGK6xDmYbPmvXBTIIfPA351Y
+id: node.news_spotlight.field_content_page_sidebar_items
+field_name: field_content_page_sidebar_items
+entity_type: node
+bundle: news_spotlight
+label: 'Sidebar Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      copy_box: copy_box
+      featured_links: featured_links
+      promo_box: promo_box
+      quote_box: quote_box
+      related_links: related_links
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: copy_box
+field_type: entity_reference

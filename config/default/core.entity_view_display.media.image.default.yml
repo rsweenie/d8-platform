@@ -1,0 +1,34 @@
+uuid: e2663ad6-0a4c-4467-b457-0acbe0839217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.image
+    - image.style.administrative_mc275
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: administrative_mc275
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  scheduled_publication: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,10 @@
+uuid: e5a87f15-ab68-4c0c-bd53-8d6ad6363931
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H_Q9IUjCkWf0atYOuE4opnmvp25pmvAhFNhhKkQIDr4
+id: transaction-menu
+label: 'Transaction Menu'
+description: 'A transaction menu for apply, visit, request info and give'
+locked: false

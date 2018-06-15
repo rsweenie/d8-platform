@@ -1,0 +1,24 @@
+uuid: 2c23c778-0bf1-4a44-96c1-8ea7acbd1975
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.copy_box
+_core:
+  default_config_hash: Utt6EuOkWJ4JmT1yTZPBUVRTwM1eLVKu8_l2X9DdPD4
+id: node.copy_box.promote
+field_name: promote
+entity_type: node
+bundle: copy_box
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

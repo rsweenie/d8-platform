@@ -1,0 +1,13 @@
+.nav {
+	li {
+		a {
+			&:focus {
+				background: transparent;
+			}
+		}
+	}
+}
+
+.row {
+	margin: 0;
+}

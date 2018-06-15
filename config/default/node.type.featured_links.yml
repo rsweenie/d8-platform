@@ -1,0 +1,19 @@
+uuid: fb98ef5d-5685-43e7-be1d-3b6ec9d1d5e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: _LYbzemiTsR_IRYfUbVvQQQmMSeb1mdyKm9wUenhicU
+name: 'Featured Links'
+type: featured_links
+description: 'A link used for calls-to-action that appear as a graphic button that appears in the &#039;Second Sidebar&#039; region (to the right of the body when viewing in a desktop environment).'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

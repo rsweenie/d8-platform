@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Content Page template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'content_page_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    {% if content.field_header_background_image.0|render %}
+        <div class="header_image" id="header_image">
+            {{ content.field_header_background_image.0 }}
+        </div>
+    {% endif %}
+
+    {{ content.field_slide }}
+    {{ content.body }}
+    {{ content.field_tabbed_accordion }}
+</div>

@@ -1,0 +1,27 @@
+.related_links_wrapper {
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+
+		a {
+			li {
+				color: $blue;
+				font-family: $baseFont;
+				line-height: 25px;
+				text-decoration: underline;
+
+				&:hover {
+					color: $darkBlue;
+				}
+			}
+		}
+
+		.field--item {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

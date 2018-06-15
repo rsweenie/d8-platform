@@ -1,0 +1,21 @@
+uuid: ab5d859a-10c5-456b-a763-4afc3c427cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_page_headline
+    - node.type.content_page
+_core:
+  default_config_hash: NtweO0LlYAOINJL6dTwsLtM-s6B8WnlNNuZcmF38X7Y
+id: node.content_page.field_content_page_headline
+field_name: field_content_page_headline
+entity_type: node
+bundle: content_page
+label: Headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
