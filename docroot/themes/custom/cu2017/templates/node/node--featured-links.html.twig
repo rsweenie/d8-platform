@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Featured Links template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'featured_links_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    {% set featured_links_attributes = create_attribute() %}
+    {% set classes = [] %}
+
+    {% if content.field_featured_link_button_color.0|render|lower|trim == "dark blue" %}
+        {% set classes = classes|merge(['featured_links_blue']) %}
+    {% elseif content.field_featured_link_button_color.0|render|lower|trim == "orange" %}
+        {% set classes = classes|merge(['featured_links_orange']) %}
+    {% endif %}
+
+    <ul{{ featured_links_attributes.addClass(classes) }}>
+        {{ content.field_featured_link }}
+    </ul>
+</div>

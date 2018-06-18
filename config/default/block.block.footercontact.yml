@@ -1,0 +1,23 @@
+uuid: 7375d72e-39c9-445c-b35a-279947a7971e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cu2017
+_core:
+  default_config_hash: PQmoRrXz2ERtxUc2bG6Wt-5KkUruvJQBVEH5KzNsbos
+id: footercontact
+theme: cu2017
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a5aca14a-eee9-4cb3-b341-054c2e13d8c6'
+settings:
+  id: 'block_content:a5aca14a-eee9-4cb3-b341-054c2e13d8c6'
+  label: 'Footer Contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

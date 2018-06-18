@@ -1,0 +1,16 @@
+uuid: 2a14409c-0963-41d0-81fc-9e4c11d16583
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: y1Q8X219pcZyp0a7juhatNmTYa8moTqAB6ag54rvNUo
+id: node.header_alert_not_dangerous
+label: 'Header Alert - Not Dangerous'
+targetEntityType: node
+cache: true

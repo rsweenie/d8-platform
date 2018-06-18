@@ -1,0 +1,16 @@
+uuid: c6ce49d2-af42-4bc0-9099-e051245c94e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: K0EcetzqX_Z6GwKhY-aqXJMWIIH5xN-uQHbvGKnLEpo
+id: node.header_alert_weather_related
+label: 'Header Alert - Weather Related'
+targetEntityType: node
+cache: true

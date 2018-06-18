@@ -1,0 +1,23 @@
+uuid: dd1b6629-9112-44d4-8348-34bae12b3401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_caption
+    - node.type.slide
+  module:
+    - text
+_core:
+  default_config_hash: aV-N5bdw_knF4tTlosXmpzI1nvKB5bjV9qrdx2pzCWE
+id: node.slide.field_slide_caption
+field_name: field_slide_caption
+entity_type: node
+bundle: slide
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

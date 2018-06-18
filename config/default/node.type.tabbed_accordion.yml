@@ -1,0 +1,19 @@
+uuid: 61fd6fb0-b537-412a-867e-87679631385f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: t-vd5QkapTIxEoavjtItRta7IQOvyLLy3xVPKG7dNiA
+name: Tabbed/Accordion
+type: tabbed_accordion
+description: 'Content modules that help to organize content and appear at the bottom of the body area. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

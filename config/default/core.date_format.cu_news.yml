@@ -1,0 +1,8 @@
+uuid: cc42b24c-db79-4947-9e30-694779df4c46
+langcode: en
+status: true
+dependencies: {  }
+id: cu_news
+label: 'CU News'
+locked: false
+pattern: 'M j, Y'

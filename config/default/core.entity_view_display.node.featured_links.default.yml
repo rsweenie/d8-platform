@@ -1,0 +1,45 @@
+uuid: 4f489efc-fed3-40a3-8ba4-33479b7938d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.featured_links.field_featured_link
+    - field.field.node.featured_links.field_featured_link_button_color
+    - node.type.featured_links
+  module:
+    - options
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: fGBrBGxG6dx-pB9Sk68lFZzk4OsK5XhgyElz2oQdJA0
+id: node.featured_links.default
+targetEntityType: node
+bundle: featured_links
+mode: default
+content:
+  field_featured_link:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_featured_link_button_color:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  links: true
+  private: true
+  scheduled_publication: true

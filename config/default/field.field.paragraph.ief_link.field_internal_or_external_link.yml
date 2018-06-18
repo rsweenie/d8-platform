@@ -1,0 +1,25 @@
+uuid: 262b20c0-af9b-4c71-ae9b-05d2efae170f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_internal_or_external_link
+    - paragraphs.paragraphs_type.ief_link
+  module:
+    - link
+_core:
+  default_config_hash: KA9KBg9JEmYRLXtfEcawtZ4CfSG6UQbmkL3vl8p9eR0
+id: paragraph.ief_link.field_internal_or_external_link
+field_name: field_internal_or_external_link
+entity_type: paragraph
+bundle: ief_link
+label: 'Internal or External Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Tabbed Accordion template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'tabbed_accordion_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    {% set accordion_attributes = create_attribute() %}
+    {% set tabbed_accordion_attributes = create_attribute() %}
+    {% set classes = [] %}
+    {% set inner_classes = [] %}
+
+    {% if content.field_accordion_display_type.0|render|lower|trim == 'accordion' %}
+        {% set classes = classes|merge(['accordion']) %}
+    {% else %}
+        {% set classes = classes|merge(['tabbed_accordion']) %}
+            {% if content.field_accordion_display_type.0|render|lower|trim == 'side tab' %}
+                {% set inner_classes = inner_classes|merge(['side_tab_wrapper']) %}
+            {% else %}
+                {% set inner_classes = inner_classes|merge(['top_tab_wrapper']) %}
+            {% endif %}
+    {% endif %}
+
+    <div{{ accordion_attributes.addClass(classes) }}>
+        <div{{ tabbed_accordion_attributes.addClass(inner_classes) }}>
+            {{ content }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+uuid: 2179c233-b0fa-41c2-8b84-7baa2fb1c076
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fc_additional_links
+    - node.type.featured_content
+    - node.type.links
+id: node.featured_content.field_fc_additional_links
+field_name: field_fc_additional_links
+entity_type: node
+bundle: featured_content
+label: 'Supporting Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      links: links
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

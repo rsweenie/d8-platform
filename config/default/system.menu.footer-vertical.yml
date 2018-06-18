@@ -1,0 +1,10 @@
+uuid: f02c54a3-b001-4f32-8958-e5743121c995
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xMFN2_o2DyvoxxWvLncx_V5dkPqkysbJBR8jeiOPJIc
+id: footer-vertical
+label: 'Footer Vertical'
+description: 'A vertical menu for the footer'
+locked: false

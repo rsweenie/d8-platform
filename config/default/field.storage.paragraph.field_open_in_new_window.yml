@@ -1,0 +1,24 @@
+uuid: 206e3b01-a40a-4b70-bfea-afcee1bd130a
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: QQlwiN253HS3e4uc_gh62BMpZrEXsUfbKRCLfqb7ikA
+id: paragraph.field_open_in_new_window
+field_name: field_open_in_new_window
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

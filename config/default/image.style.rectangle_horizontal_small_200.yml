@@ -1,0 +1,22 @@
+uuid: 7d88a6d8-6d13-4788-a95d-10464ef59b77
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: rectangle_horizontal_small_200
+label: 'Rectangle Horizontal Small (200x165)'
+effects:
+  e9f94479-6d28-4662-b92e-15580372a8af:
+    uuid: e9f94479-6d28-4662-b92e-15580372a8af
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  991e6825-87b7-4aa2-aac7-015c679c6224:
+    uuid: 991e6825-87b7-4aa2-aac7-015c679c6224
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 200
+      height: 165

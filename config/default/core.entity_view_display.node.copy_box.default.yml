@@ -1,0 +1,44 @@
+uuid: 5fc80701-e7d3-441f-ab84-7ebfaae65990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.copy_box.body
+    - field.field.node.copy_box.field_copy_box_display_type
+    - node.type.copy_box
+  module:
+    - options
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: GcRSC23J4b2wtmraVa4SikMs1uCHHbGY25T4aB2fFFM
+id: node.copy_box.default
+targetEntityType: node
+bundle: copy_box
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_copy_box_display_type:
+    type: list_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true
+  private: true
+  scheduled_publication: true

@@ -1,0 +1,22 @@
+uuid: 64e3d114-6733-4faa-9e65-4993047ff743
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: rectangle_horizontal_medium_350x160_
+label: 'Rectangle Horizontal Medium (350x160)'
+effects:
+  c88d223e-bbe6-4c1e-8ed5-e2d34344117c:
+    uuid: c88d223e-bbe6-4c1e-8ed5-e2d34344117c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  f1630bba-50f4-4a00-a80d-ef4cc692fff0:
+    uuid: f1630bba-50f4-4a00-a80d-ef4cc692fff0
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 350
+      height: 160

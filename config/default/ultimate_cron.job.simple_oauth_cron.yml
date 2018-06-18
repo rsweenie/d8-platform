@@ -1,0 +1,17 @@
+uuid: a2c09e2f-91c2-47c7-a0fc-dd2cd27d297b
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_oauth
+title: 'Default cron handler'
+id: simple_oauth_cron
+weight: -6
+module: simple_oauth
+callback: simple_oauth_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

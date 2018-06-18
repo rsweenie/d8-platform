@@ -1,0 +1,26 @@
+uuid: 65e2a9ac-66dd-4690-892e-c7b56edcd078
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: G1PLyudJQOcRJGSOolj6oY5QPf3MREsFl4VjlQJ2yVI
+id: node.field_profile_specialties
+field_name: field_profile_specialties
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

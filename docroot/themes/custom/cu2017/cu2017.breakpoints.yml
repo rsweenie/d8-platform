@@ -1,0 +1,42 @@
+cu2017.screen-mobile-max:
+  label: screen-mobile-max
+  mediaQuery: 'all and (max-width: 480px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+cu2017.screen-tablet-min:
+  label: screen-tablet-min
+  mediaQuery: 'all and (min-width: 481px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+cu2017.screen-tablet-max:
+  label: screen-tablet-max
+  mediaQuery: 'all and (max-width: 768px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+cu2017.screen-lg-tablet-min:
+  label: screen-lg-tablet-min
+  mediaQuery: 'all and (min-width: 769px)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x
+cu2017.screen-lg-tablet-max:
+  label: screen-lg-tablet-max
+  mediaQuery: 'all and (max-width: 1050px)'
+  weight: 5
+  multipliers:
+    - 1x
+    - 2x
+cu2017.screen-desktop-min:
+  label: screen-desktop-min
+  mediaQuery: 'all and (min-width: 1051px)'
+  weight: 6
+  multipliers:
+    - 1x
+    - 2x

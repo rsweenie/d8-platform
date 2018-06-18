@@ -1,0 +1,11 @@
+uuid: b83d672f-061b-49eb-9b52-88055fd6543c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: v3_Mr6C0MI95ke-k5ZSoaBYicHH9aMm7e3-uHvtm3Kk
+id: ief_link
+label: Links
+icon_uuid: null
+description: 'Internal / External / File link for Creighton'
+behavior_plugins: {  }

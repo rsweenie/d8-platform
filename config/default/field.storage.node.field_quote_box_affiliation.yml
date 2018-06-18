@@ -1,0 +1,23 @@
+uuid: ee86f212-0381-4955-b4cf-8fbaeeb75838
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 8hJw0zN9Z5Ukiy8tq4nRcicL2SSIMX9W_Hx6guc1cPY
+id: node.field_quote_box_affiliation
+field_name: field_quote_box_affiliation
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

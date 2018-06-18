@@ -1,0 +1,34 @@
+uuid: 71176835-1e3f-4b66-976d-0352bd8529b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - private_content
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  private_content:
+    private: 1
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+_core:
+  default_config_hash: BVu86ZcAmZFnbOzZTgh6SYr8oPWGosDg2BwDmpqX_HU
+name: 'Quote Box'
+type: quote_box
+description: 'An image, quote and attribute content element that appears in the &#039;Second Sidebar&#039; region (to the right of the body when viewing in a desktop environment).'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

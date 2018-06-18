@@ -1,0 +1,22 @@
+uuid: 69eb5341-8dbc-4585-9980-f7c3a15ec27d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_page_paths
+label: 'Content Page Paths'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  7b43471e-950b-47b7-aa4b-6e1f546064a2:
+    id: node_type
+    bundles:
+      content_page: content_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7b43471e-950b-47b7-aa4b-6e1f546064a2
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,24 @@
+uuid: a947597d-3986-44f4-ac07-36824cb64f1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.focal_point
+  module:
+    - crop
+name: rectangle_horizontal_inline_slider_1300x350_
+label: 'Rectangle Horizontal Inline Slider (1300x350)'
+effects:
+  94ee9bd8-abf4-4c38-8bf5-3ea7e5f6f9f3:
+    uuid: 94ee9bd8-abf4-4c38-8bf5-3ea7e5f6f9f3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  16c86836-b1f4-41c8-afbc-251ffbb9af01:
+    uuid: 16c86836-b1f4-41c8-afbc-251ffbb9af01
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1300
+      height: 350

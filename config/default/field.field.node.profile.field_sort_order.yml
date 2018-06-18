@@ -1,0 +1,25 @@
+uuid: 5e389011-7a48-4c46-b5cb-fd3c916481a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_order
+    - node.type.profile
+_core:
+  default_config_hash: '-tYdzr29aJ2NDeUfN-fK4pohlMAkOt6POFDFj5pYrNg'
+id: node.profile.field_sort_order
+field_name: field_sort_order
+entity_type: node
+bundle: profile
+label: 'Sort order'
+description: 'When this Profile appears in a list, it will be sorted by this number with the lowest number closest to the top.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

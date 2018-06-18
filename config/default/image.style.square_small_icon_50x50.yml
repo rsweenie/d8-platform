@@ -1,0 +1,22 @@
+uuid: ce5d516b-6742-48c6-9bb3-5a641494ed1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: square_small_icon_50x50
+label: 'Square Small Icon (50x50)'
+effects:
+  6046a8f3-333c-4323-b9b2-779c9e888e0c:
+    uuid: 6046a8f3-333c-4323-b9b2-779c9e888e0c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  b695db6f-56db-4622-9d26-551c2c73188b:
+    uuid: b695db6f-56db-4622-9d26-551c2c73188b
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 50
+      height: 50

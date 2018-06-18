@@ -1,0 +1,35 @@
+uuid: 661b878c-ec81-4157-91ea-7cef119a67f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.featured_links.field_featured_link
+    - field.field.node.featured_links.field_featured_link_button_color
+    - node.type.featured_links
+  module:
+    - user
+_core:
+  default_config_hash: BUD2ZzeNBvdCcF-b-hZjd9AiZstjdox-0kxyIl-OCfA
+id: node.featured_links.content_browser
+targetEntityType: node
+bundle: featured_links
+mode: content_browser
+content:
+  links:
+    weight: 100
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+hidden:
+  field_featured_link: true
+  field_featured_link_button_color: true
+  scheduled_publication: true

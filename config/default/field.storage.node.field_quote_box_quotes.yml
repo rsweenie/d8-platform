@@ -1,0 +1,33 @@
+uuid: 6aacbb19-2997-43bd-a0ad-f823fe7a09bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: StqgMDMKIEQ2vTBz7-0utBM1lQv3EbUbC44qOginlis
+id: node.field_quote_box_quotes
+field_name: field_quote_box_quotes
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: quotes
+      label: Quotes
+    -
+      value: noquotes
+      label: 'No Quotes'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+definitions:
+  creighton_menus__ccas:
+    enabled: true
+    menu_name: 9-schools-and-colleges
+    parent: ''
+    expanded: false
+    weight: 1
+  creighton_menus__office365:
+    enabled: true
+    menu_name: college-resources
+    parent: ''
+    expanded: false
+    weight: 2
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

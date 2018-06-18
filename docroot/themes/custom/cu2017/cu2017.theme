@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * The primary PHP file for the cu2017 theme.
+ *
+ * This file should only contain light helper functions and point to stubs in
+ * other files containing more complex functions.
+ *
+ * The stubs should point to files within the `./includes` directory named after
+ * the function itself minus the theme prefix. If the stub contains a group of
+ * functions, then please organize them so they are related in some way and name
+ * the file appropriately to at least hint at what it contains.
+ *
+ * All [pre]process functions, theme functions and template files lives inside
+ * the `./templates` directory. This is a highly automated and complex system
+ * designed to only load the necessary files when a given theme hook is invoked.
+ *
+ *
+ */
+use Drupal\Core\Url;
+use Drupal\Core\Menu;
+use Drupal\Core\Menu\MenuLinkTreeInterface;
+// determine if current page is in main menu and put together breadcrumbs
+function cu2017_preprocess_page(&$variables) {
+    $variables['inMainNav'] = 0;
+    $menu_name = 'main';
+    $menu_tree = \Drupal::menuTree();
+    $parameters = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
+    $tree = $menu_tree->load($menu_name, $parameters);
+    $tree_keys = array_keys($tree);
+    $count = count($tree_keys);
+    for ($i = 0; $i < $count; $i++) {
+        if ($tree[$tree_keys[$i]]->inActiveTrail) {    
+            $variables['inMainNav'] = 1;
+        }
+    }
+}
+// check display type of news/spotlight content type, and add appropriate file name to theme suggestions array
+function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variables) {
+    $node = \Drupal::request()->attributes->get('node');
+    if($node) {
+        $content_type = $node->getType();
+        if($content_type == 'news_spotlight') {
+            $field_display = $node->get('field_display_type')->getValue();
+            $field_display = $field_display[0]['value'];
+            $field_display == 0 ? $display_type = 'spotlight' : $display_type = 'news';
+            $suggestions[] = 'node__'.$content_type.'__'.$display_type;
+        }
+    }
+}

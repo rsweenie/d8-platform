@@ -1,0 +1,369 @@
+.header_top_section_mega_menu {
+	background-color: $megaMenuBackground;
+	border: 0;
+	display: none;
+	padding: 0 20px;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	width: 100%;
+	z-index: 1000;
+
+	@include respond-to(null , tablet-max)  {
+		top: $headerInnerMobileHeight + $headerTopBarHeight + $headerMobileSearchHeight;
+	}
+	@include respond-to(lg-tablet-min , lg-tablet-max) {
+		top: $headerInnerLgTabletHeight + $headerTopBarHeight;
+	}
+	@include respond-to(desktop-min , null) {
+		top: $headerDesktopHeight;
+	}
+
+	.header_top_section_mega_menu_inner_wrapper {
+		margin: auto;
+		max-width: $maxContentWidth;
+		width: 100%;
+	}
+
+	h2 {
+		color: $white;
+		font-family: $condensedFont;
+		font-size: 24px;
+		letter-spacing: 1px;
+		line-height: 1em;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 5px;
+
+		&.inline_menu {
+			display: flex;
+			justify-content: space-evenly;
+			text-align: center;
+
+			&.top_section {
+				margin: auto;
+				max-width: 600px;
+				width: 100%;
+
+				@include respond-to(null , tablet-max) {
+					margin: 20px auto 0;
+				}
+
+				li {
+					@media all and (max-width: 500px) {
+						padding-right: 10px;
+						width: 33%;
+					}
+					@media all and (max-width: 375px) {
+						padding-right: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		li {
+			list-style-image: none;
+			list-style-type: none;
+
+			@media all and (max-width: 500px) {
+				box-sizing: border-box;
+				float: left;
+				padding: 10px;
+				width: 100%;
+			}
+
+			a {
+				border-bottom: 1px dashed $borderBlue;
+				color: $white;
+				display: block;
+				font-family: $baseFont;
+				font-size: 16px;
+				line-height: normal;
+				margin-left: 0;
+				padding: 8px 0;
+			}
+		}
+	}
+
+	.mega_menu_top_wrapper {
+		margin: auto;
+		max-width: $maxContentWidth;
+		padding: 40px 0 20px;
+
+		@include respond-to(lg-tablet-min , null) {
+			padding: 20px 0 40px;
+		}
+
+		%fancyLinkProperties {
+			@include transition(background 0.2s ease);
+			border: 0;
+			display: block;
+			font-family: $condensedFont;
+			font-size: 18px;
+			height: 48px;
+			line-height: 1.1em;
+			text-align: left;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 106px;
+
+
+			&:hover {
+				background-position: 0 -48px;
+			}
+		}
+
+		a {
+			&[title='Make a Gift'] {
+				@extend %fancyLinkProperties;
+				background: transparent url(../images/megamenu-icons/mega-menu-gift.png) no-repeat top left;
+				padding: 5px 0 0 54px;
+			}
+
+			&[title='Campus Maps'] {
+				@extend %fancyLinkProperties;
+				background: transparent url(../images/megamenu-icons/mega-menu-map.png) no-repeat top left;
+				padding: 5px 0 0 44px;
+			}
+
+			&[title='A-Z Index'] {
+				@extend %fancyLinkProperties;
+				background: transparent url(../images/megamenu-icons/mega-menu-azindex.png) no-repeat top left;
+				padding: 5px 0 0 57px;
+			}
+		}
+	}
+
+	.information_for_menu_body {
+		border-top: 1px solid $white;
+
+		@include respond-to(lg-tablet-min , null) {
+			border-top: 0;
+		}
+	}
+
+	.schools_and_colleges_menu_body {
+		border-top: 1px solid $white;
+
+		@include respond-to(lg-tablet-min , null) {
+			border-top: 0;
+		}
+	}
+
+	.two_menu_columns {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-evenly;
+		margin: auto;
+		max-width: $maxContentWidth;
+
+		@include respond-to(lg-tablet-min , null) {
+			flex-flow: row wrap;
+		}
+
+		h2 {
+			border-bottom: 1px solid $white;
+			margin: 20px 0 0;
+			padding: 0 80px 10px 5px;
+			text-transform: uppercase;
+
+			&::after {
+				background-image: url(../images/png/white-arrow.png);
+				background-position: 95% 0;
+				background-repeat: no-repeat;
+				content: '';
+				display: inline-block;
+				height: 50px;
+				position: absolute;
+				right: 30px;
+				width: 50px;
+			}
+
+			@include respond-to(lg-tablet-min , null) {
+				border-bottom: 0;
+				font-size: 21px;
+				margin: 0;
+				text-decoration: none;
+
+				&::after {
+					background: 0;
+				}
+			}
+
+			&.rotate_arrow {
+				border-bottom: 0;
+
+				&::after {
+					transform: rotate(90deg);
+					transform-origin: 50% 0;
+				}
+			}
+		}
+
+		.mega_menu_column_left {
+			border-right: 0;
+			flex-basis: 100%;
+			font-size: 16px;
+			padding-left: 0;
+
+			@include respond-to(lg-tablet-min , null) {
+				border-right: 3px dotted $lightBlue;
+				flex-basis: 50%;
+			}
+
+			.schools_and_colleges_menu_wrapper {
+				&.hidden {
+					display: none;
+				}
+
+				@include respond-to(lg-tablet-min , null) {
+					display: block;
+				}
+			}
+		}
+
+		.mega_menu_column_right {
+			flex-basis: 100%;
+			padding-right: 0;
+
+			@include respond-to(lg-tablet-min , null) {
+				flex-basis: 50%;
+			}
+
+			.mega_menu_information_for_wrapper {
+				@include respond-to(lg-tablet-min , null) {
+					margin-left: 20px;
+				}
+
+				.information_for_menu_wrapper {
+					&.hidden {
+						display: none;
+					}
+
+					@include respond-to(lg-tablet-min , null) {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.two_col_menu {
+			display: flex;
+			flex-flow: column wrap;
+
+			@media all and (min-width: 1101px) {
+				max-height: 220px;
+			}
+			@media all and (min-width: 901px) and (max-width: 1100px) {
+				max-height: 240px;
+			}
+			@media all and (min-width: 769px) and (max-width: 900px) {
+				max-height: 260px;
+			}
+
+			li {
+				padding: 0;
+				width: 100%;
+
+				@include respond-to(lg-tablet-min , null) {
+					padding: 0 20px 0 0;
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	.mega_menu_bottom_wrapper {
+		clear: both;
+		margin: auto;
+		max-width: $maxContentWidth;
+		padding-top: 20px;
+		width: 100%;
+
+		.mega_menu_bottom_wrapper_label {
+			float: left;
+			margin-bottom: 10px;
+			width: 100%;
+
+			p {
+				color: $white;
+				font-size: 14px;
+			}
+		}
+
+		.resources_menu {
+			.inline_menu {
+				display: inline-flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+				margin-bottom: 25px;
+				max-width: 1300px;
+				padding: 15px;
+				width: 100%;
+			}
+
+			li {
+				padding-bottom: 40px;
+				width: 75px;
+
+				a {
+					border: 0;
+					font-size: 12px;
+					height: 50px;
+					margin: auto;
+					width: 50px;
+
+					&:hover {
+						background-position: -50px;
+					}
+
+					&[title='Directory'] {
+						background-image: url(../images/megamenu-icons/mega-menu-directory.png);
+					}
+
+					&[title='Office365'] {
+						background-image: url(../images/megamenu-icons/mega-menu-email.png);
+					}
+
+					&[title='BlueLine'] {
+						background-image: url(../images/megamenu-icons/mega-menu-blueline.png);
+					}
+
+					&[title='NEST'] {
+						background-image: url(../images/megamenu-icons/mega-menu-nest.png);
+					}
+
+					&[title='Libraries'] {
+						background-image: url(../images/megamenu-icons/mega-menu-libraries.png);
+					}
+
+					&[title='Bookstore'] {
+						background-image: url(../images/megamenu-icons/mega-menu-bookstore.png);
+					}
+
+					&[title='Calendar'] {
+						background-image: url(../images/megamenu-icons/mega-menu-calendar.png);
+					}
+
+					&[title='myCreighton'] {
+						background-image: url(../images/megamenu-icons/mega-menu-mycreighton.png);
+					}
+
+					&[title='Media'] {
+						background-image: url(../images/megamenu-icons/mega-menu-media.png);
+					}
+
+					span {
+						position: relative;
+						top: 50px;
+					}
+				}
+			}
+		}
+	}
+}

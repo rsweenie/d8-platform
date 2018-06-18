@@ -1,0 +1,22 @@
+uuid: 27b0e71b-67b1-4473-87cf-975949d1ebdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: rectangle_vertical_small_175x200_
+label: 'Rectangle Vertical Small (175x200)'
+effects:
+  72a0287b-bd90-4c71-b389-83b685b9e677:
+    uuid: 72a0287b-bd90-4c71-b389-83b685b9e677
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  65ff3938-34c4-4245-a605-0d9096759cdc:
+    uuid: 65ff3938-34c4-4245-a605-0d9096759cdc
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 175
+      height: 200

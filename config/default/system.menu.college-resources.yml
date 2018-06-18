@@ -1,0 +1,10 @@
+uuid: 5381a3b1-17de-488d-84dc-6071f2540dc5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y0nXpzijuSaEsQWOyo-Lb-racX69GO_8-32mX9N3gzY
+id: college-resources
+label: 'Kindergarten Resources'
+description: 'for Current Students, Faculty and Staff'
+locked: false

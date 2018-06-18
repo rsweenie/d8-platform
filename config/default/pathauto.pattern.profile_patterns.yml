@@ -1,0 +1,22 @@
+uuid: d2a7907c-e2b0-4405-94d1-57bd866f318b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: profile_patterns
+label: 'Profile Pattern'
+type: 'canonical_entities:node'
+pattern: 'profile/[node:title]'
+selection_criteria:
+  10eb2016-07e3-48e3-af7c-578ee3f35dbc:
+    id: node_type
+    bundles:
+      profile: profile
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 10eb2016-07e3-48e3-af7c-578ee3f35dbc
+selection_logic: and
+weight: -5
+relationships: {  }

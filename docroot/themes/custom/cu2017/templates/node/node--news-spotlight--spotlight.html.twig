@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Spotlight template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'spotlight_wrapper') }}>
+    <article class="spotlight">
+        <div class="spotlight_summary">
+            <div class="spotlight_image" id="spotlight_image">
+                {{ content.field_content_page_image.0 }}</div>
+            <div class="spotlight_top_text">
+                <h2>{{ node.label }}</h2>
+                <p>{{ node.body.summary|raw|nl2br }}</p>
+            </div>
+        </div>
+        <div class="spotlight_body">
+            {{ content.body }}
+            {{ content.field_tabbed_accordion }}
+        </div>
+    </article>
+</div>

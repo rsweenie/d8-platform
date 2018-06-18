@@ -1,0 +1,30 @@
+uuid: c369a9ca-8afb-4f23-97d3-7e16d4fddb9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tabbed_accordion
+    - node.type.profile
+    - node.type.tabbed_accordion
+_core:
+  default_config_hash: t_7sXygxuBEDmgOSjg_JZWZW_iyGXsd21gDgFkPBGcQ
+id: node.profile.field_tabbed_accordion
+field_name: field_tabbed_accordion
+entity_type: node
+bundle: profile
+label: Tabbed/Accordion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tabbed_accordion: tabbed_accordion
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

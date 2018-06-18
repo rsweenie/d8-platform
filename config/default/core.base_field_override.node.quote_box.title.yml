@@ -1,0 +1,20 @@
+uuid: 986da053-194a-4e40-852f-31299807d0d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quote_box
+_core:
+  default_config_hash: 8LYrNegVVNZCNKABDVnM26jkn707Ezk32ES0HCE_QXA
+id: node.quote_box.title
+field_name: title
+entity_type: node
+bundle: quote_box
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

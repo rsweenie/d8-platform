@@ -1,0 +1,10 @@
+uuid: e4a22420-06df-4fdc-be64-3cd05c27c98e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XglIBYwgMatI0MFU1fYiBcst-IWnPT-504DufSsThgA
+id: breadcrumbs-menu
+label: 'Breadcrumbs Menu'
+description: 'used to expand the usability of the default breadcrumbs.'
+locked: false

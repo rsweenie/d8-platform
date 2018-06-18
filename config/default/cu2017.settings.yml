@@ -1,0 +1,20 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: /themes/custom/cu2017/images/favicon.ico
+  url: /themes/custom/cu2017/images/favicon.ico
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: /themes/custom/cu2017/images/logos/CU_Logo.png
+  url: ''
+  use_default: false
+schemas:
+  bootstrap: 8000
+  cu2017: 8000

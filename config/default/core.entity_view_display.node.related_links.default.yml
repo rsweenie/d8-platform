@@ -1,0 +1,36 @@
+uuid: 4847c082-667b-4a05-a3d9-98d56122c3f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.related_links.field_related_link
+    - node.type.related_links
+  module:
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: OgylR9fDSXN2gXFiC8LZduLyK_kRplucEBZuQ4hSwjw
+id: node.related_links.default
+targetEntityType: node
+bundle: related_links
+mode: default
+content:
+  field_related_link:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  links: true
+  private: true
+  scheduled_publication: true

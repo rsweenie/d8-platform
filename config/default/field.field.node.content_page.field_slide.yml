@@ -1,0 +1,30 @@
+uuid: c2717ab2-ee38-472e-ad3c-3d484c87f4ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide
+    - node.type.content_page
+    - node.type.slide
+_core:
+  default_config_hash: hUEqkXb1_Ya2C8v6aFGKLZppjIdaHiTjZ0O1r7yWmQs
+id: node.content_page.field_slide
+field_name: field_slide
+entity_type: node
+bundle: content_page
+label: 'Inline Slideshow'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

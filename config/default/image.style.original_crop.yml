@@ -1,0 +1,15 @@
+uuid: 302ea4cf-661a-4a9d-bec1-9afe5a0b90fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: original_crop
+label: 'Original Crop'
+effects:
+  5d4a5383-fac7-4135-bbf5-3c58b9199b16:
+    uuid: 5d4a5383-fac7-4135-bbf5-3c58b9199b16
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point

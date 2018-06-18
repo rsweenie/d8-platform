@@ -1,0 +1,40 @@
+uuid: 64d8602b-71cd-4514-9bf5-74995227ff5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: cu_default_profile
+label: 'CU Default Profile'
+description: 'Creighton''s default LinkIt Profile'
+attributes:
+  target:
+    id: target
+    weight: 0
+    settings:
+      widget_type: simple_checkbox
+matchers:
+  d7afe5fd-df1c-4300-a54b-724f115be643:
+    uuid: d7afe5fd-df1c-4300-a54b-724f115be643
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: 'by [node:author] | [node:created:medium]'
+      bundles:
+        content_page: content_page
+        profile: profile
+      group_by_bundle: true
+      include_unpublished: false
+  47fab18c-54c2-4a54-8f4e-e6bcadc7076e:
+    uuid: 47fab18c-54c2-4a54-8f4e-e6bcadc7076e
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: 'uploaded by [file:owner] | uploaded on [file:created]'
+      bundles: null
+      group_by_bundle: null
+      images:
+        show_dimensions: false
+        show_thumbnail: false
+        thumbnail_image_style: null

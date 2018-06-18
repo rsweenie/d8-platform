@@ -1,0 +1,50 @@
+uuid: 91982358-33d2-4cc7-8d71-22e22dc44f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tabbed_accordion.field_accordion_display_type
+    - field.field.node.tabbed_accordion.field_tabbed_acc_content
+    - node.type.tabbed_accordion
+  module:
+    - entity_reference_revisions
+    - options
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: HwhdZC75lvY3E_m1OT7iOvXrItsOJtVcNeaCwTtBqfQ
+id: node.tabbed_accordion.default
+targetEntityType: node
+bundle: tabbed_accordion
+mode: default
+content:
+  field_accordion_display_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_tabbed_acc_content:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  private: true
+  scheduled_publication: true

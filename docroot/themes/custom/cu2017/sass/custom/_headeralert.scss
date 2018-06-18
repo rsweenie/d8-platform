@@ -1,0 +1,132 @@
+.header_alert_wrapper {
+	.alert_type_wrapper {
+		display: flex;
+		padding: 20px;
+		width: 100%;
+
+		&.header_alert_type_dangerous {
+			background: $red;
+			color: $white;
+
+			.alert_symbol_regular {
+				display: block;
+			}
+		}
+
+		&.header_alert_type_regular {
+			background: $orange;
+			color: $white;
+
+			.alert_symbol_regular {
+				display: block;
+			}
+		}
+
+		&.header_alert_type_weather {
+			background: $orange;
+			color: $white;
+
+			.alert_symbol_weather {
+				display: block;
+			}
+		}
+
+		.header_alert {
+			margin: auto;
+			max-width: 900px;
+			width: 100%;
+
+			img {
+				float: left;
+			}
+
+			a {
+				color: $white;
+				text-decoration: underline;
+
+				&:hover {
+					color: $white;
+					text-decoration: underline;
+				}
+			}
+
+			.header_alert_content {
+				float: left;
+				padding-left: 40px;
+				width: 90%;
+
+				.header_alert_headline {
+					font-family: $condensedFont;
+					font-size: 36px;
+					line-height: 40px;
+					margin: 0 0 10px;
+					text-align: left;
+					text-transform: uppercase;
+					width: 100%;
+				}
+
+				.header_alert_link {
+					a {
+						background-image: url(../images/alert-header/alert-arrow.png);
+						background-position: right;
+						background-repeat: no-repeat;
+						color: $white;
+						display: block;
+						max-width: 22%;
+						text-decoration: underline;
+
+						@media all and (min-width: 801px) and (max-width: 875px) {
+							max-width: 25%;
+						}
+
+						@media all and (min-width: 751px) and (max-width: 800px) {
+							max-width: 28%;
+						}
+
+						@media all and (min-width: 701px) and (max-width: 750px) {
+							max-width: 30%;
+						}
+
+						@media all and (min-width: 651px) and (max-width: 700px) {
+							max-width: 33%;
+						}
+
+						@media all and (min-width: 601px) and (max-width: 650px) {
+							max-width: 36%;
+						}
+
+						@media all and (min-width: 551px) and (max-width: 600px) {
+							max-width: 40%;
+						}
+
+						@media all and (min-width: 501px) and (max-width: 550px) {
+							max-width: 48%;
+						}
+
+						@media all and (min-width: 451px) and (max-width: 500px) {
+							max-width: 52%;
+						}
+
+						@media all and (min-width: 401px) and (max-width: 450px) {
+							max-width: 58%;
+						}
+
+						@media all and (max-width: 400px) {
+							max-width: 70%;
+						}
+
+						&:hover {
+							color: $white;
+							text-decoration: underline;
+						}
+					}
+				}
+
+				p {
+					font-size: 17px;
+					line-height: 1.3em;
+				}
+			}
+		}
+	}
+}

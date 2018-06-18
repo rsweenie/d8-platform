@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Profile template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'profile_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    <div class="row margin_bottom_16">
+        <div class="col-md-3 left_padding_0">
+            {{ content.field_profile_image.0 }}
+        </div>
+        <div class="col-md-9">
+            {{ content.field_profile_name }}
+            {{ content.field_profile_position }}
+        </div>
+    </div>
+    <div class="row">
+        {{ content.body }}
+    </div>
+    <div class="profile_accordion">
+        {{ content.field_tabbed_accordion }}
+    </div>
+</div>

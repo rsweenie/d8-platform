@@ -1,0 +1,23 @@
+uuid: edca2a07-40cb-44e2-9946-9bbaecb40941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_type
+    - node.type.news_spotlight
+id: node.news_spotlight.field_display_type
+field_name: field_display_type
+entity_type: node
+bundle: news_spotlight
+label: 'Display Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: News
+  off_label: Spotlight
+field_type: boolean

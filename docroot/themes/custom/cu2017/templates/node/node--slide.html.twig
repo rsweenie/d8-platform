@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Slide template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'slide_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+
+    <div class="slide" style="background-image: url({{ file_url(content.field_slide_image|field_target_entity.image.entity.uri.value) }})">
+        <div class="slideText">
+            <div class="slideTextWrapper">
+                {{ content.field_slide_caption }}
+                {{ content.field_slide_link }}
+            </div>
+        </div>
+    </div>
+</div>

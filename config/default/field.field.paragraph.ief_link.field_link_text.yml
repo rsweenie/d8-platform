@@ -1,0 +1,21 @@
+uuid: 66000ab0-eaa2-40c1-85fe-d4cc34f329c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_text
+    - paragraphs.paragraphs_type.ief_link
+_core:
+  default_config_hash: MZBT14ewS_G3MuynNBkAe5Ngm3QzW9DQzGcH1vM6KL0
+id: paragraph.ief_link.field_link_text
+field_name: field_link_text
+entity_type: paragraph
+bundle: ief_link
+label: 'Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

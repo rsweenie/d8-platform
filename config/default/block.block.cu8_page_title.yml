@@ -1,0 +1,20 @@
+uuid: df2cd8a5-7c24-49c8-8c0f-101bac4e1c6c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cu8
+_core:
+  default_config_hash: pxfD5KGbMcdUDe4FGUknpAnS8aMfJzy9DCt__6VUJFI
+id: cu8_page_title
+theme: cu8
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

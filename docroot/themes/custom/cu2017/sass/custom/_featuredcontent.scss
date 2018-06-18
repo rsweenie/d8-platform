@@ -1,0 +1,41 @@
+// added styles from the wrike ticket with placeholder class names 
+.featured_content_wrapper {
+	background-color: $darkBlue;
+	display: flex;
+	flex-flow: row nowrap;
+
+	.featured_content_content {
+		display: flex;
+		flex-flow: column nowrap;
+
+		.featured_content_link {
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+
+				li {
+					color: $yellow;
+					font-family: $condensedFont;
+					font-size: 24px;
+					font-weight: $bold;
+				}
+			}
+		}
+
+		.featured_content_body {
+			color: $white;
+			font-family: $baseFont;
+			font-size: $baseFontSize;
+		}
+
+		.featured_content_additional_links {
+			a {
+				color: $yellow;
+				font-family: $baseFont;
+				font-size: $baseFontSize;
+				text-decoration: underline;
+			}
+		}
+	}
+}

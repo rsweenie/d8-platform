@@ -1,0 +1,71 @@
+uuid: 79e20ddb-6e83-4938-a7af-c0b347e323d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.copy_box.body
+    - field.field.node.copy_box.field_copy_box_display_type
+    - node.type.copy_box
+  module:
+    - text
+_core:
+  default_config_hash: mnLnMkLUuApLKsPnrUd9k5QcylskIc_Xv9FtKEXuuBM
+id: node.copy_box.default
+targetEntityType: node
+bundle: copy_box
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_copy_box_display_type:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  private:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 20
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  scheduled_publication: true
+  status: true
+  sticky: true
+  uid: true
+  url_redirects: true

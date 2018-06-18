@@ -1,0 +1,22 @@
+uuid: a8cbb24b-facd-40d2-a4a3-ec9c82720c44
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: square_medium_275x275_
+label: 'Square Medium (275x275)'
+effects:
+  a5de9f52-f67f-4947-8450-8765b910c4a7:
+    uuid: a5de9f52-f67f-4947-8450-8765b910c4a7
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  5c68c6d3-933f-4b4a-8ff4-d43c1276a374:
+    uuid: 5c68c6d3-933f-4b4a-8ff4-d43c1276a374
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 275
+      height: 275

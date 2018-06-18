@@ -1,0 +1,33 @@
+uuid: bb797b7b-505d-476e-8905-6e1f77a90ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.related_links.field_related_link
+    - node.type.related_links
+  module:
+    - user
+_core:
+  default_config_hash: 7zm3ojtUFjFQjpLPXW0MVTsFW4KqX_BeY4_j-39dPUY
+id: node.related_links.content_browser
+targetEntityType: node
+bundle: related_links
+mode: content_browser
+content:
+  links:
+    weight: 100
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+hidden:
+  field_related_link: true
+  scheduled_publication: true

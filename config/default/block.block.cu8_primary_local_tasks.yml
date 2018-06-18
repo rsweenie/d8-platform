@@ -1,0 +1,22 @@
+uuid: 4e051443-367a-4689-b3a6-dff0abe1d7ae
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cu8
+_core:
+  default_config_hash: N0f_YPnqk73UkvUVDM-KW6op77fodoD8eP2DVk0ayws
+id: cu8_primary_local_tasks
+theme: cu8
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

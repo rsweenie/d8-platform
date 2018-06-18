@@ -1,0 +1,80 @@
+uuid: 097d7ce0-401a-41d7-90a6-c4a4e539dacb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.header_alert.field_alert_link
+    - field.field.node.header_alert.field_emergency_headline
+    - field.field.node.header_alert.field_header_alert_activate
+    - field.field.node.header_alert.field_header_alert_markup
+    - field.field.node.header_alert.field_header_alertemergency_type
+    - node.type.header_alert
+  module:
+    - options
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: S0o1QFON8Zky0yGSNP-8vPAHWx7ETbcMLc-BrBstl5U
+id: node.header_alert.default
+targetEntityType: node
+bundle: header_alert
+mode: default
+content:
+  field_alert_link:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_emergency_headline:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_alert_activate:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_header_alert_markup:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_header_alertemergency_type:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  private:
+    weight: 0
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+hidden:
+  links: true
+  scheduled_publication: true

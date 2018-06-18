@@ -1,0 +1,40 @@
+uuid: 4efe92bf-b472-4296-b922-cdbfc486c14f
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.content_browser
+    - field.field.node.copy_box.body
+    - field.field.node.copy_box.field_copy_box_display_type
+    - node.type.copy_box
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: JEmYyS2sW36aizrvLjN-E1DIFh1ZBEfOps_0PIdjBAo
+id: node.copy_box.content_browser
+targetEntityType: node
+bundle: copy_box
+mode: content_browser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden:
+  field_copy_box_display_type: true
+  scheduled_publication: true

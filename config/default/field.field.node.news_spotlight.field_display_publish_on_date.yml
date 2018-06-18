@@ -1,0 +1,23 @@
+uuid: a1078c0a-6928-491f-872a-ac1bee0d1e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_publish_on_date
+    - node.type.news_spotlight
+id: node.news_spotlight.field_display_publish_on_date
+field_name: field_display_publish_on_date
+entity_type: node
+bundle: news_spotlight
+label: 'Display Publish On Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

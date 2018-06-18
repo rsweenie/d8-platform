@@ -1,0 +1,30 @@
+uuid: 2bef90ab-bfbf-4393-b191-a9049c8ce751
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduler
+title: 'Default cron handler'
+id: scheduler_cron
+weight: -10
+module: scheduler
+callback: scheduler_cron
+scheduler:
+  id: crontab
+  configuration:
+    rules:
+      - '* * * * *'
+    catch_up: 0
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

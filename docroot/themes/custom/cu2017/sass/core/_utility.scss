@@ -1,0 +1,15 @@
+$headerTopBarHeight: 35px;
+$headerMobileSearchHeight: 20px;
+
+$headerInnerDesktopHeight: 85px;
+$headerInnerLgTabletHeight: 125px;
+$headerInnerTabletHeight: 115px;
+$headerInnerMobileHeight: 130px;
+
+$headerDesktopHeight: $headerInnerDesktopHeight + $headerTopBarHeight;
+
+$headerDesktopImageHeight: 200px;
+$headerTabletImageHeight: 190px;
+$headerMobileImageHeight: 180px;
+
+$maxContentWidth: 1300px;

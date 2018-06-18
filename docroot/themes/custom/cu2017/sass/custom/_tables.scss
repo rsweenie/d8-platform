@@ -1,0 +1,144 @@
+@mixin tablehead {
+	background-color: $mediumBlue;
+	border-bottom: 4px solid $white;
+	border-left: 1px solid $white;
+	color: $white;
+	font-family: $condensedFont;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	padding: 10px 5px;
+	text-align: left;
+}
+
+@mixin headerlink {
+	color: $white;
+
+	&.active {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			color: $darkBlue;
+		}
+	}
+
+	&::after {
+		@include transition-property(all);
+		@include transition-duration(0.2s);
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid $white;
+		display: inline-block;
+		margin-left: .35em;
+		padding-top: .2em;
+	}
+
+	&:hover {
+		color: $lightBlue;
+
+		&::after {
+			border-top-color: $darkBlue;
+		}
+	}
+ }
+
+table,
+.table {
+	margin-bottom: 2em;
+	max-width: 500px;
+	table-layout: fixed;
+	width: 100%;
+
+	p {
+		margin: 0;
+	}
+
+	thead,
+	.thead {
+		th,
+		.th {
+			@include tablehead;
+
+			@media all and (max-width: 1000px) {
+				font-size: $baseFontSize;
+				padding: 10px 5px;
+			}
+
+			a {
+				@include headerlink;
+			}
+		}
+	}
+
+	tbody,
+	.tbody {
+		tr,
+		.tr {
+			&:nth-child(even) {
+				background-color: $backgroundGray;
+			}
+
+			&:hover {
+				td,
+				.td {
+					border-bottom: 1px solid $dkGray;
+				}
+			}
+
+			td,
+			.td {
+				border-bottom: 1px solid #fff;
+				border-right: 1px solid #fff;
+				flex: 1 1 100px;
+				padding: .5em;
+
+				a {
+					color: $blue;
+
+					&:hover {
+						color: $darkBlue;
+					}
+				}
+
+				@include transition-duration(0.2s);
+				@include transition-property(border-color);
+
+				&.fullcell {
+					background-color: $primaryBlue;
+					color: $white;
+
+					&.program-name {
+						background: transparent;
+						color: $gray;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 640px) {
+	.tablesaw-stack {
+		th .tablesaw-cell-label,
+		td .tablesaw-cell-label {
+			@include tablehead;
+
+			a {
+				@include headerlink;
+			}
+		}
+
+		tbody {
+			td {
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		.tablesaw-cell-content {
+			padding-left: 10px;
+		}
+	}
+}

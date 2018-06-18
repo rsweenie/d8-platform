@@ -1,0 +1,110 @@
+@mixin quote-text {
+	display: block;
+	margin: 16px 0 16px 10px;
+
+	.field--name-field-quote-box-quote-text {
+		float: left;
+		position: relative;
+	}
+}
+
+@mixin quotes {
+	color: $blue;
+	font-size: 1.75em;
+	position: absolute;
+}
+
+.quote_box_wrapper {
+	line-height: 24px;
+	margin: 0;
+	margin-bottom: 1.5em;
+
+	img {
+		width: 100%;
+	}
+
+	.field--name-name {
+		display: none;
+	}
+
+	.quote_border {
+		border-top: 1px solid $green;
+	}
+
+	.quote_box_name_person {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		font-size: 17px;
+		font-weight: $bold;
+		padding-bottom: 0;
+		text-align: right;
+
+		&::before {
+			content: '\2014';
+			padding-right: 4px;
+			display: inline;
+		}
+	}
+	.field--name-field-name-person {
+		display: inline;
+	}
+
+	.quote_box_affiliation {
+		color: $affiliationGray;
+		display: block;
+		font-family: $baseFont;
+		font-size: 13px;
+		line-height: 1;
+		margin: 0 0 10px;
+		text-align: right;
+	}
+
+	.quote_box_btn {
+		margin: 0 10px;
+
+		li {
+			list-style-type: none;
+		}
+
+		a {
+			@include green-arrow-link(true);
+			display: flex;
+			flex-direction: row;
+			list-style-type: none;
+		}
+	}
+
+	.quote_button_margin {
+		.quote_box_btn {
+			margin-bottom: 0.75em;
+		}
+	}
+
+	.quote_box_with_quotes {
+
+		.quote_box_quote_text {
+			font-style: italic;
+			@include quote-text;
+
+			.field--name-field-quote-box-quote-text {
+				&::before {
+					content: open-quote;
+					left: -12px;
+					@include quotes;
+				}
+
+				&::after {
+					content: close-quote;
+					@include quotes;
+				}
+			}
+		}
+	}
+
+	.quote_box_no_quotes {
+
+		.quote_box_quote_text {
+			@include quote-text;
+		}
+	}
+}

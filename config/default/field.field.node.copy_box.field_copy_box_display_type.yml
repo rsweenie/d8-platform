@@ -1,0 +1,23 @@
+uuid: 5bddb85e-1f7d-4ca9-adda-74afe4f8fee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copy_box_display_type
+    - node.type.copy_box
+  module:
+    - options
+_core:
+  default_config_hash: HjfoteZGtCKaS7oERr9u56MvSs9CbYNM4mmBF0O5wxo
+id: node.copy_box.field_copy_box_display_type
+field_name: field_copy_box_display_type
+entity_type: node
+bundle: copy_box
+label: 'Display Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

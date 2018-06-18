@@ -1,0 +1,22 @@
+uuid: 14f40479-9a39-4de9-9713-509c3c89c82f
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+name: rectangle_horizontal_header_2400x600_
+label: 'Rectangle Horizontal Header (2400x600)'
+effects:
+  bd7cb944-033b-4322-b709-032691bc3b9c:
+    uuid: bd7cb944-033b-4322-b709-032691bc3b9c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: focal_point
+  be638975-c905-4517-b0c7-d5b8bd10c40e:
+    uuid: be638975-c905-4517-b0c7-d5b8bd10c40e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 2400
+      height: 600

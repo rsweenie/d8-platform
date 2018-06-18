@@ -1,0 +1,19 @@
+uuid: dde6c7c6-a01c-42aa-9c70-ff591bf4514c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: KhVzuTRQ0vn4rsp0fOd_otyWM1nZ9d76CKL73X2UDf0
+name: 'Promo Box'
+type: promo_box
+description: 'Text with an internal link that appears in a blue box in the &#039;Second Sidebar&#039; region (to the right of the body when viewing in a desktop environment).'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

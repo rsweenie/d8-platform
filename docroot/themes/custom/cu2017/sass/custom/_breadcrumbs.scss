@@ -1,0 +1,36 @@
+@mixin breadcrumb {
+	color: $breadcrumbBlue;
+	font-family: $baseFont;
+	font-size: 12px;
+}
+
+.breadcrumb_region {
+	.breadcrumb {
+		background-color: $white;
+
+		li {
+			a {
+				@include breadcrumb;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&::before {
+				@include breadcrumb;
+				content: '>';
+			}
+
+			&:first-child {
+				&::before {
+					content: '';
+				}
+			}
+		}
+
+		.active {
+			@include breadcrumb;
+		}
+	}
+}

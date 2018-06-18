@@ -1,0 +1,28 @@
+uuid: dee1e99a-9900-4ea1-bc9c-796f541a798d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_content_link
+    - node.type.featured_content
+    - node.type.links
+id: node.featured_content.field_featured_content_link
+field_name: field_featured_content_link
+entity_type: node
+bundle: featured_content
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      links: links
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

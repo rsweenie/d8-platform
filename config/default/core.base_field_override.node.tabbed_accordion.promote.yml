@@ -1,0 +1,24 @@
+uuid: bc939270-25d3-4c8f-9626-eeb580e3709f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tabbed_accordion
+_core:
+  default_config_hash: bu7iQSzKJyT1fIRt0ewliM7ZXCXro6km4u7UiujQ2rA
+id: node.tabbed_accordion.promote
+field_name: promote
+entity_type: node
+bundle: tabbed_accordion
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

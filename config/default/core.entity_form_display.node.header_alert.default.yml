@@ -1,0 +1,164 @@
+uuid: bd2c72f8-d630-4399-9f98-9e8c1023bd1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.header_alert.field_alert_link
+    - field.field.node.header_alert.field_emergency_headline
+    - field.field.node.header_alert.field_header_alert_activate
+    - field.field.node.header_alert.field_header_alert_markup
+    - field.field.node.header_alert.field_header_alertemergency_type
+    - node.type.header_alert
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser_entity_form
+    - inline_entity_form
+    - path
+    - scheduler
+    - text
+_core:
+  default_config_hash: 3_r4slN1Eq_1imlLfO7yeOGuhT4Z2_ij5ijvUGsV0eE
+id: node.header_alert.default
+targetEntityType: node
+bundle: header_alert
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_alert_link:
+    weight: 127
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Alert Link'
+      label_plural: 'Alert Links'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: creighton_link_bros
+    type: inline_entity_form_complex
+    region: content
+  field_emergency_headline:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_header_alert_activate:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_header_alert_markup:
+    weight: 125
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_header_alertemergency_type:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  private:
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: creighton_link_bros
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
