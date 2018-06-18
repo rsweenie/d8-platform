@@ -4986,6 +4986,7 @@
                     }
                 },
                 "patches_applied": {
+                    "2511404 - Add link field to entity embed dialog": "https://www.drupal.org/files/issues/entity_embed_links-2511404-31.patch",
                     "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                 }
             },
