@@ -1,0 +1,6 @@
+# cu_breadcrumbs.services.yml
+services:
+ cu_breadcrumbs.breadcrumb:
+   class: Drupal\cu_breadcrumbs\Breadcrumb\CUBreadcrumbsBreadcrumbBuilder
+   tags:
+    - { name: breadcrumb_builder, priority: 100 }
