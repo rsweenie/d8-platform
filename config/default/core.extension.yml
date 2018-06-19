@@ -1,4 +1,9 @@
 module:
+  acsf: 0
+  acsf_duplication: 0
+  acsf_sso: 0
+  acsf_theme: 0
+  acsf_variables: 0
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
@@ -14,6 +19,7 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
+  config_split: 0
   consumers: 0
   contact: 0
   contact_storage: 0
@@ -26,10 +32,11 @@ module:
   csv_serialization: 0
   ctools: 0
   ctools_block: 0
+  cu_breadcrumbs: 0
+  cu_footer_badge: 0
+  cu_footer_contact: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   diff: 0
   dropzonejs: 0
   easy_install: 0
@@ -45,6 +52,7 @@ module:
   entity_reference: 0
   entity_reference_revisions: 0
   eva: 0
+  externalauth: 0
   field: 0
   field_group: 0
   field_permissions: 0
@@ -63,7 +71,6 @@ module:
   imagemagick: 0
   inline_entity_form: 0
   jsonapi: 0
-  kint: 0
   layout_discovery: 0
   lightning_api: 0
   lightning_contact_form: 0
@@ -85,6 +92,7 @@ module:
   media_entity_instagram: 0
   media_entity_twitter: 0
   menu_block: 0
+  menu_breadcrumb: 0
   menu_ui: 0
   metatag: 0
   mimemail: 0
@@ -108,11 +116,14 @@ module:
   recaptcha: 0
   redirect: 0
   responsive_image: 0
+  responsive_table_filter: 0
+  responsive_tables_filter: 0
   responsivewrappers: 0
   rest: 0
   robotstxt: 0
   role_delegation: 0
   rules: 0
+  samlauth: 0
   scheduled_updates: 0
   scheduler: 0
   scheduler_rules_integration: 0
@@ -120,6 +131,7 @@ module:
   schemata_json_schema: 0
   search_api: 0
   search_api_db: 0
+  seckit: 0
   serialization: 0
   shortcut: 0
   simple_oauth: 0

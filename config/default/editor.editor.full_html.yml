@@ -1,0 +1,88 @@
+uuid: 1c0cd30d-4f04-4899-a55f-d1b849e114af
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Copy/Cut/Paste
+          items:
+            - Copy
+            - Cut
+            - PasteText
+            - PasteFromWord
+            - RemoveFormat
+        -
+          name: Tools
+          items:
+            - Undo
+            - Redo
+            - Maximize
+        -
+          name: Format
+          items:
+            - Format
+        -
+          name: Media
+          items:
+            - content_browser
+        -
+          name: Tables
+          items:
+            - Table
+        -
+          name: Source
+          items:
+            - Source
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - SpecialChar
+            - BulletedList
+            - NumberedList
+            - Outdent
+            - Indent
+            - Blockquote
+            - Linkit
+            - DrupalUnlink
+            - Anchor
+            - Superscript
+            - Subscript
+            - HorizontalRule
+            - ShowBlocks
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    linkit:
+      linkit_profile: cu_default_profile
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

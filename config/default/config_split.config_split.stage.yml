@@ -1,0 +1,19 @@
+uuid: 8aa9d274-bfff-4c8f-80d9-b3736cb5c72f
+langcode: en
+status: false
+dependencies: {  }
+id: stage
+label: Stage
+folder: ../config/envs/stage
+module:
+  acsf: 0
+  acsf_duplication: 0
+  acsf_sso: 0
+  acsf_theme: 0
+  acsf_variables: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,11 +1,7 @@
 <?php
 
-/**
- * @file
- * Simpletests for samlauth functionality.
- */
-
 namespace Drupal\samlauth\Tests;
+
 use Drupal\Core\Url;
 use Drupal\simpletest\WebTestBase;
 use Drupal\Component\Serialization\Yaml;
@@ -46,7 +42,7 @@ class SamlTest extends WebTestBase {
     $web_user = $this->drupalCreateUser(['configure saml']);
     $this->drupalLogin($web_user);
     $this->drupalGet('admin/config/people/saml');
-    $this->assertText('SAML Requirements', 'SAML Requirements fieldset present');
+    $this->assertText('Login / Logout', 'Login / Logout fieldset present');
     $this->assertText('Service Provider Configuration', 'SP fieldset present');
     $this->assertText('Identity Provider Configuration', 'iDP fieldset present');
     $this->assertText('User Info and Syncing', 'User Info and Syncing fieldset present');

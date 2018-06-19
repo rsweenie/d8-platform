@@ -1,11 +1,13 @@
-uuid: 44a33fbe-dda6-467a-889f-da4a60edbaa5
+uuid: 8a6ecd08-3672-41be-b514-cac6a14bbeb5
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:19ca6b97-0d94-41c4-b042-6ce8d9e9c70e'
+  module:
+    - block_content
   theme:
     - cu2017
-_core:
-  default_config_hash: '-EmwH2VUGgL2uzKNoupxETnuCjezBZUtKA8FOhUbf0Y'
 id: footerbadge
 theme: cu2017
 region: footer
@@ -16,7 +18,7 @@ settings:
   id: 'block_content:19ca6b97-0d94-41c4-b042-6ce8d9e9c70e'
   label: 'Footer Badge'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

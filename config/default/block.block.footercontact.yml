@@ -1,11 +1,13 @@
-uuid: 7375d72e-39c9-445c-b35a-279947a7971e
+uuid: 5260e5f8-e7ea-45c6-a24f-c97762a9bdc1
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:a5aca14a-eee9-4cb3-b341-054c2e13d8c6'
+  module:
+    - block_content
   theme:
     - cu2017
-_core:
-  default_config_hash: PQmoRrXz2ERtxUc2bG6Wt-5KkUruvJQBVEH5KzNsbos
 id: footercontact
 theme: cu2017
 region: footer
