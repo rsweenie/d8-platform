@@ -3,8 +3,6 @@ status: true
 dependencies:
   config:
     - system.menu.main
-  module:
-    - menu_block
   theme:
     - cu2017
 id: mainnavigation

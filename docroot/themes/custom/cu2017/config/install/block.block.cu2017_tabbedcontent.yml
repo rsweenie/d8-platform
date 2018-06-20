@@ -1,8 +1,6 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - ctools_block
   theme:
     - cu2017
 id: tabbedcontent

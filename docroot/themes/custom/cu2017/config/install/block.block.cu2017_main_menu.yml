@@ -3,8 +3,6 @@ status: true
 dependencies:
   config:
     - system.menu.main
-  module:
-    - system
   theme:
     - cu2017
 id: cu2017_main_menu

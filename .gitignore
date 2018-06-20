@@ -401,3 +401,7 @@ docroot/libraries/highlight/
 
 # Visual Studio Code
 .vscode/
+
+# Deployment Artifact / Identifier
+deploy/
+deployment_identifier
