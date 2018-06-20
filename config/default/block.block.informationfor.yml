@@ -16,7 +16,7 @@ provider: null
 plugin: 'menu_block:information-for'
 settings:
   id: 'menu_block:information-for'
-  label: Pollywog
+  label: 'Information for'
   provider: menu_block
   label_display: visible
   level: 1

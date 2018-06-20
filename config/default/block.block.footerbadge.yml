@@ -1,9 +1,9 @@
-uuid: 8a6ecd08-3672-41be-b514-cac6a14bbeb5
+uuid: 928990a5-517c-48a0-9cf4-0d2c9b40d696
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:19ca6b97-0d94-41c4-b042-6ce8d9e9c70e'
+    - 'block_content:basic:8abe36e6-1dc5-424b-9ceb-91c4a33b1bbc'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: cu2017
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:19ca6b97-0d94-41c4-b042-6ce8d9e9c70e'
+plugin: 'block_content:8abe36e6-1dc5-424b-9ceb-91c4a33b1bbc'
 settings:
-  id: 'block_content:19ca6b97-0d94-41c4-b042-6ce8d9e9c70e'
+  id: 'block_content:8abe36e6-1dc5-424b-9ceb-91c4a33b1bbc'
   label: 'Footer Badge'
   provider: block_content
   label_display: '0'

@@ -18621,17 +18621,17 @@
     },
     {
         "name": "zendframework/zend-feed",
-        "version": "2.10.1",
-        "version_normalized": "2.10.1.0",
+        "version": "2.10.2",
+        "version_normalized": "2.10.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/zendframework/zend-feed.git",
-            "reference": "2815c29a4c4e52bf4033128592ea310b0f4e9379"
+            "reference": "5253f949f4ad999086ab9b408908b6c6776f24db"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/2815c29a4c4e52bf4033128592ea310b0f4e9379",
-            "reference": "2815c29a4c4e52bf4033128592ea310b0f4e9379",
+            "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/5253f949f4ad999086ab9b408908b6c6776f24db",
+            "reference": "5253f949f4ad999086ab9b408908b6c6776f24db",
             "shasum": ""
         },
         "require": {
@@ -18657,7 +18657,7 @@
             "zendframework/zend-servicemanager": "Zend\\ServiceManager component, for easily extending ExtensionManager implementations",
             "zendframework/zend-validator": "Zend\\Validator component, for validating email addresses used in Atom feeds and entries when using the Writer subcomponent"
         },
-        "time": "2018-06-05T13:16:04+00:00",
+        "time": "2018-06-18T20:14:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

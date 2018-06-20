@@ -1,9 +1,9 @@
-uuid: 5260e5f8-e7ea-45c6-a24f-c97762a9bdc1
+uuid: fb8c495c-833e-499c-861a-60209acbd60b
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:a5aca14a-eee9-4cb3-b341-054c2e13d8c6'
+    - 'block_content:basic:38afa055-db29-4c8a-8486-bf14252228dc'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: cu2017
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:a5aca14a-eee9-4cb3-b341-054c2e13d8c6'
+plugin: 'block_content:38afa055-db29-4c8a-8486-bf14252228dc'
 settings:
-  id: 'block_content:a5aca14a-eee9-4cb3-b341-054c2e13d8c6'
+  id: 'block_content:38afa055-db29-4c8a-8486-bf14252228dc'
   label: 'Footer Contact'
   provider: block_content
   label_display: '0'

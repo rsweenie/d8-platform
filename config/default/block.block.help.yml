@@ -1,0 +1,20 @@
+uuid: a82abcbf-0dec-476f-a740-382d1a6bfdce
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cu8
+id: help
+theme: cu8
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
