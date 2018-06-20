@@ -1,45 +1,85 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Drupal 8 Creighton University
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+This project encompasses the Drupal 8 multisite platform for Creighton University marketing sites.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Getting Started
 
----
+This project is based on BLT, an open-source project template and tool that enables building, testing, and deploying Drupal installations following Acquia Professional Services best practices. While this is one of many methodologies, it is our recommended methodology.
 
-## Edit a file
+* Review the [Required / Recommended Skills](http://blt.readthedocs.io/en/latest/readme/skills) for working with a BLT project
+* Ensure that your computer meets the minimum installation requirements (and then install the required applications). See the [System Requirements](http://blt.readthedocs.io/en/latest/INSTALL/#system-requirements).
+* Request access to organization that owns the project repo in GitHub (if needed)
+* Fork the project repository in GitHub
+* Request access to the Acquia Cloud Environment for your project (if needed)
+* Setup a SSH key that can be used for GitHub and the Acquia Cloud (you CAN use the same key)
+* [Setup GitHub SSH Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+* [Setup Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
+* Clone your forked repository. By default, Git names this "origin" on your local.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+```
+$ git clone git@github.com:<account>/<project>.git
+```
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+* To ensure that upstream changes to the parent repository may be tracked, add the upstream locally as well.
 
----
+```
+$ git remote add upstream git@github.com:<organization>/<project>.git
+```
 
-## Create a file
+* Install Composer Dependencies (warning: this can take some time based on internet speeds)
 
-Next, you’ll add a new file to this repository.
+```
+$ composer install
+```
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+* Setup Local Environment
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+BLT requires "some sort" of local environment that implements a LAMP stack. While we provide out of the box templates for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
 
----
+For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
 
-## Clone a repository
+* Run the initial Setup
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+```
+$ vagrant ssh
+$ blt setup
+```
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+* Access the site and do necessary work at local.creighton.com by running
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+```
+$ drush uli
+```
+
+Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may also access a list of BLT commands by running:
+```
+$ blt
+```
+
+Note the following properties of this project:
+
+* Primary development branch: \<branch>
+* Local environment: dev
+* Local site URL: local.creighton.com
+
+## Working With a BLT Project
+
+BLT projects are designed to instill software development best practices (including git workflows). 
+
+Our BLT Developer documentation includes an [example workflow](http://blt.readthedocs.io/en/latest/readme/dev-workflow/#workflow-example-local-development).
+
+### Important Configuration Files
+
+BLT uses a number of configuration (.yml or .json) files to define and customize behaviors. Some examples of these are:
+
+* blt/blt.yml (formerly blt/project.yml prior to BLT 9.x)
+* blt/local.blt.yml
+* box/config.yml (if using Drupal VM)
+* drush/sites (contains Drush aliases for this project)
+* composer.json (includes required components, including Drupal Modules, for this project)
+
+## Resources
+
+* [Bitbucket](https://bitbucket.org/creighton-software/drupal8_cu_acsf/)
+* [Acquia Cloud](https://cloud.acquia.com)
+* [Acquia Cloud Sitefactory](https://www.creighton.acsitefactory.com/)
