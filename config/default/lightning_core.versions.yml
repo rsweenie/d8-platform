@@ -132,7 +132,6 @@ webform_devel: 0.0.0
 views_php: 0.0.0
 lightning: 3.003.0
 creighton: dev
-creighton_local: dev
 update: 0.0.0
 config_filter: 1.1.0
 config_ignore: 2.1.0
