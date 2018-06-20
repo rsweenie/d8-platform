@@ -8,22 +8,21 @@ This project is based on BLT, an open-source project template and tool that enab
 
 * Review the [Required / Recommended Skills](http://blt.readthedocs.io/en/latest/readme/skills) for working with a BLT project
 * Ensure that your computer meets the minimum installation requirements (and then install the required applications). See the [System Requirements](http://blt.readthedocs.io/en/latest/INSTALL/#system-requirements).
-* Request access to organization that owns the project repo in GitHub (if needed)
-* Fork the project repository in GitHub
+* Request access to the Creighton Software Bitbucket team (if needed)
+* Clone the project repository in Bitbucket
 * Request access to the Acquia Cloud Environment for your project (if needed)
-* Setup a SSH key that can be used for GitHub and the Acquia Cloud (you CAN use the same key)
-* [Setup GitHub SSH Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+* Setup a SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
+* [Setup Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
 * [Setup Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
-* Clone your forked repository. By default, Git names this "origin" on your local.
 
 ```
-$ git clone git@github.com:<account>/<project>.git
+$ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 ```
 
 * To ensure that upstream changes to the parent repository may be tracked, add the upstream locally as well.
 
 ```
-$ git remote add upstream git@github.com:<organization>/<project>.git
+$ git remote add upstream git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 ```
 
 * Install Composer Dependencies (warning: this can take some time based on internet speeds)
