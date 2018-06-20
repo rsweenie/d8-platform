@@ -20,7 +20,7 @@ function cu_footer_badge_install() {
     $block->info = 'Footer Badge';
     
     // we should take this UUID from configuration file, see example above
-    $block->uuid = '19ca6b97-0d94-41c4-b042-6ce8d9e9c70e'; 
+    $block->uuid = '8abe36e6-1dc5-424b-9ceb-91c4a33b1bbc'; 
 
     // Block content 
     $block->body->value = '<img src="/themes/custom/cu2017/images/png/badge.png" />';

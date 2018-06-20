@@ -20,7 +20,7 @@ function cu_footer_contact_install() {
     $block->info = 'Footer Contact';
     
     // we should take this UUID from configuration file, see example above
-    $block->uuid = 'a5aca14a-eee9-4cb3-b341-054c2e13d8c6'; 
+    $block->uuid = '38afa055-db29-4c8a-8486-bf14252228dc'; 
 
     // Block content 
     $block->body->value = '<p>2500 California Plaza | Omaha, NE 68178</p><p>402.280.2700 | <a href="https://www.creighton.edu">creighton.edu</a> | <a href="https://www.creighton.edu/ask">Ask a Question</a></p><h5>© 2018 Creighton University</h5>';
