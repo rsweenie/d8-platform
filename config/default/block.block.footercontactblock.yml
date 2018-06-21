@@ -1,0 +1,20 @@
+uuid: c0717282-1529-4ef1-b8c3-f16f755ccc91
+langcode: en
+status: true
+dependencies:
+  module:
+    - cu_footer_contact
+  theme:
+    - cu2017
+id: footercontactblock
+theme: cu2017
+region: footer
+weight: 0
+provider: null
+plugin: footer_contact_block
+settings:
+  id: footer_contact_block
+  label: 'Footer Contact block'
+  provider: cu_footer_contact
+  label_display: '0'
+visibility: {  }

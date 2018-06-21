@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the creighton installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ */
+
+use Drupal\block\Entity\Block;
+
+function creighton_install() {
+
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+
+  $config = \Drupal::configFactory();
+
+  // Enable creighton theme.
+  $config
+    ->getEditable('system.theme')
+    ->set('default', 'cu2017')
+    ->save();
+
+  \Drupal::service('module_installer')->install([
+    'block_content',
+    'cu_footer_badge',
+    'cu_footer_contact'
+  ]);
+
+  // Set the path to the logo, favicon and README file based on install
+  // directory.
+
+  \Drupal::configFactory()
+    ->getEditable('system.theme.global')
+    ->set('logo', [
+      'path' => 'themes/custom/cu2017/images/logos/CU_Logo_2x.png',
+      'url' => '',
+      'use_default' => FALSE,
+    ])
+    ->set('favicon', [
+      'mimetype' => 'image/vnd.microsoft.icon',
+      'path' => 'themes/custom/cu2017/images/favicon.ico',
+      'url' => '',
+      'use_default' => FALSE,
+    ])
+    ->save(TRUE);
+
+}
