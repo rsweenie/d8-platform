@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - cu2017
+id: headerbackgroundimage
+theme: cu2017
+region: header_background_image
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_header_background_image'
+settings:
+  id: 'entity_field:node:field_header_background_image'
+  label: 'Header Background Image'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: entity_reference_entity_view
+    settings:
+      view_mode: default
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

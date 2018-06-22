@@ -36,7 +36,7 @@ fifty_fifty_column:
   category: Creighton Layouts
   template: templates/flex-fifty-fifty
   path: templates/layouts/icons
-  icon: 4-flex-5050-preview.png
+  icon: 1-default-preview.png
   regions:
     left:
       label: Left
@@ -46,8 +46,6 @@ invert_two_column:
   label: Flex Invert Two column
   category: Creighton Layouts
   template: templates/flex-invert-two-column
-  path: templates/layouts/icons
-  icon: 5-flex-invert-two-col-preview.png
   regions:
     sidebar:
       label: Sidebar
@@ -57,8 +55,6 @@ flexbox_three_section:
   label: Flexbox Three Section
   category: Creighton Layouts
   template: templates/flex-flexbox-three-section
-  path: templates/layouts/icons
-  icon: 6-flexbox-three-section-preview.png
   regions:
     top:
       label: Top Section
@@ -70,8 +66,6 @@ three_section_left:
   label: Three Section Left
   category: Creighton Layouts
   template: templates/flex-three-section-left
-  path: templates/layouts/icons
-  icon: 7-three-section-left-preview.png
   regions:
     top:
       label: Top Section
@@ -83,8 +77,6 @@ three_section_right:
   label: Three Section Right
   category: Creighton Layouts
   template: templates/flex-three-section-right
-  path: templates/layouts/icons
-  icon: 8-three-section-right-preview.png
   regions:
     top:
       label: Top Section
@@ -96,8 +88,6 @@ three_section_split:
   label: Three Section Split
   category: Creighton Layouts
   template: templates/flex-three-section-split
-  path: templates/layouts/icons
-  icon: 9-three-section-split-preview.png
   regions:
     top:
       label: Top Section
