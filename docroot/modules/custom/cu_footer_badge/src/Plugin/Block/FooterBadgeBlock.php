@@ -8,7 +8,7 @@ use Drupal\Core\Block\BlockBase;
  * Provides a Footer Badge Block.
  *
  * @Block(
- *   id = "footer_badge_block",
+ *   id = "footerbadgeblock",
  *   admin_label = @Translation("Footer Badge block"),
  *   category = @Translation("CU Footer Badge"),
  * )

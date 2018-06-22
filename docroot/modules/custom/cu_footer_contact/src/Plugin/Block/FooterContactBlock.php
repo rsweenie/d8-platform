@@ -8,7 +8,7 @@ use Drupal\Core\Block\BlockBase;
  * Provides a Footer Contact Block.
  *
  * @Block(
- *   id = "footer_contact_block",
+ *   id = "footercontactblock",
  *   admin_label = @Translation("Footer Contact block"),
  *   category = @Translation("CU Footer Contact"),
  * )
