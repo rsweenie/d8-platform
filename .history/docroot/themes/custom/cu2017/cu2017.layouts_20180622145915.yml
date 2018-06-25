@@ -71,7 +71,7 @@ three_section_left:
   category: Creighton Layouts
   template: templates/flex-three-section-left
   path: templates/layouts/icons
-  icon: 7-three-section-left-preview.png
+  icon: 4-flex-5050-preview.png
   regions:
     top:
       label: Top Section
@@ -84,7 +84,7 @@ three_section_right:
   category: Creighton Layouts
   template: templates/flex-three-section-right
   path: templates/layouts/icons
-  icon: 8-three-section-right-preview.png
+  icon: 4-flex-5050-preview.png
   regions:
     top:
       label: Top Section
@@ -97,7 +97,7 @@ three_section_split:
   category: Creighton Layouts
   template: templates/flex-three-section-split
   path: templates/layouts/icons
-  icon: 9-three-section-split-preview.png
+  icon: 4-flex-5050-preview.png
   regions:
     top:
       label: Top Section

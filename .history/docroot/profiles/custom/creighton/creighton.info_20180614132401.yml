@@ -1,0 +1,14 @@
+name: Creighton
+type: profile
+description: 'A base profile for Creighton University websites.'
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+themes:
+  - cu2017
+  - cu8

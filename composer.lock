@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02596cfd38fa804d47f43c7976433016",
+    "content-hash": "c33203e6f54b5c900cf455f025253c99",
     "packages": [
         {
             "name": "acquia/acsf-tools",
@@ -9175,8 +9175,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/samlauth",
                 "issues": "http://drupal.org/project/samlauth"
-            },
-            "time": "2017-10-08T12:06:30+00:00"
+            }
         },
         {
             "name": "drupal/scheduled_updates",

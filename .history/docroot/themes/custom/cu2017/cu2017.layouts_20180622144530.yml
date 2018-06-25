@@ -2,8 +2,8 @@ one_column:
   label: Flex Default layout
   category: Creighton Layouts
   template: templates/flex-default
-  path: templates/layouts/icons
-  icon: 1-default-preview.png
+  path: layouts/icons
+  icon: default-layout.jpg
   regions:
     main:
       label: Main content
@@ -11,8 +11,6 @@ two_column:
   label: Flex Two column
   category: Creighton Layouts
   template: templates/flex-two-column
-  path: templates/layouts/icons
-  icon: 2-flex-two-col-preview.png
   regions:
     main:
       label: Main content
@@ -22,8 +20,6 @@ three_column:
   label: Flex Three column
   category: Creighton Layouts
   template: templates/flex-three-column
-  path: templates/layouts/icons
-  icon: 3-flex-three-col-preview.png
   regions:
     leftbar:
       label: Leftbar
@@ -35,8 +31,6 @@ fifty_fifty_column:
   label: Flex 50/50 column
   category: Creighton Layouts
   template: templates/flex-fifty-fifty
-  path: templates/layouts/icons
-  icon: 4-flex-5050-preview.png
   regions:
     left:
       label: Left
@@ -46,8 +40,6 @@ invert_two_column:
   label: Flex Invert Two column
   category: Creighton Layouts
   template: templates/flex-invert-two-column
-  path: templates/layouts/icons
-  icon: 5-flex-invert-two-col-preview.png
   regions:
     sidebar:
       label: Sidebar
@@ -57,8 +49,6 @@ flexbox_three_section:
   label: Flexbox Three Section
   category: Creighton Layouts
   template: templates/flex-flexbox-three-section
-  path: templates/layouts/icons
-  icon: 6-flexbox-three-section-preview.png
   regions:
     top:
       label: Top Section
@@ -70,8 +60,6 @@ three_section_left:
   label: Three Section Left
   category: Creighton Layouts
   template: templates/flex-three-section-left
-  path: templates/layouts/icons
-  icon: 7-three-section-left-preview.png
   regions:
     top:
       label: Top Section
@@ -83,8 +71,6 @@ three_section_right:
   label: Three Section Right
   category: Creighton Layouts
   template: templates/flex-three-section-right
-  path: templates/layouts/icons
-  icon: 8-three-section-right-preview.png
   regions:
     top:
       label: Top Section
@@ -96,8 +82,6 @@ three_section_split:
   label: Three Section Split
   category: Creighton Layouts
   template: templates/flex-three-section-split
-  path: templates/layouts/icons
-  icon: 9-three-section-split-preview.png
   regions:
     top:
       label: Top Section
