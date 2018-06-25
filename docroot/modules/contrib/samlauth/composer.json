@@ -2,9 +2,7 @@
   "name": "drupal/samlauth",
   "type": "drupal-module",
   "description": "Allows users to authenticate against an external SAML identity provider.",
-  "keywords": [
-    "Drupal"
-  ],
+  "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "http://drupal.org/project/samlauth",
   "minimum-stability": "dev",
@@ -13,6 +11,6 @@
     "source": "http://cgit.drupalcode.org/samlauth"
   },
   "require": {
-    "onelogin/php-saml": "^2.10.6"
+    "onelogin/php-saml": "~2.5"
   }
 }

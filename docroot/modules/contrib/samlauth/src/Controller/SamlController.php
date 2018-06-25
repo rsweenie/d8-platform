@@ -5,13 +5,9 @@ namespace Drupal\samlauth\Controller;
 use Exception;
 use Drupal\samlauth\SamlService;
 use Drupal\Component\Utility\UrlHelper;
-use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Path\PathValidatorInterface;
-use Drupal\Core\Routing\TrustedRedirectResponse;
 use Drupal\Core\Url;
 use Drupal\Core\Utility\Error;
-use Drupal\Core\Utility\Token;
 use OneLogin_Saml2_Utils;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -38,46 +34,16 @@ class SamlController extends ControllerBase {
   protected $requestStack;
 
   /**
-   * A configuration object containing samlauth settings.
-   *
-   * @var \Drupal\Core\Config\ImmutableConfig
-   */
-  protected $config;
-
-  /**
-   * The PathValidator service.
-   *
-   * @var \Drupal\Core\Path\PathValidatorInterface
-   */
-  protected $pathValidator;
-
-  /**
-   * The token service.
-   *
-   * @var \Drupal\Core\Utility\Token
-   */
-  protected $token;
-
-  /**
    * Constructor for Drupal\samlauth\Controller\SamlController.
    *
    * @param \Drupal\samlauth\SamlService $saml
    *   The samlauth SAML service.
    * @param \Symfony\Component\HttpFoundation\RequestStack $request_stack
    *   The request stack.
-   * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
-   *   The config factory.
-   * @param \Drupal\Core\Path\PathValidatorInterface $path_validator
-   *   The PathValidator service.
-   * @param \Drupal\Core\Utility\Token $token
-   *   The token service.
    */
-  public function __construct(SamlService $saml, RequestStack $request_stack, ConfigFactoryInterface $config_factory, PathValidatorInterface $path_validator, Token $token) {
+  public function __construct(SamlService $saml, RequestStack $request_stack) {
     $this->saml = $saml;
     $this->requestStack = $request_stack;
-    $this->config = $config_factory->get('samlauth.authentication');
-    $this->pathValidator = $path_validator;
-    $this->token = $token;
   }
 
   /**
@@ -90,10 +56,7 @@ class SamlController extends ControllerBase {
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('samlauth.saml'),
-      $container->get('request_stack'),
-      $container->get('config.factory'),
-      $container->get('path.validator'),
-      $container->get('token')
+      $container->get('request_stack')
     );
   }
 
@@ -101,36 +64,36 @@ class SamlController extends ControllerBase {
    * Initiates a SAML2 authentication flow.
    *
    * This should redirect to the Login service on the IDP and then to our ACS.
-   * It does not actually log us in (yet).
    */
   public function login() {
     try {
-      $url = $this->saml->login($this->getUrlFromDestination());
+      $this->saml->login($this->getUrlFromDestination());
+      // We don't return here unless something is fundamentally wrong inside the
+      // SAML Toolkit sources.
+      throw new Exception('Not redirected to SAML IDP');
     }
     catch (Exception $e) {
       $this->handleException($e, 'initiating SAML login');
-      $url = Url::fromRoute('<front>');
     }
-
-    return $this->createRedirectResponse($url);
+    return new RedirectResponse(Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString());
   }
 
   /**
    * Initiate a SAML2 logout flow.
    *
    * This should redirect to the SLS service on the IDP and then to our SLS.
-   * It does not actually log us out (yet).
    */
   public function logout() {
     try {
-      $url = $this->saml->logout($this->getUrlFromDestination());
+      $this->saml->logout($this->getUrlFromDestination());
+      // We don't return here unless something is fundamentally wrong inside the
+      // SAML Toolkit sources.
+      throw new Exception('Not redirected to SAML IDP');
     }
     catch (Exception $e) {
       $this->handleException($e, 'initiating SAML logout');
-      $url = Url::fromRoute('<front>');
     }
-
-    return $this->createRedirectResponse($url);
+    return new RedirectResponse(Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString());
   }
 
   /**
@@ -144,10 +107,12 @@ class SamlController extends ControllerBase {
     }
     catch (Exception $e) {
       $this->handleException($e, 'processing SAML SP metadata');
-      return $this->createRedirectResponse(Url::fromRoute('<front>'));
+      return new RedirectResponse(Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString());
     }
 
-    return new Response($metadata, 200, ['Content-Type' => 'text/xml']);
+    $response = new Response($metadata, 200);
+    $response->headers->set('Content-Type', 'text/xml');
+    return $response;
   }
 
   /**
@@ -156,7 +121,7 @@ class SamlController extends ControllerBase {
    * This is usually the second step in the authentication flow; the Login
    * service on the IDP should redirect (or: execute a POST request to) here.
    *
-   * @return \Drupal\Core\Routing\TrustedRedirectResponse
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
    */
   public function acs() {
     try {
@@ -165,10 +130,10 @@ class SamlController extends ControllerBase {
     }
     catch (Exception $e) {
       $this->handleException($e, 'processing SAML authentication response');
-      $url = Url::fromRoute('<front>');
+      $url = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString();
     }
 
-    return $this->createRedirectResponse($url);
+    return new RedirectResponse($url);
   }
 
   /**
@@ -177,21 +142,27 @@ class SamlController extends ControllerBase {
    * This is usually the second step in the logout flow; the SLS service on the
    * IDP should redirect here.
    *
-   * @return \Drupal\Core\Routing\TrustedRedirectResponse
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
+   *
+   * @todo we already called user_logout() at the start of the logout
+   *   procedure i.e. at logout(). The route that leads here is only accessible
+   *   for authenticated user. So in a logout flow where the user starts at
+   *   /saml/logout, this will never be executed and the user gets an "Access
+   *   denied" message when returning to /saml/sls; this code is never executed.
+   *   We should probably change the access rights and do more checking inside
+   *   this function whether we should still log out.
    */
   public function sls() {
     try {
-      $url = $this->saml->sls();
-      if (!$url) {
-        $url = $this->getRedirectUrlAfterProcessing();
-      }
+      $this->saml->sls();
+      $url = $this->getRedirectUrlAfterProcessing();
     }
     catch (Exception $e) {
-      $this->handleException($e, 'processing SAML single-logout response');
-      $url = Url::fromRoute('<front>');
+      $this->handleException($e, 'processing SAML aingle-logout response');
+      $url = Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString();
     }
 
-    return $this->createRedirectResponse($url);
+    return new RedirectResponse($url);
   }
 
   /**
@@ -200,8 +171,8 @@ class SamlController extends ControllerBase {
    * @return \Symfony\Component\HttpFoundation\RedirectResponse
    */
   public function changepw() {
-    $url = $this->config->get('idp_change_password_service');
-    return $this->createRedirectResponse($url);
+    $url = \Drupal::config('samlauth.authentication')->get('idp_change_password_service');
+    return new RedirectResponse($url);
   }
 
   /**
@@ -244,10 +215,11 @@ class SamlController extends ControllerBase {
    * @param bool $logged_in
    *   (optional) TRUE if an ACS request was just processed.
    *
-   * @return \Drupal\Core\Url
+   * @return string|null
    *   The URL to redirect to.
    */
   protected function getRedirectUrlAfterProcessing($logged_in = FALSE) {
+    $url = '';
     if (isset($_REQUEST['RelayState'])) {
       // We should be able to trust the RelayState parameter at this point
       // because the response from the IDP was verified. Only validate general
@@ -256,67 +228,19 @@ class SamlController extends ControllerBase {
         $this->getLogger('samlauth')->error('Invalid RelayState parameter found in request: @relaystate', ['@relaystate' => $_REQUEST['RelayState']]);
       }
       // The SAML toolkit set a default RelayState to itself (saml/log(in|out))
-      // when starting the process; ignore this value.
+      // when starting the process; ignore this.
       elseif (strpos($_REQUEST['RelayState'], OneLogin_Saml2_Utils::getSelfURLhost() . '/saml/') !== 0) {
         $url = $_REQUEST['RelayState'];
       }
     }
 
-    if (empty($url)) {
-      // If no url was specified, we check if it was configured.
-      $url = $this->config->get($logged_in ? 'login_redirect_url' : 'logout_redirect_url');
+    if (!$url) {
+      // If no url was specified, we have a hardcoded route to redirect to.
+      $route = $logged_in ? 'user.page' : '<front>';
+      $url = Url::fromRoute($route, [], ['absolute' => TRUE])->toString();
     }
 
-    if ($url) {
-      $url = $this->token->replace($url);
-      // We don't check access here. If a URL was explicitly specified, we
-      // prefer returning a 403 over silently redirecting somewhere else.
-      $url_object = $this->pathValidator->getUrlIfValidWithoutAccessCheck($url);
-      if (empty($url_object)) {
-        $type = $logged_in ? 'Login' : 'Logout';
-        $this->getLogger('samlauth')->warning("The $type Redirect URL is not a valid path; falling back to default.");
-      }
-    }
-
-    if (empty($url_object)) {
-      // If no url was configured, fall back to a hardcoded route.
-      $url_object = Url::fromRoute($logged_in ? 'user.page' : '<front>');
-    }
-
-    return $url_object;
-  }
-
-  /**
-   * Converts a URL to a response object that is suitable for this controller.
-   *
-   * @param string|\Drupal\Core\Url $url
-   *   A URL to redirect to, either as a string or a Drupal URL object. Strings
-   *   may only be used by callbacks that are configured in routing.yml as not
-   *   being cacheable. (Which, in our case, is most callbacks.)
-   *
-   * @return \Drupal\Core\Routing\TrustedRedirectResponse
-   *   A response object representing a redirect.
-   */
-  protected function createRedirectResponse($url) {
-    if (is_object($url)) {
-      // If toString() is used without arguments, this influences requirements
-      // for passing cacheability metadata into the response object, which can
-      // lead to bugs (see #2630808 short description). We pass TRUE to get
-      // cacheability metadata passed back in a GeneratedUrl object instead.
-      $generated_url = $url->toString(TRUE);
-      $url = $generated_url->getGeneratedUrl();
-    }
-    // Also when having returned from the IDP, we might redirect to an external
-    // url (at least in theory), so we always return a TrustedRedirectResponse.
-    $response = new TrustedRedirectResponse($url);
-    if (isset($generated_url)) {
-      // We shouldn't have to add cacheability metadata to our response object
-      // when the route is configured to not cache responses in our routing.yml.
-      // Do it anyway to prevent future obscure bugs with new routes.
-      $response->addCacheableDependency($generated_url);
-    }
-
-    return $response;
+    return $url;
   }
 
   /**
@@ -341,5 +265,4 @@ class SamlController extends ControllerBase {
     // can't do much with it anyway. But hint that more details are available.
     drupal_set_message("Error $while; details have been logged.", 'error');
   }
-
 }

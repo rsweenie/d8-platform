@@ -66,27 +66,3 @@ anonymously accessible to the identity provider.
 This should be enough to do a basic login. Configure the module to create new
 users if needed or allow it to map existing users. The specific configuration
 depends on the attributes delivered by the identity provider.
-
-DEBUGGING
----------
-You can use third party tools to help debug your SSO flow with SAML. The
-following are browser extensions that can be used on Linux, macOS and Windows:
-
-Google Chrome:
-- SAML Chrome Panel: https://chrome.google.com/webstore/detail/saml-chrome-panel/paijfdbeoenhembfhkhllainmocckace
-
-FireFox:
-- SAML Tracer: https://addons.mozilla.org/en-US/firefox/addon/saml-tracer/
-
-These tools will allow you to see the SAML request/response and the method
-(GET, POST or Artifact) the serialized document is sent/received.
-
-If you are configuring a new SAML connection it is wise to first test without
-encryption enabled and then enable encryption once a non encrypted assertion
-is successful.
-
-The listed third party tools do not decrypt SAML assertions, but you can use
-OneLogin's Decrypt XML tool at https://www.samltool.com/decrypt.php.
-
-You can also find more debugging tools located at
-https://www.samltool.com/saml_tools.php.

@@ -10369,17 +10369,23 @@
     },
     {
         "name": "drupal/samlauth",
-        "version": "dev-2.x",
-        "version_normalized": "dev-2.x",
+        "version": "2.0.0-alpha1",
+        "version_normalized": "2.0.0.0-alpha1",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/samlauth",
-            "reference": "349760a2fed0c963e65fd0bc30c9851aca6bde04"
+            "reference": "8.x-2.0-alpha1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-2.0-alpha1.zip",
+            "reference": "8.x-2.0-alpha1",
+            "shasum": "c113add0083cf1411b99672ddb83dd11f53418a7"
         },
         "require": {
             "drupal/core": "~8.0",
             "drupal/externalauth": "*",
-            "onelogin/php-saml": "^2.10.6"
+            "onelogin/php-saml": "~2.5"
         },
         "type": "drupal-module",
         "extra": {
@@ -10387,11 +10393,11 @@
                 "dev-2.x": "2.x-dev"
             },
             "drupal": {
-                "version": "8.x-2.0-alpha1+15-dev",
-                "datestamp": "1507464544",
+                "version": "8.x-2.0-alpha1",
+                "datestamp": "1488462483",
                 "security-coverage": {
                     "status": "not-covered",
-                    "message": "Dev releases are not covered by Drupal security advisories."
+                    "message": "Alpha releases are not covered by Drupal security advisories."
                 }
             }
         },

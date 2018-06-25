@@ -11,6 +11,10 @@ module:
   acsf_sso: 0
   acsf_theme: 0
   acsf_variables: 0
+  devel: 0
+  devel_generate: 0
+  kint: 0
+  webform_devel: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }

@@ -10,7 +10,6 @@ use Drupal\externalauth\ExternalAuth;
 use Drupal\samlauth\Event\SamlauthEvents;
 use Drupal\samlauth\Event\SamlauthUserLinkEvent;
 use Drupal\samlauth\Event\SamlauthUserSyncEvent;
-use Drupal\user\PrivateTempStoreFactory;
 use Drupal\user\UserInterface;
 use Exception;
 use OneLogin_Saml2_Auth;
@@ -67,13 +66,6 @@ class SamlService {
   protected $eventDispatcher;
 
   /**
-   * Private account session store.
-   *
-   * @var \Drupal\user\PrivateTempStore.
-   */
-  protected $privateTempStore;
-
-  /**
    * Constructor for Drupal\samlauth\SamlService.
    *
    * @param \Drupal\externalauth\ExternalAuth $external_auth
@@ -86,16 +78,13 @@ class SamlService {
    *   A logger instance.
    * @param \Symfony\Component\EventDispatcher\EventDispatcherInterface $event_dispatcher
    *   The event dispatcher.
-   * @param \Drupal\user\PrivateTempStoreFactory $temp_store_factory
-   *   A temp data store factory object.
    */
-  public function __construct(ExternalAuth $external_auth, ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, LoggerInterface $logger, EventDispatcherInterface $event_dispatcher, PrivateTempStoreFactory $temp_store_factory) {
+  public function __construct(ExternalAuth $external_auth, ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, LoggerInterface $logger, EventDispatcherInterface $event_dispatcher) {
     $this->externalAuth = $external_auth;
     $this->config = $config_factory->get('samlauth.authentication');
     $this->entityTypeManager = $entity_type_manager;
     $this->logger = $logger;
     $this->eventDispatcher = $event_dispatcher;
-    $this->privateTempStore = $temp_store_factory->get('samlauth');
   }
 
   /**
@@ -123,13 +112,9 @@ class SamlService {
    * @param string $return_to
    *   (optional) The path to return the user to after successful processing by
    *   the IDP.
-   *
-   * @return string
-   *   The URL of the single sign-on service to redirect to, including query
-   *   parameters.
    */
   public function login($return_to = null) {
-    return $this->getSamlAuth()->login($return_to, [], FALSE, FALSE, TRUE);
+    $this->getSamlAuth()->login($return_to);
   }
 
   /**
@@ -138,20 +123,10 @@ class SamlService {
    * @param null $return_to
    *   (optional) The path to return the user to after successful processing by
    *   the IDP.
-   *
-   * @return string
-   *   The URL of the single logout service to redirect to, including query
-   *   parameters.
    */
   public function logout($return_to = null) {
-    return $this->getSamlAuth()->logout(
-      $return_to,
-      [],
-      $this->privateTempStore->get('name_id'),
-      $this->privateTempStore->get('session_index'),
-      TRUE,
-      $this->privateTempStore->get('name_id_format')
-    );
+    user_logout();
+    $this->getSamlAuth()->logout($return_to, array('referrer' => $return_to));
   }
 
   /**
@@ -187,7 +162,7 @@ class SamlService {
 
     $account = $this->externalAuth->load($unique_id, 'samlauth');
     if (!$account) {
-      $this->logger->debug('No matching local users found for unique SAML ID @saml_id.', ['@saml_id' => $unique_id]);
+      $this->logger->debug('No matching local users found for unique SAML ID @saml_id.', array('@saml_id' => $unique_id));
 
       // Try to link an existing user: first through a custom event handler,
       // then by name, then by e-mail.
@@ -203,15 +178,15 @@ class SamlService {
           // cryptic machine name because  synchronizeUserAttributes() cannot
           // assign the proper name while saving.)
           $name = $this->getAttributeByConfig('user_name_attribute');
-          if ($name && $account_search = $this->entityTypeManager->getStorage('user')->loadByProperties(['name' => $name])) {
+          if ($name && $account_search = $this->entityTypeManager->getStorage('user')->loadByProperties(array('name' => $name))) {
             $account = reset($account_search);
-            $this->logger->info('Matching local user @uid found for name @name (as provided in a SAML attribute); associating user and logging in.', ['@name' => $name, '@uid' => $account->id()]);
+            $this->logger->info('Matching local user @uid found for name @name (as provided in a SAML attribute); associating user and logging in.', array('@name' => $name, '@uid' => $account->id()));
           }
           else {
             $mail = $this->getAttributeByConfig('user_mail_attribute');
-            if ($mail && $account_search = $this->entityTypeManager->getStorage('user')->loadByProperties(['mail' => $mail])) {
+            if ($mail && $account_search = $this->entityTypeManager->getStorage('user')->loadByProperties(array('mail' => $mail))) {
               $account = reset($account_search);
-              $this->logger->info('Matching local user @uid found for e-mail @mail (as provided in a SAML attribute); associating user and logging in.', ['@mail' => $mail, '@uid' => $account->id()]);
+              $this->logger->info('Matching local user @uid found for e-mail @mail (as provided in a SAML attribute); associating user and logging in.', array('@mail' => $mail, '@uid' => $account->id()));
             }
           }
         }
@@ -260,55 +235,14 @@ class SamlService {
 
       $this->externalAuth->userLoginFinalize($account, $unique_id, 'samlauth');
     }
-
-    // Set some request properties in local private storage. We can use these on
-    // logout.
-    foreach ([
-               'session_index' => $this->samlAuth->getSessionIndex(),
-               'session_expiration' => $this->samlAuth->getSessionExpiration(),
-               'name_id' => $this->samlAuth->getNameId(),
-               'name_id_format' => $this->samlAuth->getNameIdFormat(),
-             ] as $key => $value) {
-      if (isset($value)) {
-        $this->privateTempStore->set($key, $value);
-      }
-      else {
-        $this->privateTempStore->delete($key);
-      }
-    }
   }
 
   /**
-   * Does processing for the Single Logout Service.
-   *
-   * @return null|string
-   *   Usually returns nothing. May return a URL to redirect to.
+   * Does processing for the Single Logout Service if necessary.
    */
   public function sls() {
-    // This call can either set an error condition or throw a
-    // \OneLogin_Saml2_Error exception, depending on whether or not we are
-    // processing a POST request. Don't catch the exception.
-    $url = $this->getSamlAuth()->processSLO(FALSE, NULL, FALSE, NULL, TRUE);
-    // Now look if there were any errors and also throw.
-    $errors = $this->getSamlAuth()->getErrors();
-    if (!empty($errors)) {
-      // We have one or multiple error types / short descriptions, and one
-      // 'reason' for the last error.
-      throw new RuntimeException('Error(s) encountered during processing of SLS response. Type(s): ' . implode(', ', array_unique($errors)) . '; reason given for last error: ' . $this->getSamlAuth()->getLastErrorReason());
-    }
-
-    // Usually we don't get any URL returned. The case in which we do, seems to
-    // be something like IDP-initiated logout. Therefore we won't do further
-    // processing.
-    if (!$url) {
-      // Delete private stored session information.
-      foreach (['session_index', 'session_expiration'] as $key) {
-        $this->privateTempStore->delete($key);
-      }
-      user_logout();
-    }
-
-    return $url;
+    // @todo change; see SamlController::sls().
+    user_logout();
   }
 
   /**
@@ -410,64 +344,36 @@ class SamlService {
       $sp_key = $config->get('sp_private_key');
     }
 
-    $library_config = [
-      'sp' => [
+    return array(
+      'sp' => array(
         'entityId' => $config->get('sp_entity_id'),
-        'assertionConsumerService' => [
-          // See SamlController::redirectResponseFromUrl() for details.
-          'url' => Url::fromRoute('samlauth.saml_controller_acs', [], ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl(),
-        ],
-        'singleLogoutService' => [
-          'url' => Url::fromRoute('samlauth.saml_controller_sls', [], ['absolute' => TRUE])->toString(TRUE)->getGeneratedUrl(),
-        ],
+        'assertionConsumerService' => array(
+          'url' => Url::fromRoute('samlauth.saml_controller_acs', array(), array('absolute' => TRUE))->toString(),
+        ),
+        'singleLogoutService' => array(
+          'url' => Url::fromRoute('samlauth.saml_controller_sls', array(), array('absolute' => TRUE))->toString(),
+        ),
         'NameIDFormat' => $config->get('sp_name_id_format'),
         'x509cert' => $sp_cert,
         'privateKey' => $sp_key,
-      ],
-      'idp' => [
+      ),
+      'idp' => array (
         'entityId' => $config->get('idp_entity_id'),
-        'singleSignOnService' => [
+        'singleSignOnService' => array (
           'url' => $config->get('idp_single_sign_on_service'),
-        ],
-        'singleLogoutService' => [
+        ),
+        'singleLogoutService' => array (
           'url' => $config->get('idp_single_log_out_service'),
-        ],
+        ),
         'x509cert' => $config->get('idp_x509_certificate'),
-      ],
-      'security' => [
+      ),
+      'security' => array(
         'authnRequestsSigned' => (bool) $config->get('security_authn_requests_sign'),
         'wantMessagesSigned' => (bool) $config->get('security_messages_sign'),
         'requestedAuthnContext' => (bool) $config->get('security_request_authn_context'),
-        'lowercaseUrlencoding' => (bool) $config->get('security_lowercase_url_encoding'),
-        'signatureAlgorithm' => $config->get('security_signature_algorithm'),
-      ],
+      ),
       'strict' => (bool) $config->get('strict'),
-    ];
-
-    // Check for the presence of a multi cert situation.
-    $multi = $config->get('idp_cert_type');
-    switch ($multi) {
-      case "signing":
-        $library_config['idp']['x509certMulti'] = array (
-          'signing' => array (
-            $config->get('idp_x509_certificate'),
-            $config->get('idp_x509_certificate_multi'),
-          )
-        );
-        break;
-      case "encryption":
-        $library_config['idp']['x509certMulti'] = array (
-          'signing' => array (
-            $config->get('idp_x509_certificate'),
-          ),
-          'encryption' => array (
-            $config->get('idp_x509_certificate_multi'),
-          ),
-        );
-        break;
-    }
-
-    return $library_config;
+    );
   }
 
 }

@@ -5,8 +5,6 @@ samlauth.saml_controller_login:
     _title: 'SAML Login'
   requirements:
     _role: 'anonymous'
-  options:
-    no_cache: TRUE
 samlauth.saml_controller_logout:
   path: '/saml/logout'
   defaults:
@@ -14,8 +12,6 @@ samlauth.saml_controller_logout:
     _title: 'SAML Logout'
   requirements:
     _role: 'authenticated'
-  options:
-    no_cache: TRUE
 samlauth.saml_controller_metadata:
   path: '/saml/metadata'
   defaults:
@@ -30,8 +26,6 @@ samlauth.saml_controller_acs:
     _title: 'SAML ACS'
   requirements:
     _role: 'anonymous'
-  options:
-    no_cache: TRUE
 samlauth.saml_controller_sls:
   path: '/saml/sls'
   defaults:
@@ -39,8 +33,6 @@ samlauth.saml_controller_sls:
     _title: 'SAML SLS'
   requirements:
     _role: 'authenticated'
-  options:
-    no_cache: TRUE
 samlauth.saml_controller_changepw:
   path: '/saml/changepw'
   defaults:
@@ -48,8 +40,6 @@ samlauth.saml_controller_changepw:
     _title: 'SAML Change Password'
   requirements:
     _role: 'authenticated'
-  options:
-    no_cache: TRUE
 samlauth.samlauth_configure_form:
   path: '/admin/config/people/saml'
   defaults:
