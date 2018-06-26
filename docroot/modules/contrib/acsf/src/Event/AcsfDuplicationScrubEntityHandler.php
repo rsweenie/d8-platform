@@ -76,7 +76,7 @@ abstract class AcsfDuplicationScrubEntityHandler extends AcsfEventHandler {
    * Implements AcsfEventHandler::handle().
    */
   public function handle() {
-    drush_print(dt('Entered @class', array('@class' => get_class($this))));
+    $this->consoleLog(dt('Entered @class', array('@class' => get_class($this))));
 
     $options = $this->event->context['scrub_options'];
     $limit = $options['batch_' . $this->entityTypeId];

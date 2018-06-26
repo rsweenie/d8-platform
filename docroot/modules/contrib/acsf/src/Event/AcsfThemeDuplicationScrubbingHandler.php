@@ -16,7 +16,7 @@ class AcsfThemeDuplicationScrubbingHandler extends AcsfEventHandler {
    * Implements AcsfEventHandler::handle().
    */
   public function handle() {
-    drush_print(dt('Entered @class', array('@class' => get_class($this))));
+    $this->consoleLog(dt('Entered @class', array('@class' => get_class($this))));
     \Drupal::database()->truncate('acsf_theme_notifications')->execute();
   }
 

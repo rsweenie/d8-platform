@@ -30,7 +30,7 @@ class AcsfDuplicationScrubUserHandler extends AcsfDuplicationScrubEntityHandler 
     $options = $this->event->context['scrub_options'];
     if ($options['retain_users']) {
       // We still want to log that we were here.
-      drush_print(dt('Entered @class', array('@class' => get_class($this))));
+      $this->consoleLog(dt('Entered @class', array('@class' => get_class($this))));
       return;
     }
 

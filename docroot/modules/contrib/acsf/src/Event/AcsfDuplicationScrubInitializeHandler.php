@@ -19,7 +19,7 @@ class AcsfDuplicationScrubInitializeHandler extends AcsfEventHandler {
    * Implements AcsfEventHandler::handle().
    */
   public function handle() {
-    drush_print(dt('Entered @class', array('@class' => get_class($this))));
+    $this->consoleLog(dt('Entered @class', array('@class' => get_class($this))));
     if (!$this->isComplete()) {
       $site = AcsfSite::load();
       $site->clean();

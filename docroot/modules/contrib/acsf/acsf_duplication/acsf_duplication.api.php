@@ -28,12 +28,14 @@ function hook_acsf_duplication_scrub_remaining_counts_alter(array &$data) {
  *
  * @param array $context
  *   An associative array of context data needed in the event handlers.
+ * @param array $options
+ *   An associative array of drush command options.
  *
  * @see drush_acsf_duplication_scrub_batch()
  */
-function hook_acsf_duplication_scrub_context_alter(array &$context) {
-  $context['scrub_options']['retain_users'] = drush_get_option('exact-copy');
-  $context['scrub_options']['retain_content'] = drush_get_option('exact-copy');
+function hook_acsf_duplication_scrub_context_alter(array &$context, array $options) {
+  $context['scrub_options']['retain_users'] = $options['exact-copy'];
+  $context['scrub_options']['retain_content'] = $options['exact-copy'];
 }
 
 /**
