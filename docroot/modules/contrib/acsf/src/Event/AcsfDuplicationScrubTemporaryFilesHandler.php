@@ -16,7 +16,7 @@ class AcsfDuplicationScrubTemporaryFilesHandler extends AcsfEventHandler {
    * Implements AcsfEventHandler::handle().
    */
   public function handle() {
-    $this->consoleLog(dt('Entered @class', array('@class' => get_class($this))));
+    drush_print(dt('Entered @class', array('@class' => get_class($this))));
 
     $file_storage = \Drupal::entityManager()->getStorage('file');
 

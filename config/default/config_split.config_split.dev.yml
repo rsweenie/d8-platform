@@ -1,6 +1,6 @@
 uuid: a3cbf394-ec8b-496a-9751-04f414eae224
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: dev
 label: Dev
@@ -14,6 +14,7 @@ module:
   devel: 0
   devel_generate: 0
   kint: 0
+  samlauth: 0
   webform_devel: 0
 theme: {  }
 blacklist: {  }

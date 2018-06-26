@@ -33,18 +33,6 @@ abstract class AcsfEventHandler {
   }
 
   /**
-   * Writes a log message to the console.
-   *
-   * @param string $message
-   *   The log message to be written.
-   */
-  public function consoleLog($message) {
-    if (isset($this->event->output)) {
-      $this->event->output->writeln($message);
-    }
-  }
-
-  /**
    * Handle the event.
    */
   abstract public function handle();

@@ -9,7 +9,7 @@ dependencies:
  - samlauth (>= 8.x-2.0-alpha1)
 
 # Information added by Drupal.org packaging script on 2018-05-16
-version: '8.x-2.48'
+version: '8.x-1.48'
 core: '8.x'
 project: 'acsf'
-datestamp: 1526468608
+datestamp: 1526468599

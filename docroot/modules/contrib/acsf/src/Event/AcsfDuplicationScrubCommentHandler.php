@@ -31,7 +31,7 @@ class AcsfDuplicationScrubCommentHandler extends AcsfDuplicationScrubEntityHandl
     if ($options['retain_content']
             || !\Drupal::moduleHandler()->moduleExists('comment')) {
       // We still want to log that we were here.
-      $this->consoleLog(dt('Entered @class', array('@class' => get_class($this))));
+      drush_print(dt('Entered @class', array('@class' => get_class($this))));
       return;
     }
 
