@@ -4,3 +4,18 @@ local:
     host: local.creighton.com
     user: vagrant
     ssh: { options: '-o PasswordAuthentication=no -i $HOME/.vagrant.d/insecure_private_key' }
+01dev:
+  root: /var/www/html/creighton.01dev/docroot
+  uri: creighton01dev.enterprise-g1.acquia-sites.com
+  host: staging-1749.enterprise-g1.hosting.acquia.com
+  user: creighton.01dev
+01live:
+  root: /var/www/html/creighton.01live/docroot
+  uri: creighton01live.enterprise-g1.acquia-sites.com
+  host: web-1747.enterprise-g1.hosting.acquia.com
+  user: creighton.01live
+01test:
+  root: /var/www/html/creighton.01test/docroot
+  uri: creighton01test.enterprise-g1.acquia-sites.com
+  host: staging-1749.enterprise-g1.hosting.acquia.com
+  user: creighton.01test

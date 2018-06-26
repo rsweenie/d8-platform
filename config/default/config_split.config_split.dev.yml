@@ -1,0 +1,23 @@
+uuid: a3cbf394-ec8b-496a-9751-04f414eae224
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+folder: ../config/envs/dev
+module:
+  acsf: 0
+  acsf_duplication: 0
+  acsf_sso: 0
+  acsf_theme: 0
+  acsf_variables: 0
+  devel: 0
+  devel_generate: 0
+  kint: 0
+  webform_devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
