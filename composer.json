@@ -6,7 +6,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/acsf-tools": "^8.1",
         "acquia/blt": "^9.1.0",
         "acquia/lightning": "^3.1",
         "bower-asset/masonry": "^4.2",

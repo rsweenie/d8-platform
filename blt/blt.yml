@@ -14,6 +14,7 @@ git:
 drush:
   aliases:
     remote: '${project.machine_name}.test'
+    # remote: '${project.machine_name}.test'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'

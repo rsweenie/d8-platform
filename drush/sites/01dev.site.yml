@@ -1,0 +1,15 @@
+dev:
+  host: creighton01dev.ssh.enterprise-g1.acquia-sites.com
+  options:
+    ac-env: 01dev
+    ac-realm: enterprise-g1
+    ac-site: creighton
+  paths:
+    drush-script: drush9
+  root: /var/www/html/creighton.01dev/docroot
+  uri: creighton01dev.enterprise-g1.acquia-sites.com
+  user: creighton.01dev
+livedev:
+  options:
+    parent: '@creighton.01dev'
+  root: /mnt/gfs/creighton.01dev/livedev/docroot

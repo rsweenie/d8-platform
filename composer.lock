@@ -4,46 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef5d51724b010856fcca47d62cca992e",
+    "content-hash": "ecc2265da710c71358a13541f10949e4",
     "packages": [
-        {
-            "name": "acquia/acsf-tools",
-            "version": "8.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/acquia/acsf-tools.git",
-                "reference": "fc80b5603de7efe90419e5dbdf21a24fc140f493"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/acquia/acsf-tools/zipball/fc80b5603de7efe90419e5dbdf21a24fc140f493",
-                "reference": "fc80b5603de7efe90419e5dbdf21a24fc140f493",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/yaml": "^3.0"
-            },
-            "type": "drupal-drush",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Sherron (msherron)",
-                    "homepage": "https://www.drupal.org/u/msherron",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Sylvain Delbosc (sdelbosc)",
-                    "homepage": "https://www.drupal.org/u/sdelbosc",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Drush powered command line tools for working with Acquia Cloud Site Factory.",
-            "homepage": "https://github.com/acquia/acsf-tools",
-            "time": "2018-02-15T00:21:25+00:00"
-        },
         {
             "name": "acquia/blt",
             "version": "9.1.0-alpha1",
