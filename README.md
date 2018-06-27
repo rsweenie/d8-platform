@@ -156,11 +156,11 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ blt vm
 ```
 
-  a) Drupal VM is not currently installed. Install it now? (y/n) `[y]`
+  a) Drupal VM is not currently installed. Install it now? (y/n) `y`
 
-  b) Which base box would you like to use? `[0]`
+  b) Which base box would you like to use? `0`
 
-  c) Do you want to boot Drupal VM? (y/n) `[y]`
+  c) Do you want to boot Drupal VM? (y/n) `y`
 
   d) creighton: Pruning invalid NFS exports. Administrator privileges will be required...
 
@@ -169,7 +169,7 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ blt setup
 ```
 
-  a) You are about to DROP all tables in your 'drupal' database. Do you want to continue? (yes/no) [yes]: `[yes]`
+  a) You are about to DROP all tables in your 'drupal' database. Do you want to continue? (yes/no) [yes]: `yes`
 
 * Access the site and do necessary work at local.creighton.com by running
 
