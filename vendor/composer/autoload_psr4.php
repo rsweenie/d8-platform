@@ -87,6 +87,7 @@ return array(
     'Gettext\\' => array($vendorDir . '/gettext/gettext/src'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
     'Drush\\Internal\\' => array($vendorDir . '/drush/drush/internal-copy'),
+    'Drush\\Commands\\acsf_tools\\' => array($baseDir . '/drush/Commands/acsf_tools'),
     'Drush\\' => array($vendorDir . '/drush/drush/src'),
     'Drupal\\acsf\\' => array($baseDir . '/docroot/modules/contrib/acsf/src'),
     'Drupal\\Tests\\PHPUnit\\' => array($baseDir . '/blt/tests/phpunit/src'),

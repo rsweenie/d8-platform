@@ -170,6 +170,7 @@ class ComposerStaticInit2217e319a69fcec5b4bef313903d4e6b
         'D' => 
         array (
             'Drush\\Internal\\' => 15,
+            'Drush\\Commands\\acsf_tools\\' => 26,
             'Drush\\' => 6,
             'Drupal\\acsf\\' => 12,
             'Drupal\\Tests\\PHPUnit\\' => 21,
@@ -543,6 +544,10 @@ class ComposerStaticInit2217e319a69fcec5b4bef313903d4e6b
         'Drush\\Internal\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/internal-copy',
+        ),
+        'Drush\\Commands\\acsf_tools\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/drush/Commands/acsf_tools',
         ),
         'Drush\\' => 
         array (

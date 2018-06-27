@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f921763292f6cd8d567d628ecd20918c",
+    "content-hash": "ad93c2555ed8212c06c12f3995334ab2",
     "packages": [
+        {
+            "name": "acquia/acsf-tools",
+            "version": "dev-9.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquia/acsf-tools.git",
+                "reference": "027f55432e6de5a340ba2c4c273f6d0f588f15c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acquia/acsf-tools/zipball/027f55432e6de5a340ba2c4c273f6d0f588f15c4",
+                "reference": "027f55432e6de5a340ba2c4c273f6d0f588f15c4",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.6.0",
+                "symfony/yaml": "^3.0"
+            },
+            "type": "drupal-drush",
+            "extra": {
+                "installer-name": "acsf_tools",
+                "installer-paths": {
+                    "drush/Commands/{$name}": [
+                        "acquia/acsf-tools"
+                    ]
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drush\\Commands\\acsf_tools\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Sherron (msherron)",
+                    "homepage": "https://www.drupal.org/u/msherron",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Sylvain Delbosc (sdelbosc)",
+                    "homepage": "https://www.drupal.org/u/sdelbosc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Drush powered command line tools for working with Acquia Cloud Site Factory.",
+            "homepage": "https://github.com/acquia/acsf-tools",
+            "time": "2018-06-11T16:29:51+00:00"
+        },
         {
             "name": "acquia/blt",
             "version": "9.1.0-alpha1",
@@ -18117,6 +18175,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "acquia/acsf-tools": 20,
         "drupal/auto_entitylabel": 10,
         "drupal/cer": 15,
         "drupal/coffee": 10,
