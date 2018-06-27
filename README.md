@@ -9,11 +9,10 @@ This project is based on BLT, an open-source project template and tool that enab
 * Review the [Required / Recommended Skills](http://blt.readthedocs.io/en/latest/readme/skills) for working with a BLT project
 * Ensure that your computer meets the minimum installation requirements (and then install the required applications). See the [System Requirements](http://blt.readthedocs.io/en/latest/INSTALL/#system-requirements).
 * Request access to the Creighton Software Bitbucket team (if needed)
-* Clone the project repository in Bitbucket
 * Request access to the Acquia Cloud Environment for your project (if needed)
 * Setup a SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
-* [Setup Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
-* [Setup Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
+  * [Setup Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
+  * [Setup Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
 
 ## Virtual Machine
 
@@ -22,25 +21,25 @@ This project is based on BLT, an open-source project template and tool that enab
 
 ## Get Code
 
-```
-$ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
+```command-line
+~ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 ```
 
 * To ensure that upstream changes to the parent repository may be tracked, add the upstream locally as well.
 
-```
-$ git remote add upstream git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
+```command-line
+~ git remote add upstream git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 ```
 
-## Setup Local Environment
+## Local Environment Setup
 
 BLT requires "some sort" of local environment that implements a LAMP stack. While we provide out of the box templates for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
 
 For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
 
-* Create a composer.required.json in the blt directory and paste in the following:
+* Create a `composer.required.json` in the blt directory and paste in the following:
 
-```
+```json
 {
   "repositories": {
     "drupal": {
@@ -108,9 +107,9 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 
 ```
 
-* Create a composer.suggested.json in the blt directory and paste in the following:
+* Create a `composer.suggested.json` in the blt directory and paste in the following:
 
-```
+```json
 {
   "repositories": {
     "asset-packagist": {
@@ -141,57 +140,60 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 
 * Install Composer Dependencies (warning: this can take some time based on internet speeds)
 
-```
-$ composer install
+```command-line
+~ composer install
 ```
 
 * Run the initial Setup
 
-```
-$ vagrant init
-```
-
-* Create a file in the blt directory named local.blt.yml
-
-```
-$blt vm
+```command-line
+~ vagrant init
 ```
 
-	a) Drupal VM is not currently installed. Install it now? (y/n) [y]
+* Create a file in the blt directory named `local.blt.yml`
 
-	b) Which base box would you like to use? [0]
-
-	c) Do you want to boot Drupal VM? (y/n) [y]
-
-	d) creighton: Pruning invalid NFS exports. Administrator privileges will be required...
-
-```
-$ vagrant ssh
-$ blt setup
+```command-line
+~ blt vm
 ```
 
-	a) You are about to DROP all tables in your 'drupal' database. Do you want to continue? (yes/no) [yes]: [yes]
+  a) Drupal VM is not currently installed. Install it now? (y/n) `[y]`
+
+  b) Which base box would you like to use? `[0]`
+
+  c) Do you want to boot Drupal VM? (y/n) `[y]`
+
+  d) creighton: Pruning invalid NFS exports. Administrator privileges will be required...
+
+```command-line
+~ vagrant ssh
+~ blt setup
+```
+
+  a) You are about to DROP all tables in your 'drupal' database. Do you want to continue? (yes/no) [yes]: `[yes]`
 
 * Access the site and do necessary work at local.creighton.com by running
 
-```
-$ drush uli
+```command-line
+~ drush uli
 ```
 
-Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may also access a list of BLT commands by running:
-```
-$ blt
+Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may also access a list of BLT commands by running
+
+```command-line
+~ blt
 ```
 
 Note the following properties of this project:
 
-* Primary development branch: \<branch>
-* Local environment: dev
+* Primary development branch: master
+  * dev branching
+  * feature branching
+* Local environment: local
 * Local site URL: local.creighton.com
 
 ## Working With a BLT Project
 
-BLT projects are designed to instill software development best practices (including git workflows). 
+BLT projects are designed to instill software development best practices (including git workflows).
 
 Our BLT Developer documentation includes an [example workflow](http://blt.readthedocs.io/en/latest/readme/dev-workflow/#workflow-example-local-development).
 
@@ -199,11 +201,11 @@ Our BLT Developer documentation includes an [example workflow](http://blt.readth
 
 BLT uses a number of configuration (.yml or .json) files to define and customize behaviors. Some examples of these are:
 
-* blt/blt.yml (formerly blt/project.yml prior to BLT 9.x)
-* blt/local.blt.yml
-* box/config.yml (if using Drupal VM)
-* drush/sites (contains Drush aliases for this project)
-* composer.json (includes required components, including Drupal Modules, for this project)
+* `blt/blt.yml` (formerly `blt/project.yml` prior to BLT 9.x)
+* `blt/local.blt.yml`
+* `box/config.yml` (if using Drupal VM)
+* `drush/sites` (contains Drush aliases for this project)
+* `composer.json` (includes required components, including Drupal Modules, for this project)
 
 ## Resources
 
