@@ -15,6 +15,13 @@ This project is based on BLT, an open-source project template and tool that enab
 * [Setup Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
 * [Setup Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
 
+## Virtual Machine
+
+* Check VirtualBox to ensure that you don’t already have a VM named local.creighton.com - if you do, delete it. When prompted, select “remove all files”.
+* Check your hosts file to ensure that you don’t already have entries for local.creighton.com - if you do, delete them.
+
+## Get Code
+
 ```
 $ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 ```
@@ -25,24 +32,145 @@ $ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 $ git remote add upstream git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
 ```
 
+## Setup Local Environment
+
+BLT requires "some sort" of local environment that implements a LAMP stack. While we provide out of the box templates for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
+
+For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
+
+* Create a composer.required.json in the blt directory and paste in the following:
+
+```
+{
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "require": {
+    "drupal/core": "^8.5.0",
+    "drupal/config_split": "^1.0.0"
+  },
+  "require-dev": {
+    "behat/behat": ">=3.1 <3.4",
+    "behat/mink": "~1.7",
+    "behat/mink-selenium2-driver": "^1.3.1",
+    "bex/behat-screenshot": "^1.2",
+    "drupal/drupal-extension": "~3.2",
+    "drupal-composer/drupal-scaffold": "^2.1.0",
+    "jarnaiz/behat-junit-formatter": "^1.3.2",
+    "se/selenium-server-standalone": "^2.53",
+    "jakoch/phantomjs-installer":   "2.1.1-p07",
+    "dmore/behat-chrome-extension": "^1.0.0",
+    "mikey179/vfsStream": "~1.2",
+    "sensiolabs-de/deprecation-detector": "dev-master"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Drupal\\Tests\\PHPUnit\\": "tests/phpunit/src/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Acquia\\Blt\\Custom\\": "src/"
+    }
+  },
+  "extra": {
+    "composer-exit-on-patch-failure": true,
+    "drupal-scaffold": {
+      "initial": {
+        "sites/default/default.services.yml": "sites/default/services.yml",
+        "sites/default/default.settings.php": "sites/default/settings.php"
+      }
+    },
+    "enable-patching": true,
+    "patches": {
+      "drupal/core": {
+        "Clear Twig caches on deploys": "https://www.drupal.org/files/issues/2752961-130.patch"
+      }
+    }
+  },
+  "scripts": {
+    "blt-alias": "blt blt:init:shell-alias -y --ansi",
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "nuke": [
+      "rm -rf vendor composer.lock docroot/core docroot/modules/contrib docroot/profiles/contrib docroot/themes/contrib",
+      "@composer clearcache --ansi",
+      "@composer install --ansi"
+    ],
+    "install-phantomjs": [
+      "rm -rf vendor/bin/phantomjs",
+      "PhantomInstaller\\Installer::installPhantomJS"
+    ]
+  }
+}
+
+```
+
+* Create a composer.suggested.json in the blt directory and paste in the following:
+
+```
+{
+  "repositories": {
+    "asset-packagist": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
+  "require": {
+    "acquia/lightning": "^3.1.0",
+    "drupal/acquia_connector": "^1.5.0",
+    "drupal/acquia_purge": "^1.0-beta3",
+    "drupal/cog": "^1.0.0",
+    "drupal/devel": "^1.0.0",
+    "drupal/qa_accounts": "^1.0.0-alpha1",
+    "drupal/memcache": "^2.0-alpha5",
+    "drupal/seckit": "^1.0.0-alpha2",
+    "drupal/security_review": "*",
+    "drupal/shield": "^1.0.0",
+    "drupal/features": "^3.7.0"
+  },
+  "extra": {
+    "patches": {
+    }
+  }
+}
+
+```
+
 * Install Composer Dependencies (warning: this can take some time based on internet speeds)
 
 ```
 $ composer install
 ```
 
-* Setup Local Environment
-
-BLT requires "some sort" of local environment that implements a LAMP stack. While we provide out of the box templates for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
-
-For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
-
 * Run the initial Setup
+
+```
+$ vagrant init
+```
+
+* Create a file in the blt directory named local.blt.yml
+
+```
+$blt vm
+```
+
+	a) Drupal VM is not currently installed. Install it now? (y/n) [y]
+
+	b) Which base box would you like to use? [0]
+
+	c) Do you want to boot Drupal VM? (y/n) [y]
+
+	d) creighton: Pruning invalid NFS exports. Administrator privileges will be required...
 
 ```
 $ vagrant ssh
 $ blt setup
 ```
+
+	a) You are about to DROP all tables in your 'drupal' database. Do you want to continue? (yes/no) [yes]: [yes]
 
 * Access the site and do necessary work at local.creighton.com by running
 
