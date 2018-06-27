@@ -17,9 +17,9 @@ drush:
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
-# post-deploy-build:
-#   dir: '${deploy.dir}/drush'
-#   command: 'find ''Commands'' -type d -name ''.git'' -exec rm -fr {} +'
+post-deploy-build:
+  dir: '${deploy.dir}/drush'
+  command: 'find ''Commands'' -type d -name ''.git'' -exec rm -fr {} +'
 # modules:
 #   local:
 #     enable: [dblog, devel, seckit, views_ui]
