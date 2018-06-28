@@ -16,8 +16,8 @@ This project is based on BLT, an open-source project template and tool that enab
 
 ## Virtual Machine
 
-* Check VirtualBox to ensure that you don‚Äôt already have a VM named local.creighton.com - if you do, delete it. When prompted, select ‚Äúremove all files‚Äù.
-* Check your hosts file to ensure that you don‚Äôt already have entries for local.creighton.com - if you do, delete them.
+* Check VirtualBox to ensure that you donít already have a VM named local.creighton.com - if you do, delete it. When prompted, select ìremove all filesî.
+* Check your hosts file to ensure that you donít already have entries for local.creighton.com - if you do, delete them.
 
 ## Get Code
 
@@ -144,10 +144,10 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ composer install
 ```
 
-* Run the initial Setup
+* Create Vagrantfile
 
 ```command-line
-~ vagrant init
+~ touch Vagrantfile
 ```
 
 * Create a file in the blt directory named `local.blt.yml`
