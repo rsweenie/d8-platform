@@ -11,8 +11,8 @@ This project is based on BLT, an open-source project template and tool that enab
 * Request access to the Creighton Software Bitbucket team (if needed)
 * Request access to the Acquia Cloud Environment for your project (if needed)
 * Setup a SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
-  * [Setup Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
-  * [Setup Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
+  * [Set up Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
+  * [Set up Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
 
 ## Virtual Machine
 
@@ -33,7 +33,7 @@ This project is based on BLT, an open-source project template and tool that enab
 
 ## Local Environment Setup
 
-BLT requires "some sort" of local environment that implements a LAMP stack. While we provide out of the box templates for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
+BLT requires a of local environment that implements a LAMP stack. While out of the box templates are provided for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
 
 For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
 
@@ -176,6 +176,21 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ```command-line
 ~ drush uli
 ```
+
+## Further Setup
+
+BLT 9 and Drush 9 require all blt and drush commands to be executed inside of the VM. Because of this requirement, the VM must have SSH access to Acquia.
+
+```command-line
+~ cd ~/.ssh
+~ ssh-keygen -b 4096
+```
+
+* The public key needs to be added to your Acquia Cloud account. More detail can be found about that [here](https://docs.acquia.com/acquia-cloud/ssh/generate).
+
+* Install Drush Launcher, using the instructions in [this](https://github.com/drush-ops/drush-launcher) Github repository.
+
+## Additional Documentation
 
 Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may also access a list of BLT commands by running
 
