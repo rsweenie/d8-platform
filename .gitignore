@@ -405,3 +405,6 @@ docroot/libraries/highlight/
 # Deployment Artifact / Identifier
 deploy/
 deployment_identifier
+
+# History
+.history/
