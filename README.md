@@ -16,8 +16,8 @@ This project is based on BLT, an open-source project template and tool that enab
 
 ## Virtual Machine
 
-* Check VirtualBox to ensure that you don’t already have a VM named local.creighton.com - if you do, delete it. When prompted, select “remove all files”.
-* Check your hosts file to ensure that you don’t already have entries for local.creighton.com - if you do, delete them.
+* Check VirtualBox to ensure that you do not already have a VM named local.creighton.com - if you do, delete it. When prompted, select 'remove all files'.
+* Check your hosts file to ensure that you do not already have entries for local.creighton.com - if you do, delete them.
 
 ## Get Code
 
@@ -185,9 +185,9 @@ Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may
 
 Note the following properties of this project:
 
-* Primary development branch: master
-  * dev branching
-  * feature branching
+* Primary development branch: master - deploys to dev environment in ACSF
+  * dev branching - named branch for each developer
+  * feature branching - branching per feature
 * Local environment: local
 * Local site URL: local.creighton.com
 
