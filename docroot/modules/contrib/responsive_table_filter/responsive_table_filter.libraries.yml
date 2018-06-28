@@ -1,4 +1,0 @@
-responsive-table:
-  css:
-    component:
-      css/responsive-table-filter.css: {}

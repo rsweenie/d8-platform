@@ -1,8 +1,0 @@
-thumbnails:
-  js:
-    js/video-embed-html5-thumbnails.js: {}
-  css:
-    component:
-      css/video-embed-html5-thumbnails.css: {}
-  dependencies:
-    - core/jquery
