@@ -1,6 +1,6 @@
 project:
   machine_name: creighton
-  prefix: BLT
+  prefix: CU
   human_name: 'Creighton University'
   profile:
     name: creighton
@@ -13,7 +13,8 @@ git:
     - 'creighton@svn-1402.enterprise-g1.hosting.acquia.com:creighton.git'
 drush:
   aliases:
-    remote: { dev: 01dev.dev, test: 01test.dev, live: 01live.dev }
+    # remote: '${project.machine_name}.test'
+    remote: '01dev.dev'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
