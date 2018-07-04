@@ -21,3 +21,9 @@ drush:
 post-deploy-build:
   dir: '${deploy.dir}/drush'
   command: 'find ''Commands'' -type d -name ''.git'' -exec rm -fr {} +'
+disable-targets:
+  tests:
+    phpcs:
+      sniff:
+        all: true
+        files: true

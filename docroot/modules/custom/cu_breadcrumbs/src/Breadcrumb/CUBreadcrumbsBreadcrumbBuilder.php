@@ -15,6 +15,7 @@ use Drupal\Component\Utility\UrlHelper;
  * Creates breadcrumbs for content pages and news/spotlight content types.
  */
 class CUBreadcrumbsBreadcrumbBuilder implements BreadcrumbBuilderInterface {
+
   /**
    * Checks content type of current node to determine if it gets a breadcrumb.
    */
