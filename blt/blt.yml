@@ -27,3 +27,6 @@ disable-targets:
       sniff:
         all: true
         files: true
+    twig:
+      lint:
+        all: true
