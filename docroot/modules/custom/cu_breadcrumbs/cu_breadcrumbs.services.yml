@@ -4,4 +4,3 @@ services:
    class: Drupal\cu_breadcrumbs\Breadcrumb\CUBreadcrumbsBreadcrumbBuilder
    tags:
     - { name: breadcrumb_builder, priority: 100 }
-    

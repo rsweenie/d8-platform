@@ -17,39 +17,36 @@
  * designed to only load the necessary files when a given theme hook is invoked.
  */
 
-/* 
+/**
  * Determine if current page is in main menu and put together breadcrumbs.
  */
-
 function cu2017_preprocess_page(&$variables) {
-	$variables['inMainNav'] = 0;
-	$menu_name = 'main';
-	$menu_tree = \Drupal::menuTree();
-	$parameters = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
-	$tree = $menu_tree->load($menu_name, $parameters);
-	$tree_keys = array_keys($tree);
-	$count = count($tree_keys);
-	for ($i = 0; $i < $count; $i++) {
-		if ($tree[$tree_keys[$i]]->inActiveTrail) {
-			$variables['inMainNav'] = 1;
-		}
-	}
+  $variables['inMainNav'] = 0;
+  $menu_name = 'main';
+  $menu_tree = \Drupal::menuTree();
+  $parameters = $menu_tree->getCurrentRouteMenuTreeParameters($menu_name);
+  $tree = $menu_tree->load($menu_name, $parameters);
+  $tree_keys = array_keys($tree);
+  $count = count($tree_keys);
+  for ($i = 0; $i < $count; $i++) {
+    if ($tree[$tree_keys[$i]]->inActiveTrail) {
+      $variables['inMainNav'] = 1;
+    }
+  }
 }
 
-/*
- * Check display type of news/spotlight content type
- * add appropriate file name to theme suggestions array
+/**
+ * Add appropriate file name to theme suggestions array for news/spotlight.
  */
-
 function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variables) {
-	$node = \Drupal::request()->attributes->get('node');
-	if ($node) {
-		$content_type = $node->getType();
-		if ($content_type == 'news_spotlight') {
-			$field_display = $node->get('field_display_type')->getValue();
-			$field_display = $field_display[0]['value'];
-			$field_display == 0 ? $display_type = 'spotlight' : $display_type = 'news';
-			$suggestions[] = 'node__' . $content_type . '__' . $display_type;
-		}
-	}
+  $node = \Drupal::request()->attributes->get('node');
+  if ($node) {
+    $content_type = $node->getType();
+    if ($content_type == 'news_spotlight') {
+      $field_display = $node->get('field_display_type')->getValue();
+      $field_display = $field_display[0]['value'];
+      $field_display == 0 ? $display_type = 'spotlight' : $display_type = 'news';
+      $suggestions[] = 'node__' . $content_type . '__' . $display_type;
+    }
+  }
 }

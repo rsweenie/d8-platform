@@ -23,4 +23,5 @@ class FooterBadgeBlock extends BlockBase {
       '#markup' => $this->t('<img src="/modules/custom/cu_footer_badge/images/badge.png" />'),
     ];
   }
+
 }
