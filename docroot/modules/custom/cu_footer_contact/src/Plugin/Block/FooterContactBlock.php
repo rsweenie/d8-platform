@@ -19,9 +19,8 @@ class FooterContactBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#markup' => $this->t('<p>2500 California Plaza | Omaha, NE 68178</p><p>402.280.2700 | <a href="https://www.creighton.edu">creighton.edu</a> | <a href="https://www.creighton.edu/ask">Ask a Question</a></p><h5>© 2018 Creighton University</h5>'),
-    );
+    ];
   }
-
 }

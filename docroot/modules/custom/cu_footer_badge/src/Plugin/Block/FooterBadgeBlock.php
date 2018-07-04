@@ -19,9 +19,8 @@ class FooterBadgeBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#markup' => $this->t('<img src="/modules/custom/cu_footer_badge/images/badge.png" />'),
-    );
+    ];
   }
-
 }
