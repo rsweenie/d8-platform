@@ -7,10 +7,13 @@ project:
   local:
     protocol: http
     hostname: 'local.${project.machine_name}.com'
+    uri: http://local.creighton.com
 git:
   default_branch: master
   remotes:
     - 'creighton@svn-1402.enterprise-g1.hosting.acquia.com:creighton.git'
+  hooks:
+    commit-msg: false
 drush:
   aliases:
     # remote: '${project.machine_name}.test'
