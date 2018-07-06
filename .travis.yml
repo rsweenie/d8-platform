@@ -24,24 +24,24 @@ cache:
   bundler: true
   apt: true
   directories:
-  - "$HOME/.composer/cache"
-  - "$HOME/.drush/cache"
-  - "$HOME/.npm"
-  - "$HOME/.nvm"
-  - ".rules"
+    - "$HOME/.composer/cache"
+    - "$HOME/.drush/cache"
+    - "$HOME/.npm"
+    - "$HOME/.nvm"
+    - ".rules"
   # Cache front end dependencies to dramatically improve build time.
   # - "docroot/themes/custom/mytheme/node_modules"
   # - "docroot/themes/custom/mytheme/bower_components"
 
 addons:
   ssh_known_hosts:
-  - svn-1402.enterprise-g1.hosting.acquia.com
+    - svn-1402.enterprise-g1.hosting.acquia.com
   chrome: stable
 
 # @see https://docs.travis-ci.com/user/notifications
 notifications:
 # - hipchat: [api token]@[room id or name]
-- slack: creightonuniversity:iSkHf85JV4Z9k2s7k5rwdIxy'
+  - slack: creightonuniversity:iSkHf85JV4Z9k2s7k5rwdIxy'
 
 before_install:
   # Disable xdebug.
