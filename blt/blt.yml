@@ -33,3 +33,5 @@ disable-targets:
     twig:
       lint:
         all: true
+    behat:
+      run: true
