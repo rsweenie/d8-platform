@@ -20,6 +20,7 @@
         "drupal/anchor_link": "^1.6",
         "drupal/auto_entitylabel": "^2.1@beta",
         "drupal/bootstrap": "^3.11",
+        "drupal/cer": "^4.0@alpha",
         "drupal/ckeditor_markdown": "^1.0",
         "drupal/coffee": "^1.0@beta",
         "drupal/conditional_fields": "^1.0@alpha",
