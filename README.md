@@ -227,3 +227,7 @@ BLT uses a number of configuration (.yml or .json) files to define and customize
 * [Bitbucket](https://bitbucket.org/creighton-software/drupal8_cu_acsf/)
 * [Acquia Cloud](https://cloud.acquia.com)
 * [Acquia Cloud Sitefactory](https://www.creighton.acsitefactory.com/)
+
+## Platform Documentation
+
+* [Shell Scripts](https://github.com/cu-webteam/d8-platform/blob/master/ShellScripts.md)
