@@ -22,7 +22,6 @@ class CUBreadcrumbsBreadcrumbBuilder implements BreadcrumbBuilderInterface {
      */
     public function applies(RouteMatchInterface $attributes) {
       $parameters = $attributes->getParameters()->all();
-      print_r($parameters['node']->getType());
       if (!empty($parameters['node'])) {
         if ($parameters['node']->getType() == 'content_page') {
           $item = $parameters['node']->getType() == 'content_page';
