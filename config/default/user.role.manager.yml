@@ -1,0 +1,14 @@
+uuid: 2c5c866f-e0a3-405c-a42d-93fee6d14004
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Not an editor, not an admin'
+id: manager
+label: Manager
+weight: 3
+is_admin: null
+permissions: {  }
