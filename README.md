@@ -2,6 +2,18 @@
 
 This project encompasses the Drupal 8 multisite platform for Creighton University marketing sites.
 
+## Table of Contents
+
+* [Getting Started](#getting-started)
+* [Virtual Machine](#virtual-machine)
+* [Get Code](#get-code)
+* [Local Environment Setup](#local-environment-setup)
+* [Further Setup](#further-setup)
+* [Additional Documentation](#additional-documentation)
+* [Working With a BLT Project](#working-with-a-blt-project)
+* [Resources](#resources)
+* [Platform Documentation](#platform-documentation)
+
 ## Getting Started
 
 This project is based on BLT, an open-source project template and tool that enables building, testing, and deploying Drupal installations following Acquia Professional Services best practices. While this is one of many methodologies, it is our recommended methodology.
