@@ -33,4 +33,4 @@ IFS='.' read -a name <<< "${uri}"
 $blt drupal:update --environment=$env --site=${name[0]} --define drush.uri=$domain --verbose --yes
 
 echo "Testing db-update hook"
-curl -X POST -H 'Content-type: application/json' --data '{"text":"Testing db-update.sh"}' https://hooks.slack.com/services/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
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Code+db updated on $domain"}' https://hooks.slack.com/services/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
