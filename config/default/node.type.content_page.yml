@@ -26,7 +26,7 @@ third_party_settings:
     unpublish_revision: true
 _core:
   default_config_hash: rwiMBcIFJJyIsukkTWnoI0cjKeESQrqywj6zXe5SqWM
-name: 'Content Testing Code Update Page'
+name: 'Content Page'
 type: content_page
 description: 'Use <em>content pages</em> for your static content, such as an ''About us'' page.'
 help: ''
