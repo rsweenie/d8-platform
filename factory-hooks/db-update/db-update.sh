@@ -26,10 +26,11 @@ blt="/var/www/html/$site.$env/vendor/acquia/blt/bin/blt"
 uri=`/usr/bin/env php /mnt/www/html/$site.$env/hooks/acquia/uri.php $site $env $db_role`
 
 # Print a statement to the cloud log.
-echo "$site.$target_env: Running BLT deploy tasks on $uri domain in $env environment on the $site subscription."
+echo "$site.$env: Running BLT deploy tasks on $uri domain in $env environment on the $site subscription."
 
 IFS='.' read -a name <<< "${uri}"
 
 $blt drupal:update --environment=$env --site=${name[0]} --define drush.uri=$domain --verbose --yes
 
 echo "Testing db-update hook"
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Testing db-update.sh"}' https://hooks.slack.com/services/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
