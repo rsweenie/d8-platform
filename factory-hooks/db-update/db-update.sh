@@ -31,6 +31,8 @@ echo "$site.$env: Running BLT deploy tasks on $uri domain in $env environment on
 IFS='.' read -a name <<< "${uri}"
 
 $blt drupal:update --environment=$env --site=${name[0]} --define drush.uri=$domain --verbose --yes
-echo "Running config import on $site.$env"
-drush @"$site.$env" config:import vcs -y
-curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $site.$env\"}" https://hooks.slack.com/services/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
+echo "Running config import on $uri"
+siteName="${uri%%.*}"
+subEnv="${env#01}"
+drush @"$siteName.$subEnv" config:import vcs -y
+curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$subEnv\"}" https://hooks.slack.com/services/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
