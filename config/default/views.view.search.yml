@@ -91,6 +91,7 @@ display:
               links: default
               featured_content: default
               news_spotlight: default
+              test_new_content_type: default
       fields:
         rendered:
           table: search_api_index_content
