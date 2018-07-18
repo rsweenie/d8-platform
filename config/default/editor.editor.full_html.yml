@@ -64,6 +64,10 @@ settings:
             - Subscript
             - HorizontalRule
             - ShowBlocks
+        -
+          name: Markdown
+          items:
+            - Markdown
   plugins:
     stylescombo:
       styles: ''
