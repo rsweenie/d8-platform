@@ -14,17 +14,31 @@ This project encompasses the Drupal 8 multisite platform for Creighton Universit
 * [Resources](#resources)
 * [Platform Documentation](#platform-documentation)
 
-## Getting Started
+## Getting Started (Mac)
 
 This project is based on BLT, an open-source project template and tool that enables building, testing, and deploying Drupal installations following Acquia Professional Services best practices. While this is one of many methodologies, it is our recommended methodology.
 
 * Review the [Required / Recommended Skills](http://blt.readthedocs.io/en/latest/readme/skills) for working with a BLT project
-* Ensure that your computer meets the minimum installation requirements (and then install the required applications). See the [System Requirements](http://blt.readthedocs.io/en/latest/INSTALL/#system-requirements).
+* Ensure that your computer meets the minimum installation requirements (and then install the required applications). See the [System Requirements](http://blt.readthedocs.io/en/latest/INSTALL/#system-requirements) for more information.
+  - If you don't have XCode installed:
+    * `sudo xcodebuild -license`
+    * `xcode-select --install`
+  - If you don't have Homebrew installed: 
+    * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  - PHP 7.1, Composer, and Git are required. Use Homebrew to install whichever dependencies are missing from your computer:
+    * `brew install php71 git composer`
+    * `composer global require "hirak/prestissimo:^0.3"`
+  - In order to run the Drupal VM, Virtualbox and Vagrant are required:
+    * `brew tap caskroom/cask`
+    * `brew cask install virtualbox vagrant`
+    * `vagrant plugin install vagrant-hostsupdater`
 * Request access to the Creighton Software Bitbucket team (if needed)
+* Request access to the cu-webteam github organization (if needed)
 * Request access to the Acquia Cloud Environment for your project (if needed)
 * Setup a SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
   * [Set up Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
   * [Set up Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
+  * [Set up Github SSH Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
 ## Virtual Machine
 
@@ -38,18 +52,13 @@ This project is based on BLT, an open-source project template and tool that enab
 ~ git clone git@github.com:cu-webteam/d8-platform.git
 ```
 
-* To ensure that upstream changes to the parent repository may be tracked, add the upstream locally as well.
-
-```command-line
-~ git remote add upstream git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
-~ git remote add upstream git@github.com:cu-webteam/d8-platform.git
-```
-
 ## Local Environment Setup
 
-BLT requires a of local environment that implements a LAMP stack. While out of the box templates are provided for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
+BLT requires a local environment that implements a LAMP stack. While out of the box templates are provided for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
 
 For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
+
+* Open the project directory in your preferred text editor/IDE
 
 * Create a `composer.required.json` in the blt directory and paste in the following:
 
@@ -191,7 +200,7 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ drush uli
 ```
 
-## Further Setup
+## Virtual Machine Setup
 
 BLT 9 and Drush 9 require all blt and drush commands to be executed inside of the VM. Because of this requirement, the VM must have SSH access to Acquia.
 
@@ -239,6 +248,7 @@ BLT uses a number of configuration (.yml or .json) files to define and customize
 ## Resources
 
 * [Bitbucket](https://bitbucket.org/creighton-software/drupal8_cu_acsf/)
+* [Github](https://github.com/cu-webteam/d8-platform)
 * [Acquia Cloud](https://cloud.acquia.com)
 * [Acquia Cloud Sitefactory](https://www.creighton.acsitefactory.com/)
 
