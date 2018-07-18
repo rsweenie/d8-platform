@@ -35,7 +35,7 @@ This project is based on BLT, an open-source project template and tool that enab
 * Request access to the Creighton Software Bitbucket team (if needed)
 * Request access to the cu-webteam github organization (if needed)
 * Request access to the Acquia Cloud Environment for your project (if needed)
-* Setup a SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
+* Set up an SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
   * [Set up Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
   * [Set up Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
   * [Set up Github SSH Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
