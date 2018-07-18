@@ -35,12 +35,14 @@ This project is based on BLT, an open-source project template and tool that enab
 
 ```command-line
 ~ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
+~ git clone git@github.com:cu-webteam/d8-platform.git
 ```
 
 * To ensure that upstream changes to the parent repository may be tracked, add the upstream locally as well.
 
 ```command-line
 ~ git remote add upstream git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
+~ git remote add upstream git@github.com:cu-webteam/d8-platform.git
 ```
 
 ## Local Environment Setup
