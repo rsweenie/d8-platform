@@ -91,6 +91,7 @@ display:
               links: default
               featured_content: default
               news_spotlight: default
+              documentation: default
       fields:
         rendered:
           table: search_api_index_content

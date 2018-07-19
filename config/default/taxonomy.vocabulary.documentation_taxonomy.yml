@@ -1,0 +1,9 @@
+uuid: 011fab96-05d0-4874-8745-6b65cd98bd06
+langcode: en
+status: true
+dependencies: {  }
+name: 'Documentation Taxonomy'
+vid: documentation_taxonomy
+description: 'Taxonomy for the Documentation content type.'
+hierarchy: 0
+weight: 0

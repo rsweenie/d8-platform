@@ -37,6 +37,7 @@ field_settings:
           links: default
           featured_content: default
           news_spotlight: default
+          documentation: default
   label:
     label: Label
     property_path: aggregated_field
