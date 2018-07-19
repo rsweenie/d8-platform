@@ -35,23 +35,23 @@ content:
     weight: 2
     label: inline
     settings:
-      link: true
+      link: false 
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_last_updated_by:
     weight: 0
     label: inline
-    settings:
-      link: true
+    settings: 
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: author
     region: content
   field_last_updated_on:
     weight: 1
     label: inline
     settings:
-      timezone_override: ''
+      timezone_override: America/Chicago
     third_party_settings: {  }
     type: datetime_plain
     region: content

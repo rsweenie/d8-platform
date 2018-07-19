@@ -36,3 +36,5 @@ content:
     type: private
 hidden:
   field_documentation_taxonomy: true
+  field_last_updated_by: true
+  field_last_updated_on: true 
