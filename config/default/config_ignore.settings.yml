@@ -1,5 +1,6 @@
 ignored_config_entities:
   0: system.file
   2: system.site
+  # 4: reserved for samlauth, only added during db-update.sh
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
