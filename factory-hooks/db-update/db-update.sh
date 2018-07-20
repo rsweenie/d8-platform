@@ -42,7 +42,7 @@ siteName="${uri%%.*}"
 subEnv="${env#01}"
 
 # Temporarily add samlauth to config ignore
-drush @"$siteName.$subEnv" config:set config_ignore.settings ignored_config_entities.4 samlauth.authentication -y
+# drush @"$siteName.$subEnv" config:set config_ignore.settings ignored_config_entities.4 samlauth.authentication -y
 
 # Config import any changes just pushed to the code base
 drush @"$siteName.$subEnv" config:import vcs -y
