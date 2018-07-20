@@ -15,3 +15,6 @@ idp_entity_id: 'https://www.test-creighton.acsitefactory.com/sso/saml2/idp/metad
 sp_entity_id: 'urn:acquia:acsf:saml:sp:creighton:01test:711'
 idp_single_sign_on_service: 'https://www.test-creighton.acsitefactory.com/sso/saml2/idp/SSOService.php'
 idp_single_log_out_service: 'https://www.test-creighton.acsitefactory.com/sso/saml2/idp/SingleLogoutService.php'
+sp_private_key:
+sp_x509_certificate:
+idp_x509_certificate:
