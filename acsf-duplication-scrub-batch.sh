@@ -14,7 +14,7 @@ do
             if grep -wq "$env" $file ;
             then
                 echo "Scrubbing $siteName $env ..."
-                drush @$siteName.$env acsf-duplication-scrub-batch $siteName creighton
+                drush @"$siteName"."$env" acsf-duplication-scrub-batch "$siteName" creighton
             fi;
         done
     fi;
