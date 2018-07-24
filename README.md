@@ -32,11 +32,9 @@ This project is based on BLT, an open-source project template and tool that enab
     * `brew tap caskroom/cask`
     * `brew cask install virtualbox vagrant`
     * `vagrant plugin install vagrant-hostsupdater`
-* Request access to the Creighton Software Bitbucket team (if needed)
 * Request access to the cu-webteam github organization (if needed)
 * Request access to the Acquia Cloud Environment for your project (if needed)
 * Set up an SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
-  * [Set up Bitbucket SSH Keys](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
   * [Set up Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
   * [Set up Github SSH Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 
@@ -47,8 +45,7 @@ This project is based on BLT, an open-source project template and tool that enab
 
 ## Get Code
 
-```command-line
-~ git clone git@bitbucket.org:creighton-software/drupal8_cu_acsf.git
+```shell
 ~ git clone git@github.com:cu-webteam/d8-platform.git
 ```
 
@@ -163,31 +160,13 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 
 * Install Composer Dependencies (warning: this can take some time based on internet speeds)
 
-```command-line
+```shell
 ~ composer install
 ```
 
-* Create a `Vagrantfile` and paste the following
+* Create a `Vagrantfile` and add the following:
 
 ```shell
-# The absolute path to the root directory of the project. Both Drupal VM and
-# the config file need to be contained within this path.
-ENV['DRUPALVM_PROJECT_ROOT'] = "#{__dir__}"
-
-# The relative path from the project root to the config directory where you
-# placed your config.yml file.
-ENV['DRUPALVM_CONFIG_DIR'] = "box"
-
-# The relative path from the project root to the directory where Drupal VM is located.
-ENV['DRUPALVM_DIR'] = "vendor/geerlingguy/drupal-vm"
-
-# Load the real Vagrantfile
-load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
-```
-
-* Put the following in the Vagrantfile:
-
-```
 # The absolute path to the root directory of the project. Both Drupal VM and
 # the config file need to be contained within this path.
 ENV['DRUPALVM_PROJECT_ROOT'] = "#{__dir__}"
@@ -207,7 +186,7 @@ load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 
 * Build the vm using BLT
 
-```command-line
+```shell
 ~ blt vm
 ```
   a) Drupal VM is not currently installed. Install it now? (y/n) `y`
@@ -218,7 +197,7 @@ load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 
   d) creighton: Pruning invalid NFS exports. Administrator privileges will be required...
 
-```command-line
+```shell
 ~ vagrant ssh
 ~ blt setup
 ```
@@ -227,7 +206,7 @@ load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 
 * Access the site and do necessary work at local.creighton.com by running
 
-```command-line
+```shell
 ~ drush uli
 ```
 
@@ -235,7 +214,7 @@ load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 
 BLT 9 and Drush 9 require all blt and drush commands to be executed inside of the VM. Because of this requirement, the VM must have SSH access to Acquia.
 
-```command-line
+```shell
 ~ cd ~/.ssh
 ~ ssh-keygen -b 4096
 ```
@@ -248,7 +227,7 @@ BLT 9 and Drush 9 require all blt and drush commands to be executed inside of th
 
 Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may also access a list of BLT commands by running
 
-```command-line
+```shell
 ~ blt
 ```
 
