@@ -173,6 +173,24 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ touch Vagrantfile
 ```
 
+* Put the following in the Vagrantfile:
+
+```
+# The absolute path to the root directory of the project. Both Drupal VM and
+# the config file need to be contained within this path.
+ENV['DRUPALVM_PROJECT_ROOT'] = "#{__dir__}"
+
+# The relative path from the project root to the config directory where you
+# placed your config.yml file.
+ENV['DRUPALVM_CONFIG_DIR'] = "box"
+
+# The relative path from the project root to the directory where Drupal VM is located.
+ENV['DRUPALVM_DIR'] = "vendor/geerlingguy/drupal-vm"
+
+# Load the real Vagrantfile
+load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
+```
+
 * Create a file in the blt directory named `local.blt.yml`
 
 ```command-line
@@ -255,3 +273,4 @@ BLT uses a number of configuration (.yml or .json) files to define and customize
 ## Platform Documentation
 
 * [Shell Scripts](https://github.com/cu-webteam/d8-platform/blob/master/ShellScripts.md)
+* [D8 Development Process](https://github.com/cu-webteam/d8-platform/blob/master/d8dev.md)
