@@ -167,10 +167,22 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ composer install
 ```
 
-* Create Vagrantfile
+* Create a `Vagrantfile` and paste the following
 
-```command-line
-~ touch Vagrantfile
+```shell
+# The absolute path to the root directory of the project. Both Drupal VM and
+# the config file need to be contained within this path.
+ENV['DRUPALVM_PROJECT_ROOT'] = "#{__dir__}"
+
+# The relative path from the project root to the config directory where you
+# placed your config.yml file.
+ENV['DRUPALVM_CONFIG_DIR'] = "box"
+
+# The relative path from the project root to the directory where Drupal VM is located.
+ENV['DRUPALVM_DIR'] = "vendor/geerlingguy/drupal-vm"
+
+# Load the real Vagrantfile
+load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 ```
 
 * Put the following in the Vagrantfile:
@@ -193,10 +205,11 @@ load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 
 * Create a file in the blt directory named `local.blt.yml`
 
+* Build the vm using BLT
+
 ```command-line
 ~ blt vm
 ```
-
   a) Drupal VM is not currently installed. Install it now? (y/n) `y`
 
   b) Which base box would you like to use? `0`
