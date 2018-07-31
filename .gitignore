@@ -278,13 +278,10 @@ project.local.yml
 docroot/core
 
 # Ignore paths that contain user-generated content.
-docroot/sites/*
 docroot/sites/blt.development.services.yml
 docroot/sites/development.services.yml
 docroot/sites/example.settings.local.php
 docroot/sites/example.sites.php
-!docroot/sites/sites.php
-!docroot/sites/default
 docroot/sites/default/files
 
 

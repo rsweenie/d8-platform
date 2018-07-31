@@ -9,7 +9,9 @@
 
     {% if content.field_header_background_image.0|render %}
         <div class="header_image" id="header_image">
-            {{ content.field_header_background_image.0 }}
+            {% set image = content.field_header_background_image.0 %}
+            {% set image = image|merge({'#image_style': 'rectangle_horizontal_header_2400x600_'}) %}
+            {{ image }}
         </div>
     {% endif %}
 
