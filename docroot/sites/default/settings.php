@@ -541,7 +541,14 @@ if ($settings['hash_salt']) {
  * must exist and be writable by Drupal. This directory must be relative to
  * the Drupal installation directory and be accessible over the web.
  */
-# $settings['file_public_path'] = 'sites/default/files';
+// The sites.inc should have these variables populated when on ACSF.
+if (!empty($_ENV['AH_SITE_GROUP']) && !empty($_ENV['AH_SITE_ENVIRONMENT']) && function_exists('gardens_site_data_get_filepath') && file_exists(gardens_site_data_get_filepath())) {
+  $settings['file_public_path'] = 'sites/default/files';
+  print_r('yes');
+} else {
+  $settings['file_public_path'] = 'sites/default/files';
+  print_r('no');
+}
 
 /**
  * Private file path:

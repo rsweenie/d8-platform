@@ -9,15 +9,14 @@ project:
     hostname: 'local.${project.machine_name}.com'
     uri: http://local.creighton.com
 git:
-  default_branch: master
+  default_branch: master-build
   remotes:
     - 'creighton@svn-1402.enterprise-g1.hosting.acquia.com:creighton.git'
   hooks:
     commit-msg: false
 drush:
   aliases:
-    # remote: '${project.machine_name}.test'
-    remote: '01dev.dev'
+    remote: '${project.machine_name}.test'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'

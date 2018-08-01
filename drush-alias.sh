@@ -1,5 +1,6 @@
 #!/bin/sh
 # Generate ACSF site aliases for all three environments
+
 echo 'Please enter the site name: '
 read site_name
 
