@@ -38,4 +38,4 @@ done < <(drush $site_alias core:status)
 # [preflight] The alias @$site_alias could not be found.
 
 # Copies images with image styles from the selected Acquia site to the local environment
-eval drush --debug --exclude-paths /acsf_tmp:/bootstrap:/media-icons:/xmlsitemap:/.htaccess "$site_alias:/var/www/html/creighton.01$env/docroot/$file_path @self:/var/www/creighton/docroot/sites/default/ -y"
+eval drush rsync --debug --exclude-paths /acsf_tmp:/bootstrap:/media-icons:/xmlsitemap:/.htaccess "$site_alias:/var/www/html/creighton.01$env/docroot/$file_path @self:/var/www/creighton/docroot/sites/default/ -y"

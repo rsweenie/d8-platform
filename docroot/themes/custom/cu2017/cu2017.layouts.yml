@@ -105,3 +105,12 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
+kasey_test:
+  label: Front Page KLM
+  category: Creighton Layouts
+  template: templates/front-page-klm
+  regions:
+    top:
+      label: Top Section
+    middle:
+      label: Middle Section
