@@ -109,6 +109,8 @@ kasey_test:
   label: Front Page KLM
   category: Creighton Layouts
   template: templates/front-page-klm
+  path: templates/layouts/icons
+  icon: 9-three-section-split-preview.png
   regions:
     top:
       label: Top Section
