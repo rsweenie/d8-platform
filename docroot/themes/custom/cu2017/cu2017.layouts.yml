@@ -105,23 +105,13 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
-# three_section_split_2:
-#   label: NEW Three Section Split
-#   category: Creighton Layouts
-#   template: templates/flex-three-section-split-2
-#   path: templates/layouts/icons
-#   icon: 9-three-section-split-preview.png
-#   regions:
-#     top:
-#       label: Top Section
-#     left:
-#       label: Left Column
-#     right:
-#       label: Right Column
 three_section_split_2:
   label: New Three Section Split
-  category: Creighton Layouts
+  category: Creighton Front Page Layouts 
   template: templates/flex-three-section-split-2
+  icon_map:
+    - [top]
+    - [middle]
   regions:
     top:
       label: Top Section
