@@ -108,7 +108,7 @@ three_section_split:
 kasey_test:
   label: Front Page KLM
   category: Creighton Layouts
-  template: templates/front-page-klm
+  template: templates/layouts/front-page-klm
   path: templates/layouts/icons
   icon: 9-three-section-split-preview.png
   regions:
