@@ -105,14 +105,16 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
-kasey_test:
-  label: Front Page KLM
+three_section_split_2:
+  label: NEW Three Section Split
   category: Creighton Layouts
-  template: templates/layouts/front-page-klm
+  template: templates/flex-three-section-split-2
   path: templates/layouts/icons
   icon: 9-three-section-split-preview.png
   regions:
     top:
       label: Top Section
-    middle:
-      label: Middle Section
+    left:
+      label: Left Column
+    right:
+      label: Right Column
