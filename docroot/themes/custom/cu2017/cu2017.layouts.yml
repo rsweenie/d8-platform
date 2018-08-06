@@ -105,3 +105,35 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
+front-page-classic:
+  label: Front Page Classic
+  category: Front Page Layouts
+  template: templates/front-page-classic
+  icon_map:
+    - [top]
+    - [first]
+    - [middle]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First 
+    middle:
+      label: middle
+    bottom:
+      label: bottom
+front_page_two_column:
+  label: Front Page Two Column
+  category: Front Page Layouts
+  template: templates/front-page-two-column
+  icon_map:
+    - [top]
+    - [left, right]
+  regions:
+    top:
+      label: Top Section
+    left:
+      label: Left Sidebar
+    right:
+      label: Right Section
