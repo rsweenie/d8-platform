@@ -105,3 +105,16 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
+one_section:
+  label: One Section
+  category: Creighton Layouts
+  template: templates/one_section
+  path: templates/layouts/icons
+  icon: 9-three-section-split-preview.png
+  regions:
+    top:
+      label: Top Section
+    middle:
+      label: Middle Section
+    bottom:
+      label: Bottom Section
