@@ -8,8 +8,7 @@ This project encompasses the Drupal 8 multisite platform for Creighton Universit
 * [Get Code](#get-code)
 * [Local Environment Setup](#local-environment-setup)
 * [Virtual Machine](#virtual-machine)
-* [Further Setup](#further-setup)
-* [Working With BLT](#working-with-blt-)
+* [Working With BLT](#working-with-blt)
 * [Resources](#resources)
 * [Platform Documentation](#platform-documentation)
 
