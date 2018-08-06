@@ -544,10 +544,8 @@ if ($settings['hash_salt']) {
 // The sites.inc should have these variables populated when on ACSF.
 if (!empty($_ENV['AH_SITE_GROUP']) && !empty($_ENV['AH_SITE_ENVIRONMENT']) && function_exists('gardens_site_data_get_filepath') && file_exists(gardens_site_data_get_filepath())) {
   $settings['file_public_path'] = 'sites/default/files';
-  print_r('yes');
 } else {
   $settings['file_public_path'] = 'sites/default/files';
-  print_r('no');
 }
 
 /**
