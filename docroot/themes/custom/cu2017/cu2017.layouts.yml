@@ -105,18 +105,3 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
-new_three_section_split:
-  label: New Three Section Split
-  category: Creighton Layouts
-  template: templates/flex-new-three-section-split
-  path: templates/layouts/icons
-  icon_map:
-    - [top]
-    - [left, right]
-  regions:
-    top:
-      label: Top Section
-    left:
-      label: Left Column
-    right:
-      label: Right Column
