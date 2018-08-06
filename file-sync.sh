@@ -4,12 +4,12 @@
 echo 'Please enter the name of the site you would like to copy files from: '
 read site_name
 echo 'Please select the environment to copy files from: '
-options=('dev' 'test' 'live')
+options=('01dev' '01test' '01live')
 declare env
 select option in "${options[@]}"
 do
     case $option in 
-        'dev'|'test'|'live')
+        '01dev'|'01test'|'01live')
             env=$option
             break
             ;;
@@ -38,4 +38,4 @@ done < <(drush $site_alias core:status)
 # [preflight] The alias @$site_alias could not be found.
 
 # Copies images with image styles from the selected Acquia site to the local environment
-eval drush rsync --debug --exclude-paths /acsf_tmp:/bootstrap:/media-icons:/xmlsitemap:/.htaccess "$site_alias:/var/www/html/creighton.01$env/docroot/$file_path @self:/var/www/creighton/docroot/sites/default/ -y"
+eval drush rsync --debug --exclude-paths /acsf_tmp:/bootstrap:/media-icons:/xmlsitemap:/.htaccess "$site_alias:/var/www/html/creighton.$env/docroot/$file_path @self:/var/www/creighton/docroot/sites/default/ -y"
