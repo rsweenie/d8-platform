@@ -4,13 +4,12 @@ This project encompasses the Drupal 8 multisite platform for Creighton Universit
 
 ## Table of Contents
 
-* [Getting Started](#getting-started)
-* [Virtual Machine](#virtual-machine)
+* [Getting Started - Mac](#getting-started)
 * [Get Code](#get-code)
 * [Local Environment Setup](#local-environment-setup)
+* [Virtual Machine](#virtual-machine)
 * [Further Setup](#further-setup)
-* [Additional Documentation](#additional-documentation)
-* [Working With a BLT Project](#working-with-a-blt-project)
+* [Working With BLT](#working-with-a-blt-project)
 * [Resources](#resources)
 * [Platform Documentation](#platform-documentation)
 
@@ -32,16 +31,11 @@ This project is based on BLT, an open-source project template and tool that enab
     * `brew tap caskroom/cask`
     * `brew cask install virtualbox vagrant`
     * `vagrant plugin install vagrant-hostsupdater`
-* Request access to the cu-webteam github organization (if needed)
-* Request access to the Acquia Cloud Environment for your project (if needed)
-* Set up an SSH key that can be used for Bitbucket and the Acquia Cloud (you CAN use the same key)
+* Request access to the cu-webteam github organization 
+* Request access to the Acquia Cloud Environment for your project 
+* Set up an SSH key that can be used for Github and Acquia Cloud (you CAN use the same key)
   * [Set up Acquia Cloud SSH Keys](https://docs.acquia.com/acquia-cloud/ssh/generate)
   * [Set up Github SSH Keys](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-
-## Virtual Machine
-
-* Check VirtualBox to ensure that you do not already have a VM named local.creighton.com - if you do, delete it. When prompted, select 'remove all files'.
-* Check your hosts file to ensure that you do not already have entries for local.creighton.com - if you do, delete them.
 
 ## Get Code
 
@@ -162,6 +156,11 @@ BLT requires a local environment that implements a LAMP stack. While out of the 
 ~ composer install
 ```
 
+## Virtual Machine
+
+* Check VirtualBox to ensure that you do not already have a VM named local.creighton.com - if you do, delete it. When prompted, select 'remove all files'.
+* Check your hosts file to ensure that you do not already have entries for local.creighton.com - if you do, delete them.
+
 * Create a file in the blt directory named `local.blt.yml`
 
 * Build the vm using BLT
@@ -190,8 +189,6 @@ BLT requires a local environment that implements a LAMP stack. While out of the 
 ~ drush uli
 ```
 
-## Virtual Machine Setup
-
 BLT 9 and Drush 9 require all blt and drush commands to be executed inside of the VM. Because of this requirement, the VM must have SSH access to Acquia.
 
 ```shell
@@ -203,7 +200,7 @@ BLT 9 and Drush 9 require all blt and drush commands to be executed inside of th
 
 * Install Drush Launcher, using the instructions in [this](https://github.com/drush-ops/drush-launcher) Github repository.
 
-## Additional Documentation
+## Working With BLT
 
 Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may also access a list of BLT commands by running
 
@@ -217,8 +214,6 @@ Note the following properties of this project:
   * feature branching - branching per feature
 * Local environment: local
 * Local site URL: local.creighton.com
-
-## Working With a BLT Project
 
 BLT projects are designed to instill software development best practices (including git workflows).
 
