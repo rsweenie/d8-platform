@@ -26,7 +26,7 @@ This project is based on BLT, an open-source project template and tool that enab
   - If you don't have Homebrew installed: 
     * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   - PHP 7.1, Composer, and Git are required. Use Homebrew to install whichever dependencies are missing from your computer:
-    * `brew install php71 git composer`
+    * `brew install php71 mcrypt git composer`
     * `composer global require "hirak/prestissimo:^0.3"`
   - In order to run the Drupal VM, Virtualbox and Vagrant are required:
     * `brew tap caskroom/cask`
@@ -52,8 +52,6 @@ This project is based on BLT, an open-source project template and tool that enab
 ## Local Environment Setup
 
 BLT requires a local environment that implements a LAMP stack. While out of the box templates are provided for Drupal VM, if you prefer you can use another tool such as Docker, Docksal, Lando, (other) Vagrant, or your own custom LAMP stack. BLT works with any local environment, however support is limited for these solutions.
-
-For instructions on setting up Drupal VM, read our documentation [here](http://blt.readthedocs.io/en/9.x/readme/local-development/#using-drupal-vm-for-blt-generated-projects).
 
 * Open the project directory in your preferred text editor/IDE
 
@@ -216,7 +214,6 @@ Additional [BLT documentation](http://blt.readthedocs.io) may be useful. You may
 Note the following properties of this project:
 
 * Primary development branch: master - deploys to dev environment in ACSF
-  * dev branching - named branch for each developer
   * feature branching - branching per feature
 * Local environment: local
 * Local site URL: local.creighton.com
@@ -233,9 +230,9 @@ BLT uses a number of configuration (.yml or .json) files to define and customize
 
 * `blt/blt.yml` (formerly `blt/project.yml` prior to BLT 9.x)
 * `blt/local.blt.yml`
-* `box/config.yml` (if using Drupal VM)
-* `drush/sites` (contains Drush aliases for this project)
-* `composer.json` (includes required components, including Drupal Modules, for this project)
+* `box/config.yml` - Drupal VM configuration
+* `drush/sites` - contains Drush aliases for this project
+* `composer.json` - includes required components, including Drupal Modules, for this project
 
 ## Resources
 
