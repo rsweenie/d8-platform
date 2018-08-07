@@ -20,15 +20,15 @@ This project is based on BLT, an open-source project template and tool that enab
 
 * Review the [Required / Recommended Skills](http://blt.readthedocs.io/en/latest/readme/skills) for working with a BLT project
 * Ensure that your computer meets the minimum installation requirements (and then install the required applications). See the [System Requirements](http://blt.readthedocs.io/en/latest/INSTALL/#system-requirements) for more information.
-  - If you don't have XCode installed:
+  * If you don't have XCode installed:
     * `sudo xcodebuild -license`
     * `xcode-select --install`
-  - If you don't have Homebrew installed: 
+  * If you don't have Homebrew installed:
     * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  - PHP 7.1, Composer, and Git are required. Use Homebrew to install whichever dependencies are missing from your computer:
+  * PHP 7.1, Composer, and Git are required. Use Homebrew to install whichever dependencies are missing from your computer:
     * `brew install php71 git composer`
     * `composer global require "hirak/prestissimo:^0.3"`
-  - In order to run the Drupal VM, Virtualbox and Vagrant are required:
+  * In order to run the Drupal VM, Virtualbox and Vagrant are required:
     * `brew tap caskroom/cask`
     * `brew cask install virtualbox vagrant`
     * `vagrant plugin install vagrant-hostsupdater`
@@ -164,24 +164,6 @@ For instructions on setting up Drupal VM, read our documentation [here](http://b
 ~ composer install
 ```
 
-* Create a `Vagrantfile` and add the following:
-
-```shell
-# The absolute path to the root directory of the project. Both Drupal VM and
-# the config file need to be contained within this path.
-ENV['DRUPALVM_PROJECT_ROOT'] = "#{__dir__}"
-
-# The relative path from the project root to the config directory where you
-# placed your config.yml file.
-ENV['DRUPALVM_CONFIG_DIR'] = "box"
-
-# The relative path from the project root to the directory where Drupal VM is located.
-ENV['DRUPALVM_DIR'] = "vendor/geerlingguy/drupal-vm"
-
-# Load the real Vagrantfile
-load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
-```
-
 * Create a file in the blt directory named `local.blt.yml`
 
 * Build the vm using BLT
@@ -189,6 +171,7 @@ load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 ```shell
 ~ blt vm
 ```
+
   a) Drupal VM is not currently installed. Install it now? (y/n) `y`
 
   b) Which base box would you like to use? `0`
