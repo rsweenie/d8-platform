@@ -50,5 +50,5 @@ drush @"$siteName.$subEnv" config:import vcs -y
 # Scrubbing functions to fix login errors
 drush @"$siteName.$subEnv" acsf-duplication-scrub-batch "$siteName" "$site"
 # echo drush @"$siteName.$subEnv" acsf-duplication-scrub-batch "$siteName" "$site"
-# Push a notification to the #edw channel on slack
-curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$subEnv\"}" https://hooks.slack.com/services/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
+# Push a notification to the #acsf_site_updates channel on slack
+curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$subEnv\"}" https://hooks.slack.com/services/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
