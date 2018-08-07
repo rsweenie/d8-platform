@@ -7,7 +7,7 @@ project:
   local:
     protocol: http
     hostname: 'local.${project.machine_name}.com'
-    uri: http://local.creighton.com
+    uri: 'http://local.creighton.com'
 git:
   default_branch: master-build
   remotes:
@@ -20,20 +20,6 @@ drush:
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
-post-deploy-build:
-  dir: '${deploy.dir}/drush'
-  command: 'find ''Commands'' -type d -name ''.git'' -exec rm -fr {} +'
-disable-targets:
-  tests:
-    phpcs:
-      sniff:
-        all: true
-        files: true
-    twig:
-      lint:
-        all: true
-    behat:
-      run: true
 modules:
   local:
     enable: [dblog, devel, seckit, views_ui]
@@ -50,3 +36,11 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
+post-deploy-build:
+  dir: '${deploy.dir}/drush'
+  command: 'find ''Commands'' -type d -name ''.git'' -exec rm -fr {} +'
+disable-targets:
+  tests:
+    phpcs: { sniff: { all: true, files: true } }
+    twig: { lint: { all: true } }
+    behat: { run: true }

@@ -3,6 +3,9 @@ local.*
 *.local
 local.blt.yml
 
+# Ignore drupal core.
+docroot/core
+
 # Ignore paths that contain user-generated content.
 /docroot/sites/*/files/
 /docroot/sites/*/private/
@@ -398,10 +401,16 @@ docroot/libraries/highlight/
 
 # Visual Studio Code
 .vscode/
+#NPM
+npm-debug.log
 
 # Deployment Artifact / Identifier
 deploy/
 deployment_identifier
+# Drush 9 Checksums
+drush/sites/.checksums
 
 # History
 .history/
+# Deprecation detector rules
+.rules
