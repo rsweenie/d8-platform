@@ -412,3 +412,6 @@ drush/sites/.checksums
 
 # Hide our history
 .history/
+
+# Deployment identifier
+deployment_identifier
