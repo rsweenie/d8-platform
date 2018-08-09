@@ -105,35 +105,37 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
-front-page-classic:
+front_page_two_column:
+  label: Front Page Two Column
+  category: Creighton Front Page
+  template: templates/front-page-two-column
+  path: templates/layouts/icons
+  icon: 9-three-section-split-preview.png
+  regions:
+    top:
+      label: Top
+    left:
+      label: left
+    right:
+      label: right
+front_page_classic:
   label: Front Page Classic
-  category: Front Page Layouts
+  category: Creighton Front Page
   template: templates/front-page-classic
-  icon_map:
-    - [top]
-    - [first]
-    - [middle]
-    - [bottom]
+  path: templates/layouts/icons
+  icon: 9-three-section-split-preview.png
   regions:
     top:
       label: Top
     first:
-      label: First 
+      label: first
+    ctas:
+      label: calls to action
     middle:
       label: middle
-    bottom:
-      label: bottom
-front_page_two_column:
-  label: Front Page Two Column
-  category: Front Page Layouts
-  template: templates/front-page-two-column
-  icon_map:
-    - [top]
-    - [left, right]
-  regions:
-    top:
-      label: Top Section
-    left:
-      label: Left Sidebar
-    right:
-      label: Right Section
+    bottom_callout:
+      label: bottom callout
+    bottom_feed:
+      label: bottom feed
+
+
