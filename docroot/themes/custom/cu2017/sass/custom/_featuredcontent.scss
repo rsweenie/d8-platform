@@ -1,40 +1,196 @@
-// added styles from the wrike ticket with placeholder class names 
-.featured_content_wrapper {
+@mixin featured-content {
 	background-color: $darkBlue;
 	display: flex;
-	flex-flow: row nowrap;
+
+	.featured_content_image {
+		img {
+			margin-bottom: 0;
+		}
+	}
 
 	.featured_content_content {
 		display: flex;
 		flex-flow: column nowrap;
+		padding: 10px;
+	}
 
-		.featured_content_link {
-			a {
-				&:hover {
-					text-decoration: none;
-				}
+	.featured_content_link {
+		a {
+			&:hover {
+				text-decoration: none;
 
 				li {
-					color: $yellow;
-					font-family: $condensedFont;
-					font-size: 24px;
-					font-weight: $bold;
+					color: $white;
 				}
 			}
 		}
 
-		.featured_content_body {
-			color: $white;
+		li {
+			color: $yellow;
+			font-family: $condensedFont;
+			font-size: 24px;
+			font-weight: $bold;
+			list-style: none;
+			text-transform: uppercase;
+		}
+	}
+
+	.featured_content_body {
+		color: $white;
+		font-family: $baseFont;
+		font-size: $baseFontSize;
+	}
+
+	.featured_content_additional_links {
+		a {
+			color: $yellow;
 			font-family: $baseFont;
 			font-size: $baseFontSize;
+			text-decoration: underline;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+.featured_content_wrapper {
+	// mobile = always vertical
+	@include respond-to(null , mobile-max) {
+		.desktop_horizontal,
+		.desktop_vertical {
+			@include featured-content;
+			flex-flow: column nowrap;
+			max-width: 275px;
+		}
+	}
+
+	// tablet, lg-tablet = always horizontal
+	@include respond-to(tablet-min , lg-tablet-max) {
+		.desktop_horizontal,
+		.desktop_vertical {
+			@include featured-content;
+			flex-flow: row nowrap;
+		}
+	}
+
+	// desktop = choice of orientation
+	@include respond-to(desktop-min , null) {
+		.desktop_horizontal {
+			@include featured-content;
+			flex-flow: row nowrap;
+			img {
+				max-width: 275px;
+			}
 		}
 
-		.featured_content_additional_links {
-			a {
-				color: $yellow;
-				font-family: $baseFont;
-				font-size: $baseFontSize;
-				text-decoration: underline;
+		.desktop_vertical {
+			@include featured-content;
+			flex-flow: column nowrap;
+			height: 100%;
+			max-width: 275px;
+		}
+	}
+}
+
+// test for paragraph method of displaying featured content 
+.desktop_horizontal {
+	.field--items {
+		display: grid;
+		grid-row-gap: 50px;
+		grid-template-columns: 1fr;
+
+		.featured_content_item_wrapper {
+			// mobile = always vertical
+			@include respond-to(null , mobile-max) {
+				@include featured-content;
+				flex-flow: column nowrap;
+				max-width: 395px;
+			}
+
+			// tablet = always horizontal
+			@include respond-to(tablet-min , tablet-max) {
+				@include featured-content;
+				flex-flow: row nowrap;
+
+				img {
+					max-width: 275px;
+				}
+			}
+
+			// lg-tablet = always horizontal
+			@include respond-to(lg-tablet-min , lg-tablet-max) {
+				@include featured-content;
+				flex-flow: row nowrap;
+
+				img {
+					max-width: 186px;
+				}
+			}
+
+			// desktop = choice of orientation
+			@include respond-to(desktop-min , null) {
+				@include featured-content;
+				flex-flow: row nowrap;
+
+				img {
+					max-width: 296px;
+				}
+			}
+		}
+	}
+}
+
+.desktop_vertical {
+	.field--items {
+		display: grid;
+		grid-row-gap: 50px;
+		grid-template-columns: 1fr;
+
+		// desktop = choice of orientation
+		@include respond-to(desktop-min , null) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		.featured_content_item_wrapper {
+			// mobile = always vertical
+			@include respond-to(null , mobile-max) {
+				@include featured-content;
+				flex-flow: column nowrap;
+				max-width: 395px;
+			}
+
+			// tablet = always horizontal
+			@include respond-to(tablet-min , tablet-max) {
+				@include featured-content;
+				flex-flow: row nowrap;
+
+				img {
+					max-width: 275px;
+				}
+			}
+
+			// lg-tablet = always horizontal
+			@include respond-to(lg-tablet-min , lg-tablet-max) {
+				@include featured-content;
+				flex-flow: row nowrap;
+
+				img {
+					max-width: 186px;
+				}
+			}
+
+			// desktop = choice of orientation
+			@include respond-to(desktop-min , null) {
+				@include featured-content;
+				flex-flow: column nowrap;
+				height: 100%;
+				max-width: 296px;
+
+				img {
+					max-width: 296px;
+				}
 			}
 		}
 	}

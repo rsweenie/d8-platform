@@ -1,4 +1,4 @@
-uuid: 34f35d40-bd56-45b6-a522-40405f23daf9
+uuid: cf387ee6-4531-4acb-9e59-3ca4c92f7912
 langcode: en
 status: true
 dependencies:
@@ -23,9 +23,11 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-name: 'Featured Content'
-type: featured_content
-description: ''
+_core:
+  default_config_hash: t-vd5QkapTIxEoavjtItRta7IQOvyLLy3xVPKG7dNiA
+name: 'Featured Content Group'
+type: featured_content_group
+description: 'One or more featured content items that will have the same orientation and display in a group.'
 help: ''
 new_revision: false
 preview_mode: 1

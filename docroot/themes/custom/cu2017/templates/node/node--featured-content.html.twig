@@ -7,19 +7,35 @@
 <div{{ attributes.addClass('clearfix', 'featured_content_wrapper') }}>
     {{ title_suffix.contextual_links }}
 
+    {% set featured_content_attributes = create_attribute() %}
+    {% set classes = [] %}
 
-    <div class="featured_content_image">
-        {{ content.field_featured_content_image }}
-    </div>
-    <div class="featured_content_content">
-        <div class="featured_content_link">
-            {{ content.field_featured_content_link }}
+    {% if content.field_orientation.0|render|lower|trim == "vertical" %} 
+        {% set classes = classes|merge(['desktop_vertical']) %}
+    {% else %}
+        {% set classes = classes|merge(['desktop_horizontal']) %}
+    {% endif %}
+
+    <div{{ featured_content_attributes.addClass(classes) }}>
+        <div class="featured_content_image">
+            {{ content.field_featured_content_image }}
         </div>
-        <div class="featured_content_body">
-            {{ content.body }}
-        </div>
-        <div class="featured_content_additional_links">
-            {{ content.field_fc_additional_links }}
+        <div class="featured_content_content">
+            {% if node.field_featured_content_link.entity.field_links_link.0.uri %}
+                <div class="featured_content_link">
+                    {{ content.field_featured_content_link }}
+                </div>
+            {% else %}
+                <div class="featured_content_link">
+                    <li>{{ node.field_featured_content_link.entity.field_links_link_text.0.value }}</li>
+                </div>
+            {% endif %}
+            <div class="featured_content_body">
+                {{ content.body }}
+            </div>
+            <div class="featured_content_additional_links">
+                {{ content.field_fc_additional_links }}
+            </div>
         </div>
     </div>
 </div>
