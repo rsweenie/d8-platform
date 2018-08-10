@@ -1,0 +1,26 @@
+// any link with the class of button blue will have this treatment.
+// currently the arrow as background image isn't showing up
+
+a.button-blue {
+    background-color: #0054a6;
+    padding: 8px 80px 8px 10px;
+    background-image: url(../images/png/white-arrow.png);
+    background-position: 95%;
+    background-repeat: no-repeat;
+    padding: 8px 80px 8px 10px;
+    color: white;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-decoration: none;
+}
+// only links with class of button blue within a first content div 
+// will have the following happen
+// May not be needed
+.first-content a.button-blue{
+
+}
+.front-page-classic > div:nth-child(3n) {
+    margin-top: 40px;
+}
+.block-region-ctas {
+    padding: 30px;
+}

@@ -1,20 +1,37 @@
 <div class="front-page-classic">
-<div class="main-region col-md-12">
+  <div class="row">
+  <div class="top col-md-12">
     {{ content.top }}
   </div>
-  <div class="main-region col-md-8">
-    {{ content.first }}
   </div>
-  <div class="calls-to-action col-md-4">
-    {{content.ctas}}
+  
+  <div class="row">
+    <div class="first-content col-md-8">
+      {{ content.first_content }}
+    </div>
+    <div class="calls-to-action col-md-4">
+      {{content.ctas}}
+    </div>
   </div>
-  <div class="middle col-md-12">
-    {{ content.middle }}
+
+  <div class="row">
+    <div class="middle-left col-md-4">
+      {{ content.middle_left }}
+    </div>
+    <div class="middle-center col-md-4">
+      {{ content.middle_center }}
+    </div>
+    <div class="middle-right col-md-4">
+      {{ content.middle_right }}
+    </div>
   </div>
-  <div class="bottom col-md-3">
-    {{ content.bottom_callout }}
-  </div>
-    <div class="bottom col-md-9">
-    {{ content.bottom_feed }}
+
+  <div class="row">
+    <div class="bottom_callout col-md-3">
+      {{ content.bottom_callout }}
+    </div>
+      <div class="bottom_feed col-md-9">
+      {{ content.bottom_feed }}
+    </div>
   </div>
 </div>

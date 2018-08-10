@@ -127,12 +127,16 @@ front_page_classic:
   regions:
     top:
       label: Top
-    first:
-      label: first
+    first_content:
+      label: First Content
     ctas:
       label: calls to action
-    middle:
-      label: middle
+    middle_left:
+      label: middle left
+    middle_center:
+      label: middle center
+    middle_right:
+      label: middle right
     bottom_callout:
       label: bottom callout
     bottom_feed:
