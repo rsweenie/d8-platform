@@ -12913,6 +12913,26 @@ article figcaption {
   right: 27px;
 }
 
+/* line 96, ../sass/custom/_frontpage.scss */
+.main .slick-slider .slick-next,
+.main .slick-slider .slick-next:hover,
+.main .slick-slider .slick-next:focus {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  background-position: -47px 1px;
+  outline: none;
+  right: 30px;
+}
+
+/* line 104, ../sass/custom/_frontpage.scss */
+.main .slick-slider .slick-prev,
+.main .slick-slider .slick-prev:hover,
+.main .slick-slider .slick-prev:focus {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  position: relative;
+  left: 1090px;
+  top: 450px;
+}
+
 /* line 4, ../sass/custom/_bootstrapoverride.scss */
 .nav li a:focus {
   background: transparent;
