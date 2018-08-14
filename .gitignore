@@ -3,6 +3,9 @@ local.*
 *.local
 local.blt.yml
 
+# Ignore drupal core.
+docroot/core
+
 # Ignore paths that contain user-generated content.
 /docroot/sites/*/files/
 /docroot/sites/*/private/
@@ -392,16 +395,23 @@ nbproject/*
 # PHPStorm
 atlassian-ide-plugin.xml
 
-# ignore testing libraries
-docroot/libraries/d3/
-docroot/libraries/highlight/
+#NPM
+npm-debug.log
 
-# Visual Studio Code
-.vscode/
-
-# Deployment Artifact / Identifier
-deploy/
-deployment_identifier
+# Drush 9 Checksums
+drush/sites/.checksums
 
 # History
 .history/
+# Deprecation detector rules
+.rules
+
+# Visual Studio Code
+.vscode
+.vscode/*
+
+# Hide our history
+.history/
+
+# Deployment identifier
+deployment_identifier

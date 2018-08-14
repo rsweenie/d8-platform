@@ -1,13 +1,5 @@
-01dev:
-    uri: contenttest.dev-creighton.acsitefactory.com
-    host: staging-1749.enterprise-g1.hosting.acquia.com
-    options: {  }
-    paths: { dump-dir: /mnt/tmp }
-    root: /var/www/html/creighton.01dev/docroot
-    user: creighton.01dev
-    ssh: { options: '-p 22' }
 01live:
-    uri: contenttest.creighton.acsitefactory.com
+    uri: reservations.creighton.acsitefactory.com
     host: web-1747.enterprise-g1.hosting.acquia.com
     options: {  }
     paths: { dump-dir: /mnt/tmp }
@@ -15,7 +7,7 @@
     user: creighton.01live
     ssh: { options: '-p 22' }
 01test:
-    uri: contenttest.test-creighton.acsitefactory.com
+    uri: reservations.test-creighton.acsitefactory.com
     host: staging-1749.enterprise-g1.hosting.acquia.com
     options: {  }
     paths: { dump-dir: /mnt/tmp }
