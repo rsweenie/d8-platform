@@ -105,19 +105,6 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
-front_page_two_column:
-  label: Front Page Two Column
-  category: Creighton Front Page
-  template: templates/front-page-two-column
-  path: templates/layouts/icons
-  icon: 9-three-section-split-preview.png
-  regions:
-    top:
-      label: Top
-    left:
-      label: left
-    right:
-      label: right
 front_page_classic:
   label: Front Page Classic
   category: Creighton Front Page
@@ -141,5 +128,3 @@ front_page_classic:
       label: bottom callout
     bottom_feed:
       label: bottom feed
-
-
