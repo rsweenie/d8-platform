@@ -12829,6 +12829,110 @@ article figcaption {
   list-style: none;
 }
 
+/* line 7, ../sass/custom/_frontpage.scss */
+.block-region-middle-center .front-page-classic h2, .block-region-middle-left .front-page-classic h2, .block-region-middle-right .front-page-classic h2 {
+  color: #FFA300;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+}
+/* line 13, ../sass/custom/_frontpage.scss */
+.front-page-classic .row.breadcrumb_region {
+  display: none !important;
+}
+/* line 16, ../sass/custom/_frontpage.scss */
+.front-page-classic .slideText {
+  background: transparent !important;
+}
+/* line 18, ../sass/custom/_frontpage.scss */
+.front-page-classic .slideText h1 {
+  color: #FFCC4F;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+/* line 28, ../sass/custom/_frontpage.scss */
+.front-page-classic .slideText h2 {
+  color: #FFF;
+  font-weight: 700;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+/* line 34, ../sass/custom/_frontpage.scss */
+.front-page-classic .slideText a {
+  background-image: url(../images/png/white-arrow.png);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  padding: 0px 20px 0px 0px;
+}
+/* line 41, ../sass/custom/_frontpage.scss */
+.front-page-classic a.button-blue {
+  background-color: #0054A6;
+  padding: 8px 80px 8px 10px;
+  background-image: url(../images/png/white-arrow.png);
+  background-position: 95%;
+  background-repeat: no-repeat;
+  padding: 8px 80px 8px 10px;
+  color: #FFF;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-decoration: none;
+}
+/* line 52, ../sass/custom/_frontpage.scss */
+.front-page-classic a.button-blue:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #002E6D;
+}
+/* line 58, ../sass/custom/_frontpage.scss */
+.front-page-classic .block-region-ctas {
+  padding: 30px;
+}
+/* line 61, ../sass/custom/_frontpage.scss */
+.front-page-classic > div:nth-child(3n) {
+  margin-top: 40px;
+}
+/* line 64, ../sass/custom/_frontpage.scss */
+.front-page-classic a.orange-text-link {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  color: #FFA300;
+  background-image: url(../images/png/orange-arrow.png);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  padding: 0px 20px 0px 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 86, ../sass/custom/_frontpage.scss */
+.front-page-classic .button.slick-next.slick-arrow {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat !important;
+  background-position: -46px 0;
+  color: none;
+  outline: none;
+  right: 27px;
+}
+
+/* line 96, ../sass/custom/_frontpage.scss */
+.main .slick-slider .slick-next,
+.main .slick-slider .slick-next:hover,
+.main .slick-slider .slick-next:focus {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  background-position: -47px 1px;
+  outline: none;
+  right: 30px;
+}
+
+/* line 104, ../sass/custom/_frontpage.scss */
+.main .slick-slider .slick-prev,
+.main .slick-slider .slick-prev:hover,
+.main .slick-slider .slick-prev:focus {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  position: relative;
+  left: 1090px;
+  top: 450px;
+}
+
 /* line 4, ../sass/custom/_bootstrapoverride.scss */
 .nav li a:focus {
   background: transparent;
