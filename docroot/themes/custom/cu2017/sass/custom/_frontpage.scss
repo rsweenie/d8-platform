@@ -1,26 +1,95 @@
+// front page CLASSIC
+// TODO figure out how to make wrapper/use sass
+
 // any link with the class of button blue will have this treatment.
 // currently the arrow as background image isn't showing up
+.front-page-classic{
+    %orange-h2{
+        color: $orange;
+        font-family: $baseFont;
+        font-weight: $semiBold;
+    }
 
-a.button-blue {
-    background-color: #0054a6;
-    padding: 8px 80px 8px 10px;
-    background-image: url(../images/png/white-arrow.png);
-    background-position: 95%;
-    background-repeat: no-repeat;
-    padding: 8px 80px 8px 10px;
-    color: white;
-    font-family: "Open Sans Condensed", sans-serif;
-    text-decoration: none;
-}
-// only links with class of button blue within a first content div 
-// will have the following happen
-// May not be needed
-.first-content a.button-blue{
+    .row.breadcrumb_region{
+        display:none !important; 
+    }
+    .slideText {
+        background: transparent !important;
+        h1{
+            color: $yellow;
+            text-transform: uppercase;
+            font-weight: $bold;
+            font-size: 60px;
+            font-family: $condensedFont;
+            margin-top: -10px;
+            margin-bottom: -10px;
+        }
 
+        h2{
+            color: $white;
+            font-weight: $bold;
+            font-family: $condensedFont;
+        }
+
+        a {
+            background-image: url(../images/png/white-arrow.png);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            padding: 0px 20px 0px 0px;
+        }
+    }
+    a.button-blue {
+        background-color: $mediumBlue;
+        padding: 8px 80px 8px 10px;
+        background-image: url(../images/png/white-arrow.png);
+        background-position: 95%;
+        background-repeat: no-repeat;
+        padding: 8px 80px 8px 10px;
+        color: $white;
+        font-family: "Open Sans Condensed", sans-serif;
+        text-decoration: none;
+   
+        &:hover {
+            text-decoration: none;
+            color: $white;
+            background-color: $darkBlue
+        }
+    }
+    .block-region-ctas {
+        padding: 30px;
+    }
+    > div:nth-child(3n) {
+        margin-top: 40px;
+    }
+    a.orange-text-link{
+        font-family: $condensedFont;
+        font-weight: $bold;
+        color: $orange;
+        background-image: url(../images/png/orange-arrow.png);
+        background-position: 100%;
+        background-repeat: no-repeat;
+        padding: 0px 20px 0px 0px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    h2{
+        .block-region-middle-center &{
+            @extend %orange-h2;
+        }
+        .block-region-middle-left & {
+            @extend %orange-h2;
+        }
+        .block-region-middle-right & {
+            @extend %orange-h2;
+        }
+    }
+    .button.slick-next.slick-arrow{
+        background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat !important;
+        background-position: -46px 0;
+        color: none;
+        outline: none;
+        right: 27px;
+    }
+    
 }
-.front-page-classic > div:nth-child(3n) {
-    margin-top: 40px;
-}
-.block-region-ctas {
-    padding: 30px;
-}
+// front page TWO COLUMN
