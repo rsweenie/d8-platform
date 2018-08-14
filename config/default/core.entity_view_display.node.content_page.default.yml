@@ -5,15 +5,25 @@ dependencies:
   config:
     - field.field.node.content_page.body
     - field.field.node.content_page.field_content_page_headline
+    - field.field.node.content_page.field_content_page_image
+    - field.field.node.content_page.field_content_page_news_link
     - field.field.node.content_page.field_content_page_sidebar_items
+    - field.field.node.content_page.field_content_taxo
     - field.field.node.content_page.field_content_taxonomy
+    - field.field.node.content_page.field_display
+    - field.field.node.content_page.field_display_publish_on_date
     - field.field.node.content_page.field_header_background_image
+    - field.field.node.content_page.field_links_for_news
+    - field.field.node.content_page.field_meta_tags
+    - field.field.node.content_page.field_new
     - field.field.node.content_page.field_slide
     - field.field.node.content_page.field_tabbed_accordion
     - field.field.node.content_page.panelizer
     - node.type.content_page
   module:
+    - metatag
     - panelizer
+    - private_content
     - text
     - user
 third_party_settings:
@@ -99,6 +109,21 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_header_background_image:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   panelizer:
     type: panelizer
     weight: 2
@@ -110,12 +135,9 @@ content:
     weight: 0
     region: content
     label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+    settings: {  }
     third_party_settings: {  }
-    type: boolean
+    type: private
 hidden:
   field_content_page_headline: true
   field_content_page_image: true
@@ -125,7 +147,6 @@ hidden:
   field_content_taxonomy: true
   field_display: true
   field_display_publish_on_date: true
-  field_header_background_image: true
   field_links_for_news: true
   field_new: true
   field_slide: true
