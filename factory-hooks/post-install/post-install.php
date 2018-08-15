@@ -25,3 +25,5 @@ $domain_fragments = explode('.', $_SERVER['HTTP_HOST']);
 $site_name = array_shift($domain_fragments);
 
 exec("/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt drupal:update --environment=$env --site=$site_name --define drush.uri=$domain --verbose --yes");
+
+print_r("HACKED from post-install.php");
