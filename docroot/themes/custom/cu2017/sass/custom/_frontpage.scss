@@ -1,8 +1,9 @@
 // front page CLASSIC
 // TODO figure out how to make wrapper/use sass
-
-// any link with the class of button blue will have this treatment.
-// currently the arrow as background image isn't showing up
+    //TODO for whatever reason .front-page-classic.row.breadcrumb_region doesn't work but .row.breadcrumb_region
+    .row.breadcrumb_region{
+        display:none !important; 
+    }
 .front-page-classic{
     %orange-h2{
         color: $orange;
@@ -10,8 +11,8 @@
         font-weight: $semiBold;
     }
 
-    .row.breadcrumb_region{
-        display:none !important; 
+    .block-region-top{
+    margin-top: -85px
     }
     .slideText {
         background: transparent !important;
@@ -37,6 +38,9 @@
             background-repeat: no-repeat;
             padding: 0px 20px 0px 0px;
         }
+        p{
+            font-weight: $regular;
+        }
     }
     a.button-blue {
         background-color: $mediumBlue;
@@ -48,11 +52,13 @@
         color: $white;
         font-family: "Open Sans Condensed", sans-serif;
         text-decoration: none;
+        text-transform: uppercase;
    
         &:hover {
             text-decoration: none;
             color: $white;
             background-color: $darkBlue
+            text-transform: uppercase;
         }
     }
     .block-region-ctas {
