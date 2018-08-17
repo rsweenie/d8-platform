@@ -1,16 +1,16 @@
-uuid: 2435640a-37ae-469e-b3cd-d1cf5b64e4b1
+uuid: ba8dedcf-ea9c-49c6-831a-5150b5eeff41
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_featured_content_image
+    - field.storage.paragraph.field_featured_content_image
     - media.type.image
-    - node.type.featured_content
-id: node.featured_content.field_featured_content_image
+    - paragraphs.paragraphs_type.featured_content_item
+id: paragraph.featured_content_item.field_featured_content_image
 field_name: field_featured_content_image
-entity_type: node
-bundle: featured_content
-label: Image
+entity_type: paragraph
+bundle: featured_content_item
+label: 'Featured Content Image'
 description: ''
 required: false
 translatable: false
