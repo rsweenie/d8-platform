@@ -105,3 +105,26 @@ three_section_split:
       label: Left Column
     right:
       label: Right Column
+front_page_classic:
+  label: Front Page Classic
+  category: Creighton Front Page
+  template: templates/front-page-classic
+  path: templates/layouts/icons
+  icon: 9-three-section-split-preview.png
+  regions:
+    top:
+      label: Top
+    first_content:
+      label: First Content
+    ctas:
+      label: calls to action
+    middle_left:
+      label: middle left
+    middle_center:
+      label: middle center
+    middle_right:
+      label: middle right
+    bottom_callout:
+      label: bottom callout
+    bottom_feed:
+      label: bottom feed

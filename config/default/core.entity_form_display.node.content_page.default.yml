@@ -6,9 +6,17 @@ dependencies:
     - entity_browser.browser.media_browser
     - field.field.node.content_page.body
     - field.field.node.content_page.field_content_page_headline
+    - field.field.node.content_page.field_content_page_image
+    - field.field.node.content_page.field_content_page_news_link
     - field.field.node.content_page.field_content_page_sidebar_items
+    - field.field.node.content_page.field_content_taxo
     - field.field.node.content_page.field_content_taxonomy
+    - field.field.node.content_page.field_display
+    - field.field.node.content_page.field_display_publish_on_date
     - field.field.node.content_page.field_header_background_image
+    - field.field.node.content_page.field_links_for_news
+    - field.field.node.content_page.field_meta_tags
+    - field.field.node.content_page.field_new
     - field.field.node.content_page.field_slide
     - field.field.node.content_page.field_tabbed_accordion
     - field.field.node.content_page.panelizer
@@ -18,6 +26,7 @@ dependencies:
     - entity_browser
     - entity_browser_entity_form
     - inline_entity_form
+    - metatag
     - path
     - scheduler
     - text
@@ -89,6 +98,12 @@ content:
       open: false
     region: content
     third_party_settings: {  }
+  field_meta_tags:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_slide:
     weight: 3
     settings:
