@@ -22,6 +22,8 @@
         max-width: $maxContentWidth;
         margin: 0 auto;
         padding-left: 42px;
+        position: relative;
+        bottom: -250px;
         h1{
             color: $yellow;
             text-transform: uppercase;
@@ -49,10 +51,17 @@
             font-weight: $regular;
         }
     }
-    
+    .new-arrows{
+        width: 100px;
+        position: absolute;
+        right: 187px;
+        bottom: 0px;
+        height: 60px;
+    }
+
      .new-arrows .slick-prev{
         left:0 !important;
-        background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+        background: url(/themes/custom/cu2017/images/front-page/arrows-circle-left.png) no-repeat;
         background-position: 6px 0;
         width: 50px;
         height: 50px;
@@ -65,9 +74,9 @@
 
     .new-arrows .slick-next{
         right:0 !important;
-        background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat !important;
+        background: url(/themes/custom/cu2017/images/front-page/arrows-circle-right.png) no-repeat !important;
         background-position: -46px 0;
-        width: 50px;
+        width: 44px;
         height: 50px;
 
         :before {

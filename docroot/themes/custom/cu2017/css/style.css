@@ -12804,8 +12804,10 @@ article figcaption {
   max-width: 1300px;
   margin: 0 auto;
   padding-left: 42px;
+  position: relative;
+  bottom: -250px;
 }
-/* line 25, ../sass/custom/_frontpage.scss */
+/* line 27, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText h1 {
   color: #FFCC4F;
   text-transform: uppercase;
@@ -12815,13 +12817,13 @@ article figcaption {
   margin-top: -10px;
   margin-bottom: -10px;
 }
-/* line 35, ../sass/custom/_frontpage.scss */
+/* line 37, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText h2 {
   color: #FFF;
   font-weight: 700;
   font-family: "Open Sans Condensed", sans-serif;
 }
-/* line 41, ../sass/custom/_frontpage.scss */
+/* line 43, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText a {
   background-image: url(../images/png/white-arrow.png);
   background-position: 100%;
@@ -12829,40 +12831,48 @@ article figcaption {
   padding: 0px 20px 0px 0px;
   font-size: 16px;
 }
-/* line 48, ../sass/custom/_frontpage.scss */
+/* line 50, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText p {
   font-weight: 400;
 }
-/* line 53, ../sass/custom/_frontpage.scss */
+/* line 54, ../sass/custom/_frontpage.scss */
+.front-page-classic .new-arrows {
+  width: 100px;
+  position: absolute;
+  right: 187px;
+  bottom: 0px;
+  height: 60px;
+}
+/* line 62, ../sass/custom/_frontpage.scss */
 .front-page-classic .new-arrows .slick-prev {
   left: 0 !important;
-  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  background: url(/themes/custom/cu2017/images/front-page/arrows-circle-left.png) no-repeat;
   background-position: 6px 0;
   width: 50px;
   height: 50px;
 }
-/* line 61, ../sass/custom/_frontpage.scss */
+/* line 70, ../sass/custom/_frontpage.scss */
 .front-page-classic .new-arrows .slick-prev:before, .front-page-classic .new-arrows .slick-next:before {
   content: none;
 }
-/* line 66, ../sass/custom/_frontpage.scss */
+/* line 75, ../sass/custom/_frontpage.scss */
 .front-page-classic .new-arrows .slick-next {
   right: 0 !important;
-  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat !important;
+  background: url(/themes/custom/cu2017/images/front-page/arrows-circle-right.png) no-repeat !important;
   background-position: -46px 0;
-  width: 50px;
+  width: 44px;
   height: 50px;
 }
-/* line 73, ../sass/custom/_frontpage.scss */
+/* line 82, ../sass/custom/_frontpage.scss */
 .front-page-classic .new-arrows .slick-next :before {
   content: none;
 }
-/* line 77, ../sass/custom/_frontpage.scss */
+/* line 86, ../sass/custom/_frontpage.scss */
 .front-page-classic > div:not(:first-child) {
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 81, ../sass/custom/_frontpage.scss */
+/* line 90, ../sass/custom/_frontpage.scss */
 .front-page-classic a.button-blue {
   background-color: #0054A6;
   padding: 8px 80px 8px 10px;
@@ -12875,23 +12885,23 @@ article figcaption {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 93, ../sass/custom/_frontpage.scss */
+/* line 102, ../sass/custom/_frontpage.scss */
 .front-page-classic a.button-blue:hover {
   text-decoration: none;
   color: #FFF;
   background-color: #002E6D;
   text-transform: uppercase;
 }
-/* line 100, ../sass/custom/_frontpage.scss */
+/* line 109, ../sass/custom/_frontpage.scss */
 .front-page-classic .block-region-ctas {
   padding: 30px;
 }
-/* line 103, ../sass/custom/_frontpage.scss */
+/* line 112, ../sass/custom/_frontpage.scss */
 .front-page-classic > div:nth-child(3n) {
   margin-top: 40px;
   margin-bottom: 80px;
 }
-/* line 107, ../sass/custom/_frontpage.scss */
+/* line 116, ../sass/custom/_frontpage.scss */
 .front-page-classic a.orange-text-link {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
@@ -12904,33 +12914,33 @@ article figcaption {
   text-decoration: none;
 }
 
-/* line 156, ../sass/custom/_frontpage.scss */
+/* line 165, ../sass/custom/_frontpage.scss */
 .row.breadcrumb_region {
   display: none;
 }
 
-/* line 160, ../sass/custom/_frontpage.scss */
+/* line 169, ../sass/custom/_frontpage.scss */
 .row.site_name {
   z-index: 999;
   position: absolute;
 }
 
-/* line 164, ../sass/custom/_frontpage.scss */
+/* line 173, ../sass/custom/_frontpage.scss */
 .slideText p {
   font-weight: 400;
 }
 
-/* line 167, ../sass/custom/_frontpage.scss */
+/* line 176, ../sass/custom/_frontpage.scss */
 .main .col-md-12 .center_column .front-page-classic .slide {
   height: 430px;
 }
 
-/* line 170, ../sass/custom/_frontpage.scss */
+/* line 179, ../sass/custom/_frontpage.scss */
 .slick-slider.slick-list {
   overflow: visible;
 }
 
-/* line 176, ../sass/custom/_frontpage.scss */
+/* line 185, ../sass/custom/_frontpage.scss */
 .front-page-classic > div:nth-child(3n) {
   margin-top: 40px;
   margin-bottom: 80px;
