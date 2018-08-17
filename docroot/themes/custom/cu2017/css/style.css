@@ -12871,7 +12871,7 @@ article figcaption {
 .front-page-classic > div:not(:first-child) {
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 42px;
+  padding-left: 28px;
 }
 /* line 91, ../sass/custom/_frontpage.scss */
 .front-page-classic a.button-blue {
