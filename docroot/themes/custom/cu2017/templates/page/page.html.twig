@@ -55,22 +55,26 @@
             {{ page.header_alert }}
         </div>
     <header{{ toolbar_attribute.addClass(admin).setAttribute('role', 'banner') }}>
+        {% block header %}
             {{ page.header_html }}
             {{ page.navigation }}
             {{ page.navigation_collapsible }}
             {{ page.header }}
             {{ page.header_background_image }}
+        {% endblock %}
     </header>
     {% if page.sitename %}
-        <div class="row site_name">
-            {{ page.sitename }}
-        </div>
+        {% block sitename %}
+            <div class="row site_name">
+                {{ page.sitename }}
+            </div>
+        {% endblock %}
     {% endif %}
 
     {% block main_front %}
         <div{{ attributes.addClass('layout-content')}}>
     {% endblock %}
-    
+    {% block content %}
         <main role="main">
             {{ page.hero_slideshow }}
             <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
@@ -133,12 +137,15 @@
                 </div>
             </div>
         </main>
+        {% endblock %}
     </div>
 
     <footer role="contentinfo">
-        <div class="transaction_menu_wrapper">
-            {{ drupal_menu('transaction-menu') }}
-        </div>
-        {{ page.footer }}
+        {% block footer %}
+            <div class="transaction_menu_wrapper">
+                {{ drupal_menu('transaction-menu') }}
+            </div>
+            {{ page.footer }}
+        {% endblock %}
     </footer>
 </div>

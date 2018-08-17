@@ -51,5 +51,29 @@
 {% set classes = ['main_front'] %}
 {% if logged_in %}
     {% set classes = classes|merge(['admin']) %}
+    {% set toolbar_attribute = create_attribute() %}
+    {% set admin = 'admin' %}
 {% endif %}
 {% set attributes = attributes.addClass(classes) %}
+{% block header %}
+    <header>       
+        {{ parent() }}
+    </header>
+{% endblock %}
+
+{% block sitename %}
+    {{ parent() }}
+{% endblock %}
+ {% block main_front %}
+        <div{{ attributes.addClass('layout-content')}}>
+{% endblock %}
+{% block content %}
+    <main role="main">
+        {{ page.content }}
+    </main>
+{% endblock %}
+{% block footer %}
+    <footer>      
+        {{ parent() }}
+    </footer>
+{% endblock %}

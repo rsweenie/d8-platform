@@ -14,13 +14,17 @@ jQuery(document).ready(function() {
         }
     });
     // slideshow
-    jQuery('.field--name-field-slide').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>'
+    jQuery('.field--name-field-slide').on("init", function() {
+        $(".new-arrows").appendTo(".slider");
+        })
+        .slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            appendArrows: jQuery("<div></div>").addClass("new-arrows").insertAfter(".field--name-field-slide")
     });
     // if mobile, build the slide text below the slide
     if (jQuery('.region-hero-slideshow')[0] && jQuery(window).width() < 768) {
