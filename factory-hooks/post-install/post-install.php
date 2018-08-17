@@ -10,10 +10,16 @@
  *
  * This is used so that an ACSF site install will match a local BLT site
  * install. After a local site install, the update functions are run.
+<<<<<<< HEAD
  *
  * @param string $db_role
  * The 'role' of the AH database.
  * 
+=======
+ * 
+ * @param string $db_role
+ * The 'role' of the AH database.
+>>>>>>> a64f30599797b53fd23c1f2c97c521f92a34d797
  */
    
 $site = $_ENV['AH_SITE_GROUP'];
