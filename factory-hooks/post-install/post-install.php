@@ -16,6 +16,7 @@
 $site = $_ENV['AH_SITE_GROUP'];
 $env = $_ENV['AH_SITE_ENVIRONMENT'];
 $target_env = $site . $env;
+$db_role = $argv[3];
 
 // The public domain name of the website.
 // Run updates against requested domain rather than acsf primary domain.
@@ -25,5 +26,5 @@ $domain_fragments = explode('.', $_SERVER['HTTP_HOST']);
 $site_name = array_shift($domain_fragments);
 
 exec("/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt drupal:update --environment=$env --site=$site_name --define drush.uri=$domain --verbose --yes");
-
-echo("HACKED from post-install.php");
+echo("$db_role");
+echo("drush $site_name.$env cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:$site:$env:(site id) -y");
