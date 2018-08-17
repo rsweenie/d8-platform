@@ -9715,7 +9715,15 @@ html body h3 {
     padding-right: 0;
   }
 }
-/* line 56, ../sass/custom/_main.scss */
+@media all and (max-width: 480px) {
+  /* line 50, ../sass/custom/_main.scss */
+  .main .right_sidebar {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+/* line 61, ../sass/custom/_main.scss */
 .main .featured_links_wrapper,
 .main .copy_box_wrapper,
 .main .quote_box_wrapper,

@@ -51,6 +51,11 @@
 		@media all and (min-width: 992px) {
 			padding-right: 0;
 		}
+		@include respond-to(null , mobile-max) {
+			padding-top: 20px;
+			padding-right: 0px;
+			padding-left: 0px;
+		}
 	}
 
 	.featured_links_wrapper,
