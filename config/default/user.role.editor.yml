@@ -1,0 +1,59 @@
+uuid: 309a5120-0966-4f16-a7f7-7006e544df91
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'create content_page content'
+  - 'create copy_box content'
+  - 'create document media'
+  - 'create documentation content'
+  - 'create featured_content_group content'
+  - 'create featured_links content'
+  - 'create image media'
+  - 'create links content'
+  - 'create media'
+  - 'create news_spotlight content'
+  - 'create promo_box content'
+  - 'create quote_box content'
+  - 'create related_links content'
+  - 'create video media'
+  - 'delete any document media'
+  - 'dropzone upload files'
+  - 'edit any content_page content'
+  - 'edit any copy_box content'
+  - 'edit any featured_content_group content'
+  - 'edit any featured_links content'
+  - 'edit any links content'
+  - 'edit any news_spotlight content'
+  - 'edit any profile content'
+  - 'edit any promo_box content'
+  - 'edit any quote_box content'
+  - 'edit any related_links content'
+  - 'edit own content_page content'
+  - 'edit own copy_box content'
+  - 'edit own documentation content'
+  - 'edit own featured_content_group content'
+  - 'edit own featured_links content'
+  - 'edit own links content'
+  - 'edit own news_spotlight content'
+  - 'edit own profile content'
+  - 'edit own promo_box content'
+  - 'edit own quote_box content'
+  - 'edit own related_links content'
+  - 'update media'
+  - 'use text format full_html'
+  - 'use text format rich_text'
+  - 'view own unpublished content'
+  - 'view the administration theme'

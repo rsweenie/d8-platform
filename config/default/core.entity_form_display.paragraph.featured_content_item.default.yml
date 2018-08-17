@@ -1,0 +1,87 @@
+uuid: 1c4ca9e6-6ba6-47b9-ab84-90569b8adc52
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.paragraph.featured_content_item.field_body
+    - field.field.paragraph.featured_content_item.field_featured_content_image
+    - field.field.paragraph.featured_content_item.field_link
+    - field.field.paragraph.featured_content_item.field_supporting_links
+    - paragraphs.paragraphs_type.featured_content_item
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser
+    - inline_entity_form
+    - text
+id: paragraph.featured_content_item.default
+targetEntityType: paragraph
+bundle: featured_content_item
+mode: default
+content:
+  field_body:
+    weight: 101
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_featured_content_image:
+    type: entity_browser_entity_reference
+    weight: 104
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+    region: content
+    third_party_settings: {  }
+  field_link:
+    weight: 105
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_supporting_links:
+    weight: 106
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

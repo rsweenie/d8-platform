@@ -1,15 +1,15 @@
-uuid: dee1e99a-9900-4ea1-bc9c-796f541a798d
+uuid: 95bafcb9-6478-4062-9dbc-18d4f716d3bc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_featured_content_link
-    - node.type.featured_content
+    - field.storage.paragraph.field_link
     - node.type.links
-id: node.featured_content.field_featured_content_link
-field_name: field_featured_content_link
-entity_type: node
-bundle: featured_content
+    - paragraphs.paragraphs_type.featured_content_item
+id: paragraph.featured_content_item.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: featured_content_item
 label: Link
 description: ''
 required: false
