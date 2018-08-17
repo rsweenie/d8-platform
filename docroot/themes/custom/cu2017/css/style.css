@@ -9689,19 +9689,41 @@ html body h3 {
   line-height: 1.25em;
   padding-bottom: 0.8em;
 }
+@media all and (max-width: 480px) {
+  /* line 26, ../sass/custom/_main.scss */
+  .main .headline {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media all and (min-width: 992px) {
-  /* line 34, ../sass/custom/_main.scss */
+  /* line 38, ../sass/custom/_main.scss */
   .main .center_column {
     padding-left: 0;
   }
 }
+@media all and (max-width: 480px) {
+  /* line 42, ../sass/custom/_main.scss */
+  .main .center_column, .main .center_column * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media all and (min-width: 992px) {
-  /* line 40, ../sass/custom/_main.scss */
+  /* line 50, ../sass/custom/_main.scss */
   .main .right_sidebar {
     padding-right: 0;
   }
 }
-/* line 46, ../sass/custom/_main.scss */
+@media all and (max-width: 480px) {
+  /* line 50, ../sass/custom/_main.scss */
+  .main .right_sidebar {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+/* line 61, ../sass/custom/_main.scss */
 .main .featured_links_wrapper,
 .main .copy_box_wrapper,
 .main .quote_box_wrapper,
@@ -12788,40 +12810,718 @@ article figcaption {
   }
 }
 
-/* line 2, ../sass/custom/_featuredcontent.scss */
-.featured_content_wrapper {
-  background-color: #002E6D;
+@media all and (max-width: 480px) {
+  /* line 61, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal,
+  .featured_content_wrapper .desktop_vertical {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 275px;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_image img,
+  .featured_content_wrapper .desktop_vertical .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_content,
+  .featured_content_wrapper .desktop_vertical .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link a:hover,
+  .featured_content_wrapper .desktop_vertical .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link a:hover li,
+  .featured_content_wrapper .desktop_vertical .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link li,
+  .featured_content_wrapper .desktop_vertical .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_body,
+  .featured_content_wrapper .desktop_vertical .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_additional_links a,
+  .featured_content_wrapper .desktop_vertical .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_additional_links a:hover,
+  .featured_content_wrapper .desktop_vertical .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 1050px) {
+  /* line 71, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal,
+  .featured_content_wrapper .desktop_vertical {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_image img,
+  .featured_content_wrapper .desktop_vertical .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_content,
+  .featured_content_wrapper .desktop_vertical .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link a:hover,
+  .featured_content_wrapper .desktop_vertical .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link a:hover li,
+  .featured_content_wrapper .desktop_vertical .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link li,
+  .featured_content_wrapper .desktop_vertical .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_body,
+  .featured_content_wrapper .desktop_vertical .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_additional_links a,
+  .featured_content_wrapper .desktop_vertical .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_additional_links a:hover,
+  .featured_content_wrapper .desktop_vertical .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+}
+@media all and (min-width: 1051px) {
+  /* line 80, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 83, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_horizontal img {
+    max-width: 275px;
+  }
+  /* line 88, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    max-width: 275px;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .featured_content_wrapper .desktop_vertical .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+}
+
+/* line 99, ../sass/custom/_featuredcontent.scss */
+.desktop_horizontal .field--items {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr;
+}
+@media all and (max-width: 480px) {
+  /* line 104, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 395px;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  /* line 104, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 117, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper img {
+    max-width: 275px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1050px) {
+  /* line 104, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 127, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper img {
+    max-width: 186px;
+  }
+}
+@media all and (min-width: 1051px) {
+  /* line 104, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 137, ../sass/custom/_featuredcontent.scss */
+  .desktop_horizontal .field--items .featured_content_item_wrapper img {
+    max-width: 296px;
+  }
+}
+/* line 143, ../sass/custom/_featuredcontent.scss */
+.desktop_horizontal .field--name-field-supporting-links {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: column;
 }
-/* line 7, ../sass/custom/_featuredcontent.scss */
-.featured_content_wrapper .featured_content_content {
+/* line 147, ../sass/custom/_featuredcontent.scss */
+.desktop_horizontal .field--name-field-supporting-links .field--item:nth-child(n+2) {
+  margin-top: 5px;
+}
+
+/* line 154, ../sass/custom/_featuredcontent.scss */
+.desktop_vertical .field--items {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr;
+}
+@media all and (min-width: 1051px) {
+  /* line 154, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media all and (max-width: 480px) {
+  /* line 164, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 395px;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  /* line 164, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 177, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper img {
+    max-width: 275px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1050px) {
+  /* line 164, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 187, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper img {
+    max-width: 186px;
+  }
+}
+@media all and (min-width: 1051px) {
+  /* line 164, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper {
+    background-color: #002E6D;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    max-width: 296px;
+  }
+  /* line 6, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_image img {
+    margin-bottom: 0;
+  }
+  /* line 11, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  /* line 19, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover {
+    text-decoration: none;
+  }
+  /* line 22, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link a:hover li {
+    color: #FFF;
+  }
+  /* line 28, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_link li {
+    color: #FFCC4F;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  /* line 38, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_body {
+    color: #FFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+  }
+  /* line 45, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a {
+    color: #FFCC4F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  /* line 51, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
+    color: #FFF;
+  }
+  /* line 199, ../sass/custom/_featuredcontent.scss */
+  .desktop_vertical .field--items .featured_content_item_wrapper img {
+    max-width: 296px;
+  }
+}
+/* line 205, ../sass/custom/_featuredcontent.scss */
+.desktop_vertical .field--name-field-supporting-links {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
 }
-/* line 13, ../sass/custom/_featuredcontent.scss */
-.featured_content_wrapper .featured_content_content .featured_content_link a:hover {
-  text-decoration: none;
-}
-/* line 17, ../sass/custom/_featuredcontent.scss */
-.featured_content_wrapper .featured_content_content .featured_content_link a li {
-  color: #FFCC4F;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-}
-/* line 26, ../sass/custom/_featuredcontent.scss */
-.featured_content_wrapper .featured_content_content .featured_content_body {
-  color: #FFF;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 16px;
-}
-/* line 33, ../sass/custom/_featuredcontent.scss */
-.featured_content_wrapper .featured_content_content .featured_content_additional_links a {
-  color: #FFCC4F;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 16px;
-  text-decoration: underline;
+/* line 209, ../sass/custom/_featuredcontent.scss */
+.desktop_vertical .field--name-field-supporting-links .field--item:nth-child(n+2) {
+  margin-top: 5px;
 }
 
 /* line 2, ../sass/custom/_links.scss */

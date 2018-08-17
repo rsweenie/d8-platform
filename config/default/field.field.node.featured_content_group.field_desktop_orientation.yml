@@ -1,0 +1,23 @@
+uuid: 9419f6ab-e976-40f0-93d5-6bf55588b2c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desktop_orientation
+    - node.type.featured_content_group
+id: node.featured_content_group.field_desktop_orientation
+field_name: field_desktop_orientation
+entity_type: node
+bundle: featured_content_group
+label: 'Desktop Orientation'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Horizontal
+  off_label: Vertical
+field_type: boolean
