@@ -140,6 +140,14 @@
 			}
 		}
 	}
+	.field--name-field-supporting-links {
+		display: flex;
+		flex-direction: column;
+
+		.field--item:nth-child(n+2) {
+			margin-top: 5px;
+		}
+	}
 }
 
 .desktop_vertical {
@@ -192,6 +200,14 @@
 					max-width: 296px;
 				}
 			}
+		}
+	}
+	.field--name-field-supporting-links {
+		display: flex;
+		flex-direction: column;
+
+		.field--item:nth-child(n+2) {
+			margin-top: 5px;
 		}
 	}
 }

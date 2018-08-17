@@ -9689,19 +9689,33 @@ html body h3 {
   line-height: 1.25em;
   padding-bottom: 0.8em;
 }
+@media all and (max-width: 480px) {
+  /* line 26, ../sass/custom/_main.scss */
+  .main .headline {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media all and (min-width: 992px) {
-  /* line 34, ../sass/custom/_main.scss */
+  /* line 38, ../sass/custom/_main.scss */
   .main .center_column {
     padding-left: 0;
   }
 }
+@media all and (max-width: 480px) {
+  /* line 42, ../sass/custom/_main.scss */
+  .main .center_column, .main .center_column * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media all and (min-width: 992px) {
-  /* line 40, ../sass/custom/_main.scss */
+  /* line 50, ../sass/custom/_main.scss */
   .main .right_sidebar {
     padding-right: 0;
   }
 }
-/* line 46, ../sass/custom/_main.scss */
+/* line 56, ../sass/custom/_main.scss */
 .main .featured_links_wrapper,
 .main .copy_box_wrapper,
 .main .quote_box_wrapper,
@@ -13247,21 +13261,30 @@ article figcaption {
     max-width: 296px;
   }
 }
+/* line 143, ../sass/custom/_featuredcontent.scss */
+.desktop_horizontal .field--name-field-supporting-links {
+  display: flex;
+  flex-direction: column;
+}
+/* line 147, ../sass/custom/_featuredcontent.scss */
+.desktop_horizontal .field--name-field-supporting-links .field--item:nth-child(n+2) {
+  margin-top: 5px;
+}
 
-/* line 146, ../sass/custom/_featuredcontent.scss */
+/* line 154, ../sass/custom/_featuredcontent.scss */
 .desktop_vertical .field--items {
   display: grid;
   grid-row-gap: 50px;
   grid-template-columns: 1fr;
 }
 @media all and (min-width: 1051px) {
-  /* line 146, ../sass/custom/_featuredcontent.scss */
+  /* line 154, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 156, ../sass/custom/_featuredcontent.scss */
+  /* line 164, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper {
     background-color: #002E6D;
     display: flex;
@@ -13314,7 +13337,7 @@ article figcaption {
   }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
-  /* line 156, ../sass/custom/_featuredcontent.scss */
+  /* line 164, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper {
     background-color: #002E6D;
     display: flex;
@@ -13364,13 +13387,13 @@ article figcaption {
   .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
     color: #FFF;
   }
-  /* line 169, ../sass/custom/_featuredcontent.scss */
+  /* line 177, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper img {
     max-width: 275px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 1050px) {
-  /* line 156, ../sass/custom/_featuredcontent.scss */
+  /* line 164, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper {
     background-color: #002E6D;
     display: flex;
@@ -13420,13 +13443,13 @@ article figcaption {
   .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
     color: #FFF;
   }
-  /* line 179, ../sass/custom/_featuredcontent.scss */
+  /* line 187, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper img {
     max-width: 186px;
   }
 }
 @media all and (min-width: 1051px) {
-  /* line 156, ../sass/custom/_featuredcontent.scss */
+  /* line 164, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper {
     background-color: #002E6D;
     display: flex;
@@ -13478,10 +13501,19 @@ article figcaption {
   .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_additional_links a:hover {
     color: #FFF;
   }
-  /* line 191, ../sass/custom/_featuredcontent.scss */
+  /* line 199, ../sass/custom/_featuredcontent.scss */
   .desktop_vertical .field--items .featured_content_item_wrapper img {
     max-width: 296px;
   }
+}
+/* line 205, ../sass/custom/_featuredcontent.scss */
+.desktop_vertical .field--name-field-supporting-links {
+  display: flex;
+  flex-direction: column;
+}
+/* line 209, ../sass/custom/_featuredcontent.scss */
+.desktop_vertical .field--name-field-supporting-links .field--item:nth-child(n+2) {
+  margin-top: 5px;
 }
 
 /* line 2, ../sass/custom/_links.scss */
