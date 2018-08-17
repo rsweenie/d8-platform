@@ -12805,14 +12805,14 @@ article figcaption {
   margin: 0 auto;
   padding-left: 42px;
   position: relative;
-  bottom: -250px;
+  top: 54%;
 }
 /* line 27, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText h1 {
   color: #FFCC4F;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.8em;
   font-family: "Open Sans Condensed", sans-serif;
   margin-top: -10px;
   margin-bottom: -10px;
@@ -12829,7 +12829,7 @@ article figcaption {
   background-position: 100%;
   background-repeat: no-repeat;
   padding: 0px 20px 0px 0px;
-  font-size: 16px;
+  font-size: 1em;
 }
 /* line 50, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText p {
@@ -12839,7 +12839,7 @@ article figcaption {
 .front-page-classic .new-arrows {
   width: 100px;
   position: absolute;
-  right: 187px;
+  right: 200px;
   bottom: 0px;
   height: 60px;
 }
@@ -12871,8 +12871,9 @@ article figcaption {
 .front-page-classic > div:not(:first-child) {
   max-width: 1300px;
   margin: 0 auto;
+  padding-left: 42px;
 }
-/* line 90, ../sass/custom/_frontpage.scss */
+/* line 91, ../sass/custom/_frontpage.scss */
 .front-page-classic a.button-blue {
   background-color: #0054A6;
   padding: 8px 80px 8px 10px;
@@ -12885,23 +12886,23 @@ article figcaption {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 102, ../sass/custom/_frontpage.scss */
+/* line 103, ../sass/custom/_frontpage.scss */
 .front-page-classic a.button-blue:hover {
   text-decoration: none;
   color: #FFF;
   background-color: #002E6D;
   text-transform: uppercase;
 }
-/* line 109, ../sass/custom/_frontpage.scss */
+/* line 110, ../sass/custom/_frontpage.scss */
 .front-page-classic .block-region-ctas {
   padding: 30px;
 }
-/* line 112, ../sass/custom/_frontpage.scss */
+/* line 113, ../sass/custom/_frontpage.scss */
 .front-page-classic > div:nth-child(3n) {
   margin-top: 40px;
   margin-bottom: 80px;
 }
-/* line 116, ../sass/custom/_frontpage.scss */
+/* line 117, ../sass/custom/_frontpage.scss */
 .front-page-classic a.orange-text-link {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
@@ -12913,39 +12914,39 @@ article figcaption {
   text-transform: uppercase;
   text-decoration: none;
 }
-
-/* line 165, ../sass/custom/_frontpage.scss */
-.row.breadcrumb_region {
+/* line 139, ../sass/custom/_frontpage.scss */
+.front-page-classic .row.breadcrumb_region {
   display: none;
 }
-
-/* line 169, ../sass/custom/_frontpage.scss */
-.row.site_name {
+/* line 143, ../sass/custom/_frontpage.scss */
+.front-page-classic .row.site_name {
   z-index: 999;
   position: absolute;
 }
-
-/* line 173, ../sass/custom/_frontpage.scss */
-.slideText p {
+/* line 147, ../sass/custom/_frontpage.scss */
+.front-page-classic .slideText p {
   font-weight: 400;
 }
-
-/* line 176, ../sass/custom/_frontpage.scss */
-.main .col-md-12 .center_column .front-page-classic .slide {
+/* line 150, ../sass/custom/_frontpage.scss */
+.front-page-classic .main .col-md-12 .center_column .front-page-classic .slide {
   height: 430px;
 }
-
-/* line 179, ../sass/custom/_frontpage.scss */
-.slick-slider.slick-list {
+/* line 153, ../sass/custom/_frontpage.scss */
+.front-page-classic .slick-slider.slick-list {
   overflow: visible;
 }
 
-/* line 185, ../sass/custom/_frontpage.scss */
-.front-page-classic > div:nth-child(3n) {
-  margin-top: 40px;
-  margin-bottom: 80px;
-}
+@media (max-width: 1050px) {
+  /* line 166, ../sass/custom/_frontpage.scss */
+  .main-front .slide {
+    height: 350px;
+  }
 
+  /* line 169, ../sass/custom/_frontpage.scss */
+  .slideText {
+    top: 37%;
+  }
+}
 /* line 4, ../sass/custom/_bootstrapoverride.scss */
 .nav li a:focus {
   background: transparent;
