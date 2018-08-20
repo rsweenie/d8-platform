@@ -12901,7 +12901,7 @@ article figcaption {
 .front-page-classic > div:nth-child(3n) {
   margin-bottom: 80px;
 }
-/* line 117, ../sass/custom/_frontpage.scss */
+/* line 116, ../sass/custom/_frontpage.scss */
 .front-page-classic a.orange-text-link {
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
@@ -12913,35 +12913,35 @@ article figcaption {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 139, ../sass/custom/_frontpage.scss */
+/* line 138, ../sass/custom/_frontpage.scss */
 .front-page-classic .row.breadcrumb_region {
   display: none;
 }
-/* line 143, ../sass/custom/_frontpage.scss */
+/* line 142, ../sass/custom/_frontpage.scss */
 .front-page-classic .row.site_name {
   z-index: 999;
   position: absolute;
 }
-/* line 147, ../sass/custom/_frontpage.scss */
+/* line 146, ../sass/custom/_frontpage.scss */
 .front-page-classic .slideText p {
   font-weight: 400;
 }
-/* line 150, ../sass/custom/_frontpage.scss */
+/* line 149, ../sass/custom/_frontpage.scss */
 .front-page-classic .main .col-md-12 .center_column .front-page-classic .slide {
   height: 430px;
 }
-/* line 153, ../sass/custom/_frontpage.scss */
+/* line 152, ../sass/custom/_frontpage.scss */
 .front-page-classic .slick-slider.slick-list {
   overflow: visible;
 }
 
 @media (max-width: 1050px) {
-  /* line 166, ../sass/custom/_frontpage.scss */
+  /* line 165, ../sass/custom/_frontpage.scss */
   .main-front .slide {
     height: 350px;
   }
 
-  /* line 169, ../sass/custom/_frontpage.scss */
+  /* line 168, ../sass/custom/_frontpage.scss */
   .slideText {
     top: 37%;
   }
