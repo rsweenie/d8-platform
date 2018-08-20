@@ -13633,6 +13633,73 @@ article figcaption {
   top: 450px;
 }
 
+/* line 2, ../sass/custom/_news.scss */
+.view-cu-news .views-row {
+  display: flex;
+  border-bottom: 1px #CCC solid;
+}
+/* line 5, ../sass/custom/_news.scss */
+.view-cu-news .views-row:nth-child(n+2) {
+  margin-top: 30px;
+}
+/* line 8, ../sass/custom/_news.scss */
+.view-cu-news .views-row:last-of-type {
+  border-bottom: none;
+}
+/* line 11, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news-image {
+  min-width: 200px;
+  height: 166px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/* line 16, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news-image img {
+  width: 200px;
+}
+/* line 21, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+/* line 26, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news-text .learn-more-link {
+  display: flex;
+  margin-bottom: 30px;
+}
+/* line 30, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news-text .learn-more-link a {
+  color: #73B865;
+  display: block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 17px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+}
+/* line 17, ../sass/custom/_utility.scss */
+.view-cu-news .views-row .news-text .learn-more-link a::before {
+  content: url(../images/svgs/green-arrow.svg);
+  display: inline-flex;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+/* line 24, ../sass/custom/_utility.scss */
+.view-cu-news .views-row .news-text .learn-more-link a:hover {
+  color: #002E6D;
+  text-decoration: none;
+}
+/* line 28, ../sass/custom/_utility.scss */
+.view-cu-news .views-row .news-text .learn-more-link a:hover::before {
+  content: url(../images/svgs/dkblue-arrow.svg);
+  display: inline-flex;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
 /* line 4, ../sass/custom/_bootstrapoverride.scss */
 .nav li a:focus {
   background: transparent;
