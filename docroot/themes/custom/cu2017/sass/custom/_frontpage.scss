@@ -164,13 +164,19 @@
 @media (max-width: 480px){
    
         body{
-            background: blue;
+            background:#eaeaea;
+        }
+        .front-page-classic .block-region-top{
+            margin-top: -52px;
         }
         .main-front .slide{
-            height: 155px;
+            height: 185px;
         }
-        .slideText {
+        .front-page-classic .slideText {
             top: 37%;   
+        }
+        .front-page-classic .block-region-ctas {
+            padding: 50px 0 40px 0;
         }
     
 }
