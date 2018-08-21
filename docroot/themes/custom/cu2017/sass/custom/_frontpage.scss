@@ -15,7 +15,7 @@
         padding: 0;
     }
     .block-region-top{
-    margin-top: -105px
+        margin-top: -143px
     }
     .slideText {
         background: transparent !important;
@@ -54,7 +54,7 @@
     .new-arrows{
         width: 100px;
         position: absolute;
-        right: 200px;
+        right: 11%;
         bottom: 0px;
         height: 60px;
     }
@@ -161,12 +161,86 @@
 //         margin-bottom: 80px;
 //     }
 
-@media (max-width: 1050px){
-    .main-front .slide{
-        height: 350px;
-    }
-    .slideText {
-        top: 37%;
-        
-    }
+@media (max-width: 480px){
+   
+        body{
+            background: blue;
+        }
+        .main-front .slide{
+            height: 155px;
+        }
+        .slideText {
+            top: 37%;   
+        }
+    
 }
+
+@media (min-width: 481px) and (max-width: 768px){
+        
+        body{
+            background: green;
+        }
+        .front-page-classic .block-region-top{
+            margin-top: -58px;
+        }
+        .main-front .slide{
+            height: 256px;
+        }
+        .front-page-classic .slideText {
+            top: 32%;  
+        }
+
+        .front-page-classic > div:nth-child(3){
+            margin-left:10px;
+            .image {
+                display: flex;
+                width: 150%;
+                img { 
+                    margin-top: 20px;
+                }
+            }
+            .content {
+                float:left;
+                width: 40%;
+                margin-left: 40px;
+            }
+        }       
+        .front-page-classic .block-region-ctas {
+            padding: 50px 0 40px 0;
+        }
+       
+}
+
+@media (min-width:769px) and (max-width: 1049px){
+        .front-page-classic .block-region-top{
+            margin-top: -58px;
+        }
+        .main_front .slide, .main_front .slick-slide {
+            height: 350px;
+        }
+        .front-page-classic .slideText {
+            top: 50%;   
+        }
+        .first-content.col-md-8 {
+            width: 100%;
+        }
+        .calls-to-action.col-md-4 {
+            width: 100%;
+            margin-left: -15px;
+            padding: 0px;
+        }
+        .front-page-classic .block-region-ctas {
+            padding: 50px 0px 30px 30px;
+        }
+        .bottom_callout.col-md-3 {
+            margin-top: -50px;
+        }
+        .front-page-classic .new-arrows {
+            width: 100px;
+            position: absolute;
+            right: 1%;
+            bottom: 0px;
+            height: 60px;
+        }
+}
+
