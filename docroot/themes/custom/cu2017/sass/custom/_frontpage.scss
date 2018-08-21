@@ -176,10 +176,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-        
-        body{
-            background: green;
-        }
         .front-page-classic .block-region-top{
             margin-top: -58px;
         }
@@ -194,19 +190,22 @@
             margin-left:10px;
             .image {
                 display: flex;
-                width: 150%;
+                width: 120%;
                 img { 
                     margin-top: 20px;
                 }
             }
             .content {
                 float:left;
-                width: 40%;
+                width: 50%;
                 margin-left: 40px;
             }
         }       
         .front-page-classic .block-region-ctas {
             padding: 50px 0 40px 0;
+        }
+        .front-page-classic .new-arrows {
+            right: 2%;
         }
        
 }

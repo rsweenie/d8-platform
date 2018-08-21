@@ -12996,46 +12996,51 @@ article figcaption {
   .front-page-classic .block-region-ctas {
     padding: 50px 0 40px 0;
   }
+
+  /* line 211, ../sass/custom/_frontpage.scss */
+  .front-page-classic .new-arrows {
+    right: 2%;
+  }
 }
 @media (min-width: 769px) and (max-width: 1049px) {
-  /* line 215, ../sass/custom/_frontpage.scss */
+  /* line 218, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -58px;
   }
 
-  /* line 218, ../sass/custom/_frontpage.scss */
+  /* line 221, ../sass/custom/_frontpage.scss */
   .main_front .slide, .main_front .slick-slide {
     height: 350px;
   }
 
-  /* line 221, ../sass/custom/_frontpage.scss */
+  /* line 224, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText {
     top: 50%;
   }
 
-  /* line 224, ../sass/custom/_frontpage.scss */
+  /* line 227, ../sass/custom/_frontpage.scss */
   .first-content.col-md-8 {
     width: 100%;
   }
 
-  /* line 227, ../sass/custom/_frontpage.scss */
+  /* line 230, ../sass/custom/_frontpage.scss */
   .calls-to-action.col-md-4 {
     width: 100%;
     margin-left: -15px;
     padding: 0px;
   }
 
-  /* line 232, ../sass/custom/_frontpage.scss */
+  /* line 235, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0px 30px 30px;
   }
 
-  /* line 235, ../sass/custom/_frontpage.scss */
+  /* line 238, ../sass/custom/_frontpage.scss */
   .bottom_callout.col-md-3 {
     margin-top: -50px;
   }
 
-  /* line 238, ../sass/custom/_frontpage.scss */
+  /* line 241, ../sass/custom/_frontpage.scss */
   .front-page-classic .new-arrows {
     width: 100px;
     position: absolute;
