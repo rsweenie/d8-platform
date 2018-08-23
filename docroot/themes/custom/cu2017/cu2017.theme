@@ -68,6 +68,8 @@ function cu2017_preprocess_views_view_fields__cu_news__page_1(array &$variables)
 
   print_r(array_keys($variables));
   print_r(sizeof($variables['view']->result));
+  // will be paginated, 5 news items per page
+  // TODO: change pagination to 5 items per page
   // kint($variables['view']);
   // each loop per row? check length of row array?
   $row = $variables['row']->_entity;
