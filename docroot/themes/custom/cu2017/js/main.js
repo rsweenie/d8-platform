@@ -210,15 +210,4 @@ jQuery(document).ready(function() {
     newWindow('ul.header_nav li a');
     newWindow('ul#schools_and_colleges_menu_body  li a');
     newWindow('ul#information_for_menu_body li a');
-    //front page -mobile text moved below slideshow
-    // function reorganizeSlideText {
-    //     // $("").insertAfter("row_1");
-    // }
-    // function putSlideTextInPlace(){
-        
-    //     // addNewClass(??, mobile_slide-text)
-    // }
-    // function addNewClass($element, $className) {
-    //     $element.addClass($className)
-    // }
 });
