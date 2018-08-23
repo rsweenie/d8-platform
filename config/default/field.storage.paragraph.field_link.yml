@@ -1,16 +1,17 @@
-uuid: 3366b7a1-e087-400a-b845-72ff9cd7f7bd
+uuid: 353a4c06-7f6e-4cfb-a2f5-86aa55df1db9
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
     - node
+    - paragraphs
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_featured_content_link
-field_name: field_featured_content_link
-entity_type: node
+id: paragraph.field_link
+field_name: field_link
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: node

@@ -1,4 +1,4 @@
-## Description
+# Description
 
 A few sentences describing the overall goals of the pull request's commits.
 
@@ -6,23 +6,22 @@ A few sentences describing the overall goals of the pull request's commits.
 
 List related PRs against other branches:
 
-- branch	PR
-- other_pr_production	link
-- other_pr_master	link
+- branch PR
+- other_pr_production link
+- other_pr_master link
 
 ## Todos
- 
- - [ ] Tests
- - [ ] Documentation
- 
+
+- [ ] Tests
+- [ ] Documentation
+
 ## Deploy Notes
 
-Notes regarding deployment the contained body of work. These should note any db migrations, etc.
+Notes regarding deployment. These should note any db migrations, etc.
 
 ## Steps to Test or Reproduce
 
 Outline the steps to test or reproduce the PR here.
 
-```
-
+```shell
 ```

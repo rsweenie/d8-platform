@@ -1,0 +1,39 @@
+uuid: 0ed73034-f6c0-4f0e-8074-1738f63f39b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.featured_content
+    - node.type.featured_content_group
+    - paragraphs.paragraphs_type.featured_content_item
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: keMzNDUfFgFA9179Wl_6l0IWbWdHMS0q_rJDijMtV9c
+id: node.featured_content_group.featured_content
+field_name: featured_content
+entity_type: node
+bundle: featured_content_group
+label: 'Featured Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      featured_content_item: featured_content_item
+    target_bundles_drag_drop:
+      accordion:
+        weight: 4
+        enabled: false
+      featured_content_item:
+        enabled: true
+        weight: 4
+      ief_link:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
