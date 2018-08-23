@@ -4,6 +4,7 @@
  * Links content type template.
  */
 #}
+
 <div{{ attributes.addClass('clearfix', 'links_wrapper') }}>
     {{ title_suffix.contextual_links }}    
     {% if content.field_links_open_in_new_window.0|render != "Off" %}  
@@ -16,5 +17,6 @@
         {% set href = content.field_links_link.0['#url'] %}
     {% endif %}
 
-    <a href="{{ href }}" target="{{ target }}"><li>{{ content.field_links_link_text.0 }}</li></a>      
+    <a href="{{ href }}" target="{{ target }}"><li>{{ content.field_links_link_text.0 }}</li></a>  
+
 </div>

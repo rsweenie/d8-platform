@@ -26,6 +26,7 @@
 
     <div{{ quote_box_attributes.addClass(classes) }}>
         <div class="quote_box_photo">{{ content.field_quote_box_photo }}</div>
+        {{ drupal_dump(content.field_quote_box_photo) }}
         <div class="quote_box_quote_text">{{ content.field_quote_box_quote_text }}</div>
         <br>
         <div class="quote_box_name_person">{{ content.field_name_person }}</div>
