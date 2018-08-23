@@ -153,16 +153,8 @@
         overflow: visible;
     }
 }
-// .main .slick-slider .slick-next, .main .slick-slider .slick-next:hover, .main .slick-slider .slick-next:focus {
-//    background-position: -47px 0px;
-// }
-// .front-page-classic > div:nth-child(3n) {
-//         margin-top: 40px;
-//         margin-bottom: 80px;
-//     }
 
 @media (max-width: 480px){
-   
         body{
             background:#eaeaea;
         }
@@ -178,7 +170,15 @@
         .front-page-classic .block-region-ctas {
             padding: 50px 0 40px 0;
         }
-    
+        .front-page-classic .slideText.mobile_slide_text{
+            background-color:#616161 !important;
+            padding-top: 1px;
+            padding-bottom: 20px;
+            margin-top: 0px;
+        }
+        .front-page-classic .slideText h1{
+            margin-bottom:10px;
+        }
 }
 
 @media (min-width: 481px) and (max-width: 768px){

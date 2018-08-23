@@ -14,8 +14,10 @@ jQuery(document).ready(function() {
         }
     });
     // slideshow
+
     jQuery('.field--name-field-slide').on("init", function() {
-        $(".new-arrows").appendTo(".slider");
+        jQuery (".new-arrows").appendTo(".slider");
+       
         })
         .slick({
             slidesToShow: 1,
@@ -26,6 +28,21 @@ jQuery(document).ready(function() {
             nextArrow: '<button type="button" class="slick-next"></button>',
             appendArrows: jQuery("<div></div>").addClass("new-arrows").insertAfter(".field--name-field-slide")
     });
+    jQuery('.field--name-field-slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+        console.log("made it to after change")
+        removeExisting();
+    });
+    function removeExisting(){
+        // var allExistingElements = jQuery(".front-page-classic .slideText.mobile_slide_text")
+        // allExistingElements.remove()
+        // console.log("finished remove existing")
+        changePosition();
+    }
+    function changePosition(){
+        var neededText = jQuery(".slick-active .slideText")
+        jQuery(neededText).insertAfter(row_1);
+        console.log("finished changePosition")
+    }
     // if mobile, build the slide text below the slide
     if (jQuery('.region-hero-slideshow')[0] && jQuery(window).width() < 768) {
         var slideTextjq = jQuery(".region-hero-slideshow .slick-active .slideText");
@@ -192,5 +209,16 @@ jQuery(document).ready(function() {
     newWindow('ul.menu--transaction-menu li a');
     newWindow('ul.header_nav li a');
     newWindow('ul#schools_and_colleges_menu_body  li a');
-    newWindow('ul#information_for_menu_body li a')
+    newWindow('ul#information_for_menu_body li a');
+    //front page -mobile text moved below slideshow
+    // function reorganizeSlideText {
+    //     // $("").insertAfter("row_1");
+    // }
+    // function putSlideTextInPlace(){
+        
+    //     // addNewClass(??, mobile_slide-text)
+    // }
+    // function addNewClass($element, $className) {
+    //     $element.addClass($className)
+    // }
 });

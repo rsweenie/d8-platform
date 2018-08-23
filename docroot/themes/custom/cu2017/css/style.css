@@ -12936,29 +12936,42 @@ article figcaption {
 }
 
 @media (max-width: 480px) {
-  /* line 166, ../sass/custom/_frontpage.scss */
+  /* line 158, ../sass/custom/_frontpage.scss */
   body {
     background: #eaeaea;
   }
 
-  /* line 169, ../sass/custom/_frontpage.scss */
+  /* line 161, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -52px;
   }
 
-  /* line 172, ../sass/custom/_frontpage.scss */
+  /* line 164, ../sass/custom/_frontpage.scss */
   .main-front .slide {
     height: 185px;
   }
 
-  /* line 175, ../sass/custom/_frontpage.scss */
+  /* line 167, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText {
     top: 37%;
   }
 
-  /* line 178, ../sass/custom/_frontpage.scss */
+  /* line 170, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0 40px 0;
+  }
+
+  /* line 173, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slideText.mobile_slide_text {
+    background-color: #616161 !important;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  /* line 179, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slideText h1 {
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
