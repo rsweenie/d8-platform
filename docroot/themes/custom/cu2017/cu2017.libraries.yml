@@ -1,11 +1,11 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
       css/headroom.css: {}
       css/customer-typeahead.css: {}
       /libraries/slick-carousel/slick/slick.css: {}
       /libraries/slick-carousel/slick/slick-theme.css: {}
+      css/style.css: {}
       
 
 bootstrap-scripts:

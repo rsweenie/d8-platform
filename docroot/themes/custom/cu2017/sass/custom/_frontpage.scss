@@ -1,31 +1,40 @@
 // front page CLASSIC
 // TODO figure out how to make wrapper/use sass
-
-// any link with the class of button blue will have this treatment.
-// currently the arrow as background image isn't showing up
+    //TODO for whatever reason .front-page-classic.row.breadcrumb_region doesn't work but .row.breadcrumb_region
+    .row.breadcrumb_region{
+        display:none !important; 
+    }
 .front-page-classic{
     %orange-h2{
         color: $orange;
         font-family: $baseFont;
         font-weight: $semiBold;
     }
-
-    .row.breadcrumb_region{
-        display:none !important; 
+    .top.col-md-12{
+        padding: 0;
+        padding: 0;
+    }
+    .block-region-top{
+        margin-top: -143px
     }
     .slideText {
         background: transparent !important;
+        max-width: $maxContentWidth;
+        margin: 0 auto;
+        padding-left: 42px;
+        position: relative;
+        top: 54%;
         h1{
             color: $yellow;
             text-transform: uppercase;
             font-weight: $bold;
-            font-size: 60px;
+            font-size: 3.8em;
             font-family: $condensedFont;
             margin-top: -10px;
             margin-bottom: -10px;
         }
 
-        h2{
+        h2 {
             color: $white;
             font-weight: $bold;
             font-family: $condensedFont;
@@ -36,7 +45,48 @@
             background-position: 100%;
             background-repeat: no-repeat;
             padding: 0px 20px 0px 0px;
+            font-size:1em;
         }
+        p {
+            font-weight: $regular;
+        }
+    }
+    .new-arrows{
+        width: 100px;
+        position: absolute;
+        right: 11%;
+        bottom: 0px;
+        height: 60px;
+    }
+
+     .new-arrows .slick-prev{
+        left:0 !important;
+        background: url(/themes/custom/cu2017/images/front-page/arrows-circle-left.png) no-repeat;
+        background-position: 6px 0;
+        width: 50px;
+        height: 50px;
+        
+     }
+    .new-arrows .slick-prev:before, .new-arrows .slick-next:before {
+        content:none;
+    }
+
+
+    .new-arrows .slick-next{
+        right:0 !important;
+        background: url(/themes/custom/cu2017/images/front-page/arrows-circle-right.png) no-repeat !important;
+        background-position: -46px 0;
+        width: 44px;
+        height: 50px;
+
+        :before {
+            content: none;
+        }
+    }
+    > div:not(:first-child){
+        max-width: $maxContentWidth;
+        margin: 0 auto;
+        padding-left: 28px;
     }
     a.button-blue {
         background-color: $mediumBlue;
@@ -48,18 +98,20 @@
         color: $white;
         font-family: "Open Sans Condensed", sans-serif;
         text-decoration: none;
+        text-transform: uppercase;
    
         &:hover {
             text-decoration: none;
             color: $white;
-            background-color: $darkBlue
+            background-color: $darkBlue;
+            text-transform: uppercase;
         }
     }
     .block-region-ctas {
         padding: 30px;
     }
     > div:nth-child(3n) {
-        margin-top: 40px;
+        margin-bottom: 80px;
     }
     a.orange-text-link{
         font-family: $condensedFont;
@@ -83,31 +135,117 @@
             @extend %orange-h2;
         }
     }
-    .button.slick-next.slick-arrow{
-        background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat !important;
-        background-position: -46px 0;
-        color: none;
-        outline: none;
-        right: 27px;
+    .row.breadcrumb_region {
+        display: none ;
     }
-    
+
+    .row.site_name {
+        z-index: 999;
+        position: absolute;
+    }
+    .slideText p{
+        font-weight:400;
+    }
+    .main .col-md-12 .center_column .front-page-classic .slide {
+        height: 430px;
+    }
+    .slick-slider.slick-list{
+        overflow: visible;
+    }
 }
 
-.main .slick-slider .slick-next, 
-.main .slick-slider .slick-next:hover, 
-.main .slick-slider .slick-next:focus {
-    background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
-    background-position: -47px 1px;
-    outline: none;
-    right: 30px;
-}
-.main .slick-slider .slick-prev, 
-.main .slick-slider .slick-prev:hover, 
-.main .slick-slider .slick-prev:focus{
-    background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
-    position: relative;
-    left: 1090px;
-    top: 450px;
+@media (max-width: 480px){
+        body{
+            background:#eaeaea;
+        }
+        .front-page-classic .block-region-top{
+            margin-top: -52px;
+        }
+        .main-front .slide{
+            height: 185px;
+        }
+        .front-page-classic .slideText {
+            top: 37%;   
+        }
+        .front-page-classic .block-region-ctas {
+            padding: 50px 0 40px 0;
+        }
+        .front-page-classic .slideText.mobile_slide_text{
+            background-color:#616161 !important;
+            padding-top: 1px;
+            padding-bottom: 20px;
+            margin-top: 0px;
+        }
+        .front-page-classic .slideText h1{
+            margin-bottom:10px;
+        }
 }
 
-// front page TWO COLUMN
+@media (min-width: 481px) and (max-width: 768px){
+        .front-page-classic .block-region-top{
+            margin-top: -58px;
+        }
+        .main-front .slide{
+            height: 256px;
+        }
+        .front-page-classic .slideText {
+            top: 32%;  
+        }
+
+        .front-page-classic > div:nth-child(3){
+            margin-left:10px;
+            .image {
+                display: flex;
+                width: 120%;
+                img { 
+                    margin-top: 20px;
+                }
+            }
+            .content {
+                float:left;
+                width: 50%;
+                margin-left: 40px;
+            }
+        }       
+        .front-page-classic .block-region-ctas {
+            padding: 50px 0 40px 0;
+        }
+        .front-page-classic .new-arrows {
+            right: 2%;
+        }
+       
+}
+
+@media (min-width:769px) and (max-width: 1049px){
+        .front-page-classic .block-region-top{
+            margin-top: -58px;
+        }
+        .main_front .slide, .main_front .slick-slide {
+            height: 350px;
+        }
+        .front-page-classic .slideText {
+            top: 50%;   
+        }
+        .first-content.col-md-8 {
+            width: 100%;
+        }
+        .calls-to-action.col-md-4 {
+            width: 100%;
+            margin-left: -15px;
+            padding: 0px;
+        }
+        .front-page-classic .block-region-ctas {
+            padding: 50px 0px 30px 30px;
+        }
+        .bottom_callout.col-md-3 {
+            margin-top: -50px;
+        }
+        .front-page-classic .new-arrows {
+            width: 100px;
+            position: absolute;
+            right: 1%;
+            bottom: 0px;
+            height: 60px;
+        }
+}
+
