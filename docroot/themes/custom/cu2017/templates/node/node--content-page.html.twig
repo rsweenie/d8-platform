@@ -4,18 +4,18 @@
  * Content Page template.
  */
 #}
-<div{{ attributes.addClass('clearfix', 'content_page_wrapper') }}>
-    {{ title_suffix.contextual_links }}
+{# <div{{ attributes.addClass('clearfix', 'content_page_wrapper') }}>
+    {{ title_suffix.contextual_links }} #}
 
-    {% if content.field_header_background_image.0|render %}
+    {# {% if content.field_header_background_image.0|render %}
         <div class="header_image" id="header_image">
             {% set image = content.field_header_background_image.0 %}
             {% set image = image|merge({'#image_style': 'rectangle_horizontal_header_2400x600_'}) %}
             {{ image }}
         </div>
-    {% endif %}
+    {% endif %} #}
 
-    {{ content.field_slide }}
+    {# {{ content.field_slide }}
     {{ content.body }}
-    {{ content.field_tabbed_accordion }}
-</div>
+    {{ content.field_tabbed_accordion }} #}
+{# </div> #}

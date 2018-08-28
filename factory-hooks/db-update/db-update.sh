@@ -39,16 +39,14 @@ echo "Running config import on $uri"
 siteName="${uri%%.*}"
 
 # Get alias env 
-subEnv="${env#01}"
-
-# Temporarily add samlauth to config ignore
-# drush @"$siteName.$subEnv" config:set config_ignore.settings ignored_config_entities.4 samlauth.authentication -y
+# subEnv="${env#01}"
+echo "ENV: $env"
 
 # Config import any changes just pushed to the code base
-drush @"$siteName.$subEnv" config:import vcs -y
+drush @"$siteName.$env" config:import vcs -y
 
 # Scrubbing functions to fix login errors
-drush @"$siteName.$subEnv" acsf-duplication-scrub-batch "$siteName" "$site"
-# echo drush @"$siteName.$subEnv" acsf-duplication-scrub-batch "$siteName" "$site"
+drush @"$siteName.$env" acsf-duplication-scrub-batch "$siteName" "$site"
+
 # Push a notification to the #acsf_site_updates channel on slack
-curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$subEnv\"}" https://hooks.slack.com/services/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
+curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$env\"}" https://hooks.slack.com/services/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
