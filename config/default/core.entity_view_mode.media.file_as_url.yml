@@ -1,0 +1,14 @@
+uuid: 1e4ab5cd-3ca8-4596-b0fa-df5eb2b0503f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: 'Only show the URL of a file'
+id: media.file_as_url
+label: 'File as URL'
+targetEntityType: media
+cache: true
