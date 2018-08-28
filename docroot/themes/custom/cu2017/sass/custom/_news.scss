@@ -1,0 +1,40 @@
+.view-cu-news {
+    .views-row {
+        display: flex;
+        border-bottom: 1px #CCC solid;
+        &:nth-child(n+2) {
+            margin-top: 30px;
+        }
+        &:last-of-type {
+            border-bottom: none;
+        }
+        .news-image {
+            min-width: 200px;
+            height: 166px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            img {
+               width: 200px 
+            }
+
+        }
+        .news-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            
+            .learn-more-link {
+                display: flex;
+                margin-bottom: 30px;
+
+                a {
+                    @include green-arrow-link(false);
+                    display: flex;
+                    flex-direction: row-reverse;
+                    list-style-type: none;
+                }
+            }
+        }
+
+    }
+}

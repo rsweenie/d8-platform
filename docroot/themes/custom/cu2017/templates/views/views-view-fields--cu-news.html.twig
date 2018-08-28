@@ -1,0 +1,80 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable`
+ */
+#}
+{# {{ dd(_context|keys) }} #}
+{# {{ dd(fields.field_new._entity) }} #}
+{# {{ dd(row._relationship_entities.field_new)}} #}
+
+{% set news_link = row._relationship_entities.field_new %}
+{% if news_link is not empty %}
+    {% set headline_link %}
+       {% if news_link.field_links_open_in_new_window.value == "0" %}
+        {% set target = '' %}
+        {% else %}
+        {% set target = 'target="_blank"' %}
+       {% endif %}
+       {# {% set headline_text = fields.field_content_page_headline.content %}
+       {% set link_url = 'href="' ~ fields.field_links_link ~ '"' %}
+#}
+      <a href="#" {{target}}><h4>test of set</h4></a> 
+    {% endset %}
+{% else %}
+    {% set headline_link = fields.nothing.content  %}
+{% endif %}
+
+<div class="news-image">
+    {{fields.field_content_page_image.content}}
+</div>
+<div class="news-text">
+    {{ headline_link }}
+    {# {%- set news_list_title_link -%}
+        {{ fields.field_new.content}}
+    {% endset %} #}
+    {# {{ dd(news_list_title_letter) }} #}
+    {# {{ news_list_title_letter }} #}
+    {# {{ dd( fields.field_new.content) }}  #}
+    
+    {# {% if news_list_title_link.value is not empty %}
+        <h2>{{ fields.field_new.content }}</h2>
+    {% else %}
+        <h2>{{ fields.title.content }}</h2>
+    {% endif %} #}
+   
+    <p class="date">{{ fields.created.content }}</p>
+    <p class="summary">{{ fields.body.content }}</p>
+    <div class="learn-more-link">
+        {# see view for rendering of this field "Content: Link to Content" #}
+        {{ fields.view_node.content }}
+    </div>
+    {{ fields.field_new.content }}
+</div>
