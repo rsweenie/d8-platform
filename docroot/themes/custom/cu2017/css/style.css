@@ -11405,6 +11405,7 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
 /* line 6, ../sass/custom/_mainnav.scss */
 .main_nav {
   padding-left: 0;
+  padding-top: 18px;
 }
 /* line 9, ../sass/custom/_mainnav.scss */
 .main_nav .child_menu {
