@@ -36,20 +36,29 @@ jQuery(document).ready(function() {
     function removeExisting(){
         // find the divs with slideText mobile_slide_tex undreneath front-page classic and remove all except first happening of slideText
     //     var allExistingElements = jQuery(".front-page-classic .slideText.mobile_slide_text")
-   
-        var mainElement = jQuery(".front-page-classic")
-        var children = mainElement[0].children
-        jQuery.each( children, function( i ,val ){
-            console.log(val)
-            debugger;
-            if (val.classList.contains("mobile_slide_text") == true){
-            console.log(children[i].text);
-            val.remove();
-            }
-            else {
-                console.log( "not found" );
-            }
-        })
+//    FIRST VERSION
+        // var mainElement = jQuery(".front-page-classic")
+        // var children = mainElement[0].children
+        // jQuery.each( children, function( i ,val ){
+        //     console.log(val)
+        //     debugger;
+        //     if (val.classList.contains("mobile_slide_text") == true){
+        //     console.log(children[i].text);
+        //     val.remove();
+        //     }
+        //     else {
+        //         console.log( "not found" );
+        //     }
+        // })
+// FIRST VERSION
+jQuery(".front-page-classic")[0].children[0].classList.contains("mobile_slide_text")
+     var mainElement = jQuery(".front-page-classic")
+     var children = mainElement[0].children
+     jQuery.each( children, function ( i, val){
+         
+     })
+
+
     }
     checkWindowSize();
     function checkWindowSize(){
