@@ -7,15 +7,21 @@
 .front-page-classic{
     %orange-h2{
         color: $orange;
-        font-family: $baseFont;
+        font-family: $h2LargerFontSize;
         font-weight: $semiBold;
+    }
+    .margin-top-10{
+        margin-top: 10px
+    }
+    p{
+        font-size:18px;
     }
     .top.col-md-12{
         padding: 0;
         padding: 0;
     }
     .block-region-top{
-        margin-top: -143px
+        margin-top: -144px
     }
     .slideText {
         background: transparent !important;
@@ -28,7 +34,7 @@
             color: $yellow;
             text-transform: uppercase;
             font-weight: $bold;
-            font-size: 3.8em;
+            font-size: 4em;
             font-family: $condensedFont;
             margin-top: -10px;
             margin-bottom: -10px;
@@ -38,6 +44,7 @@
             color: $white;
             font-weight: $bold;
             font-family: $condensedFont;
+            font-size:36px;
         }
 
         a {
@@ -45,7 +52,7 @@
             background-position: 100%;
             background-repeat: no-repeat;
             padding: 0px 20px 0px 0px;
-            font-size:1em;
+            margin-top: 15px;
         }
         p {
             font-weight: $regular;
@@ -111,7 +118,7 @@
         padding: 30px;
     }
     > div:nth-child(3n) {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
     a.orange-text-link{
         font-family: $condensedFont;
@@ -124,33 +131,39 @@
         text-transform: uppercase;
         text-decoration: none;
     }
-    h2{
-        .block-region-middle-center &{
+    #row_3{
+        h2 {
             @extend %orange-h2;
         }
-        .block-region-middle-left & {
-            @extend %orange-h2;
-        }
-        .block-region-middle-right & {
-            @extend %orange-h2;
+        p{
+            font-size: $pLargerFontSize;
         }
     }
     .row.breadcrumb_region {
         display: none ;
     }
-
-    .row.site_name {
-        z-index: 999;
-        position: absolute;
-    }
-    .slideText p{
+    .slideText p {
         font-weight:400;
     }
     .main .col-md-12 .center_column .front-page-classic .slide {
         height: 430px;
     }
-    .slick-slider.slick-list{
+    .slick-slider.slick-list {
         overflow: visible;
+    }
+    
+    .first-content {
+        h3 {
+            font-weight: $custom;
+            color: $mediumBlue; 
+            font-size: $h3LargerFontSize;
+        }
+        p {
+            font-size: $pLargerFontSize;
+        }
+        a {
+            font-size: $h3FontSize ;
+        }
     }
 }
 
