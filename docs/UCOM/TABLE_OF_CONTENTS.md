@@ -2,4 +2,4 @@
 
 ## Table of Contents
 
-* [Building a site in Acquia Cloud Site Factory](docs/UCOM/BUILDING_SITE_IN_ACSF.md)
+* [Building a site in Acquia Cloud Site Factory](BUILDING_SITE_IN_ACSF)
