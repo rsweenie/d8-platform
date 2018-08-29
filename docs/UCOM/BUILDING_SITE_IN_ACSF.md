@@ -20,4 +20,4 @@ Production: creighton.acsitefactory.com
 
 4. Click the `Create site` button at the bottom of the screen. `!caution` Coordinate with devs on this step: The site should now be staged to the dev and test environments for testing prior to launch, but care should be taken - staging sites down to dev or test can wipe all sites currently in those environments and only copy down the sites selected for staging. More info on staging sites to non-production environments [here](https://docs.acquia.com/site-factory/workflow/staging/)
 
-[Home](/d8-platform/docs/UCOM/TABLE_OF_CONTENTS.md)
+[Home](/d8-platform/docs/UCOM/TABLE_OF_CONTENTS)
