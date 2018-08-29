@@ -1,13 +1,15 @@
-uuid: 15898d1f-5f7a-493b-81f2-4d5249d9d5ab
+uuid: 86098a75-52dd-4588-80ef-abfcb6bece5c
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.featured_content
-id: node.featured_content.promote
+    - node.type.featured_content_group
+_core:
+  default_config_hash: bu7iQSzKJyT1fIRt0ewliM7ZXCXro6km4u7UiujQ2rA
+id: node.featured_content_group.promote
 field_name: promote
 entity_type: node
-bundle: featured_content
+bundle: featured_content_group
 label: 'Promoted to front page'
 description: ''
 required: false

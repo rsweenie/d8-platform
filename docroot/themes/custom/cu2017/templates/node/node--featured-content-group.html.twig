@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Featured Content template.
+ */
+#}
+<div{{ attributes.addClass('clearfix', 'featured_content_group_wrapper') }}>
+    {{ title_suffix.contextual_links }}
+    {% set featured_content_attributes = create_attribute() %}
+    {% set classes = [] %}
+
+    {% if content.field_desktop_orientation.0|render|lower|trim == "vertical" %} 
+        {% set classes = classes|merge(['desktop_vertical']) %}
+    {% else %}
+        {% set classes = classes|merge(['desktop_horizontal']) %}
+    {% endif %}
+    
+    <div{{ featured_content_attributes.addClass(classes) }}>
+        {{ content.featured_content }}
+    </div>
+</div>
+

@@ -79,7 +79,11 @@ display:
             'entity:node':
               content_page: default
               copy_box: default
+              documentation: default
               featured_links: default
+              header_alert: default
+              links: default
+              news_spotlight: default
               profile: default
               promo_box: default
               quote_box: default
@@ -87,11 +91,6 @@ display:
               slide: default
               slideshow: default
               tabbed_accordion: default
-              header_alert: default
-              links: default
-              featured_content: default
-              news_spotlight: default
-              documentation: default
       fields:
         rendered:
           table: search_api_index_content

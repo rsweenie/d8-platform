@@ -1,22 +1,22 @@
-uuid: d1e3ebc8-ae8d-4cf0-a885-8d681a61c307
+uuid: b6eb115f-2167-462f-9928-b9c4c356e295
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
-    - node
+    - paragraphs
+    - text
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_fc_additional_links
-field_name: field_fc_additional_links
-entity_type: node
-type: entity_reference
-settings:
-  target_type: node
-module: core
+id: paragraph.field_body
+field_name: field_body
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
