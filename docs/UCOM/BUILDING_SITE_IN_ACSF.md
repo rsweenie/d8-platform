@@ -10,7 +10,7 @@ Production: creighton.acsitefactory.com
 
 1. Select one of the groups from the menu on the left side of the screen
 
-    ![Select group](d8-platform/docs/images/select_group.png "Select Group Screenshot")
+    ![Select group](/d8-platform/docs/images/select_group.png "Select Group Screenshot")
 
 2. Select the “Create a new site” button on the top right of the screen
     ![Create new site](d8-platform/docs/images/create_new_site.png "Create New Site Screenshot")
