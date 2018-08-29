@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\node\Entity\Node;
+
 /**
  * @file
  * The primary PHP file for the cu2017 theme.
@@ -42,11 +44,57 @@ function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variab
   $node = \Drupal::request()->attributes->get('node');
   if ($node) {
     $content_type = $node->getType();
+    // change which content type is being referenced -> or change the function name to be more specific
     if ($content_type == 'news_spotlight') {
       $field_display = $node->get('field_display_type')->getValue();
       $field_display = $field_display[0]['value'];
       $field_display == 0 ? $display_type = 'spotlight' : $display_type = 'news';
       $suggestions[] = 'node__' . $content_type . '__' . $display_type;
+    } 
+  }
+}
+
+/**
+ * Pass link field values back to cu_news view template
+ */
+function cu2017_preprocess_views_view_fields__cu_news__page_1(array &$variables) {
+  // print_r(array_keys($variables));
+  $variables['view_node_1'] = array();
+  $variables['field_links_open_in_new_window'] = array();
+  $variables['field_links_file_link_upload'] = array();
+  $variables['uri'] = array();
+  $variables['link_text'] = array();
+  $variables['view_node_1'] = array();
+
+  print_r(array_keys($variables));
+  print_r(sizeof($variables['view']->result));
+  // will be paginated, 5 news items per page
+  // TODO: change pagination to 5 items per page
+  // kint($variables['view']);
+  // each loop per row? check length of row array?
+  $row = $variables['row']->_entity;
+  $news_link_field = $row->get('field_new')->getValue(); 
+  if($news_link_field){
+    $id = $news_link_field[0]['target_id'];
+    $node = Node::load($id);
+    if($node->get('field_links_open_in_new_window')->getValue()) {
+      array_push($variables['field_links_open_in_new_window'], "true");
+    } else { 
+      array_push($variables['field_links_open_in_new_window'], "false");
     }
+    if($node->get('field_links_file_link_upload')->getValue()) {
+      $field_links_file_link_upload = $node->get('field_links_file_link_upload')->getValue();
+      array_push($variables['field_links_file_link_upload'], $field_links_file_link_upload);
+    } else { 
+      array_push($variables['field_links_file_link_upload'], "false");
+    }
+    $link = $node->get('field_links_link')->getValue();
+    array_push($variables['uri'], $link[0]['uri']);
+    $link_text = $node->get('field_links_link_text')->getValue();
+    $link_text = $link_text[0]['value'];
+    array_push($variables['link_text'], $link_text);
+  } else {
+    // $view_node_1 = $variables['fields']['view_node_1']->handler->original_value->__toString();
+    // array_push($variables['view_node_1'], $view_node_1);
   }
 }

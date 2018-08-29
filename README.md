@@ -4,7 +4,7 @@ This project encompasses the Drupal 8 multisite platform for Creighton Universit
 
 [Github Pages Documentation](https://cu-webteam.github.io/d8-platform/)
 
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/cu-webteam/d8-platform.svg?columns=all)](https://waffle.io/cu-webteam/d8-platform)
+[![Travis (.com)](https://img.shields.io/travis/cu-webteam/d8-platform.svg)](https://travis-ci.com/cu-webteam/d8-platform)
 
 ## Table of Contents
 

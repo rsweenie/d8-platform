@@ -36,12 +36,19 @@ cache:
 addons:
   ssh_known_hosts:
     - svn-1402.enterprise-g1.hosting.acquia.com
-  chrome: stable
+  browserstack:
+    username: "webteam@creighton.edu"
+    access_key:
+      secure: "Z7KYrManWdReaYbd3F58/qIN1Vg+wI+mJI4f9lU+3k4VuauWXpOt8uaafBVfxsUtl8qf48SXP1IGqiM0FT3MEGqi7Ml0grzPMYKUs7iNp3aTFs2vIWds5ZDzcXUSdvf4wpD9kLXvX51981OEmKcY+YnFSrd56lN5x9Ng3WNav4qH0I1ALKZQDUOwjVAdN4DNGbOGj32tyqipFcM3TbaNISIoFTNfP8fX3XdazXLRUy7B2P8NVb1Sa+i3+i43JwIlDbBi7Nr8gI1+qxWxVhPUG6Zmmv3WQVYcUENNdoGBmxWwBEmJFGJxvlk35JTCvKZaVKXDqixTP4NNmWif5nPBNswu/zUT3V7tqj13btNVz8T2s7deTxG6Zs7g1eAah97Y4dPXuvJiK8GUmjWbpGJzP8T7K/rJoHDYcE4V4My2Re30lChmm1ndeSff8KRaT0LJV9gUoqJJXoVu/+8g1W+MrT36f3uVxWS542Ch5+UYp0KaoiSEokKW6ekpGl6txbYnySVFvUgcbD365u7Bx2qTu4cYGhA5HNK9R4kJd1RyzNw2x5WeTLd/COVN3ScfD4KkTrVWMErVPMRRH1bnYWfqAEncHVU8iR4jCzUS4Qos7yQiBnrm4t49Pd2lHmqITgwJwBD03M5O2ZkGj3borTde06skGdgn9rWbif+0QJbyySQ="  # chrome: stable
+      # browserstack setup docs here: https://docs.travis-ci.com/user/browserstack/
 
 # @see https://docs.travis-ci.com/user/notifications
 notifications:
-# - hipchat: [api token]@[room id or name]
-  - slack: creightonuniversity:iSkHf85JV4Z9k2s7k5rwdIxy'
+  slack:
+      rooms: 
+        - creightonuniversity:iSkHf85JV4Z9k2s7k5rwdIxy'
+      on_success: always
+      on_failure: always
 
 before_install:
   # Disable xdebug.
@@ -58,6 +65,11 @@ install:
 
 script:
   - source ${BLT_DIR}/scripts/travis/run_tests
+
+before_deploy:
+  - echo "ssh creighton@svn-1402.enterprise-g1.hosting.acquia.com"
+  - ssh creighton@svn-1402.enterprise-g1.hosting.acquia.com
+
 
 # The version below MUST match the php version indicated at the top of this file, otherwise the artifact won't build.
 deploy:
