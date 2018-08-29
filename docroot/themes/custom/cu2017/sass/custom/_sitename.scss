@@ -1,6 +1,9 @@
 .site_name {
 	background-color: $siteNameBackground;
 	width: 100%;
+	z-index: 999;
+	position: relative;
+	
 
 	.cu2017_site_name {
 		color: $darkBlue;
