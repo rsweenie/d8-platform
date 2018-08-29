@@ -11,7 +11,7 @@ Production: creighton.acsitefactory.com
 
 1. Select one of the groups from the menu on the left side of the screen
 
-    ![Select group](/images/select_group.png "Select Group Screenshot")
+    ![Select group](docs/UCOM/images/select_group.png "Select Group Screenshot")
 
 2. Select the “Create a new site” button on the top right of the screen
     ![Create new site](UCOM/images/create_new_site.png "Create New Site Screenshot")
