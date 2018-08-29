@@ -3,7 +3,7 @@
 * Version: 1.1
 * Created: 07/17/2018
 * Last Updated: 08/29/2018
-* Intended Audience: UCOM/DoIT
+* Intended Audience: UCOM
 
 In Acquia Cloud Site Factory, new websites should first be created in your production environment, and then staged to your non-production environments for thorough testing before deploying them to production.
 Production: creighton.acsitefactory.com
