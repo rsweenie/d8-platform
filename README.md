@@ -241,7 +241,9 @@ BLT uses a number of configuration (.yml or .json) files to define and customize
 
 ## Platform Documentation
 
-* [Shell Scripts](docs/SHELL_SCRIPTS.md)
-* [D8 Development Process](docs/D8_DEV.md)
-* [Common D8 Commands](docs/COMMON_COMMANDS.md)
-* [cu2017 Theme Docs](/docroot/themes/custom/cu2017/README.md)
+* [Shell Scripts](docs/SHELL_SCRIPTS)
+* [D8 Development Process](docs/D8_DEV)
+* [Common D8 Commands](docs/COMMON_COMMANDS)
+* [cu2017 Theme Docs](/docroot/themes/custom/cu2017/README)
+* [Deployment Process](docs/DEPLOYMENT)
+* [Configuration Management](docs/CONFIG_MANAGEMENT)
