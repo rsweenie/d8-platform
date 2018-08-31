@@ -24,8 +24,10 @@ $domain = $_SERVER['HTTP_HOST'];
 $domain_fragments = explode('.', $_SERVER['HTTP_HOST']);
 $site_name = array_shift($domain_fragments);
 
+$site_name = "loginssotest";
+
 exec("/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt drupal:update --environment=$env --site=$site_name --define drush.uri=$domain --verbose --yes");
 
-shell_exec("drush core:status --uri=$domain --no-interaction -v");
-
-echo("drush $site_name.$env cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:$site:$env:(site id) -y");
+$response = array();
+exec("bash ../sso-config.sh $site_name 2>&1", $response);
+var_dump($response);

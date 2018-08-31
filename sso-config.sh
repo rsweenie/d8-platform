@@ -1,9 +1,10 @@
 #!/bin/bash
 # Copy files down from selected Acquia site
 
-echo 'Please enter the name of the production site on which to configure SSO: '
-read site_name
-site_alias="@$site_name.01live"
+# takes site name as an argument
+# $1 = site name
+
+site_alias="@$1.01live"
 # Finds site id for selected Acquia site
 site_path="Site path"
 while read line
@@ -20,4 +21,6 @@ done < <(drush $site_alias core:status)
 # [preflight] The alias @$site_alias could not be found.
 
 # Sets sp_entity_id for ACSF SSO into the selected site
+echo "drush ($site_alias) cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:creighton:01live:($site_id) -y"
+
 eval drush $site_alias cset samlauth.authentication sp_entity_id "urn:acquia:acsf:saml:sp:creighton:01live:$site_id" -y
