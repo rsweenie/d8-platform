@@ -37,11 +37,11 @@
 @import 'custom/wysiwyg';
 @import 'custom/flexpage';
 @import 'custom/megamenu';
-@import 'custom/sitename';
+
 @import 'custom/featuredcontent';
 @import 'custom/links';
 @import 'custom/frontpage';
-@import 'custom/news';
+@import 'custom/sitename';
 
 // override bootstrap defaults that interfere with custom styles
 @import 'custom/bootstrapoverride';

@@ -21,9 +21,10 @@ settings:
   label_display: '0'
   formatter:
     label: hidden
-    type: entity_reference_entity_view
+    type: media_thumbnail
     settings:
-      view_mode: default
+      image_style: rectangle_horizontal_header_2400x600_
+      image_link: ''
     third_party_settings: {  }
     weight: 0
   context_mapping:

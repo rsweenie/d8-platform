@@ -8,6 +8,8 @@ html {
 		margin: 0;
 
 		p {
+			margin: 0 0 1.5em;
+			word-wrap: break-word;
 			a {
 				color: $blue;
 				text-decoration: underline;
@@ -30,6 +32,49 @@ html {
 			color: $darkBlue;
 			font-size: $h3FontSize;
 			font-weight: $bold;
+			font-family: $baseFont;
+
 		}
+	}
+	.main {
+		padding: 0;
+		width: 100%;
+	
+		@media (min-width: 65.6875em) {
+			max-width: $maxContentWidth;
+		}
+	}
+	.main_page_title {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		margin-bottom: 5%;
+	}
+
+	.headline {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		font-size: 2.25em;
+		line-height: 1.25em;
+		padding-bottom: 0.8em;
+	}
+
+	.center_column {
+		@media all and (min-width: 992px) {
+			padding-left: 0;
+		}
+	}
+
+	.right_sidebar {
+		@media all and (min-width: 992px) {
+			padding-right: 0;
+		}
+	}
+
+	.featured_links_wrapper,
+	.copy_box_wrapper,
+	.quote_box_wrapper,
+	.related_links_wrapper,
+	.promo_box_wrapper {
+		margin-bottom: 20px;
 	}
 }

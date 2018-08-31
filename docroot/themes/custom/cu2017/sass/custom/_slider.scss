@@ -45,7 +45,6 @@
 			max-width: 1200px;
 			position: relative;
 			width: 100%;
-
 			a {
 				background-image: url(../images/svgs/white-arrow.svg);
 				background-position: right center;
@@ -107,7 +106,7 @@
 			}
 		}
 	}
-}
+
 
 .mobile-slide-text {
 	background-color: $baseGray;
@@ -347,4 +346,5 @@
 
 .slick-list {
 	width: 100%;
+}
 }
