@@ -1,0 +1,8 @@
+01dev:
+    uri: sitecreationtest2.dev-creighton.acsitefactory.com
+    host: staging-1749.enterprise-g1.hosting.acquia.com
+    options: {  }
+    paths: { dump-dir: /mnt/tmp }
+    root: /var/www/html/creighton.01dev/docroot
+    user: creighton.01dev
+    ssh: { options: '-p 22' }

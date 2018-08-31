@@ -21,6 +21,6 @@ done < <(drush $site_alias core:status)
 # [preflight] The alias @$site_alias could not be found.
 
 # Sets sp_entity_id for ACSF SSO into the selected site
-echo "drush ($site_alias) cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:creighton:01live:($site_id) -y"
-
-eval drush $site_alias cset samlauth.authentication sp_entity_id "urn:acquia:acsf:saml:sp:creighton:01live:$site_id" -y
+echo "/mnt/www/html/creighton01live/vendor/bin/drush @self cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:creighton:01live:($site_id) -y --uri=$1.creighton.acsitefactory.com --no-interaction -v --ansi"
+eval /mnt/www/html/creighton01live/vendor/bin/drush @self cset samlauth.authentication sp_entity_id "urn:acquia:acsf:saml:sp:creighton:01live:$site_id" -y --uri=$1.creighton.acsitefactory.com --no-interaction -v --ansi
+# eval drush $site_alias cset samlauth.authentication sp_entity_id "urn:acquia:acsf:saml:sp:creighton:01live:$site_id" -y
