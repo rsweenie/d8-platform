@@ -34,6 +34,8 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       content_page: content_page
+      news_spotlight: news_spotlight
+      profile: profile
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

@@ -31,50 +31,51 @@
  * @ingroup themeable`
  */
 #}
-{# {{ dd(_context|keys) }} #}
-{# {{ dd(fields.field_new._entity) }} #}
-{# {{ dd(row._relationship_entities.field_new)}} #}
-
-{% set news_link = row._relationship_entities.field_new %}
-{% if news_link is not empty %}
-    {% set headline_link %}
-       {% if news_link.field_links_open_in_new_window.value == "0" %}
-        {% set target = '' %}
-        {% else %}
-        {% set target = 'target="_blank"' %}
-       {% endif %}
-       {# {% set headline_text = fields.field_content_page_headline.content %}
-       {% set link_url = 'href="' ~ fields.field_links_link ~ '"' %}
-#}
-      <a href="#" {{target}}><h4>test of set</h4></a> 
-    {% endset %}
-{% else %}
-    {% set headline_link = fields.nothing.content  %}
-{% endif %}
-
+{# {{ dd(fields.field_links_file_link_upload.content) }} #}
+ {# {% if fields.field_links_file_link_upload.content %}
+ {{fields.field_links_file_link_upload.content}}
+  {% else %}
+  No
+  {% endif %} #}
 <div class="news-image">
     {{fields.field_content_page_image.content}}
 </div>
 <div class="news-text">
-    {{ headline_link }}
-    {# {%- set news_list_title_link -%}
-        {{ fields.field_new.content}}
-    {% endset %} #}
-    {# {{ dd(news_list_title_letter) }} #}
-    {# {{ news_list_title_letter }} #}
-    {# {{ dd( fields.field_new.content) }}  #}
-    
-    {# {% if news_list_title_link.value is not empty %}
-        <h2>{{ fields.field_new.content }}</h2>
-    {% else %}
-        <h2>{{ fields.title.content }}</h2>
-    {% endif %} #}
+    {# {{ START of section from Kikki}} #}
+    <div class="news_headline">
+        {# If there is a news link (meaning the news is not the node, wrap the headline with the link #}
+        {% if fields.field_links_link.content or fields.field_links_file_link_upload.content %}
+            <div class="links_wrapper">
+                {% if field_links_open_in_new_window.content != "false" %}  
+                    {% set target = '_blank' %} 
+                {% elseif fields.field_links_file_link_upload.content is not empty %}         
+                    {% set target = '_blank' %} 
+                {% endif %}
+               
+                {% if fields.field_links_file_link_upload.content %}
+                    {% set href = fields.field_links_file_link_upload.content %}
+                    
+                {% else %}
+                    {% set href = fields.field_links_link.content %}
+                {% endif %}
+
+                <a href="{{ href }}" target="{{ target }}"><h2>{{ fields.field_content_page_headline.content }}</h2> </a> 
+            </div>
+        {% else %}
+            <a href="{{ fields.view_node_1.content }}"><h2>{{ fields.field_content_page_headline.content }}</h2></a>
+        {% endif %}
+    </div>
+    {# {{ END of section from Kikki}} #}
    
     <p class="date">{{ fields.created.content }}</p>
     <p class="summary">{{ fields.body.content }}</p>
     <div class="learn-more-link">
-        {# see view for rendering of this field "Content: Link to Content" #}
-        {{ fields.view_node.content }}
+        {# If there is a news link (meaning the news is not the node, wrap the headline with the link #}
+        {% if fields.field_links_link.content or fields.field_links_file_link_upload.content %}
+            <a href="{{ href }}" target="{{ target }}">Learn More </a><span class="hidden">: {{ fields.field_content_page_headline.content }}</span> 
+        {% else %}
+             {# see view for rendering of this field "Content: Link to Content" #}
+            {{ fields.view_node.content }}
+        {% endif %}
     </div>
-    {{ fields.field_new.content }}
 </div>

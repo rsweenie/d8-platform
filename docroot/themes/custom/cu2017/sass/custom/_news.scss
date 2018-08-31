@@ -18,6 +18,9 @@
             }
 
         }
+        .news-date {
+            color: $gray;
+        }
         .news-text {
             display: flex;
             flex-direction: column;
@@ -36,5 +39,11 @@
             }
         }
 
+    }
+}
+article.news {
+    .news-date {
+        color: $gray;
+        margin-bottom: 30px;
     }
 }
