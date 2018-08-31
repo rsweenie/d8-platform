@@ -7,3 +7,5 @@
 * [Testing Procedures](TESTING)
 
 * [Views and Blocks](VIEWS_BLOCKS)
+
+* [Using the Front Page Classic Layout](FRONT_PAGE_CLASSIC)
