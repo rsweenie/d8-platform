@@ -31,17 +31,11 @@
  * @ingroup themeable`
  */
 #}
-{# {{ dd(fields.field_links_file_link_upload.content) }} #}
- {# {% if fields.field_links_file_link_upload.content %}
- {{fields.field_links_file_link_upload.content}}
-  {% else %}
-  No
-  {% endif %} #}
+
 <div class="news-image">
     {{fields.field_content_page_image.content}}
 </div>
 <div class="news-text">
-    {# {{ START of section from Kikki}} #}
     <div class="news_headline">
         {# If there is a news link (meaning the news is not the node, wrap the headline with the link #}
         {% if fields.field_links_link.content or fields.field_links_file_link_upload.content %}
@@ -65,7 +59,6 @@
             <a href="{{ fields.view_node_1.content }}"><h2>{{ fields.field_content_page_headline.content }}</h2></a>
         {% endif %}
     </div>
-    {# {{ END of section from Kikki}} #}
    
     <p class="date">{{ fields.created.content }}</p>
     <p class="summary">{{ fields.body.content }}</p>
