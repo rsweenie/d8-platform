@@ -13,15 +13,25 @@ Testing procedures and best practices
 
 * The [development environment](http://dev-creighton.acsitefactory.com) is intended for development and testing by the web devs.
 
-* In the dev environment, the web developers will create content for testing. UCOM may be asked to verify a feature visually, but as development is still in progress, and code changes are made rapidly in this environment, it should _not_ be used for testing feedback.
+* In the dev environment, the web developers will create content for testing. UCOM may be asked to verify a feature visually, but as development is still in progress, and code changes are made rapidly in this environment, it should _not_ be used for testing feedback. Tickets should never be created based on the status of the development environment.
 
 ## Test
 
-* foo
+* Testing of code changes will be performed in the test environment.
+
+* The code in the test environment should mirror as closely as possible the state of the production environment.
 
 ## Prod
 
-* bar
+* New sites are built in production.
+
+* New content is added to sites in production.
+
+* To add content to sites that are live, there are two options:
+    * Create the content, but leave it "unpublished" until it is ready for production.
+    * Clone the site, and build the content directly in the cloned site. Once the new content is ready to go live, the cloned site will take the place of the original.
+
+* If there are problems with content in production and code changes are required, the site will be staged down to the test and dev environments for testing.
 
 ## Keywords
 
