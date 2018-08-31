@@ -24,8 +24,6 @@ $domain = $_SERVER['HTTP_HOST'];
 $domain_fragments = explode('.', $_SERVER['HTTP_HOST']);
 $site_name = array_shift($domain_fragments);
 
-$site_name = "loginssotest";
-
 exec("/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt drupal:update --environment=$env --site=$site_name --define drush.uri=$domain --verbose --yes");
 
 $response = array();

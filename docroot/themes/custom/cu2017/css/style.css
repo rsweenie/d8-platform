@@ -9734,6 +9734,7 @@ h3 {
   font-size: 2.25em;
   line-height: 1.25em;
   padding-bottom: 0.8em;
+  padding-left: 0;
 }
 @media all and (max-width: 480px) {
   /* line 23, ../sass/custom/_main.scss */
@@ -9744,13 +9745,13 @@ h3 {
 }
 
 @media all and (min-width: 992px) {
-  /* line 35, ../sass/custom/_main.scss */
+  /* line 36, ../sass/custom/_main.scss */
   .center_column {
     padding-left: 0;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 39, ../sass/custom/_main.scss */
+  /* line 40, ../sass/custom/_main.scss */
   .center_column, .center_column * {
     padding-left: 0;
     padding-right: 0;
@@ -9758,13 +9759,13 @@ h3 {
 }
 
 @media all and (min-width: 992px) {
-  /* line 47, ../sass/custom/_main.scss */
+  /* line 48, ../sass/custom/_main.scss */
   .right_sidebar {
     padding-right: 0;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 47, ../sass/custom/_main.scss */
+  /* line 48, ../sass/custom/_main.scss */
   .right_sidebar {
     padding-top: 20px;
     padding-right: 0px;
@@ -9772,7 +9773,7 @@ h3 {
   }
 }
 
-/* line 58, ../sass/custom/_main.scss */
+/* line 59, ../sass/custom/_main.scss */
 .featured_links_wrapper,
 .copy_box_wrapper,
 .quote_box_wrapper,
