@@ -15,8 +15,9 @@ do
         prefix=$(echo "$site_path:sites/g/files/indaly" | sed 's/ //g')
         site_id=$(echo "${new_line#$prefix}" | tr '\r' ' ' | sed 's/ //g')
     fi;
-done < <(drush $site_alias core:status)
-
+done < <(/mnt/www/html/creighton01live/vendor/bin/drush @self core:status --uri=$1.creighton.acsitefactory.com --no-interaction -v --ansi)
+echo "Site Name: " $1
+echo "Site ID: " $site_id
 # If alias is incorrect, the return will be
 # [preflight] The alias @$site_alias could not be found.
 
