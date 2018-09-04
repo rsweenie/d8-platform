@@ -32,10 +32,10 @@
  */
 #}
 
-<div class="news-image">
+<div class="news_image">
     {{fields.field_content_page_image.content}}
 </div>
-<div class="news-text">
+<div class="news_text">
     <div class="news_headline">
         {# If there is a news link (meaning the news is not the node, wrap the headline with the link #}
         {% if fields.field_links_link.content or fields.field_links_file_link_upload.content %}
@@ -62,7 +62,7 @@
    
     <p class="date">{{ fields.created.content }}</p>
     <p class="summary">{{ fields.body.content }}</p>
-    <div class="learn-more-link">
+    <div class="learn_more_link">
         {# If there is a news link (meaning the news is not the node, wrap the headline with the link #}
         {% if fields.field_links_link.content or fields.field_links_file_link_upload.content %}
             <a href="{{ href }}" target="{{ target }}">Learn More </a><span class="hidden">: {{ fields.field_content_page_headline.content }}</span> 
