@@ -10,9 +10,9 @@
     <article class="news">
         {% if content.field_display_publish_on_date.0['#markup'] == "On"  %}
          {% set date = node.createdtime|format_date('cu_news') %}
-            <div class="news-date">{{ date }}</div>
+            <div class="news_date">{{ date }}</div>
         {% endif %}
-        <div class="news-body">
+        <div class="news_body">
             {{ content.body }}
             {{ content.field_tabbed_accordion }}
         </div>
