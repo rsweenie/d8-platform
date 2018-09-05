@@ -40,13 +40,15 @@ siteName="${uri%%.*}"
 
 # Get alias env 
 # subEnv="${env#01}"
-echo "ENV: $env"
+# echo "ENV: $env"
 
 # Config import any changes just pushed to the code base
-drush @"$siteName.$env" config:import vcs -y
+echo '(/mnt/www/html/creighton$env/vendor/bin/drush @self cim -y --uri=$siteName.creighton.acsitefactory.com --no-interaction -v --ansi)'
+
+eval /mnt/www/html/creighton$env/vendor/bin/drush @self cim -y --uri=$siteName.creighton.acsitefactory.com --no-interaction -v --ansi
 
 # Scrubbing functions to fix login errors
-drush @"$siteName.$env" acsf-duplication-scrub-batch "$siteName" "$site"
+# drush @"$siteName.$env" acsf-duplication-scrub-batch "$siteName" "$site"
 
 # Push a notification to the #d8_site_updates channel on slack
 curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$env\"}" https://hooks.slack.com/services/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
