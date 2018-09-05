@@ -74,41 +74,44 @@
 			}
 		}
 	}
-	// .slide_text {
+	.slide_text_wrapper {
         background: transparent !important;
     //     max-width: $maxContentWidth;
         margin: 0 auto;
     //     padding-left: 42px;
         position: relative;
-    //     top: 54%;
+	    top: -4%;
+		.slide_text{
+			background: transparent !important;
+		}
         h1{
             color: $yellow;
             text-transform: uppercase;
             font-weight: $bold;
-    //         font-size: 4em;
-    //         font-family: $condensedFont;
-    //         margin-top: -10px;
-    //         margin-bottom: -10px;
+            font-size: 4em;
+            font-family: $condensedFont;
+            margin-top: -10px;
+            margin-bottom: -10px;
         }
 
-    //     h2 {
-    //         color: $white;
-    //         font-weight: $bold;
-    //         font-family: $condensedFont;
-    //         font-size:36px;
-    //     }
+        h2 {
+            color: $white;
+            font-weight: $bold;
+            font-family: $condensedFont;
+            font-size:36px;
+        }
 
-    //     a {
-    //         background-image: url(../images/png/white-arrow.png);
-    //         background-position: 100%;
-    //         background-repeat: no-repeat;
-    //         padding: 0px 20px 0px 0px;
-    //         margin-top: 15px;
-    //     }
-    //     p {
-    //         font-weight: $regular;
-    //     }
-	// }
+        a {
+            background-image: url(../images/png/white-arrow.png);
+            background-position: 100%;
+            background-repeat: no-repeat;
+            padding: 0px 20px 0px 0px;
+            margin-top: -10px;
+        }
+        p {
+            font-weight: $regular;
+        }
+	}
 	// .slide_text_wrapper {
 	// 	margin-top: -239px;
 	// }
