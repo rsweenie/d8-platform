@@ -26,6 +26,5 @@ $site_name = array_shift($domain_fragments);
 
 exec("/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt drupal:update --environment=$env --site=$site_name --define drush.uri=$domain --verbose --yes");
 
-$response = array();
-exec("bash ../sso-config.sh $site_name 2>&1", $response);
-var_dump($response);
+// Run sso-config script to set sp_entity_id in config when a new site is created
+exec("bash ../sso-config.sh $site_name");
