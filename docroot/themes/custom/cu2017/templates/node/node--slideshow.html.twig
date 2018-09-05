@@ -6,9 +6,10 @@
 #}
 {% if is_front %}
     {% set attributes = attributes.setAttribute('id', 'slideshow_wrapper')%}
-{% endif %}
 
-<div{{ attributes.addClass('clearfix', 'slideshow_wrapper') }}>
-    {{ title_suffix.contextual_links }}
-    {{ content.field_slide }}
-</div>
+    <div{{ attributes.addClass('clearfix', 'slideshow_wrapper') }}>
+        {{ title_suffix.contextual_links }}
+        {{ content.field_slide }}
+    </div>
+
+{% endif %}

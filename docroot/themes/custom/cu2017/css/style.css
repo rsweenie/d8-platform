@@ -11391,230 +11391,10 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   color: #0054A6;
 }
 
-@media all and (min-width: 320px) {
-  /* line 3, ../sass/custom/_slider.scss */
-  .main_front .slide,
-  .main_front .slick-slide {
-    height: 155px;
-  }
-}
-@media all and (min-width: 768px) {
-  /* line 9, ../sass/custom/_slider.scss */
-  .main_front .slide,
-  .main_front .slick-slide {
-    height: 256px;
-  }
-}
-@media all and (min-width: 1050px) {
-  /* line 15, ../sass/custom/_slider.scss */
-  .main_front .slide,
-  .main_front .slick-slide {
-    height: 350px;
-  }
-}
-@media all and (min-width: 1251px) {
-  /* line 21, ../sass/custom/_slider.scss */
-  .main_front .slide,
-  .main_front .slick-slide {
-    height: 430px;
-  }
-}
-@media all and (max-width: 1050px) {
-  /* line 1, ../sass/custom/_slider.scss */
-  .main_front {
-    top: 0;
-  }
-}
-/* line 30, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow {
-  position: relative;
-}
-@media all and (min-width: 1251px) {
-  /* line 30, ../sass/custom/_slider.scss */
-  .main_front .region-hero-slideshow {
-    margin-top: -85px;
-  }
-}
-/* line 37, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slick-slide {
-  width: 100%;
-}
-/* line 41, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText {
-  color: #FFF;
-  height: 100%;
-  margin: auto;
-  max-width: 1200px;
-  position: relative;
-  width: 100%;
-}
-/* line 48, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText a {
-  background-image: url(../images/svgs/white-arrow.svg);
-  background-position: right center;
-  background-repeat: no-repeat;
-  margin: .8em 0 0;
-  padding-right: 30px;
-}
-/* line 55, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText a::after {
-  top: 3px;
-}
-/* line 60, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText li {
-  list-style: none;
-}
-/* line 64, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText .slideTextWrapper {
-  bottom: 50px;
-  padding-left: 20px;
-  position: absolute;
-}
-/* line 70, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText h1 {
-  color: #FFCC4F;
-  font-size: 61px;
-  font-weight: 700;
-  line-height: 68px;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-transform: uppercase;
-}
-/* line 80, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText h2 {
-  color: #FFF;
-  display: inline-block;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  padding-bottom: 0px;
-}
-/* line 89, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText p {
-  font-size: 40px;
-  line-height: 1.4em;
-}
-/* line 93, ../sass/custom/_slider.scss */
-.main_front .region-hero-slideshow .slideText p strong {
-  color: #FFCC4F;
-  font-size: 68px;
-  text-transform: uppercase;
-}
-@media all and (max-width: 768px) {
-  /* line 93, ../sass/custom/_slider.scss */
-  .main_front .region-hero-slideshow .slideText p strong {
-    font-size: 40px;
-  }
-}
-@media all and (max-width: 768px) {
-  /* line 41, ../sass/custom/_slider.scss */
-  .main_front .region-hero-slideshow .slideText {
-    display: none;
-  }
-}
-/* line 111, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text {
-  background-color: #555;
-}
-/* line 114, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText {
-  color: #FFF;
-  height: 100%;
-  margin: auto;
-  max-width: 1200px;
-  padding: 5px 10px 20px 20px;
-  position: relative;
-  width: 100%;
-}
-/* line 123, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText a {
-  background-image: url(../images/svgs/white-arrow.svg);
-  background-position: right center;
-  background-repeat: no-repeat;
-  font-size: 18px;
-  margin: .8em 0 0;
-  padding-right: 30px;
-}
-/* line 131, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText a::after {
-  top: 3px;
-}
-/* line 136, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText li {
-  list-style: none;
-}
-/* line 140, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText h1 {
-  color: #FFCC4F;
-  font-size: 61px;
-  font-weight: 700;
-  line-height: 68px;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-transform: uppercase;
-}
-/* line 150, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText h2 {
-  color: #FFF;
-  display: inline-block;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  padding-bottom: 0px;
-}
-/* line 159, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText p {
-  font-size: 30px;
-  line-height: 1.4em;
-}
-/* line 163, ../sass/custom/_slider.scss */
-.main_front .mobile-slide-text .slideText p strong {
-  color: #FFCC4F;
-  font-size: 68px;
-  text-transform: uppercase;
-}
-@media all and (max-width: 768px) {
-  /* line 163, ../sass/custom/_slider.scss */
-  .main_front .mobile-slide-text .slideText p strong {
-    font-size: 55px;
-  }
-}
-/* line 176, ../sass/custom/_slider.scss */
-.main_front .slideText {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 700;
-}
-/* line 181, ../sass/custom/_slider.scss */
-.main_front .slideText .slideTextWrapper li {
-  list-style: none;
-}
-/* line 186, ../sass/custom/_slider.scss */
-.main_front .slideText a {
-  -webkit-transition: color, 0.2s;
-  -o-transition: color, 0.2s;
-  transition: color, 0.2s;
-  color: #FFF;
-  display: inline-block;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  position: relative;
-  text-decoration: underline;
-}
-/* line 197, ../sass/custom/_slider.scss */
-.main_front .slideText a li {
-  list-style: none;
-}
-/* line 202, ../sass/custom/_slider.scss */
-.main_front .slideText p {
-  margin-bottom: 0;
-}
-/* line 208, ../sass/custom/_slider.scss */
-.main_front .slick-slider button {
+/* line 3, ../sass/custom/_slide.scss */
+.slick-slider button {
   background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
   bottom: 0;
-  display: block;
   height: 44px;
   left: auto;
   position: absolute;
@@ -11622,65 +11402,42 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   width: 44px;
   z-index: 1;
 }
-/* line 219, ../sass/custom/_slider.scss */
-.main_front .slick-slider button::before {
+/* line 13, ../sass/custom/_slide.scss */
+.slick-slider button::before {
   display: none;
 }
 @media all and (max-width: 900px) {
-  /* line 208, ../sass/custom/_slider.scss */
-  .main_front .slick-slider button {
+  /* line 3, ../sass/custom/_slide.scss */
+  .slick-slider button {
     bottom: -5px;
   }
 }
-/* line 228, ../sass/custom/_slider.scss */
-.main_front .slick-slider .slick-prev,
-.main_front .slick-slider .slick-prev:hover,
-.main_front .slick-slider .slick-prev:focus {
-  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
-  color: none;
+/* line 22, ../sass/custom/_slide.scss */
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  bottom: -21px;
+}
+/* line 27, ../sass/custom/_slide.scss */
+.slick-slider .slick-prev,
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-prev:focus {
+  background: url(/themes/custom/cu2017/images/png/left-white-arrows.png) no-repeat;
+  background-position: 14px 11px;
+  border: 0;
   outline: none;
-  right: 90px;
 }
-@media all and (max-width: 768px) {
-  /* line 228, ../sass/custom/_slider.scss */
-  .main_front .slick-slider .slick-prev,
-  .main_front .slick-slider .slick-prev:hover,
-  .main_front .slick-slider .slick-prev:focus {
-    display: none;
-  }
-}
-/* line 241, ../sass/custom/_slider.scss */
-.main_front .slick-slider .slick-next,
-.main_front .slick-slider .slick-next:hover,
-.main_front .slick-slider .slick-next:focus {
-  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
-  background-position: -46px 0;
-  color: none;
+/* line 37, ../sass/custom/_slide.scss */
+.slick-slider .slick-next,
+.slick-slider .slick-next:hover,
+.slick-slider .slick-next:focus {
+  background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
+  background-position: 18px 11px;
   outline: none;
-  right: 27px;
+  right: 0;
 }
-@media all and (max-width: 768px) {
-  /* line 241, ../sass/custom/_slider.scss */
-  .main_front .slick-slider .slick-next,
-  .main_front .slick-slider .slick-next:hover,
-  .main_front .slick-slider .slick-next:focus {
-    display: none;
-  }
-}
-/* line 261, ../sass/custom/_slider.scss */
-.main_front .main .col-md-12 .center_column .slide {
-  height: 350px;
-}
-/* line 269, ../sass/custom/_slider.scss */
-.main_front .main .col-md-8 .center_column .slide {
-  height: 250px;
-}
-/* line 277, ../sass/custom/_slider.scss */
-.main_front .main .col-md-9 .center_column .slide {
-  height: 250px;
-}
-/* line 283, ../sass/custom/_slider.scss */
-.main_front .main .slideText {
+
+/* line 48, ../sass/custom/_slide.scss */
+.slide_wrapper .slide_text {
   background: rgba(0, 0, 0, 0.75);
   bottom: 0;
   color: #FFF;
@@ -11690,59 +11447,150 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   padding: 0 45px;
   position: absolute;
   width: 100%;
+  font-weight: 700;
 }
-/* line 294, ../sass/custom/_slider.scss */
-.main_front .main .slideText .field {
+/* line 60, ../sass/custom/_slide.scss */
+.slide_wrapper .slide_text .field {
   padding: 10px 0;
 }
-/* line 298, ../sass/custom/_slider.scss */
-.main_front .main .slideText a {
-  font-family: "Open Sans", Arial, sans-serif;
+/* line 63, ../sass/custom/_slide.scss */
+.slide_wrapper .slide_text a {
+  -webkit-transition: color, 0.2s;
+  -o-transition: color, 0.2s;
+  transition: color, 0.2s;
+  color: #FFF;
+  display: inline-block;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  text-decoration: underline;
 }
-/* line 302, ../sass/custom/_slider.scss */
-.main_front .main .slideText a::after {
-  display: none;
+/* line 74, ../sass/custom/_slide.scss */
+.slide_wrapper .slide_text a li {
+  list-style: none;
 }
-/* line 309, ../sass/custom/_slider.scss */
-.main_front .main .slick-slider button {
-  height: 42px;
+/* line 79, ../sass/custom/_slide.scss */
+.slide_wrapper .slide_text p {
+  margin-bottom: 0;
 }
-/* line 313, ../sass/custom/_slider.scss */
-.main_front .main .slick-slider .slick-prev,
-.main_front .main .slick-slider .slick-next {
-  bottom: -21px;
+/* line 85, ../sass/custom/_slide.scss */
+.slide_wrapper .slide_image_wrapper img {
+  margin-bottom: 0;
 }
-/* line 318, ../sass/custom/_slider.scss */
-.main_front .main .slick-slider .slick-prev,
-.main_front .main .slick-slider .slick-prev:hover,
-.main_front .main .slick-slider .slick-prev:focus {
-  background: url(/themes/custom/cu2017/images/png/left-white-arrows.png) no-repeat;
-  background-position: 14px 11px;
-  border: 0;
-  left: 0;
-  outline: none;
+/* line 87, ../sass/custom/_slide.scss */
+.col-md-12 .slide_wrapper .slide_image_wrapper img {
+  height: 350px;
 }
-/* line 328, ../sass/custom/_slider.scss */
-.main_front .main .slick-slider .slick-next,
-.main_front .main .slick-slider .slick-next:hover,
-.main_front .main .slick-slider .slick-next:focus {
-  background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
-  background-position: 18px 11px;
-  outline: none;
-  right: 0;
+/* line 90, ../sass/custom/_slide.scss */
+.col-md-8 .slide_wrapper .slide_image_wrapper img, .col-md-9 .slide_wrapper .slide_image_wrapper img {
+  height: 250px;
 }
-/* line 339, ../sass/custom/_slider.scss */
-.main_front .slide {
-  background: #000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* line 97, ../sass/custom/_slide.scss */
+.slide_wrapper .slick-list {
+  width: 100%;
+}
+
+/* line 2, ../sass/custom/_slideshow.scss */
+.slideshow_wrapper {
+  background: transparent !important;
+  margin: 0 auto;
   position: relative;
 }
-/* line 347, ../sass/custom/_slider.scss */
-.main_front .slick-list {
-  width: 100%;
+@media all and (min-width: 320px) {
+  /* line 5, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slide_wrapper,
+  .slideshow_wrapper .slick-slide {
+    height: 155px;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 11, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slide_wrapper,
+  .slideshow_wrapper .slick-slide {
+    height: 256px;
+  }
+}
+@media all and (min-width: 1050px) {
+  /* line 17, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slide_wrapper,
+  .slideshow_wrapper .slick-slide {
+    height: 350px;
+  }
+}
+@media all and (min-width: 1251px) {
+  /* line 23, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slide_wrapper,
+  .slideshow_wrapper .slick-slide {
+    height: 430px;
+  }
+}
+@media all and (max-width: 1050px) {
+  /* line 2, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper {
+    top: 0;
+  }
+}
+/* line 33, ../sass/custom/_slideshow.scss */
+.slideshow_wrapper .slick-slider button {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  bottom: 0;
+  height: 44px;
+  left: auto;
+  position: absolute;
+  top: auto;
+  width: 44px;
+  z-index: 1;
+}
+/* line 43, ../sass/custom/_slideshow.scss */
+.slideshow_wrapper .slick-slider button::before {
+  display: none;
+}
+@media all and (max-width: 900px) {
+  /* line 33, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slick-slider button {
+    bottom: -5px;
+  }
+}
+/* line 52, ../sass/custom/_slideshow.scss */
+.slideshow_wrapper .slick-slider .slick-prev,
+.slideshow_wrapper .slick-slider .slick-prev:hover,
+.slideshow_wrapper .slick-slider .slick-prev:focus {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  outline: none;
+  right: 90px;
+}
+@media all and (max-width: 768px) {
+  /* line 52, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slick-slider .slick-prev,
+  .slideshow_wrapper .slick-slider .slick-prev:hover,
+  .slideshow_wrapper .slick-slider .slick-prev:focus {
+    display: none;
+  }
+}
+/* line 63, ../sass/custom/_slideshow.scss */
+.slideshow_wrapper .slick-slider .slick-next,
+.slideshow_wrapper .slick-slider .slick-next:hover,
+.slideshow_wrapper .slick-slider .slick-next:focus {
+  background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+  background-position: -46px 0;
+  outline: none;
+  right: 27px;
+}
+@media all and (max-width: 768px) {
+  /* line 63, ../sass/custom/_slideshow.scss */
+  .slideshow_wrapper .slick-slider .slick-next,
+  .slideshow_wrapper .slick-slider .slick-next:hover,
+  .slideshow_wrapper .slick-slider .slick-next:focus {
+    display: none;
+  }
+}
+/* line 84, ../sass/custom/_slideshow.scss */
+.slideshow_wrapper h1 {
+  color: #FFCC4F;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (max-width: 65.625em) {
@@ -13495,76 +13343,6 @@ article figcaption {
 .front-page-classic .block-region-top {
   margin-top: -144px;
 }
-/* line 26, ../sass/custom/_frontpage.scss */
-.front-page-classic .slideText {
-  background: transparent !important;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding-left: 42px;
-  position: relative;
-  top: 54%;
-}
-/* line 33, ../sass/custom/_frontpage.scss */
-.front-page-classic .slideText h1 {
-  color: #FFCC4F;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 4em;
-  font-family: "Open Sans Condensed", sans-serif;
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
-/* line 43, ../sass/custom/_frontpage.scss */
-.front-page-classic .slideText h2 {
-  color: #FFF;
-  font-weight: 700;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 36px;
-}
-/* line 50, ../sass/custom/_frontpage.scss */
-.front-page-classic .slideText a {
-  background-image: url(../images/png/white-arrow.png);
-  background-position: 100%;
-  background-repeat: no-repeat;
-  padding: 0px 20px 0px 0px;
-  margin-top: 15px;
-}
-/* line 57, ../sass/custom/_frontpage.scss */
-.front-page-classic .slideText p {
-  font-weight: 400;
-}
-/* line 61, ../sass/custom/_frontpage.scss */
-.front-page-classic .new-arrows {
-  width: 100px;
-  position: absolute;
-  right: 11%;
-  bottom: 0px;
-  height: 60px;
-}
-/* line 69, ../sass/custom/_frontpage.scss */
-.front-page-classic .new-arrows .slick-prev {
-  left: 0 !important;
-  background: url(/themes/custom/cu2017/images/front-page/arrows-circle-left.png) no-repeat;
-  background-position: 6px 0;
-  width: 50px;
-  height: 50px;
-}
-/* line 77, ../sass/custom/_frontpage.scss */
-.front-page-classic .new-arrows .slick-prev:before, .front-page-classic .new-arrows .slick-next:before {
-  content: none;
-}
-/* line 82, ../sass/custom/_frontpage.scss */
-.front-page-classic .new-arrows .slick-next {
-  right: 0 !important;
-  background: url(/themes/custom/cu2017/images/front-page/arrows-circle-right.png) no-repeat !important;
-  background-position: -46px 0;
-  width: 44px;
-  height: 50px;
-}
-/* line 89, ../sass/custom/_frontpage.scss */
-.front-page-classic .new-arrows .slick-next :before {
-  content: none;
-}
 /* line 93, ../sass/custom/_frontpage.scss */
 .front-page-classic > div:not(:first-child) {
   max-width: 1300px;
@@ -13620,151 +13398,119 @@ article figcaption {
   display: none;
 }
 /* line 145, ../sass/custom/_frontpage.scss */
-.front-page-classic .slideText p {
-  font-weight: 400;
-}
-/* line 148, ../sass/custom/_frontpage.scss */
 .front-page-classic .main .col-md-12 .center_column .front-page-classic .slide {
   height: 430px;
 }
-/* line 151, ../sass/custom/_frontpage.scss */
+/* line 148, ../sass/custom/_frontpage.scss */
 .front-page-classic .slick-slider.slick-list {
   overflow: visible;
 }
-/* line 156, ../sass/custom/_frontpage.scss */
+/* line 153, ../sass/custom/_frontpage.scss */
 .front-page-classic .first-content h3 {
   font-weight: 500;
   color: #0054A6;
   font-size: 28px;
 }
-/* line 161, ../sass/custom/_frontpage.scss */
+/* line 158, ../sass/custom/_frontpage.scss */
 .front-page-classic .first-content p {
   font-size: 18px;
 }
-/* line 164, ../sass/custom/_frontpage.scss */
+/* line 161, ../sass/custom/_frontpage.scss */
 .front-page-classic .first-content a {
   font-size: 20px;
 }
 
 @media (max-width: 480px) {
-  /* line 171, ../sass/custom/_frontpage.scss */
+  /* line 168, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -52px;
   }
-
-  /* line 174, ../sass/custom/_frontpage.scss */
-  .main-front .slide {
-    height: 185px;
-  }
-
-  /* line 177, ../sass/custom/_frontpage.scss */
-  .front-page-classic .slideText {
-    top: 37%;
-  }
-
-  /* line 180, ../sass/custom/_frontpage.scss */
-  .front-page-classic .block-region-ctas {
-    padding: 50px 0 40px 0;
-  }
-
-  /* line 183, ../sass/custom/_frontpage.scss */
-  .front-page-classic .slideText.mobile_slide_text {
-    background-color: #616161 !important;
-    padding-top: 1px;
-    padding-bottom: 20px;
-    margin-top: 0px;
-  }
-
-  /* line 189, ../sass/custom/_frontpage.scss */
-  .front-page-classic .slideText h1 {
-    margin-bottom: 10px;
-  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  /* line 195, ../sass/custom/_frontpage.scss */
+  /* line 192, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -58px;
   }
 
-  /* line 198, ../sass/custom/_frontpage.scss */
-  .main-front .slide {
+  /* line 195, ../sass/custom/_frontpage.scss */
+  .main-front .slide_wrapper .slide_image_wrapper {
     height: 256px;
   }
 
-  /* line 201, ../sass/custom/_frontpage.scss */
-  .front-page-classic .slideText {
+  /* line 198, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slide_text {
     top: 32%;
   }
 
-  /* line 205, ../sass/custom/_frontpage.scss */
+  /* line 202, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) {
     margin-left: 10px;
   }
-  /* line 207, ../sass/custom/_frontpage.scss */
+  /* line 204, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) .image {
     display: flex;
     width: 120%;
   }
-  /* line 210, ../sass/custom/_frontpage.scss */
+  /* line 207, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) .image img {
     margin-top: 20px;
   }
-  /* line 214, ../sass/custom/_frontpage.scss */
+  /* line 211, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) .content {
     float: left;
     width: 50%;
     margin-left: 40px;
   }
 
-  /* line 220, ../sass/custom/_frontpage.scss */
+  /* line 217, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0 40px 0;
   }
 
-  /* line 223, ../sass/custom/_frontpage.scss */
+  /* line 220, ../sass/custom/_frontpage.scss */
   .front-page-classic .new-arrows {
     right: 2%;
   }
 }
 @media (min-width: 769px) and (max-width: 1049px) {
-  /* line 230, ../sass/custom/_frontpage.scss */
+  /* line 227, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -58px;
   }
 
-  /* line 233, ../sass/custom/_frontpage.scss */
+  /* line 230, ../sass/custom/_frontpage.scss */
   .main_front .slide, .main_front .slick-slide {
     height: 350px;
   }
 
-  /* line 236, ../sass/custom/_frontpage.scss */
-  .front-page-classic .slideText {
+  /* line 233, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slide_text {
     top: 50%;
   }
 
-  /* line 239, ../sass/custom/_frontpage.scss */
+  /* line 236, ../sass/custom/_frontpage.scss */
   .first-content.col-md-8 {
     width: 100%;
   }
 
-  /* line 242, ../sass/custom/_frontpage.scss */
+  /* line 239, ../sass/custom/_frontpage.scss */
   .calls-to-action.col-md-4 {
     width: 100%;
     margin-left: -15px;
     padding: 0px;
   }
 
-  /* line 247, ../sass/custom/_frontpage.scss */
+  /* line 244, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0px 30px 30px;
   }
 
-  /* line 250, ../sass/custom/_frontpage.scss */
+  /* line 247, ../sass/custom/_frontpage.scss */
   .bottom_callout.col-md-3 {
     margin-top: -50px;
   }
 
-  /* line 253, ../sass/custom/_frontpage.scss */
+  /* line 250, ../sass/custom/_frontpage.scss */
   .front-page-classic .new-arrows {
     width: 100px;
     position: absolute;

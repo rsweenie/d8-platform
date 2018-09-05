@@ -1,0 +1,115 @@
+//specific to slideshow_wrapper, used on front page
+.slideshow_wrapper {
+	//media calls Caleb created
+	@media all and (min-width: 320px) {
+		.slide_wrapper,
+		.slick-slide {
+			height: 155px;
+		}
+	}
+	@media all and (min-width: 768px) {
+		.slide_wrapper,
+		.slick-slide {
+			height: 256px;
+		}
+	}
+	@media all and (min-width: 1050px) {
+		.slide_wrapper,
+		.slick-slide {
+			height: 350px;
+		}
+	}
+	@media all and (min-width: 1251px) {
+		.slide_wrapper,
+		.slick-slide {
+			height: 430px;
+		}
+	}
+	@media all and (max-width: 1050px) {
+		top: 0;
+	}
+
+	.slick-slider {
+		button {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			bottom: 0;
+			height: 44px;
+			left: auto;
+			position: absolute;
+			top: auto;
+			width: 44px;
+			z-index: 1;
+
+			&::before {
+				display: none;
+			}
+
+			@media all and (max-width: 900px) {
+				bottom: -5px;
+			}
+		}
+		
+		.slick-prev,
+		.slick-prev:hover,
+		.slick-prev:focus {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			outline: none;
+			right: 90px;
+			// get rid of the buttons on mobile (to overide in the in-line css)
+			@include respond-to(null , tablet-max) {
+				display: none;
+			}
+		}
+		.slick-next,
+		.slick-next:hover,
+		.slick-next:focus {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			background-position: -46px 0;
+			outline: none;
+			right: 27px;
+
+			// get rid of the buttons on mobile (to overide in the in-line css)
+			@include respond-to(null , tablet-max) {
+				display: none;
+			}
+		}
+	}
+	// .slide_text {
+        background: transparent !important;
+    //     max-width: $maxContentWidth;
+        margin: 0 auto;
+    //     padding-left: 42px;
+        position: relative;
+    //     top: 54%;
+        h1{
+            color: $yellow;
+            text-transform: uppercase;
+            font-weight: $bold;
+    //         font-size: 4em;
+    //         font-family: $condensedFont;
+    //         margin-top: -10px;
+    //         margin-bottom: -10px;
+        }
+
+    //     h2 {
+    //         color: $white;
+    //         font-weight: $bold;
+    //         font-family: $condensedFont;
+    //         font-size:36px;
+    //     }
+
+    //     a {
+    //         background-image: url(../images/png/white-arrow.png);
+    //         background-position: 100%;
+    //         background-repeat: no-repeat;
+    //         padding: 0px 20px 0px 0px;
+    //         margin-top: 15px;
+    //     }
+    //     p {
+    //         font-weight: $regular;
+    //     }
+	// }
+	// .slide_text_wrapper {
+	// 	margin-top: -239px;
+	// }
+}

@@ -14,10 +14,7 @@ jQuery(document).ready(function() {
         }
     });
     //slider
-    jQuery('.field--name-field-slide').on("init", function() {
-   
-    })
-    .slick({
+    jQuery('.field--name-field-slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -26,12 +23,9 @@ jQuery(document).ready(function() {
         nextArrow: '<button type="button" class="slick-next"></button>',
     });
     
-    // jQuery('.slideshow_wrapper').on("init", function() {
-   
-    // })
-    // .slick({
-    //     appendArrows: jQuery("<div></div>").addClass("new-arrows").insertAfter(".field--name-field-slide")
-    // });
+    jQuery('.slideshow_wrapper').slick({
+         appendArrows: jQuery("<div></div>").addClass("new-arrows").insertAfter(".field--name-field-slide")
+    });
     
     jQuery('.field--name-field-slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
         
