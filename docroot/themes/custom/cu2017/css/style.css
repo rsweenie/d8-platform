@@ -13453,6 +13453,34 @@ article figcaption {
   .front-page-classic .block-region-top {
     margin-top: -52px;
   }
+
+  /* line 136, ../sass/custom/_frontpage.scss */
+  .main-front .slide_wrapper {
+    height: 185px;
+  }
+
+  /* line 139, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slide_text_wrapper {
+    top: 37%;
+  }
+
+  /* line 142, ../sass/custom/_frontpage.scss */
+  .front-page-classic .block-region-ctas {
+    padding: 50px 0 40px 0;
+  }
+
+  /* line 145, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slide_text_wrapper {
+    background-color: #616161 !important;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  /* line 151, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slide_text_wrapper h1 {
+    margin-bottom: 10px;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   /* line 157, ../sass/custom/_frontpage.scss */
