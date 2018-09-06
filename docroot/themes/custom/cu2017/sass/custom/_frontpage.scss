@@ -1,8 +1,10 @@
-// front page CLASSIC
-//TODO for whatever reason .front-page-classic.row.breadcrumb_region doesn't work 
+
+//Hiding breadcrumb is needed on both front page layouts 
 .row.breadcrumb_region{
     display:none !important; 
 }
+
+// front page CLASSIC
 .front-page-classic{
     %orange-h2{
         color: $orange;
@@ -94,6 +96,9 @@
     }
 }
 
+// front page ALTERNATE
+
+// media queries will have both CLASSIC and ALTERNATE styles within
 @media (max-width: 480px){
         .front-page-classic {
             .block-region-top{
@@ -132,7 +137,7 @@
                 padding: 50px 0 40px 0;
             }
 
-        }       
+        }   
 }
 
 @media (min-width: 481px) and (max-width: 768px){
