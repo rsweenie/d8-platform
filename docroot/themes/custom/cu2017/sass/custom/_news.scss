@@ -20,6 +20,7 @@
         }
         p.date {
             color: $gray;
+            font-size: 13px;
         }
         .news_text {
             display: flex;
@@ -29,7 +30,16 @@
             .news_headline {
                 h2 {
                     margin-top: 0;
+                    color: $blue;
+                    font-size: 24px;
+
+                    &:hover {
+                        color: $darkBlue;
+                    }
                 }
+            }
+            .summary {
+                margin-bottom: 30px;
             }
             
             .learn_more_link {

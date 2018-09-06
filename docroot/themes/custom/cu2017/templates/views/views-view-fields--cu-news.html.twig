@@ -61,7 +61,7 @@
     </div>
    
     <p class="date">{{ fields.created.content }}</p>
-    <p class="summary">{{ fields.body.content }}</p>
+    <div class="summary">{{ fields.body.content }}</div>
     <div class="learn_more_link">
         {# If there is a news link (meaning the news is not the node, wrap the headline with the link #}
         {% if fields.field_links_link.content or fields.field_links_file_link_upload.content %}
