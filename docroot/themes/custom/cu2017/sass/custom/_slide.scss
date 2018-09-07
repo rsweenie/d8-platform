@@ -81,6 +81,11 @@
 		}
 	}
 
+	.slick-list {
+		width: 100%;
+	}
+}
+.inline_slide_wrapper{
 	.slide_image_wrapper { 
 		img {
 			margin-bottom:0;
@@ -91,10 +96,6 @@
 				height: 250px;
 			}
 		}
-
-	}
-
-	.slick-list {
-		width: 100%;
+	
 	}
 }
