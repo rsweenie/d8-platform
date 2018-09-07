@@ -12848,26 +12848,61 @@ article figcaption {
 .view-cu-news .views-row .news_image img {
   width: 200px;
 }
-/* line 21, ../sass/custom/_news.scss */
-.view-cu-news .views-row p.date {
-  color: #B3B4B3;
+@media all and (max-width: 480px) {
+  /* line 11, ../sass/custom/_news.scss */
+  .view-cu-news .views-row .news_image {
+    margin-bottom: 10px;
+  }
 }
 /* line 24, ../sass/custom/_news.scss */
+.view-cu-news .views-row p.date {
+  color: #B3B4B3;
+  font-size: 13px;
+}
+@media all and (max-width: 480px) {
+  /* line 24, ../sass/custom/_news.scss */
+  .view-cu-news .views-row p.date {
+    margin-bottom: 15px;
+  }
+}
+/* line 32, ../sass/custom/_news.scss */
 .view-cu-news .views-row .news_text {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
 }
-/* line 30, ../sass/custom/_news.scss */
+@media all and (max-width: 480px) {
+  /* line 32, ../sass/custom/_news.scss */
+  .view-cu-news .views-row .news_text {
+    margin-left: 0;
+  }
+}
+/* line 42, ../sass/custom/_news.scss */
 .view-cu-news .views-row .news_text .news_headline h2 {
   margin-top: 0;
+  color: #019CDB;
+  font-size: 24px;
 }
-/* line 35, ../sass/custom/_news.scss */
+/* line 47, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news_text .news_headline h2:hover {
+  color: #002E6D;
+}
+/* line 52, ../sass/custom/_news.scss */
+.view-cu-news .views-row .news_text .summary {
+  margin-bottom: 30px;
+}
+@media all and (max-width: 480px) {
+  /* line 52, ../sass/custom/_news.scss */
+  .view-cu-news .views-row .news_text .summary {
+    margin-bottom: 20px;
+  }
+}
+/* line 60, ../sass/custom/_news.scss */
 .view-cu-news .views-row .news_text .learn_more_link {
   display: flex;
   margin-bottom: 30px;
 }
-/* line 39, ../sass/custom/_news.scss */
+/* line 64, ../sass/custom/_news.scss */
 .view-cu-news .views-row .news_text .learn_more_link a {
   color: #73B865;
   display: block;
@@ -12898,8 +12933,14 @@ article figcaption {
   margin-left: 10px;
   vertical-align: middle;
 }
+@media all and (max-width: 480px) {
+  /* line 2, ../sass/custom/_news.scss */
+  .view-cu-news .views-row {
+    flex-direction: column;
+  }
+}
 
-/* line 51, ../sass/custom/_news.scss */
+/* line 79, ../sass/custom/_news.scss */
 article.news .news_date {
   color: #B3B4B3;
   margin-bottom: 30px;

@@ -16,19 +16,44 @@
             img {
                width: 200px 
             }
+            @include respond-to(null , mobile-max) {
+                margin-bottom: 10px;
+            }
 
         }
         p.date {
             color: $gray;
+            font-size: 13px;
+            
+            @include respond-to(null , mobile-max) {
+                margin-bottom: 15px;
+            }
         }
         .news_text {
             display: flex;
             flex-direction: column;
             margin-left: 30px;
 
+            @include respond-to(null , mobile-max) {
+                margin-left: 0;
+            }
+
             .news_headline {
                 h2 {
                     margin-top: 0;
+                    color: $blue;
+                    font-size: 24px;
+
+                    &:hover {
+                        color: $darkBlue;
+                    }
+                }
+            }
+            .summary {
+                margin-bottom: 30px;
+
+                @include respond-to(null , mobile-max) {
+                    margin-bottom: 20px;
                 }
             }
             
@@ -44,7 +69,10 @@
                 }
             }
         }
-
+        @include respond-to(null , mobile-max) {
+            flex-direction: column;
+        }
+        
     }
 }
 article.news {
