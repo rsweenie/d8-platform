@@ -9,10 +9,8 @@ dependencies:
     - field.field.node.quote_box.field_quote_box_quote_text
     - field.field.node.quote_box.field_quote_box_quotes
     - field.field.node.quote_box.field_quote_link
-    - image.style.rectangle_horizontal_medium_350x160_
     - node.type.quote_box
   module:
-    - media
     - name
     - options
     - panelizer
@@ -58,10 +56,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: rectangle_horizontal_medium_350x160_
-      image_link: ''
+      view_mode: quote_box_image
+      link: false
     third_party_settings: {  }
-    type: media_thumbnail
+    type: entity_reference_entity_view
     region: content
   field_quote_box_quote_text:
     weight: 1
