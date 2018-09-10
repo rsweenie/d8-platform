@@ -76,13 +76,13 @@ table,
 		tr,
 		.tr {
 			&:nth-child(even) {
-				background-color: $backgroundGray;
+				background-color: $lightGray;
 			}
 
 			&:hover {
 				td,
 				.td {
-					border-bottom: 1px solid $dkGray;
+					border-bottom: 1px solid $baseGray;
 				}
 			}
 
