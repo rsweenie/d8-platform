@@ -11,9 +11,9 @@
         font-family: $h2LargerFontSize;
         font-weight: $semiBold;
     }
-    .margin-top-10{
-        margin-top: 10px
-    }
+    // .margin-top-10{
+    //     margin-top: 10px
+    // }
     p{
         font-size:18px;
     }
@@ -24,63 +24,51 @@
     .block-region-top {
         margin-top: -38px;
     }
+
     > div:not(:first-child){
         max-width: $maxContentWidth;
         margin: 0 auto;
         padding-left: 28px;
     }
-    a.button-blue {
-        background-color: $mediumBlue;
-        padding: 8px 80px 8px 10px;
-        background-image: url(../images/png/white-arrow.png);
-        background-position: 95%;
-        background-repeat: no-repeat;
-        padding: 8px 80px 8px 10px;
-        color: $white;
-        font-family: "Open Sans Condensed", sans-serif;
-        text-decoration: none;
-        text-transform: uppercase;
-   
-        &:hover {
-            text-decoration: none;
-            color: $white;
-            background-color: $darkBlue;
-            text-transform: uppercase;
-        }
-    }
+
     .block-region-ctas {
         padding: 30px; 
     }
+
     > div:nth-child(3n) {
         margin-bottom: 40px;
     }
-    a.orange-text-link{
-        font-family: $condensedFont;
-        font-weight: $bold;
-        color: $orange;
-        background-image: url(../images/png/orange-arrow.png);
-        background-position: 100%;
-        background-repeat: no-repeat;
-        padding: 0px 20px 0px 0px;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
+
     #row_3{
-        h2 {
-            @extend %orange-h2;
-        }
-        p{
-            font-size: $pLargerFontSize;
+        .middle-left, .middle-center, .middle-right{
+            img{
+
+            }
+            h2{
+                @extend %orange-h2;
+            }
+            p{
+                font-size: $pLargerFontSize;
+                margin-bottom: 10px;
+            }
+            a{
+                font-family: $condensedFont;
+                font-weight: $bold;
+                color: $orange;
+                background-image: url(../images/png/orange-arrow.png);
+                background-position: 100%;
+                background-repeat: no-repeat;
+                padding: 0px 20px 0px 0px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
         }
     }
-    .row.breadcrumb_region {
-        display: none ;
-    }
+
     .main .col-md-12 .center_column .front-page-classic .slide {
         height: 430px;
     }
-    
-    
+      
     .first-content {
         h3 {
             font-weight: $custom;
@@ -92,106 +80,157 @@
         }
         a {
             font-size: $h3FontSize ;
+            background-color: $mediumBlue;
+            padding: 8px 80px 8px 10px;
+            background-image: url(../images/png/white-arrow.png);
+            background-position: 95%;
+            background-repeat: no-repeat;
+            padding: 8px 80px 8px 10px;
+            color: $white;
+            font-family: "Open Sans Condensed", sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            &:hover {
+                text-decoration: none;
+                color: $white;
+                background-color: $darkBlue;
+                text-transform: uppercase;
+            }
         }
+    }
+    .bottom_callout{
+        margin-top: -50px;        
     }
 }
 
 // front page ALTERNATE
-
+//TODO pull out media put specific queries inside selectors, use breakpoint mixin
 // media queries will have both CLASSIC and ALTERNATE styles within
 @media (max-width: 480px){
-        .front-page-classic {
-            .block-region-top{
-                margin-top: -52px;
+    .front-page-classic{
+        
+        .block-region-top{
+            margin-top: -32px;
+        }
+        //START Slide info TODO..move?
+        .slide_wrapper{
+                height:100%;
+            .slide_image_wrapper{
+                height: 155px;
+                overflow: hidden;
             }
-            //START Slide info TODO..move?
-            .slide_wrapper{
-                    // height:100%;
-                .slide_image_wrapper{
-                    height: 185px;
-                    overflow: hidden;
-                }
-                .slide_text_wrapper{
-                    background-color:#616161 !important;
-                    padding-left: 20px;
-                    .slide_text{
-                        position: relative;
-                        padding: 0;
-
-                        h1{
-                            margin-bottom: 10px;
-                        }
+            .slide_text_wrapper{
+                background-color:#616161 !important;
+                padding-left: 20px;
+                .slide_text{
+                    position: relative;
+                    padding: 0;
+                    h2{
+                        margin-top: 0;
+                        font-weight: 400;
+                    }
+                    a{
+                        font-weight: 400;
+                        font-weight: normal; 
                     }
                 }
             }
-            .new-arrows, .slick-arrow{
-                display:none !important;
-            }
-            // END slide info .. move?
-
-            .block-region-ctas{
-                padding: 50px 0 40px 0;
-            }
-            #row_3 > div {
+        }
+        .new-arrows, .slick-arrow{
+            display:none !important;
+        }
+        // END slide info .. move?
+        
+        .block-region-ctas{
+            padding: 50px 0 40px 0;
+        }
+        #row_3{
+            .middle-left, .middle-center, .middle-right{
                 margin-bottom: 25px;
-
-                img{
-                    width:99%;
+                img {
+                    width: 99%;
+                }
+                
+                p {
+                    font-size: $pLargerFontSize;
+                    margin-bottom: 10px;
+                }
+                a {
+                    font-family: $condensedFont;
+                    font-weight: $bold;
+                    color: $orange;
+                    background-image: url(../images/png/orange-arrow.png);
+                    background-position: 100%;
+                    background-repeat: no-repeat;
+                    padding: 0px 20px 0px 0px;
+                    text-transform: uppercase;
+                    text-decoration: none;
                 }
             }
-            > div{
-                padding-left: 0 !important;
-            }
-
-        }   
+        }
+        > div{
+            padding-left: 0 !important;
+        }
+    }   
 }
 
 @media (min-width: 481px) and (max-width: 768px){
     .front-page-classic { 
-        .block-region-top {
-            margin-top: -58px;
-        }
         //Slide info
-        .slide_show_wrapper {
+        .slideshow_wrapper {
             height: 256px;
             .slide_wrapper {
                 height: 256px;
                 .slide_image_wrapper {
+                    height: 256px;
+                    overflow: hidden;
                     img{
                         height:256px !important;
                     }
                 }
                 .slide_text_wrapper {
                     max-width: $screen-tablet-max;
-                    min-width: $screen-mobile-max;
-                    top: -113px; 
+                    min-width: $screen-mobile-max; 
 
                     .slide_text{
                         padding: 0;
+                        h2{
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
         }
         
         //END slide info
-
-        > div:nth-child(3){
-            margin-left:10px;
-            .image {
-                display: flex;
-                width: 120%;
-                img { 
-                    margin-top: 20px;
+        #row_3{
+            .middle-left, .middle-center, .middle-right{
+                margin-bottom: 20px;
+                img{
+                    display: flex;
+                    float: left;
+                    width: 42%;
+                }
+                h2{
+                    display: flex;
+                    padding-left: 20px;
+                }
+                
+                p{
+                    padding-left: 20px;
+                    display: flex;
                 }
             }
-            .content {
-                float:left;
-                width: 50%;
-                margin-left: 40px;
-            }
-        }       
+        }      
         .block-region-ctas {
             padding: 50px 0 40px 0;
+        }
+        > div:not(:first-child){
+            padding-left: 24px;
+        }
+        .bottom_callout{
+            margin-top: 10px;
         }
         
     }    
@@ -225,9 +264,6 @@
             height: 60px;
         }
         // END slide info
-        .block-region-top{
-            margin-top: -58px;
-        }
         .first-content.col-md-8 {
             width: 100%;
         }
@@ -240,12 +276,21 @@
                 padding: 50px 0px 30px 30px;
             }
         }
+        
+        #row_3{
+            .middle-left, .middle-center, .middle-right{
+                width: 33%;
+                display: flex;
+                float: left;
+            }
+        }
+
         .bottom_callout.col-md-3 {
             margin-top: -50px;
         }   
     }     
 }
-@media (min-width:1050px) and (max-width: 1300px){
+@media (min-width:1051px) and (max-width: 1300px){
     .front-page-classic{
             .slideshow_wrapper{
                 height:430px;
@@ -262,5 +307,19 @@
     
 }
 @media (min-width:1300px){
-    
+    .front-page-classic {
+        .slideshow_wrapper{
+            height:430px;
+            .slide_wrapper{
+                height:430px;
+                .slide_image_wrapper{
+                    img{
+                        height:430px !important;
+                        object-fit: cover;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+}
 }
