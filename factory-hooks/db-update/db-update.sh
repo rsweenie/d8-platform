@@ -26,29 +26,22 @@ blt="/var/www/html/$site.$env/vendor/acquia/blt/bin/blt"
 uri=`/usr/bin/env php /mnt/www/html/$site.$env/hooks/acquia/uri.php $site $env $db_role`
 
 # Print a statement to the cloud log.
-echo "$site.$env: Running BLT deploy tasks on $uri domain in $env environment on the $site subscription."
+echo "$site.$target_env: Running BLT deploy tasks on $uri domain in $env environment on the $site subscription."
 
 IFS='.' read -a name <<< "${uri}"
 
+# Set Drush cache to local ephemeral storage to avoid race conditions. This is
+# done on a per site basis to completely avoid race conditions.
+# @see https://github.com/acquia/blt/pull/2922
+export DRUSH_PATHS_CACHE_DIRECTORY=/tmp/.drush/${db_role}
+
 $blt drupal:update --environment=$env --site=${name[0]} --define drush.uri=$domain --verbose --yes
 
-# Print a statement to the cloud log
-echo "Running config import on $uri"
-
-# Get sitename from uri
 siteName="${uri%%.*}"
 
-# Get alias env 
-# subEnv="${env#01}"
-# echo "ENV: $env"
-
 # Config import any changes just pushed to the code base
-echo '(/mnt/www/html/creighton$env/vendor/bin/drush @self cim -y --uri=$siteName.creighton.acsitefactory.com --no-interaction -v --ansi)'
-
+echo "Running config import on $siteName"
 eval /mnt/www/html/creighton$env/vendor/bin/drush @self cim -y --uri=$siteName.creighton.acsitefactory.com --no-interaction -v --ansi
-
-# Scrubbing functions to fix login errors
-# drush @"$siteName.$env" acsf-duplication-scrub-batch "$siteName" "$site"
 
 # Push a notification to the #d8_site_updates channel on slack
 curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$env\"}" https://hooks.slack.com/services/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
