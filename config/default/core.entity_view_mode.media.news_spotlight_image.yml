@@ -1,0 +1,14 @@
+uuid: 5078b2b3-16b3-462d-b1c6-247ef795257e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.news_spotlight_image
+label: 'News/Spotlight Image'
+targetEntityType: media
+cache: true
