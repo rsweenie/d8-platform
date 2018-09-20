@@ -4,7 +4,7 @@ This project encompasses the Drupal 8 multisite platform for Creighton Universit
 
 [Github Pages Documentation](https://cu-webteam.github.io/d8-platform/)
 
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/cu-webteam/d8-platform.svg?columns=all)](https://waffle.io/cu-webteam/d8-platform)
+[![Travis (.com)](https://img.shields.io/travis/cu-webteam/d8-platform.svg)](https://travis-ci.com/cu-webteam/d8-platform)
 
 ## Table of Contents
 
@@ -241,7 +241,9 @@ BLT uses a number of configuration (.yml or .json) files to define and customize
 
 ## Platform Documentation
 
-* [Shell Scripts](docs/SHELL_SCRIPTS.md)
-* [D8 Development Process](docs/D8_DEV.md)
-* [Common D8 Commands](docs/COMMON_COMMANDS.md)
-* [cu2017 Theme Docs](/docroot/themes/custom/cu2017/README.md)
+* [Shell Scripts](docs/SHELL_SCRIPTS)
+* [D8 Development Process](docs/D8_DEV)
+* [Common D8 Commands](docs/COMMON_COMMANDS)
+* [cu2017 Theme Docs](/docroot/themes/custom/cu2017/README)
+* [Deployment Process](docs/DEPLOYMENT)
+* [Configuration Management](docs/CONFIG_MANAGEMENT)
