@@ -1,0 +1,14 @@
+uuid: 45442897-5209-4c2a-b1cd-8213c0239fdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.quote_box_image
+label: 'Quote Box Image'
+targetEntityType: media
+cache: true

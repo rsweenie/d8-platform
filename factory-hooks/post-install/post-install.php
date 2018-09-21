@@ -10,9 +10,9 @@
  *
  * This is used so that an ACSF site install will match a local BLT site
  * install. After a local site install, the update functions are run.
- * 
+ *
  */
-   
+
 $site = $_ENV['AH_SITE_GROUP'];
 $env = $_ENV['AH_SITE_ENVIRONMENT'];
 $target_env = $site . $env;
