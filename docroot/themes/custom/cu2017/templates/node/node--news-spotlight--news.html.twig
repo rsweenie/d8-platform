@@ -4,16 +4,14 @@
  * News template.
  */
 #}
+
+
 <div{{ attributes.addClass('clearfix', 'news_wrapper') }}>
     <article class="news">
-        <div class="news_summary">
-            <div class="news_image" id="news_image">
-                {{ content.field_content_page_image.0 }}</div>
-            <div class="news_top_text">
-                <h2>{{ node.label }}</h2>
-                <p>{{ node.body.summary|raw|nl2br }}</p>
-            </div>
-        </div>
+        {% if content.field_display_publish_on_date.0['#markup'] == "On"  %}
+         {% set date = node.createdtime|format_date('cu_news') %}
+            <div class="news_date">{{ date }}</div>
+        {% endif %}
         <div class="news_body">
             {{ content.body }}
             {{ content.field_tabbed_accordion }}

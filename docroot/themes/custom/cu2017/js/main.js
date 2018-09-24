@@ -30,13 +30,44 @@ jQuery(document).ready(function() {
     });
     jQuery('.field--name-field-slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
         console.log("made it to after change")
+        checkWindowSize();
         removeExisting();
     });
     function removeExisting(){
-        // var allExistingElements = jQuery(".front-page-classic .slideText.mobile_slide_text")
-        // allExistingElements.remove()
-        // console.log("finished remove existing")
-        changePosition();
+        // find the divs with slideText mobile_slide_tex undreneath front-page classic and remove all except first happening of slideText
+    //     var allExistingElements = jQuery(".front-page-classic .slideText.mobile_slide_text")
+//    FIRST VERSION
+        // var mainElement = jQuery(".front-page-classic")
+        // var children = mainElement[0].children
+        // jQuery.each( children, function( i ,val ){
+        //     console.log(val)
+        //     debugger;
+        //     if (val.classList.contains("mobile_slide_text") == true){
+        //     console.log(children[i].text);
+        //     val.remove();
+        //     }
+        //     else {
+        //         console.log( "not found" );
+        //     }
+        // })
+// FIRST VERSION
+jQuery(".front-page-classic")[0].children[0].classList.contains("mobile_slide_text")
+     var mainElement = jQuery(".front-page-classic")
+     var children = mainElement[0].children
+     jQuery.each( children, function ( i, val){
+         
+     })
+
+
+    }
+    checkWindowSize();
+    function checkWindowSize(){
+    if ( jQuery(window).width() <= 480) {      
+        changePosition(); 
+    } 
+    else {
+        console.log("no function needed") 
+    }
     }
     function changePosition(){
         var neededText = jQuery(".slick-active .slideText")
