@@ -325,7 +325,7 @@ display:
           click_sort_column: value
           type: text_summary_or_trimmed
           settings:
-          trim_length: 1
+            trim_length: 1
           group_column: value
           group_columns: {  }
           group_rows: true
