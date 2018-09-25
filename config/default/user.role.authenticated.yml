@@ -13,6 +13,7 @@ permissions:
   - 'access private content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'view field_header_background_image'
   - 'view field_slide'
   - 'view media'
   - 'view own field_slide'
