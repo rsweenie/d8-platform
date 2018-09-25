@@ -11036,7 +11036,7 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   margin-bottom: 14px;
   padding: 3px 50px 3px 10px;
   position: relative;
-  text-transform: capitalize;
+  text-transform: uppercase;
   width: 100%;
 }
 /* line 25, ../sass/custom/_accordion.scss */
