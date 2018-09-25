@@ -98,7 +98,7 @@
 .desktop_horizontal {
 	.field--items {
 		display: grid;
-		grid-row-gap: 50px;
+		grid-row-gap: 20px;
 		grid-template-columns: 1fr;
 
 		.featured_content_item_wrapper {
@@ -153,7 +153,7 @@
 .desktop_vertical {
 	.field--items {
 		display: grid;
-		grid-row-gap: 50px;
+		grid-row-gap: 20px;
 		grid-template-columns: 1fr;
 
 		// desktop = choice of orientation
