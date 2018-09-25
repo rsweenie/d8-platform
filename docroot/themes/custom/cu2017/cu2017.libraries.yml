@@ -27,6 +27,7 @@ bootstrap-scripts:
 custom-javascript:
   js: 
     js/main.js: {}
+    js/tabbedaccordion.js: {}
     js/handlebars.js: {}
     js/typeahead.bundle.js: {}
     js/typeahead.fb.js: {}
