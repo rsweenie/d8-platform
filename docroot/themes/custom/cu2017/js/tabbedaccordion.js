@@ -80,7 +80,6 @@ jQuery(document).ready(function() {
     // active class & show toggle for tabbed accordions
     jQuery('.tabbed_accordion .accordion_title').on("click", function(){
         var title_bar = jQuery(this);
-        console.log(title_bar.parents('.tabbed_accordion'));
         var tabbed_accordion = title_bar.parents('.tabbed_accordion');
         tabbed_accordion.find('.accordion_title').removeClass('active');
         title_bar.addClass('active');
