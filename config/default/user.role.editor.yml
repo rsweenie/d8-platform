@@ -43,6 +43,7 @@ permissions:
   - 'create links content'
   - 'create media'
   - 'create news_spotlight content'
+  - 'create profile content'
   - 'create promo_box content'
   - 'create quote_box content'
   - 'create related_links content'
