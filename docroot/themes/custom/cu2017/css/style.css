@@ -13181,7 +13181,7 @@ article.news .news_date {
 /* line 99, ../sass/custom/_featuredcontent.scss */
 .desktop_horizontal .field--items {
   display: grid;
-  grid-row-gap: 50px;
+  grid-row-gap: 20px;
   grid-template-columns: 1fr;
 }
 @media all and (max-width: 480px) {
@@ -13846,31 +13846,26 @@ article.news .news_date {
 
 @media (max-width: 480px) {
   /* line 171, ../sass/custom/_frontpage.scss */
-  body {
-    background: #eaeaea;
-  }
-
-  /* line 174, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -52px;
   }
 
-  /* line 177, ../sass/custom/_frontpage.scss */
+  /* line 174, ../sass/custom/_frontpage.scss */
   .main-front .slide {
     height: 185px;
   }
 
-  /* line 180, ../sass/custom/_frontpage.scss */
+  /* line 177, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText {
     top: 37%;
   }
 
-  /* line 183, ../sass/custom/_frontpage.scss */
+  /* line 180, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0 40px 0;
   }
 
-  /* line 186, ../sass/custom/_frontpage.scss */
+  /* line 183, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText.mobile_slide_text {
     background-color: #616161 !important;
     padding-top: 1px;
@@ -13878,96 +13873,96 @@ article.news .news_date {
     margin-top: 0px;
   }
 
-  /* line 192, ../sass/custom/_frontpage.scss */
+  /* line 189, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText h1 {
     margin-bottom: 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  /* line 198, ../sass/custom/_frontpage.scss */
+  /* line 195, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -58px;
   }
 
-  /* line 201, ../sass/custom/_frontpage.scss */
+  /* line 198, ../sass/custom/_frontpage.scss */
   .main-front .slide {
     height: 256px;
   }
 
-  /* line 204, ../sass/custom/_frontpage.scss */
+  /* line 201, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText {
     top: 32%;
   }
 
-  /* line 208, ../sass/custom/_frontpage.scss */
+  /* line 205, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) {
     margin-left: 10px;
   }
-  /* line 210, ../sass/custom/_frontpage.scss */
+  /* line 207, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) .image {
     display: flex;
     width: 120%;
   }
-  /* line 213, ../sass/custom/_frontpage.scss */
+  /* line 210, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) .image img {
     margin-top: 20px;
   }
-  /* line 217, ../sass/custom/_frontpage.scss */
+  /* line 214, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:nth-child(3) .content {
     float: left;
     width: 50%;
     margin-left: 40px;
   }
 
-  /* line 223, ../sass/custom/_frontpage.scss */
+  /* line 220, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0 40px 0;
   }
 
-  /* line 226, ../sass/custom/_frontpage.scss */
+  /* line 223, ../sass/custom/_frontpage.scss */
   .front-page-classic .new-arrows {
     right: 2%;
   }
 }
 @media (min-width: 769px) and (max-width: 1049px) {
-  /* line 233, ../sass/custom/_frontpage.scss */
+  /* line 230, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-top {
     margin-top: -58px;
   }
 
-  /* line 236, ../sass/custom/_frontpage.scss */
+  /* line 233, ../sass/custom/_frontpage.scss */
   .main_front .slide, .main_front .slick-slide {
     height: 350px;
   }
 
-  /* line 239, ../sass/custom/_frontpage.scss */
+  /* line 236, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideText {
     top: 50%;
   }
 
-  /* line 242, ../sass/custom/_frontpage.scss */
+  /* line 239, ../sass/custom/_frontpage.scss */
   .first-content.col-md-8 {
     width: 100%;
   }
 
-  /* line 245, ../sass/custom/_frontpage.scss */
+  /* line 242, ../sass/custom/_frontpage.scss */
   .calls-to-action.col-md-4 {
     width: 100%;
     margin-left: -15px;
     padding: 0px;
   }
 
-  /* line 250, ../sass/custom/_frontpage.scss */
+  /* line 247, ../sass/custom/_frontpage.scss */
   .front-page-classic .block-region-ctas {
     padding: 50px 0px 30px 30px;
   }
 
-  /* line 253, ../sass/custom/_frontpage.scss */
+  /* line 250, ../sass/custom/_frontpage.scss */
   .bottom_callout.col-md-3 {
     margin-top: -50px;
   }
 
-  /* line 256, ../sass/custom/_frontpage.scss */
+  /* line 253, ../sass/custom/_frontpage.scss */
   .front-page-classic .new-arrows {
     width: 100px;
     position: absolute;
