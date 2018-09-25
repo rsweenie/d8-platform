@@ -13418,7 +13418,7 @@ article.news .news_date {
 /* line 154, ../sass/custom/_featuredcontent.scss */
 .desktop_vertical .field--items {
   display: grid;
-  grid-row-gap: 50px;
+  grid-row-gap: 20px;
   grid-template-columns: 1fr;
 }
 @media all and (min-width: 1051px) {
