@@ -99,6 +99,20 @@
     .bottom_callout{
         margin-top: -50px;        
     }
+    
+    .first-content {
+        h3 {
+            font-weight: $custom;
+            color: $mediumBlue; 
+            font-size: $h3LargerFontSize;
+        }
+        p {
+            font-size: $pLargerFontSize;
+        }
+        a {
+            font-size: $h3FontSize ;
+        }
+    }
 }
 
 // front page ALTERNATE

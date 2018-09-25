@@ -1,0 +1,38 @@
+uuid: 9acf723c-f331-4e5c-b3e3-184b22e4f960
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.quote_box_image
+    - field.field.media.image.field_media_in_library
+    - field.field.media.image.image
+    - image.style.rectangle_horizontal_medium_350x160_
+    - media.type.image
+  module:
+    - image_enhanced
+_core:
+  default_config_hash: VLDxfMVPTkd2xvOjFMCh3kWmaOYnd03zggFXuUXQVEY
+id: media.image.quote_box_image
+targetEntityType: media
+bundle: image
+mode: quote_box_image
+content:
+  image:
+    type: image_enhanced
+    weight: 0
+    label: hidden
+    settings:
+      image_style: rectangle_horizontal_medium_350x160_
+      image_link: ''
+      custom_link: ''
+      alt_text: '[media:image:alt]'
+      title_text: '[media:name]'
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_in_library: true
+  name: true
+  scheduled_publication: true
+  thumbnail: true
+  uid: true

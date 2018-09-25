@@ -68,7 +68,7 @@ script:
 
 before_deploy:
   - echo "ssh creighton@svn-1402.enterprise-g1.hosting.acquia.com"
-  - ssh creighton@svn-1402.enterprise-g1.hosting.acquia.com
+  # - ssh creighton@svn-1402.enterprise-g1.hosting.acquia.com
 
 
 # The version below MUST match the php version indicated at the top of this file, otherwise the artifact won't build.

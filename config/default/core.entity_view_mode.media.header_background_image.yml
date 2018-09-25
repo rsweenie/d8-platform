@@ -1,0 +1,14 @@
+uuid: 41d04ff3-d8e6-4444-8afa-053e8d8519a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.header_background_image
+label: 'Header Background Image'
+targetEntityType: media
+cache: true

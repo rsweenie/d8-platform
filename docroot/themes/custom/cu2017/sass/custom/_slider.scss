@@ -1,0 +1,350 @@
+.main_front {
+	@media all and (min-width: 320px) {
+		.slide,
+		.slick-slide {
+			height: 155px;
+		}
+	}
+	@media all and (min-width: 768px) {
+		.slide,
+		.slick-slide {
+			height: 256px;
+		}
+	}
+	@media all and (min-width: 1050px) {
+		.slide,
+		.slick-slide {
+			height: 350px;
+		}
+	}
+	@media all and (min-width: 1251px) {
+		.slide,
+		.slick-slide {
+			height: 430px;
+		}
+	}
+	@media all and (max-width: 1050px) {
+		top: 0;
+	}
+
+	.region-hero-slideshow {
+		position: relative;
+
+		@media all and (min-width: 1251px) {
+			margin-top: -85px;
+		}
+
+		.slick-slide {
+			width: 100%;
+		}
+
+		.slideText {
+			color: $white;
+			height: 100%;
+			margin: auto;
+			max-width: 1200px;
+			position: relative;
+			width: 100%;
+			a {
+				background-image: url(../images/svgs/white-arrow.svg);
+				background-position: right center;
+				background-repeat: no-repeat;
+				margin: .8em 0 0;
+				padding-right: 30px;
+
+				&::after {
+					top: 3px;
+				}
+			}
+
+			li {
+				list-style: none;
+			}
+
+			.slideTextWrapper {
+				bottom: 50px;
+				padding-left: 20px;
+				position: absolute;
+			}
+
+			h1 {
+				color: $yellow;
+				font-size: 61px;
+				font-weight: $bold;
+				line-height: 68px;
+				margin-bottom: 0;
+				margin-top: 0;
+				text-transform: uppercase;
+			}
+
+			h2 {
+				color: $white;
+				display: inline-block;
+				font-family: $condensedFont;
+				font-size: 40px;
+				font-weight: bold;
+				padding-bottom: 0px;
+			}
+
+			p {
+				font-size: 40px;
+				line-height: 1.4em;
+
+				strong {
+					color: $yellow;
+					font-size: 68px;
+					text-transform: uppercase;
+
+					@include respond-to(null , tablet-max) {
+						font-size: 40px;
+					}
+				}
+			}
+
+			@include respond-to(null , tablet-max) {
+				display: none;
+			}
+		}
+	}
+
+
+.mobile-slide-text {
+	background-color: $baseGray;
+
+	.slideText {
+		color: $white;
+		height: 100%;
+		margin: auto;
+		max-width: 1200px;
+		padding: 5px 10px 20px 20px;
+		position: relative;
+		width: 100%;
+
+		a {
+			background-image: url(../images/svgs/white-arrow.svg);
+			background-position: right center;
+			background-repeat: no-repeat;
+			font-size: 18px;
+			margin: .8em 0 0;
+			padding-right: 30px;
+
+			&::after {
+				top: 3px;
+			}
+		}
+
+		li {
+			list-style: none;
+		}
+
+		h1 {
+			color: $yellow;
+			font-size: 61px;
+			font-weight: $bold;
+			line-height: 68px;
+			margin-bottom: 0;
+			margin-top: 0;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			color: $white;
+			display: inline-block;
+			font-family: $condensedFont;
+			font-size: 40px;
+			font-weight: $bold;
+			padding-bottom: 0px;
+		}
+
+		p {
+			font-size: 30px;
+			line-height: 1.4em;
+
+			strong {
+				color: $yellow;
+				font-size: 68px;
+				text-transform: uppercase;
+
+				@include respond-to(null , tablet-max) {
+					font-size: 55px;
+				}
+			}
+		}
+	}
+}
+
+.slideText {
+	font-family: $condensedFont;
+	font-weight: $bold;
+
+	.slideTextWrapper {
+		li {
+			list-style: none;
+		}
+	}
+
+	a {
+		@include transition(color, 0.2s);
+		color: $white;
+		display: inline-block;
+		font-family: $condensedFont;
+		font-size: 26px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		position: relative;
+		text-decoration: underline;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.slick-slider {
+	button {
+		background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+		bottom: 0;
+		display: block;
+		height: 44px;
+		left: auto;
+		position: absolute;
+		top: auto;
+		width: 44px;
+		z-index: 1;
+
+		&::before {
+			display: none;
+		}
+
+		@media all and (max-width: 900px) {
+			bottom: -5px;
+		}
+	}
+
+	.slick-prev,
+	.slick-prev:hover,
+	.slick-prev:focus {
+		background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+		color: none;
+		outline: none;
+		right: 90px;
+		// get rid of the buttons on mobile (to overide in the in-line css)
+		@include respond-to(null , tablet-max) {
+			display: none;
+		}
+	}
+
+	.slick-next,
+	.slick-next:hover,
+	.slick-next:focus {
+		background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+		background-position: -46px 0;
+		color: none;
+		outline: none;
+		right: 27px;
+
+		// get rid of the buttons on mobile (to overide in the in-line css)
+		@include respond-to(null , tablet-max) {
+			display: none;
+		}
+	}
+}
+
+
+.main {
+	.col-md-12 {
+		.center_column {
+			.slide {
+				height: 350px;
+			}
+		}
+	}
+
+	.col-md-8 {
+		.center_column {
+			.slide {
+				height: 250px;
+			}
+		}
+	}
+
+	.col-md-9 {
+		.center_column {
+			.slide {
+				height: 250px;
+			}
+		}
+	}
+
+	.slideText {
+		background: $backgroundBlack;
+		bottom: 0;
+		color: $white;
+		font-family: $baseFont;
+		font-size: 16px;
+		margin: auto;
+		padding: 0 45px;
+		position: absolute;
+		width: 100%;
+
+		.field {
+			padding: 10px 0;
+		}
+
+		a {
+			font-family: $baseFont;
+			font-size: 16px;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.slick-slider {
+		button {
+			height: 42px;
+		}
+
+		.slick-prev,
+		.slick-next {
+			bottom: -21px;
+		}
+
+		.slick-prev,
+		.slick-prev:hover,
+		.slick-prev:focus {
+			background: url(/themes/custom/cu2017/images/png/left-white-arrows.png) no-repeat;
+			background-position: 14px 11px;
+			border: 0;
+			left: 0;
+			outline: none;
+		}
+
+		.slick-next,
+		.slick-next:hover,
+		.slick-next:focus {
+			background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
+			background-position: 18px 11px;
+			outline: none;
+			right: 0;
+		}
+	}
+}
+
+.slide {
+	background: $black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.slick-list {
+	width: 100%;
+}
+}

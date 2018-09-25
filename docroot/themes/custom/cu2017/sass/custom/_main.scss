@@ -1,0 +1,66 @@
+// Main page content
+
+	@media (min-width: 65.6875em) {
+		max-width: $maxContentWidth;
+	}
+
+	p {
+		margin: 0 0 1.5em;
+		word-wrap: break-word;
+	}
+
+	h3 {
+		color: $darkBlue;
+		font-family: $baseFont;
+	}
+
+	.main_page_title {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		margin-bottom: 5%;
+	}
+
+	.headline {
+		color: $darkBlue;
+		font-family: $condensedFont;
+		font-size: 2.25em;
+		line-height: 1.25em;
+		padding-bottom: 0.8em;
+		padding-left: 0;
+		@include respond-to(null , mobile-max) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.center_column {
+		@media all and (min-width: 992px) {
+			padding-left: 0;
+		}
+		&, & * {
+			@include respond-to(null , mobile-max) {
+			padding-left: 0;
+			padding-right: 0;
+			}
+		}
+	}
+
+	.right_sidebar {
+		@media all and (min-width: 992px) {
+			padding-right: 0;
+		}
+		@include respond-to(null , mobile-max) {
+			padding-top: 20px;
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+	}
+
+	.featured_links_wrapper,
+	.copy_box_wrapper,
+	.quote_box_wrapper,
+	.related_links_wrapper,
+	.promo_box_wrapper {
+		margin-bottom: 20px;
+	}
+

@@ -26,8 +26,6 @@ bootstrap-scripts:
 
 custom-javascript:
   js: 
-    js/jquery.sticky.js: {}
-    js/headroom.min.js: {}
     js/main.js: {}
     js/handlebars.js: {}
     js/typeahead.bundle.js: {}
