@@ -57,6 +57,7 @@ permissions:
   - 'administer media'
   - 'administer menu'
   - 'administer menu-icons menu items'
+  - 'administer nodes'
   - 'administer pane access'
   - 'administer panelizer'
   - 'administer panelizer node content_page content'

@@ -29,6 +29,7 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'administer menu'
+  - 'administer nodes'
   - 'clone block entity'
   - 'clone media entity'
   - 'clone node entity'
