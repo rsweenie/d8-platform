@@ -111,6 +111,7 @@ permissions:
   - 'view copy_box revisions'
   - 'view featured_content_group revisions'
   - 'view featured_links revisions'
+  - 'view field_header_background_image'
   - 'view header_alert revisions'
   - 'view latest version'
   - 'view links revisions'
