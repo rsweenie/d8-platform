@@ -63,7 +63,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 12
+          items_per_page: 8
           offset: 0
           id: 12345
           total_pages: null
@@ -572,7 +572,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<style>\nform.entity-browser-media-browser-form .field--name-revision-log-message {\n    display: none;\n}\n</style>"
+          #content: "<style>\nform.entity-browser-media-browser-form .field--name-revision-log-message {\n    display: none;\n}\n</style>"
           plugin_id: text_custom
       empty:
         area_text_custom:
