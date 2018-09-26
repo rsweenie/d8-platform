@@ -10,14 +10,15 @@ html {
 		p {
 			margin: 0 0 1.5em;
 			word-wrap: break-word;
-			a {
-				color: $blue;
-				text-decoration: underline;
+			
+		}
+		a {
+			color: $blue;
+			text-decoration: underline;
 
-				&:hover {
-					color: $darkBlue;
-					text-decoration: underline;
-				}
+			&:hover {
+				color: $darkBlue;
+				text-decoration: underline;
 			}
 		}
 
