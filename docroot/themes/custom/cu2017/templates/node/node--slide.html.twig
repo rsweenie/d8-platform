@@ -4,15 +4,22 @@
  * Slide template.
  */
 #}
-<div{{ attributes.addClass('clearfix', 'slide_wrapper') }}>
-    {{ title_suffix.contextual_links }}
+{% if is_front %}
+<div{{ attributes.addClass('clearfix', 'front_page_slide_wrapper') }}>
+{% else %}
+<div{{ attributes.addClass('clearfix', 'inline_slide_wrapper') }}>
+{% endif %}
 
-    <div class="slide" style="background-image: url({{ file_url(content.field_slide_image|field_target_entity.image.entity.uri.value) }})">
-        <div class="slideText mobile_slide_text">
-            <div class="slideTextWrapper">
-                {{ content.field_slide_caption }}
-                {{ content.field_slide_link }}
-            </div>
+    {{ title_suffix.contextual_links }}
+    <div class="slide_wrapper">
+        <div class="slide_image_wrapper">  
+            {{ content.field_slide_image }}  
+        </div>
+        <div class="slide_text_wrapper">
+                <div class="slide_text">
+                    {{ content.field_slide_caption }}
+                    {{ content.field_slide_link }}
+                </div>
         </div>
     </div>
 </div>

@@ -13,73 +13,43 @@ jQuery(document).ready(function() {
             headerNav.classList.remove('open');
         }
     });
-    // slideshow
-
-    jQuery('.field--name-field-slide').on("init", function() {
-        jQuery (".new-arrows").appendTo(".slider");
-       
-        })
-        .slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: true,
-            prevArrow: '<button type="button" class="slick-prev"></button>',
-            nextArrow: '<button type="button" class="slick-next"></button>',
-            appendArrows: jQuery("<div></div>").addClass("new-arrows").insertAfter(".field--name-field-slide")
+    //slider
+    jQuery('.field--name-field-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
     });
+    
+    jQuery('.slideshow_wrapper').slick({
+         appendArrows: jQuery("<div></div>").addClass("new-arrows").insertAfter(".field--name-field-slide")
+    });
+    
     jQuery('.field--name-field-slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        console.log("made it to after change")
+        
         checkWindowSize();
-        removeExisting();
     });
-    function removeExisting(){
-        // find the divs with slideText mobile_slide_tex undreneath front-page classic and remove all except first happening of slideText
-    //     var allExistingElements = jQuery(".front-page-classic .slideText.mobile_slide_text")
-//    FIRST VERSION
-        // var mainElement = jQuery(".front-page-classic")
-        // var children = mainElement[0].children
-        // jQuery.each( children, function( i ,val ){
-        //     console.log(val)
-        //     debugger;
-        //     if (val.classList.contains("mobile_slide_text") == true){
-        //     console.log(children[i].text);
-        //     val.remove();
-        //     }
-        //     else {
-        //         console.log( "not found" );
-        //     }
-        // })
-// FIRST VERSION
-jQuery(".front-page-classic")[0].children[0].classList.contains("mobile_slide_text")
-     var mainElement = jQuery(".front-page-classic")
-     var children = mainElement[0].children
-     jQuery.each( children, function ( i, val){
-         
-     })
 
-
-    }
     checkWindowSize();
     function checkWindowSize(){
     if ( jQuery(window).width() <= 480) {      
+        removeOldText();
         changePosition(); 
+        jQuery('.slick-active .slideText').appendTo();
     } 
     else {
-        console.log("no function needed") 
     }
     }
     function changePosition(){
-        var neededText = jQuery(".slick-active .slideText")
-        jQuery(neededText).insertAfter(row_1);
-        console.log("finished changePosition")
+        var neededText = jQuery(".slick-active .slideText");
+        jQuery(neededText).addClass("active-text").insertAfter(row_1);
     }
-    // if mobile, build the slide text below the slide
-    if (jQuery('.region-hero-slideshow')[0] && jQuery(window).width() < 768) {
-        var slideTextjq = jQuery(".region-hero-slideshow .slick-active .slideText");
-        jQuery("<div class='mobile-slide-text'></div>").insertAfter(".region-hero-slideshow");
-        jQuery(slideTextjq).appendTo(".mobile-slide-text");
+    function removeOldText(){
+        jQuery('.active-text').detach();
     }
+
     // find the size of the header logo and assign classes accordingly
     var logo = jQuery('.cu2017_logo');
     if (logo.width() > 200) {

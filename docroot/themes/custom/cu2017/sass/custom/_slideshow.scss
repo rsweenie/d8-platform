@@ -1,0 +1,102 @@
+//specific to slideshow_wrapper, currently only used on front page
+.slideshow_wrapper {
+	// height:430px;
+	.slide_wrapper{
+		// .slide_image_wrapper {
+		// 	img {
+		// 		height: 430px;
+		// 	}
+		// }
+		.slide_text_wrapper {
+			background: transparent !important;
+			max-width: $maxContentWidth;
+			margin: 0 auto;
+			padding-left: 42px;
+			position: relative;
+			top: -4%;
+			.slide_text{
+				background: transparent !important;
+			}
+			h1{
+				color: $yellow;
+				text-transform: uppercase;
+				font-weight: $bold;
+				font-size: 4em;
+				font-family: $condensedFont;
+				margin-top: -10px;
+				margin-bottom: -10px;
+			}
+	
+			h2 {
+				color: $white;
+				font-weight: $bold;
+				font-family: $condensedFont;
+				font-size:36px;
+			}
+	
+			a {
+				background-image: url(../images/png/white-arrow.png);
+				background-position: 100%;
+				background-repeat: no-repeat;
+				padding: 0px 20px 0px 0px;
+				margin-top: -10px;
+				font-size:1.6em;
+			}
+			p {
+				font-weight: $regular;
+			}
+		}
+	} 
+	.slick-slider {
+		button {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			bottom: 0;
+			height: 44px;
+			left: auto;
+			position: absolute;
+			top: auto;
+			width: 44px;
+			z-index: 1;
+
+			&::before {
+				display: none;
+			}
+
+			@media all and (max-width: 900px) {
+				bottom: -5px;
+			}
+		}
+		
+		.slick-prev,
+		.slick-prev:hover,
+		.slick-prev:focus {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			outline: none;
+			right: 90px;
+			top: 91%;
+			// get rid of the buttons on mobile (to overide in the in-line css)
+			@include respond-to(null , tablet-max) {
+				display: none;
+			}
+		}
+		.slick-next,
+		.slick-next:hover,
+		.slick-next:focus {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			background-position: -46px 0;
+			outline: none;
+			right: 27px;
+			top: 91%;
+			// get rid of the buttons on mobile (to overide in the in-line css)
+			@include respond-to(null , tablet-max) {
+				display: none;
+			}
+		}
+	}
+	.slick-slider.slick-list {
+        overflow: visible;
+    }
+	
+	
+	
+}

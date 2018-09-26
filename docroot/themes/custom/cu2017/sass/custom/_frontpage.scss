@@ -1,17 +1,15 @@
+
+//Hiding breadcrumb is needed on both front page layouts 
+.row.breadcrumb_region{
+    display:none !important; 
+}
+
 // front page CLASSIC
-// TODO figure out how to make wrapper/use sass
-    //TODO for whatever reason .front-page-classic.row.breadcrumb_region doesn't work but .row.breadcrumb_region
-    .row.breadcrumb_region{
-        display:none !important; 
-    }
 .front-page-classic{
     %orange-h2{
         color: $orange;
         font-family: $h2LargerFontSize;
         font-weight: $semiBold;
-    }
-    .margin-top-10{
-        margin-top: 10px
     }
     p{
         font-size:18px;
@@ -20,136 +18,86 @@
         padding: 0;
         padding: 0;
     }
-    .block-region-top{
-        margin-top: -144px
-    }
-    .slideText {
-        background: transparent !important;
-        max-width: $maxContentWidth;
-        margin: 0 auto;
-        padding-left: 42px;
-        position: relative;
-        top: 54%;
-        h1{
-            color: $yellow;
-            text-transform: uppercase;
-            font-weight: $bold;
-            font-size: 4em;
-            font-family: $condensedFont;
-            margin-top: -10px;
-            margin-bottom: -10px;
-        }
-
-        h2 {
-            color: $white;
-            font-weight: $bold;
-            font-family: $condensedFont;
-            font-size:36px;
-        }
-
-        a {
-            background-image: url(../images/png/white-arrow.png);
-            background-position: 100%;
-            background-repeat: no-repeat;
-            padding: 0px 20px 0px 0px;
-            margin-top: 15px;
-        }
-        p {
-            font-weight: $regular;
-        }
-    }
-    .new-arrows{
-        width: 100px;
-        position: absolute;
-        right: 11%;
-        bottom: 0px;
-        height: 60px;
+    .block-region-top {
+        margin-top: -38px;
     }
 
-     .new-arrows .slick-prev{
-        left:0 !important;
-        background: url(/themes/custom/cu2017/images/front-page/arrows-circle-left.png) no-repeat;
-        background-position: 6px 0;
-        width: 50px;
-        height: 50px;
-        
-     }
-    .new-arrows .slick-prev:before, .new-arrows .slick-next:before {
-        content:none;
-    }
-
-
-    .new-arrows .slick-next{
-        right:0 !important;
-        background: url(/themes/custom/cu2017/images/front-page/arrows-circle-right.png) no-repeat !important;
-        background-position: -46px 0;
-        width: 44px;
-        height: 50px;
-
-        :before {
-            content: none;
-        }
-    }
     > div:not(:first-child){
         max-width: $maxContentWidth;
         margin: 0 auto;
         padding-left: 28px;
     }
-    a.button-blue {
-        background-color: $mediumBlue;
-        padding: 8px 80px 8px 10px;
-        background-image: url(../images/png/white-arrow.png);
-        background-position: 95%;
-        background-repeat: no-repeat;
-        padding: 8px 80px 8px 10px;
-        color: $white;
-        font-family: "Open Sans Condensed", sans-serif;
-        text-decoration: none;
-        text-transform: uppercase;
-   
-        &:hover {
-            text-decoration: none;
-            color: $white;
-            background-color: $darkBlue;
-            text-transform: uppercase;
-        }
-    }
+
     .block-region-ctas {
-        padding: 30px;
+        padding: 30px; 
     }
+
     > div:nth-child(3n) {
         margin-bottom: 40px;
     }
-    a.orange-text-link{
-        font-family: $condensedFont;
-        font-weight: $bold;
-        color: $orange;
-        background-image: url(../images/png/orange-arrow.png);
-        background-position: 100%;
-        background-repeat: no-repeat;
-        padding: 0px 20px 0px 0px;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
+
     #row_3{
-        h2 {
-            @extend %orange-h2;
+        .middle-left, .middle-center, .middle-right{
+            img{
+
+            }
+            h2{
+                @extend %orange-h2;
+            }
+            p{
+                font-size: $pLargerFontSize;
+                margin-bottom: 10px;
+            }
+            a{
+                font-family: $condensedFont;
+                font-weight: $bold;
+                color: $orange;
+                background-image: url(../images/png/orange-arrow.png);
+                background-position: 100%;
+                background-repeat: no-repeat;
+                padding: 0px 20px 0px 0px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
         }
-        p{
-            font-size: $pLargerFontSize;
-        }
     }
-    .row.breadcrumb_region {
-        display: none ;
-    }
-    .slideText p {
-        font-weight:400;
-    }
+
     .main .col-md-12 .center_column .front-page-classic .slide {
         height: 430px;
     }
-    .slick-slider.slick-list {
-        overflow: visible;
+      
+    .first-content {
+        h3 {
+            font-weight: $custom;
+            color: $mediumBlue; 
+            font-size: $h3LargerFontSize;
+        }
+        p {
+            font-size: $pLargerFontSize;
+        }
+        a {
+            font-size: $h3FontSize ;
+            background-color: $mediumBlue;
+            padding: 8px 80px 8px 10px;
+            background-image: url(../images/png/white-arrow.png);
+            background-position: 95%;
+            background-repeat: no-repeat;
+            padding: 8px 80px 8px 10px;
+            color: $white;
+            font-family: "Open Sans Condensed", sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            &:hover {
+                text-decoration: none;
+                color: $white;
+                background-color: $darkBlue;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .bottom_callout{
+        margin-top: -50px;        
     }
     
     .first-content {
@@ -167,75 +115,166 @@
     }
 }
 
+// front page ALTERNATE
+//TODO pull out media put specific queries inside selectors, use breakpoint mixin
+// media queries will have both CLASSIC and ALTERNATE styles within
 @media (max-width: 480px){
-        .front-page-classic .block-region-top{
-            margin-top: -52px;
+    .front-page-classic{
+        
+        .block-region-top{
+            margin-top: -32px;
         }
-        .main-front .slide{
-            height: 185px;
+        //START Slide info TODO..move?
+        .slide_wrapper{
+                height:100%;
+            .slide_image_wrapper{
+                height: 155px;
+                overflow: hidden;
+            }
+            .slide_text_wrapper{
+                background-color:#616161 !important;
+                padding-left: 20px;
+                .slide_text{
+                    position: relative;
+                    padding: 0;
+                    h2{
+                        margin-top: 0;
+                        font-weight: 400;
+                    }
+                    a{
+                        font-weight: 400;
+                        font-weight: normal; 
+                    }
+                }
+            }
         }
-        .front-page-classic .slideText {
-            top: 37%;   
+        .new-arrows, .slick-arrow{
+            display:none !important;
         }
-        .front-page-classic .block-region-ctas {
+        // END slide info .. move?
+        
+        .block-region-ctas{
             padding: 50px 0 40px 0;
         }
-        .front-page-classic .slideText.mobile_slide_text{
-            background-color:#616161 !important;
-            padding-top: 1px;
-            padding-bottom: 20px;
-            margin-top: 0px;
+        #row_3{
+            .middle-left, .middle-center, .middle-right{
+                margin-bottom: 25px;
+                img {
+                    width: 99%;
+                }
+                
+                p {
+                    font-size: $pLargerFontSize;
+                    margin-bottom: 10px;
+                }
+                a {
+                    font-family: $condensedFont;
+                    font-weight: $bold;
+                    color: $orange;
+                    background-image: url(../images/png/orange-arrow.png);
+                    background-position: 100%;
+                    background-repeat: no-repeat;
+                    padding: 0px 20px 0px 0px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
         }
-        .front-page-classic .slideText h1{
-            margin-bottom:10px;
+        > div{
+            padding-left: 0 !important;
         }
+    }   
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-        .front-page-classic .block-region-top{
-            margin-top: -58px;
-        }
-        .main-front .slide{
+    .front-page-classic { 
+        //Slide info
+        .slideshow_wrapper {
             height: 256px;
-        }
-        .front-page-classic .slideText {
-            top: 32%;  
-        }
+            .slide_wrapper {
+                height: 256px;
+                .slide_image_wrapper {
+                    height: 256px;
+                    overflow: hidden;
+                    img{
+                        height:256px !important;
+                    }
+                }
+                .slide_text_wrapper {
+                    max-width: $screen-tablet-max;
+                    min-width: $screen-mobile-max; 
 
-        .front-page-classic > div:nth-child(3){
-            margin-left:10px;
-            .image {
-                display: flex;
-                width: 120%;
-                img { 
-                    margin-top: 20px;
+                    .slide_text{
+                        padding: 0;
+                        h2{
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
-            .content {
-                float:left;
-                width: 50%;
-                margin-left: 40px;
+        }
+        
+        //END slide info
+        #row_3{
+            .middle-left, .middle-center, .middle-right{
+                margin-bottom: 20px;
+                img{
+                    display: flex;
+                    float: left;
+                    width: 42%;
+                }
+                h2{
+                    display: flex;
+                    padding-left: 20px;
+                }
+                
+                p{
+                    padding-left: 20px;
+                    display: flex;
+                }
             }
-        }       
-        .front-page-classic .block-region-ctas {
+        }      
+        .block-region-ctas {
             padding: 50px 0 40px 0;
         }
-        .front-page-classic .new-arrows {
-            right: 2%;
+        > div:not(:first-child){
+            padding-left: 24px;
         }
-       
+        .bottom_callout{
+            margin-top: 10px;
+        }
+        
+    }    
 }
 
-@media (min-width:769px) and (max-width: 1049px){
-        .front-page-classic .block-region-top{
-            margin-top: -58px;
-        }
-        .main_front .slide, .main_front .slick-slide {
+@media (min-width:769px) and (max-width: 1050px){    
+    .front-page-classic {
+        // slide info
+        .slideshow_wrapper {
             height: 350px;
+            .slide_wrapper {
+                height: 350px;
+                .slide_image_wrapper {
+                    img {
+                        height:350px !important;
+                    }
+                }
+            }
+            .slide_text_wrapper {
+                position: relative;
+                top: -14px;
+                min-width: $screen-tablet-max;
+                max-width: $screen-lg-tablet-max;
+            }
         }
-        .front-page-classic .slideText {
-            top: 50%;   
+        .new-arrows {
+            width: 100px;
+            position: absolute;
+            right: 1%;
+            bottom: 0px;
+            height: 60px;
         }
+        // END slide info
         .first-content.col-md-8 {
             width: 100%;
         }
@@ -243,19 +282,55 @@
             width: 100%;
             margin-left: -15px;
             padding: 0px;
+       
+            .block-region-ctas {
+                padding: 50px 0px 30px 30px;
+            }
         }
-        .front-page-classic .block-region-ctas {
-            padding: 50px 0px 30px 30px;
+        
+        #row_3{
+            .middle-left, .middle-center, .middle-right{
+                width: 33%;
+                display: flex;
+                float: left;
+            }
         }
+
         .bottom_callout.col-md-3 {
             margin-top: -50px;
-        }
-        .front-page-classic .new-arrows {
-            width: 100px;
-            position: absolute;
-            right: 1%;
-            bottom: 0px;
-            height: 60px;
+        }   
+    }     
+}
+@media (min-width:1051px) and (max-width: 1300px){
+    .front-page-classic{
+            .slideshow_wrapper{
+                height:430px;
+                .slide_wrapper{
+                    height:430px;
+                    .slide_image_wrapper{
+                        img{
+                            height:430px !important;
+                        }
+                    }
+                }
+            }
+    }
+    
+}
+@media (min-width:1300px){
+    .front-page-classic {
+        .slideshow_wrapper{
+            height:430px;
+            .slide_wrapper{
+                height:430px;
+                .slide_image_wrapper{
+                    img{
+                        height:430px !important;
+                        object-fit: cover;
+                        width: 100%;
+                    }
+                }
+            }
         }
 }
-
+}

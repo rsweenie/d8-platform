@@ -1,0 +1,107 @@
+//slide size, slide text, typically inline slider use
+	.slick-slider {
+		button {
+			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
+			bottom: 0;
+			height: 44px;
+			left: auto;
+			position: absolute;
+			top: auto;
+			width: 44px;
+			z-index: 1;
+	
+			&::before {
+				display: none;
+			}
+	
+			@media all and (max-width: 900px) {
+				bottom: -5px;
+			}
+		}
+		
+		.slick-prev,
+		.slick-next {
+			bottom: -21px;
+		}
+
+		.slick-prev,
+		.slick-prev:hover,
+		.slick-prev:focus {
+			background: url(/themes/custom/cu2017/images/png/left-white-arrows.png) no-repeat;
+			background-position: 14px 11px;
+			border: 0;
+			// left: 0;
+			outline: none;
+		}
+
+		.slick-next,
+		.slick-next:hover,
+		.slick-next:focus {
+			background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
+			background-position: 18px 11px;
+			outline: none;
+			right: 0;
+		}
+	}
+
+.slide_wrapper{
+	// .slide_image_wrapper{
+	// 	img{
+	// 		object-fit: cover;
+   	//  		width: 100%;
+	// 	}
+	// }
+	.slide_text {
+		background: $backgroundBlack;
+		bottom: 0;
+		color: $white;
+		font-family: $baseFont;
+		font-size: $baseFontSize;
+		margin: auto;
+		padding: 0 45px;
+		position: absolute;
+		width: 100%;
+		font-weight: $bold;
+
+		.field {
+			padding: 10px 0;
+		}
+		a {
+			@include transition(color, 0.2s);
+			color: $white;
+			display: inline-block;
+			font-family: $condensedFont;
+			font-size: $baseFontSize;
+			font-weight: $bold;
+			letter-spacing: 1px;
+			position: relative;
+			text-decoration: underline;
+
+			li {
+				list-style: none;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.slick-list {
+		width: 100%;
+	}
+}
+.inline_slide_wrapper{
+	.slide_image_wrapper { 
+		img {
+			margin-bottom:0;
+			.col-md-12 &{
+				height: 350px;
+			}
+			.col-md-8 &, .col-md-9 &{
+				height: 250px;
+			}
+		}
+	
+	}
+}

@@ -76,13 +76,13 @@ table,
 		tr,
 		.tr {
 			&:nth-child(even) {
-				background-color: $backgroundGray;
+				background-color: $lightGray;
 			}
 
 			&:hover {
 				td,
 				.td {
-					border-bottom: 1px solid $dkGray;
+					border-bottom: 1px solid $baseGray;
 				}
 			}
 
@@ -105,7 +105,7 @@ table,
 				@include transition-property(border-color);
 
 				&.fullcell {
-					background-color: $primaryBlue;
+					background-color: $mediumBlue;
 					color: $white;
 
 					&.program-name {
