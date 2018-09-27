@@ -44,7 +44,7 @@
         {% for item in items %}
 			{% set main_nav_li_attributes = create_attribute() %}
 			{% set li_classes = [] %}
-			{% if item.in_active_trail %}
+			{% if item.in_active_trail and not item.below %}
 				{% set li_classes = li_classes|merge(['active']) %}
 			{% endif %}
 			{% if level == 1 %}
