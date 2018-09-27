@@ -11326,20 +11326,36 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   margin: 0;
 }
 
-/* line 6, ../sass/custom/_mainnav.scss */
+/* line 11, ../sass/custom/_mainnav.scss */
 .main_nav {
   padding-left: 0;
-  padding-top: 18px;
-}
-/* line 9, ../sass/custom/_mainnav.scss */
-.main_nav .child_menu {
-  margin-left: 10px;
 }
 /* line 13, ../sass/custom/_mainnav.scss */
+.main_nav:first-child {
+  padding-top: 18px;
+}
+/* line 16, ../sass/custom/_mainnav.scss */
+.main_nav .child_menu {
+  border-left: 2px solid #019cdb;
+  margin-left: 12px;
+}
+/* line 21, ../sass/custom/_mainnav.scss */
+.main_nav .child_menu .active::before {
+  content: "•";
+  color: #FFA300;
+  font-size: 16px;
+  padding-right: 4px;
+}
+/* line 29, ../sass/custom/_mainnav.scss */
 .main_nav .grandchild_menu {
   margin-left: 10px;
 }
-/* line 17, ../sass/custom/_mainnav.scss */
+/* line 31, ../sass/custom/_mainnav.scss */
+.main_nav .grandchild_menu li ul {
+  margin-left: 10px;
+  font-size: 16px;
+}
+/* line 37, ../sass/custom/_mainnav.scss */
 .main_nav li {
   display: block;
   line-height: 1;
@@ -11347,48 +11363,45 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 24, ../sass/custom/_mainnav.scss */
+/* line 44, ../sass/custom/_mainnav.scss */
 .main_nav li a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
   color: #002E6D;
-  display: block;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: normal;
+  line-height: 28px;
   margin-left: 0;
   padding: 6px 4px 6px 10px;
   text-decoration: none;
 }
-/* line 35, ../sass/custom/_mainnav.scss */
-.main_nav li a.active {
-  background: #EFEFEF;
-  color: #0054A6;
-}
-/* line 39, ../sass/custom/_mainnav.scss */
+/* line 53, ../sass/custom/_mainnav.scss */
 .main_nav li a:hover {
-  color: #002E6D;
+  background: #EFEFEF;
+  text-decoration: none;
+  width: 100%;
 }
-/* line 43, ../sass/custom/_mainnav.scss */
+/* line 57, ../sass/custom/_mainnav.scss */
+.main_nav li a.active {
+  font-weight: 700;
+}
+/* line 61, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item {
   color: #002E6D;
   margin: 4px 0;
 }
-/* line 47, ../sass/custom/_mainnav.scss */
+/* line 65, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item.active {
-  background: #EFEFEF;
-  color: #0054A6;
+  font-weight: 700;
 }
-/* line 52, ../sass/custom/_mainnav.scss */
+/* line 70, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item {
   border-bottom: 0;
   color: #002E6D;
-  font-size: 15px;
+  font-size: 16px;
   padding: 5px 4px 5px 10px;
 }
-/* line 58, ../sass/custom/_mainnav.scss */
+/* line 76, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item.active {
-  background: #EFEFEF;
-  color: #0054A6;
+  font-weight: 700;
 }
 
 /* line 3, ../sass/custom/_slide.scss */

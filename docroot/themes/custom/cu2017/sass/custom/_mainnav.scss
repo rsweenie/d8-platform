@@ -1,17 +1,37 @@
 @mixin active-link {
+	font-weight: $bold;
+	
+} 
+@mixin hover-link {
 	background: $lightGray;
-	color: $mediumBlue;
+	text-decoration: none;
+	width:100%;
 }
 
 .main_nav {
 	padding-left: 0;
-	padding-top: 18px;
+	&:first-child{
+		padding-top: 18px;
+	}
 	.child_menu {
-		margin-left: 10px;
+		border-left:2px solid #019cdb;
+		margin-left:12px;
+		
+		
+		.active::before {
+			content: "•"; 
+			color: #FFA300;
+			font-size:$baseFontSize;
+			padding-right:4px;
+		}
 	}
 
 	.grandchild_menu {
 		margin-left: 10px;
+		li ul{
+			margin-left:10px;
+			font-size:$baseFontSize;
+		}	
 	}
 
 	li {
@@ -20,24 +40,22 @@
 		list-style-image: none;
 		list-style-type: none;
 		margin-left: 0;
-
+		
 		a {
-			color: $darkBlue;
-			display: block;
-			font-family: $condensedFont;
-			font-size: 17px;
-			font-weight: $bold;
-			line-height: normal;
+			font-family: $baseFont;
+			font-size: $baseFontSize;
+			color: $darkBlue; 
+			line-height: $h3LargerFontSize; 
 			margin-left: 0;
 			padding: 6px 4px 6px 10px;
 			text-decoration: none;
 
+			&:hover {
+				@include hover-link;
+			}
+			
 			&.active {
 				@include active-link;
-			}
-
-			&:hover {
-				color: $darkBlue;
 			}
 
 			&.child_menu_item {
@@ -52,7 +70,7 @@
 			&.grandchild_menu_item {
 				border-bottom: 0;
 				color: $darkBlue;
-				font-size: 15px;
+				font-size: $baseFontSize;
 				padding: 5px 4px 5px 10px;
 
 				&.active {
