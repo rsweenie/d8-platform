@@ -53,3 +53,17 @@ function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variab
     } 
   }
 }
+
+/**
+ * Set active class for main menu.
+ */
+function cu2017_preprocess_menu__main(&$menu) {
+  foreach ($menu['items'] as &$item) {
+    if ($item['in_active_trail']) {
+      $item['attributes']->addClass('active');
+      if (!count($item['below']) || (count($item['below']) && !$item['below']['in_active_trail'])) {
+        $item['attributes']->addClass('last_active');
+      }
+    }
+  }
+}
