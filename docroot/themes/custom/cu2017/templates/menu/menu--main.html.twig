@@ -20,6 +20,7 @@
  * @ingroup themeable
  */
 #}
+
 {% import _self as menus %}
 
 {#
@@ -29,53 +30,26 @@
 <ul class="main_nav">
 	{{ menus.menu_links(items, attributes, 0) }}
 </ul>
-{# {% macro menu_links(items, attributes, level) %}
-    {% import _self as menus %}
 
-	{% set main_nav_ul_attributes = create_attribute() %}
-	{% set ul_classes = ['main_nav'] %}
-
-	{% if level == 1 %}
-		{% set ul_classes = ul_classes|merge(['child_menu']) %} 
-	{% elseif level == 2 %}	
-		{% set ul_classes = ul_classes|merge(['grandchild_menu']) %} 
-	{% endif %}
-
-    <ul {{ main_nav_ul_attributes.addClass(ul_classes) }}>
-        {% for item in items %}
-			{% set main_nav_li_attributes = create_attribute() %}
-			{% set li_classes = [] %}
-			{% if item.in_active_trail and not item.below %}
-				{% set li_classes = li_classes|merge(['active']) %}
-			{% endif %}
-			{% if level == 1 %}
-				{% set li_classes = li_classes|merge(['child_menu_item']) %} 
-			{% elseif level == 2 %}	
-				{% set li_classes = li_classes|merge(['grandchild_menu_item']) %} 
-			{% endif %}
-			<li>
-				<a href="{{ item.url }}" title="{{ item.title }}" {{ main_nav_li_attributes.addClass(li_classes) }}>{{ item.title }}</a>
+{% macro menu_links(items, attributes, level) %}
+	{% import _self as menus %}
+	{% if items %}
+			{% for item in items %}
+				{% if level == 1 %}
+					{% set child_classes = 'child_class' %} 
+				{% elseif level == 2 %}	
+					{% set child_classes = 'grandchild_class' %} 
+				{% elseif level == 3 %}	
+					{% set child_classes = 'great_grandchild_class' %}
+				{% endif %}
+				<li{{ item.attributes.addClass(child_classes) }}>
+					<a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+				</li>
 				{% if item.below and item.in_active_trail %}
 					{% set nextLevel = level + 1 %}
 					{{ _self.menu_links(item.below, attributes, nextLevel) }}
 				{% endif %}
-			</li>
-        {% endfor %}
-    </ul>
-{% endmacro %} #}
-
-{% macro menu_links(items, attributes, level) %}
-    {% import _self as menus %}
-    {% if items %}
-            {% for item in items %}
-                <li{{ item.attributes }}>
-                    <a href="{{ item.url }}" title="{{ item.title }}" {{ item.attributes }}>{{ item.title }}</a>
-                </li>
-                {% if item.below and item.in_active_trail %}
-                    {% set nextLevel = level + 1 %}
-                    {{ _self.menu_links(item.below, attributes, nextLevel) }}
-                {% endif %}
-            {% endfor %}
-    {% endif %}
+			{% endfor %}
+	{% endif %}
 {% endmacro %}
 

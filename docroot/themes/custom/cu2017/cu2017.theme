@@ -1,6 +1,6 @@
 <?php
 
-use Drupal\node\Entity\Node;
+// use Drupal\node\Entity\Node;
 
 /**
  * @file
@@ -50,8 +50,35 @@ function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variab
       $field_display = $field_display[0]['value'];
       $field_display == 0 ? $display_type = 'spotlight' : $display_type = 'news';
       $suggestions[] = 'node__' . $content_type . '__' . $display_type;
-    } 
+    }
   }
+}
+
+/**
+ * Implements hook_preprocess_menu() for menu--main.html.twig.
+ */
+function cu2017_preprocess_menu__main(&$variables) {
+  _cu2017_preprocess_menu($variables['items']);
+}
+
+/**
+ * Set active class for main menu recursively.
+ */
+function _cu2017_preprocess_menu(&$menu) {
+  foreach ($menu as &$item) {
+    if ($item['in_active_trail']) {
+      $item['attributes']->addClass('active');
+      $parameters = $item['url']->getRouteParameters();
+      $current_path = \Drupal::service('path.current')->getPath();
+      if (strpos($current_path, $parameters['node'])) {
+        $item['attributes']->addClass('last_active');
+      }
+      if ($item['below']) {
+        _cu2017_preprocess_menu($item['below']);
+      }
+    }
+  }
+  return $menu;
 }
 
 /**
