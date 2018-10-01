@@ -55,15 +55,28 @@ function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variab
 }
 
 /**
- * Set active class for main menu.
+ * Implements hook_preprocess_menu() for menu.html.twig.
  */
-function cu2017_preprocess_menu__main(&$menu) {
-  foreach ($menu['items'] as &$item) {
+function cu2017_preprocess_menu__main(&$variables, &$hook) {
+  if ($variables['menu_name'] == 'main') {
+    _cu2017_preprocess_menu($variables['items']);
+  }
+}
+
+/**
+ * Set active class for main menu recursively.
+ */
+function _cu2017_preprocess_menu(&$menu) {
+  foreach ($menu as &$item) {
     if ($item['in_active_trail']) {
       $item['attributes']->addClass('active');
-      if (!count($item['below']) || (count($item['below']) && !$item['below']['in_active_trail'])) {
+      if (!$item['below']) {
         $item['attributes']->addClass('last_active');
+      }
+      elseif ($item['is_expanded']) {
+        _cu2017_preprocess_menu($item['below']);
       }
     }
   }
+  return $menu;
 }

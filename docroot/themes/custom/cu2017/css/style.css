@@ -11336,7 +11336,7 @@ nav#block-mainnavigation {
   padding-left: 0;
 }
 /* line 15, ../sass/custom/_mainnav.scss */
-.main_nav .last_active::before {
+.main_nav .last_active a::before {
   content: "•";
   color: #FFA300;
   font-size: 16px;
@@ -11347,16 +11347,16 @@ nav#block-mainnavigation {
   border-left: 2px solid #019cdb;
   margin-left: 12px;
 }
-/* line 29, ../sass/custom/_mainnav.scss */
+/* line 25, ../sass/custom/_mainnav.scss */
 .main_nav .grandchild_menu {
   margin-left: 20px;
 }
-/* line 31, ../sass/custom/_mainnav.scss */
+/* line 27, ../sass/custom/_mainnav.scss */
 .main_nav .grandchild_menu li ul {
   margin-left: 20px;
   font-size: 16px;
 }
-/* line 37, ../sass/custom/_mainnav.scss */
+/* line 33, ../sass/custom/_mainnav.scss */
 .main_nav li {
   display: block;
   line-height: 1;
@@ -11364,7 +11364,7 @@ nav#block-mainnavigation {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 44, ../sass/custom/_mainnav.scss */
+/* line 40, ../sass/custom/_mainnav.scss */
 .main_nav li a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
@@ -11375,31 +11375,31 @@ nav#block-mainnavigation {
   text-decoration: none;
   display: block;
 }
-/* line 55, ../sass/custom/_mainnav.scss */
+/* line 51, ../sass/custom/_mainnav.scss */
 .main_nav li a:hover {
   background: #EFEFEF;
   text-decoration: none;
   width: 100%;
 }
-/* line 59, ../sass/custom/_mainnav.scss */
+/* line 55, ../sass/custom/_mainnav.scss */
 .main_nav li a.active {
   font-weight: 700;
 }
-/* line 63, ../sass/custom/_mainnav.scss */
+/* line 59, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item {
   color: #002E6D;
 }
-/* line 66, ../sass/custom/_mainnav.scss */
+/* line 62, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item.active {
   font-weight: 700;
 }
-/* line 71, ../sass/custom/_mainnav.scss */
+/* line 67, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item {
   border-bottom: 0;
   color: #002E6D;
   font-size: 16px;
 }
-/* line 77, ../sass/custom/_mainnav.scss */
+/* line 73, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item.active {
   font-weight: 700;
 }

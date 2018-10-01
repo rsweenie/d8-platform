@@ -12,7 +12,7 @@ nav#block-mainnavigation {
 }
 .main_nav {
 	padding-left: 0;
-	.last_active::before {
+	.last_active a::before {
 		content: "•"; 
 		color: #FFA300;
 		font-size:$baseFontSize;
