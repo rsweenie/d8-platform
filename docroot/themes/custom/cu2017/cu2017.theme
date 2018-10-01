@@ -55,12 +55,10 @@ function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variab
 }
 
 /**
- * Implements hook_preprocess_menu() for menu.html.twig.
+ * Implements hook_preprocess_menu() for menu--main.html.twig.
  */
-function cu2017_preprocess_menu__main(&$variables, &$hook) {
-  if ($variables['menu_name'] == 'main') {
-    _cu2017_preprocess_menu($variables['items']);
-  }
+function cu2017_preprocess_menu__main(&$variables) {
+  _cu2017_preprocess_menu($variables['items']);
 }
 
 /**
@@ -70,10 +68,12 @@ function _cu2017_preprocess_menu(&$menu) {
   foreach ($menu as &$item) {
     if ($item['in_active_trail']) {
       $item['attributes']->addClass('active');
-      if (!$item['below']) {
+      $parameters = $item['url']->getRouteParameters();
+      $current_path = \Drupal::service('path.current')->getPath();
+      if (strpos($current_path, $parameters['node'])) {
         $item['attributes']->addClass('last_active');
       }
-      elseif ($item['is_expanded']) {
+      if ($item['below']) {
         _cu2017_preprocess_menu($item['below']);
       }
     }
