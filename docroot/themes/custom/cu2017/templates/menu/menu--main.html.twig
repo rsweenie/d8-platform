@@ -26,9 +26,10 @@
   We call a macro which calls itself to render the full tree.
   @see http://twig.sensiolabs.org/doc/tags/macro.html
 #}
-{# {{ menus.menu_links(items, attributes, 0) }}
-
-{% macro menu_links(items, attributes, level) %}
+<ul class="main_nav">
+	{{ menus.menu_links(items, attributes, 0) }}
+</ul>
+{# {% macro menu_links(items, attributes, level) %}
     {% import _self as menus %}
 
 	{% set main_nav_ul_attributes = create_attribute() %}
@@ -66,7 +67,6 @@
 {% macro menu_links(items, attributes, level) %}
     {% import _self as menus %}
     {% if items %}
-        <ul class="main_nav">
             {% for item in items %}
                 <li{{ item.attributes }}>
                     <a href="{{ item.url }}" title="{{ item.title }}" {{ item.attributes }}>{{ item.title }}</a>
@@ -76,6 +76,5 @@
                     {{ _self.menu_links(item.below, attributes, nextLevel) }}
                 {% endif %}
             {% endfor %}
-        </ul>
     {% endif %}
 {% endmacro %}

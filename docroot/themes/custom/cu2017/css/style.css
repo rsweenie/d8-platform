@@ -11336,27 +11336,27 @@ nav#block-mainnavigation {
   padding-left: 0;
 }
 /* line 15, ../sass/custom/_mainnav.scss */
-.main_nav .child_menu {
-  border-left: 2px solid #019cdb;
-  margin-left: 12px;
-}
-/* line 20, ../sass/custom/_mainnav.scss */
-.main_nav .child_menu .active::before {
+.main_nav .last_active::before {
   content: "•";
   color: #FFA300;
   font-size: 16px;
   padding-right: 4px;
 }
-/* line 28, ../sass/custom/_mainnav.scss */
+/* line 21, ../sass/custom/_mainnav.scss */
+.main_nav .child_menu {
+  border-left: 2px solid #019cdb;
+  margin-left: 12px;
+}
+/* line 29, ../sass/custom/_mainnav.scss */
 .main_nav .grandchild_menu {
   margin-left: 20px;
 }
-/* line 30, ../sass/custom/_mainnav.scss */
+/* line 31, ../sass/custom/_mainnav.scss */
 .main_nav .grandchild_menu li ul {
   margin-left: 20px;
   font-size: 16px;
 }
-/* line 36, ../sass/custom/_mainnav.scss */
+/* line 37, ../sass/custom/_mainnav.scss */
 .main_nav li {
   display: block;
   line-height: 1;
@@ -11364,7 +11364,7 @@ nav#block-mainnavigation {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 43, ../sass/custom/_mainnav.scss */
+/* line 44, ../sass/custom/_mainnav.scss */
 .main_nav li a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
@@ -11375,31 +11375,31 @@ nav#block-mainnavigation {
   text-decoration: none;
   display: block;
 }
-/* line 54, ../sass/custom/_mainnav.scss */
+/* line 55, ../sass/custom/_mainnav.scss */
 .main_nav li a:hover {
   background: #EFEFEF;
   text-decoration: none;
   width: 100%;
 }
-/* line 58, ../sass/custom/_mainnav.scss */
+/* line 59, ../sass/custom/_mainnav.scss */
 .main_nav li a.active {
   font-weight: 700;
 }
-/* line 62, ../sass/custom/_mainnav.scss */
+/* line 63, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item {
   color: #002E6D;
 }
-/* line 65, ../sass/custom/_mainnav.scss */
+/* line 66, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item.active {
   font-weight: 700;
 }
-/* line 70, ../sass/custom/_mainnav.scss */
+/* line 71, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item {
   border-bottom: 0;
   color: #002E6D;
   font-size: 16px;
 }
-/* line 76, ../sass/custom/_mainnav.scss */
+/* line 77, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item.active {
   font-weight: 700;
 }
