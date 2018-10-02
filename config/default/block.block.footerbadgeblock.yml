@@ -1,4 +1,4 @@
-uuid: db86e308-35ef-4a58-a16a-c34abded814c
+uuid: c53fde44-82e2-4cb2-8b23-b6c24a1d9f38
 langcode: en
 status: true
 dependencies:
@@ -11,9 +11,9 @@ theme: cu2017
 region: footer
 weight: 0
 provider: null
-plugin: footer_badge_block
+plugin: footerbadgeblock
 settings:
-  id: footer_badge_block
+  id: footerbadgeblock
   label: 'Footer Badge block'
   provider: cu_footer_badge
   label_display: '0'
