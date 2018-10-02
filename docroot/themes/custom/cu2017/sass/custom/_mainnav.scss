@@ -1,17 +1,36 @@
 @mixin active-link {
+	font-weight: $bold;
+	
+} 
+@mixin hover-link {
 	background: $lightGray;
-	color: $mediumBlue;
+	text-decoration: none;
+	width:100%;
 }
-
+nav#block-mainnavigation {
+    margin-top: 22px;
+}
 .main_nav {
 	padding-left: 0;
-	padding-top: 18px;
-	.child_menu {
-		margin-left: 10px;
+	.last_active a{
+		@include active-link;
+		&:before {
+			content: "•"; 
+			color: #FFA300;
+			font-size:$baseFontSize;
+			padding-right:4px;
+			font-weight: 700;
+		}
 	}
-
-	.grandchild_menu {
-		margin-left: 10px;
+	.child_class, .grandchild_class, .great_grandchild_class {
+			border-left:2px solid #019cdb;		
+			margin-left:10px;
+	}
+	.grandchild_class a {
+		padding-left: 20px;
+	}
+	.great_grandchild_class a{
+		padding-left: 40px;
 	}
 
 	li {
@@ -20,29 +39,23 @@
 		list-style-image: none;
 		list-style-type: none;
 		margin-left: 0;
-
+		
 		a {
-			color: $darkBlue;
-			display: block;
-			font-family: $condensedFont;
-			font-size: 17px;
-			font-weight: $bold;
-			line-height: normal;
+			font-family: $baseFont;
+			font-size: $baseFontSize;
+			color: $darkBlue; 
+			line-height: $h3LargerFontSize; 
 			margin-left: 0;
-			padding: 6px 4px 6px 10px;
+			padding: 0 0 0 10px;
 			text-decoration: none;
-
-			&.active {
-				@include active-link;
-			}
+			display:block;
 
 			&:hover {
-				color: $darkBlue;
+				@include hover-link;
 			}
 
 			&.child_menu_item {
 				color: $darkBlue;
-				margin: 4px 0;
 
 				&.active {
 					@include active-link;
@@ -52,8 +65,7 @@
 			&.grandchild_menu_item {
 				border-bottom: 0;
 				color: $darkBlue;
-				font-size: 15px;
-				padding: 5px 4px 5px 10px;
+				font-size: $baseFontSize;
 
 				&.active {
 					@include active-link;
