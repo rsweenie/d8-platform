@@ -572,7 +572,6 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          #content: "<style>\nform.entity-browser-media-browser-form .field--name-revision-log-message {\n    display: none;\n}\n</style>"
           plugin_id: text_custom
       empty:
         area_text_custom:

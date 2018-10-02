@@ -1,4 +1,4 @@
-uuid: c0717282-1529-4ef1-b8c3-f16f755ccc91
+uuid: d6740b48-c3b1-45e6-9940-d614a3d2d87c
 langcode: en
 status: true
 dependencies:
@@ -11,9 +11,9 @@ theme: cu2017
 region: footer
 weight: 0
 provider: null
-plugin: footer_contact_block
+plugin: footercontactblock
 settings:
-  id: footer_contact_block
+  id: footercontactblock
   label: 'Footer Contact block'
   provider: cu_footer_contact
   label_display: '0'
