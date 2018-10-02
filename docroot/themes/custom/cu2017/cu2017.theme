@@ -68,9 +68,9 @@ function _cu2017_preprocess_menu(&$menu) {
   foreach ($menu as &$item) {
     if ($item['in_active_trail']) {
       $item['attributes']->addClass('active');
-      $parameters = $item['url']->getRouteParameters();
+      $internalPath = $item['url']->getInternalPath();
       $current_path = \Drupal::service('path.current')->getPath();
-      if (strpos($current_path, $parameters['node'])) {
+      if (substr_compare($current_path, $internalPath, 1) === 0) {
         $item['attributes']->addClass('last_active');
       }
       if ($item['below']) {
