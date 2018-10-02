@@ -1,7 +1,5 @@
 <?php
 
-// use Drupal\node\Entity\Node;
-
 /**
  * @file
  * The primary PHP file for the cu2017 theme.
