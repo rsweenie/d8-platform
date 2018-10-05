@@ -2,5 +2,6 @@ ignored_config_entities:
   0: system.file
   2: system.site
   4: samlauth.authentication
+  6: block.block.socialmedialinks
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
