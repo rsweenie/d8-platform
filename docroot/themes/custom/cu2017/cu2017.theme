@@ -39,11 +39,13 @@ function cu2017_preprocess_page(&$variables) {
  * Add appropriate file name to theme suggestions array for news/spotlight.
  */
 function cu2017_theme_suggestions_node_alter(array &$suggestions, array &$variables) {
-  $node = \Drupal::request()->attributes->get('node');
+  $elements = $variables['elements'];
+  $node = $elements['#node'];
   if ($node) {
+    $url = $node->url();
     $content_type = $node->getType();
-    // change which content type is being referenced -> or change the function name to be more specific
-    if ($content_type == 'news_spotlight') {
+    $current_path = \Drupal::service('path.current')->getPath();
+    if (($content_type == 'news_spotlight') && (substr_compare($current_path, $url, 0) === 0)) {
       $field_display = $node->get('field_display_type')->getValue();
       $field_display = $field_display[0]['value'];
       $field_display == 0 ? $display_type = 'spotlight' : $display_type = 'news';

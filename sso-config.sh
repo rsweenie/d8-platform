@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copy files down from selected Acquia site
+# Sets sp_entity id on site install
 
 # takes site name as an argument
 # $1 = site name
@@ -26,9 +26,7 @@ do
     fi;
 done < <(/mnt/www/html/creighton"$2"/vendor/bin/drush @self core:status --uri="$1"."$uri_prefix"creighton.acsitefactory.com --no-interaction -v --ansi)
 
-# eval "/mnt/www/html/creighton"$2"/vendor/bin/drush @self cim -y --uri=$1.$envcreighton.acsitefactory.com --no-interaction -v --ansi"
-echo "/mnt/www/html/creighton"$2"/vendor/bin/drush @self cim -y --uri="$1"."$uri_prefix"creighton.acsitefactory.com --no-interaction -v --ansi"
+eval "/mnt/www/html/creighton"$2"/vendor/bin/drush @self cim -y --uri="$1"."$uri_prefix"creighton.acsitefactory.com --no-interaction -v --ansi"
 
 # Sets sp_entity_id for ACSF SSO into the selected site
-# eval "/mnt/www/html/creighton"$2"/vendor/bin/drush @self cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:creighton:"$env":$site_id -y --uri="$1"."$env"creighton.acsitefactory.com --no-interaction -v --ansi"
-echo "/mnt/www/html/creighton"$2"/vendor/bin/drush @self cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:creighton:"$2":"$site_id" -y --uri="$1"."$uri_prefix"creighton.acsitefactory.com --no-interaction -v --ansi"
+eval "/mnt/www/html/creighton"$2"/vendor/bin/drush @self cset samlauth.authentication sp_entity_id urn:acquia:acsf:saml:sp:creighton:"$2":"$site_id" -y --uri="$1"."$uri_prefix"creighton.acsitefactory.com --no-interaction -v --ansi"
