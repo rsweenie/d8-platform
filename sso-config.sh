@@ -29,11 +29,7 @@ function config_status {
 site_path="Site path"
 uri_prefix=""
 
-if [ "$2" == "01dev" ];
-then
-    env_prefix="01"
-    uri_prefix="${2#$env_prefix}-"
-elif [ "$2" == "01test" ];
+if [ "$2" == "01dev" ] || [ "$2" == "01test" ];
 then
     env_prefix="01"
     uri_prefix="${2#$env_prefix}-"
