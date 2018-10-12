@@ -19,7 +19,7 @@ function config_status {
                 suffix="dev"
                 site_id=$(echo "${new_line#$prefix}" | tr '\r' ' ' | sed 's/ //g')
                 site_id=$(echo "${site_id%$suffix}")
-            elif [ "$2" == "01dev" ];
+            elif [ "$2" == "01test" ];
             then
                 suffix="test"
                 site_id=$(echo "${new_line#$prefix}" | tr '\r' ' ' | sed 's/ //g')
