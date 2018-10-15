@@ -34,7 +34,7 @@
 * `blt deploy`
     - Do you want to create a tag? `y`
     - Enter a commit message
-    - Enter a tag name `yyyymmdd.version`
+    - Enter a tag name `yymmdd.version`
 
 * Once the deploy process is complete, run the [Update Code](https://www.test-creighton.acsitefactory.com/admin/gardens/site-update/update) process on ACSF test
     - Select the tag that was just deployed from the dropdown under `Site Update Action`
