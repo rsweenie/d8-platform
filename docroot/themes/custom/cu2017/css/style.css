@@ -11326,41 +11326,45 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   margin: 0;
 }
 
-/* line 10, ../sass/custom/_mainnav.scss */
+/* line 11, ../sass/custom/_mainnav.scss */
 nav#block-mainnavigation {
   margin-top: 22px;
 }
 
-/* line 13, ../sass/custom/_mainnav.scss */
+/* line 18, ../sass/custom/_mainnav.scss */
+li.active.last_active.child_class a:before,
+li.active.last_active.grandchild_class a:before,
+li.active.last_active.great_grandchild_class a:before {
+  content: "•";
+  color: #FFA300;
+  padding-right: 4px;
+  font-weight: 700;
+  margin-left: -10px;
+}
+
+/* line 26, ../sass/custom/_mainnav.scss */
 .main_nav {
   padding-left: 0;
 }
-/* line 15, ../sass/custom/_mainnav.scss */
+/* line 29, ../sass/custom/_mainnav.scss */
 .main_nav .last_active a {
   font-weight: 700;
 }
-/* line 17, ../sass/custom/_mainnav.scss */
-.main_nav .last_active a:before {
-  content: "•";
-  color: #FFA300;
-  font-size: 16px;
-  padding-right: 4px;
-  font-weight: 700;
-}
-/* line 25, ../sass/custom/_mainnav.scss */
+/* line 34, ../sass/custom/_mainnav.scss */
 .main_nav .child_class, .main_nav .grandchild_class, .main_nav .great_grandchild_class {
   border-left: 2px solid #019cdb;
   margin-left: 10px;
+  padding-left: 10px;
 }
-/* line 29, ../sass/custom/_mainnav.scss */
-.main_nav .grandchild_class a {
+/* line 39, ../sass/custom/_mainnav.scss */
+.main_nav .grandchild_class {
   padding-left: 20px;
 }
-/* line 32, ../sass/custom/_mainnav.scss */
-.main_nav .great_grandchild_class a {
+/* line 42, ../sass/custom/_mainnav.scss */
+.main_nav .great_grandchild_class {
   padding-left: 40px;
 }
-/* line 36, ../sass/custom/_mainnav.scss */
+/* line 45, ../sass/custom/_mainnav.scss */
 .main_nav li {
   display: block;
   line-height: 1;
@@ -11368,7 +11372,7 @@ nav#block-mainnavigation {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 43, ../sass/custom/_mainnav.scss */
+/* line 52, ../sass/custom/_mainnav.scss */
 .main_nav li a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
@@ -11379,27 +11383,27 @@ nav#block-mainnavigation {
   text-decoration: none;
   display: block;
 }
-/* line 54, ../sass/custom/_mainnav.scss */
+/* line 62, ../sass/custom/_mainnav.scss */
 .main_nav li a:hover {
   background: #EFEFEF;
   text-decoration: none;
   width: 100%;
 }
-/* line 58, ../sass/custom/_mainnav.scss */
+/* line 66, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item {
   color: #002E6D;
 }
-/* line 61, ../sass/custom/_mainnav.scss */
+/* line 69, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item.active {
   font-weight: 700;
 }
-/* line 66, ../sass/custom/_mainnav.scss */
+/* line 74, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item {
   border-bottom: 0;
   color: #002E6D;
   font-size: 16px;
 }
-/* line 72, ../sass/custom/_mainnav.scss */
+/* line 79, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item.active {
   font-weight: 700;
 }
