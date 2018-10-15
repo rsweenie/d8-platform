@@ -7,32 +7,41 @@
 	text-decoration: none;
 	width:100%;
 }
+
 nav#block-mainnavigation {
     margin-top: 22px;
 }
+
+li.active.last_active.child_class, 
+li.active.last_active.grandchild_class, 
+li.active.last_active.great_grandchild_class{
+	a:before{
+		content: "•";
+		color: #FFA300;
+		padding-right: 4px;
+		font-weight: 700;
+		margin-left: -10px;
+		}
+}
 .main_nav {
 	padding-left: 0;
-	.last_active a{
+	.last_active {	
+		a {
 		@include active-link;
-		&:before {
-			content: "•"; 
-			color: #FFA300;
-			font-size:$baseFontSize;
-			padding-right:4px;
-			font-weight: 700;
 		}
+	
 	}
 	.child_class, .grandchild_class, .great_grandchild_class {
 			border-left:2px solid #019cdb;		
 			margin-left:10px;
+			padding-left: 10px;
 	}
-	.grandchild_class a {
-		padding-left: 20px;
+	.grandchild_class{
+		padding-left:20px;
 	}
-	.great_grandchild_class a{
+	.great_grandchild_class{
 		padding-left: 40px;
 	}
-
 	li {
 		display: block;
 		line-height: 1;
