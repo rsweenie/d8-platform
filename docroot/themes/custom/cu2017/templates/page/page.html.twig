@@ -84,12 +84,20 @@
                         {{ page.breadcrumbs }}
                     </div>
                 </div>
-                <div class="row">
+                <div class="row">                
+                 {# if it is a spotlight, wrap a div around it #}
+                 {# for the sake of CSS, to hide the headline #}
+                 {% if (node.type.entity.id == "news_spotlight")  %}
+                     {% if node.field_display_type.value == "0" %}
+                        <div class="display_type_spotlight">
+                    {% endif %}
+                 {% endif %}
                     {% if inMainNav == 1 and page.sidebar_second %}
                         <div class="col-md-3">
                             {{ page.sidebar_first }}
                         </div>
                         <div class="col-md-9">
+                           
                             <h1 class="col-md-12 headline">
                                 {{ node.field_content_page_headline.value }}
                             </h1>
@@ -134,6 +142,13 @@
                             </div>
                         </div>
                     {% endif %}
+                 {# if it is a spotlight, wrap a div around it #}
+                 {# for the sake of CSS, to hide the headline #}
+                 {% if (node.type.entity.id == "news_spotlight")  %}
+                     {% if node.field_display_type.value == "0" %}
+                        </div> <!-- END of class="display_type_spotlight" -->
+                    {% endif %}
+                 {% endif %}
                 </div>
             </div>
         </main>
