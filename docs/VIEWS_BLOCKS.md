@@ -46,4 +46,4 @@ Configuration management procedures for creating and modifying views and blocks 
 * block
 * configuration
 
-[Home](/d8-platform/docs/UCOM/TABLE_OF_CONTENTS)
+[Home](https://cu-webteam.github.io/d8-platform/UCOM)
