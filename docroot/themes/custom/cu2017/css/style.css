@@ -11326,41 +11326,45 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   margin: 0;
 }
 
-/* line 10, ../sass/custom/_mainnav.scss */
+/* line 11, ../sass/custom/_mainnav.scss */
 nav#block-mainnavigation {
   margin-top: 22px;
 }
 
-/* line 13, ../sass/custom/_mainnav.scss */
+/* line 18, ../sass/custom/_mainnav.scss */
+li.active.last_active.child_class a:before,
+li.active.last_active.grandchild_class a:before,
+li.active.last_active.great_grandchild_class a:before {
+  content: "•";
+  color: #FFA300;
+  padding-right: 4px;
+  font-weight: 700;
+  margin-left: -10px;
+}
+
+/* line 26, ../sass/custom/_mainnav.scss */
 .main_nav {
   padding-left: 0;
 }
-/* line 15, ../sass/custom/_mainnav.scss */
+/* line 29, ../sass/custom/_mainnav.scss */
 .main_nav .last_active a {
   font-weight: 700;
 }
-/* line 17, ../sass/custom/_mainnav.scss */
-.main_nav .last_active a:before {
-  content: "•";
-  color: #FFA300;
-  font-size: 16px;
-  padding-right: 4px;
-  font-weight: 700;
-}
-/* line 25, ../sass/custom/_mainnav.scss */
+/* line 34, ../sass/custom/_mainnav.scss */
 .main_nav .child_class, .main_nav .grandchild_class, .main_nav .great_grandchild_class {
   border-left: 2px solid #019cdb;
   margin-left: 10px;
+  padding-left: 10px;
 }
-/* line 29, ../sass/custom/_mainnav.scss */
-.main_nav .grandchild_class a {
+/* line 39, ../sass/custom/_mainnav.scss */
+.main_nav .grandchild_class {
   padding-left: 20px;
 }
-/* line 32, ../sass/custom/_mainnav.scss */
-.main_nav .great_grandchild_class a {
+/* line 42, ../sass/custom/_mainnav.scss */
+.main_nav .great_grandchild_class {
   padding-left: 40px;
 }
-/* line 36, ../sass/custom/_mainnav.scss */
+/* line 45, ../sass/custom/_mainnav.scss */
 .main_nav li {
   display: block;
   line-height: 1;
@@ -11368,7 +11372,7 @@ nav#block-mainnavigation {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 43, ../sass/custom/_mainnav.scss */
+/* line 52, ../sass/custom/_mainnav.scss */
 .main_nav li a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
@@ -11379,27 +11383,27 @@ nav#block-mainnavigation {
   text-decoration: none;
   display: block;
 }
-/* line 53, ../sass/custom/_mainnav.scss */
+/* line 62, ../sass/custom/_mainnav.scss */
 .main_nav li a:hover {
   background: #EFEFEF;
   text-decoration: none;
   width: 100%;
 }
-/* line 57, ../sass/custom/_mainnav.scss */
+/* line 66, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item {
   color: #002E6D;
 }
-/* line 60, ../sass/custom/_mainnav.scss */
+/* line 69, ../sass/custom/_mainnav.scss */
 .main_nav li a.child_menu_item.active {
   font-weight: 700;
 }
-/* line 65, ../sass/custom/_mainnav.scss */
+/* line 74, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item {
   border-bottom: 0;
   color: #002E6D;
   font-size: 16px;
 }
-/* line 70, ../sass/custom/_mainnav.scss */
+/* line 79, ../sass/custom/_mainnav.scss */
 .main_nav li a.grandchild_menu_item.active {
   font-weight: 700;
 }
@@ -11610,41 +11614,50 @@ nav#block-mainnavigation {
   overflow: visible;
 }
 
+/* line 2, ../sass/custom/_spotlight.scss */
+.display_type_spotlight h1.headline {
+  display: none;
+}
+/* line 5, ../sass/custom/_spotlight.scss */
+.display_type_spotlight .center_column, .display_type_spotlight .right_sidebar {
+  margin-top: 22px;
+}
+
 @media (max-width: 65.625em) {
-  /* line 4, ../sass/custom/_spotlight.scss */
+  /* line 12, ../sass/custom/_spotlight.scss */
   .view-spotlight img {
     margin-bottom: 22px;
   }
 }
 @media (max-width: 47.9375em) {
-  /* line 12, ../sass/custom/_spotlight.scss */
+  /* line 20, ../sass/custom/_spotlight.scss */
   .view-spotlight img {
     float: none;
     margin-bottom: 0;
   }
 }
-/* line 22, ../sass/custom/_spotlight.scss */
+/* line 30, ../sass/custom/_spotlight.scss */
 .view-spotlight .view-content {
   display: flex;
   flex-direction: column;
 }
-/* line 28, ../sass/custom/_spotlight.scss */
+/* line 36, ../sass/custom/_spotlight.scss */
 .view-spotlight .views-row .sptlt-text-wrapper {
   display: flex;
   flex-direction: column;
 }
-/* line 32, ../sass/custom/_spotlight.scss */
+/* line 40, ../sass/custom/_spotlight.scss */
 .view-spotlight .views-row .sptlt-text-wrapper .sptlt-title {
   color: #002E6D;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
-/* line 39, ../sass/custom/_spotlight.scss */
+/* line 47, ../sass/custom/_spotlight.scss */
 .view-spotlight .views-row .sptlt-text-wrapper .sptlt-body {
   margin-bottom: 24px;
 }
-/* line 43, ../sass/custom/_spotlight.scss */
+/* line 51, ../sass/custom/_spotlight.scss */
 .view-spotlight .views-row .sptlt-text-wrapper a {
   color: #73B865;
   display: block;
@@ -11672,52 +11685,52 @@ nav#block-mainnavigation {
   margin-left: 10px;
   vertical-align: middle;
 }
-/* line 49, ../sass/custom/_spotlight.scss */
+/* line 57, ../sass/custom/_spotlight.scss */
 .view-spotlight img {
   float: left;
   margin: 0 30px 65px;
 }
 @media all and (max-width: 768px) {
-  /* line 49, ../sass/custom/_spotlight.scss */
+  /* line 57, ../sass/custom/_spotlight.scss */
   .view-spotlight img {
     margin-bottom: 22px;
   }
 }
 @media all and (max-width: 599px) {
-  /* line 49, ../sass/custom/_spotlight.scss */
+  /* line 57, ../sass/custom/_spotlight.scss */
   .view-spotlight img {
     float: none;
     margin-bottom: 0;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 62, ../sass/custom/_spotlight.scss */
+  /* line 70, ../sass/custom/_spotlight.scss */
   .view-spotlight h2 {
     margin-top: 22px;
     width: 100%;
   }
 }
 
-/* line 70, ../sass/custom/_spotlight.scss */
+/* line 78, ../sass/custom/_spotlight.scss */
 .spotlight_summary {
   display: flex;
 }
-/* line 73, ../sass/custom/_spotlight.scss */
+/* line 81, ../sass/custom/_spotlight.scss */
 .spotlight_summary .spotlight_image {
   margin: 0 30px 0 0;
 }
-/* line 76, ../sass/custom/_spotlight.scss */
+/* line 84, ../sass/custom/_spotlight.scss */
 .spotlight_summary .spotlight_image img {
   max-height: 220px;
   max-width: 175px;
 }
-/* line 82, ../sass/custom/_spotlight.scss */
+/* line 90, ../sass/custom/_spotlight.scss */
 .spotlight_summary h2 {
   margin-bottom: 8px;
   margin-top: 0;
 }
 
-/* line 89, ../sass/custom/_spotlight.scss */
+/* line 97, ../sass/custom/_spotlight.scss */
 .spotlight_body .field--name-body > :first-child {
   margin-top: 20px;
 }
