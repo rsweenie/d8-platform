@@ -42,6 +42,8 @@ siteName="${uri%%.*}"
 # Config import any changes just pushed to the code base
 echo "Running config import on $siteName"
 eval /mnt/www/html/creighton$env/vendor/bin/drush @self cim -y --uri=$siteName.creighton.acsitefactory.com --no-interaction -v --ansi
+# $5 custom args => check custom argument and run an external shell script that imports configuration
+
 
 # Push a notification to the #d8_site_updates channel on slack
 curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$env\"}" https://hooks.slack.com/services/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
