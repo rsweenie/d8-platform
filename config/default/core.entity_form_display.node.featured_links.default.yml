@@ -8,9 +8,9 @@ dependencies:
     - node.type.featured_links
   module:
     - content_moderation
-    - datetime
     - entity_browser_entity_form
     - inline_entity_form
+    - private_content
     - scheduler
 _core:
   default_config_hash: iSyNQrbMLfBOJqyCTz9bQ_RWuKfOuhJLSUSQthRAdLk
@@ -29,6 +29,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_link_bros
@@ -49,10 +52,9 @@ content:
   private:
     weight: 2
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: private
   publish_on:
     type: datetime_timestamp_no_default
     weight: 6
@@ -71,7 +73,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'What do you want to call this featured link?'
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

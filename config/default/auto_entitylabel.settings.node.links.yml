@@ -1,5 +1,5 @@
-status: '0'
-pattern: '[node:field_links_link:title][node:field_links_link:uri]'
+status: '1'
+pattern: 'LNK - [node:field_links_link:title][node:field_links_link:uri]'
 php: 0
 escape: 0
 dependencies:

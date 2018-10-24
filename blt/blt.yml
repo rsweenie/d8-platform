@@ -41,6 +41,9 @@ post-deploy-build:
   command: 'find ''Commands'' -type d -name ''.git'' -exec rm -fr {} +'
 disable-targets:
   tests:
+    security:
+        check:
+          updates: true
     phpcs: { sniff: { all: true, files: true } }
     twig: { lint: { all: true } }
     behat: { run: true }
