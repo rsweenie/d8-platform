@@ -49,4 +49,4 @@ Testing procedures and best practices
 * testing
 * UAT
 
-[Home](/d8-platform/docs/UCOM/TABLE_OF_CONTENTS)
+[Home](https://cu-webteam.github.io/d8-platform/UCOM)

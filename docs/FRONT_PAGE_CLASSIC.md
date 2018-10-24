@@ -118,3 +118,5 @@ The front page classic layout handles the styling without specific content types
 * front page
 * layout
 * panelizer
+
+[Home](https://cu-webteam.github.io/d8-platform/UCOM)
