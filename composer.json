@@ -90,7 +90,8 @@
         "drupal/views_php": "1.x-dev",
         "drupal/views_slideshow": "^4.6",
         "drupal/webform": "^5.0@RC",
-        "drupal/xmlsitemap": "^1.0@alpha"
+        "drupal/xmlsitemap": "^1.0@alpha",
+        "onelogin/php-saml": "dev-remove_mcrypt as 2.11.0"
     },
     "require-dev": {
         "drupal/devel": "^1.2",

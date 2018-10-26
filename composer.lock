@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9054862de76fc5e85e1494d50f7e9c99",
+    "content-hash": "626118e2ea248a288e39171e309470df",
     "packages": [
         {
             "name": "acquia/acsf-tools",
@@ -391,7 +391,7 @@
             "version": "v5.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/enyo/dropzone.git",
+                "url": "git@github.com:enyo/dropzone.git",
                 "reference": "7d0792d1346d83a8b0c0d2919121bdd2b8e7fee4"
             },
             "dist": {
@@ -407,7 +407,7 @@
             "version": "v1.1.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:metafizzy/ev-emitter.git",
+                "url": "https://github.com/metafizzy/ev-emitter.git",
                 "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736"
             },
             "dist": {
@@ -12732,24 +12732,22 @@
         },
         {
             "name": "onelogin/php-saml",
-            "version": "v2.14.0",
+            "version": "dev-remove_mcrypt",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onelogin/php-saml.git",
-                "reference": "939f509143e95c21ab9720d2bfd5220c5828016d"
+                "reference": "06a94653172a7029d8087842e030af80126a4a2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/939f509143e95c21ab9720d2bfd5220c5828016d",
-                "reference": "939f509143e95c21ab9720d2bfd5220c5828016d",
+                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/06a94653172a7029d8087842e030af80126a4a2f",
+                "reference": "06a94653172a7029d8087842e030af80126a4a2f",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
                 "ext-dom": "*",
-                "ext-mcrypt": "*",
                 "ext-openssl": "*",
-                "php": ">=5.3.2"
+                "php": ">= 5.4"
             },
             "require-dev": {
                 "pdepend/pdepend": "1.1.0",
@@ -12757,10 +12755,11 @@
                 "phpunit/phpunit": "4.8",
                 "satooshi/php-coveralls": "1.0.1",
                 "sebastian/phpcpd": "*",
-                "squizlabs/php_codesniffer": "2.9.0"
+                "squizlabs/php_codesniffer": "*"
             },
             "suggest": {
-                "ext-gettext": "Install gettext and php5-gettext libs to handle translations"
+                "ext-gettext": "Install gettext and php5-gettext libs to handle translations",
+                "lib-openssl": "Install openssl lib in order to handle with x509 certs (require to support sign and encryption)"
             },
             "type": "library",
             "autoload": {
@@ -12774,14 +12773,14 @@
             "license": [
                 "MIT"
             ],
-            "description": "OneLogin PHP SAML Toolkit",
-            "homepage": "https://developers.onelogin.com/saml/php",
+            "description": "OneLogin PHP SAML Toolkit (with no mcrypt)",
+            "homepage": "https://onelogin.zendesk.com/hc/en-us/sections/200245634-SAML-Toolkits",
             "keywords": [
                 "SAML2",
                 "onelogin",
                 "saml"
             ],
-            "time": "2018-06-17T08:10:08+00:00"
+            "time": "2017-11-14T15:41:11+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -18898,7 +18897,14 @@
             "time": "2015-10-09T07:32:42+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.11.0",
+            "alias_normalized": "2.11.0.0",
+            "version": "dev-remove_mcrypt",
+            "package": "onelogin/php-saml"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "acquia/acsf-tools": 20,
@@ -18930,6 +18936,7 @@
         "drupal/views_php": 20,
         "drupal/webform": 5,
         "drupal/xmlsitemap": 15,
+        "onelogin/php-saml": 20,
         "drupal/webform_devel": 5,
         "sensiolabs-de/deprecation-detector": 20
     },
