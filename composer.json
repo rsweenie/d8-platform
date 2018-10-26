@@ -8,7 +8,7 @@
     "require": {
         "acquia/acsf-tools": "dev-9.x-dev",
         "acquia/blt": "^9.1.0",
-        "acquia/lightning": "^3.1",
+        "acquia/lightning": "~3.1.7",
         "bower-asset/masonry": "^4.2",
         "bower-asset/slick-carousel": "^1.8",
         "components/masonry": "^4.2",
