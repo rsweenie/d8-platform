@@ -7,7 +7,7 @@
 
 ## Summary
 
-The front page classic layout handles the styling without specific content types. However, it does require specific heading tags and classes in some cases.
+The front page classic layout handles the styling without specific content types. However, it does require specific heading tags in some cases.
 
 ## Procedure
 
@@ -82,6 +82,12 @@ The front page classic layout handles the styling without specific content types
     * Click Add
 
 12. Save
+13. Assign this page you created as the front/home page
+    1) Hover over edit, look at the bottom of your browser window and get the node number. The URl will end with /node/###/edit, where ### are the numebrs you need.
+    2) Hover over configuration at the top, then system, then click on basic settings
+    3) Scroll to the section titled Front page, add the numbers of the node into the field. Specifically /###
+    4) Save
+    5) Visit landing page and verify
 
 ## Keywords
 
