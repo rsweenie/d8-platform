@@ -45,12 +45,7 @@
 	}
 
 .slide_wrapper{
-	// .slide_image_wrapper{
-	// 	img{
-	// 		object-fit: cover;
-   	//  		width: 100%;
-	// 	}
-	// }
+	
 	.slide_text {
 		background: $backgroundBlack;
 		bottom: 0;
@@ -58,14 +53,11 @@
 		font-family: $baseFont;
 		font-size: $baseFontSize;
 		margin: auto;
-		padding: 0 45px;
+		padding: 10px 45px;
 		position: absolute;
 		width: 100%;
 		font-weight: $bold;
 
-		.field {
-			padding: 10px 0;
-		}
 		a {
 			@include transition(color, 0.2s);
 			color: $white;
@@ -95,11 +87,13 @@
 	.slide_image_wrapper { 
 		img {
 			margin-bottom:0;
-			.col-md-12 &{
+			.col-md-12 &, .col-md-9 &{
 				height: 350px;
+				object-fit: cover;
 			}
-			.col-md-8 &, .col-md-9 &{
+			.col-md-8 & {
 				height: 250px;
+				object-fit: cover;
 			}
 		}
 	
