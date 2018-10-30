@@ -11,7 +11,6 @@
         "acquia/lightning": "~3.2.2",
         "bower-asset/masonry": "^4.2",
         "bower-asset/slick-carousel": "^1.8",
-        "components/masonry": "^4.2",
         "drupal/acsf": "^2.47.0",
         "drupal/acsf_sso": "^2.47.0",
         "drupal/address": "^1.4",
