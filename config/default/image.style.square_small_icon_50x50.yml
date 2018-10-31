@@ -2,6 +2,8 @@ uuid: ce5d516b-6742-48c6-9bb3-5a641494ed1a
 langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.focal_point
   module:
     - crop
 name: square_small_icon_50x50
@@ -20,3 +22,4 @@ effects:
     data:
       width: 50
       height: 50
+      anchor: center-center

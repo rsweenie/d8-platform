@@ -8,7 +8,6 @@ dependencies:
     - node.type.tabbed_accordion
   module:
     - content_moderation
-    - datetime
     - paragraphs
     - scheduler
 _core:

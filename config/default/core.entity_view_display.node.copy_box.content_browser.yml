@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.copy_box.field_copy_box_display_type
     - node.type.copy_box
   module:
+    - private_content
     - text
     - user
 _core:
@@ -28,6 +29,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
   private:
     weight: 1
     region: content

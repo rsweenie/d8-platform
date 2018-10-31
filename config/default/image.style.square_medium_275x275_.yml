@@ -2,6 +2,8 @@ uuid: a8cbb24b-facd-40d2-a4a3-ec9c82720c44
 langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.focal_point
   module:
     - crop
 name: square_medium_275x275_
@@ -20,3 +22,4 @@ effects:
     data:
       width: 275
       height: 275
+      anchor: center-center

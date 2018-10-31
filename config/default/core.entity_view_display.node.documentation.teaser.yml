@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.documentation.body
     - field.field.node.documentation.field_documentation_taxonomy
+    - field.field.node.documentation.field_last_updated_by
+    - field.field.node.documentation.field_last_updated_on
     - node.type.documentation
   module:
     - private_content
@@ -27,6 +29,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
   private:
     weight: 1
     region: content
