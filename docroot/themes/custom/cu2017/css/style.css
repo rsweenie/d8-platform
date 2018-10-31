@@ -11453,7 +11453,7 @@ li.active.last_active.great_grandchild_class a:before {
   right: 0;
 }
 
-/* line 54, ../sass/custom/_slide.scss */
+/* line 49, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text {
   background: rgba(0, 0, 0, 0.75);
   bottom: 0;
@@ -11461,16 +11461,12 @@ li.active.last_active.great_grandchild_class a:before {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   margin: auto;
-  padding: 0 45px;
+  padding: 10px 45px;
   position: absolute;
   width: 100%;
   font-weight: 700;
 }
-/* line 66, ../sass/custom/_slide.scss */
-.slide_wrapper .slide_text .field {
-  padding: 10px 0;
-}
-/* line 69, ../sass/custom/_slide.scss */
+/* line 61, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text a {
   -webkit-transition: color, 0.2s;
   -o-transition: color, 0.2s;
@@ -11484,30 +11480,32 @@ li.active.last_active.great_grandchild_class a:before {
   position: relative;
   text-decoration: underline;
 }
-/* line 80, ../sass/custom/_slide.scss */
+/* line 72, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text a li {
   list-style: none;
 }
-/* line 85, ../sass/custom/_slide.scss */
+/* line 77, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text p {
   margin-bottom: 0;
 }
-/* line 90, ../sass/custom/_slide.scss */
+/* line 82, ../sass/custom/_slide.scss */
 .slide_wrapper .slick-list {
   width: 100%;
 }
 
-/* line 96, ../sass/custom/_slide.scss */
+/* line 88, ../sass/custom/_slide.scss */
 .inline_slide_wrapper .slide_image_wrapper img {
   margin-bottom: 0;
 }
-/* line 98, ../sass/custom/_slide.scss */
-.col-md-12 .inline_slide_wrapper .slide_image_wrapper img {
+/* line 90, ../sass/custom/_slide.scss */
+.col-md-12 .inline_slide_wrapper .slide_image_wrapper img, .col-md-9 .inline_slide_wrapper .slide_image_wrapper img {
   height: 350px;
+  object-fit: cover;
 }
-/* line 101, ../sass/custom/_slide.scss */
-.col-md-8 .inline_slide_wrapper .slide_image_wrapper img, .col-md-9 .inline_slide_wrapper .slide_image_wrapper img {
+/* line 94, ../sass/custom/_slide.scss */
+.col-md-8 .inline_slide_wrapper .slide_image_wrapper img {
   height: 250px;
+  object-fit: cover;
 }
 
 /* line 10, ../sass/custom/_slideshow.scss */
@@ -11568,7 +11566,7 @@ li.active.last_active.great_grandchild_class a:before {
 .slideshow_wrapper .slick-slider button::before {
   display: none;
 }
-@media all and (max-width: 900px) {
+@media all and (max-width: 940px) {
   /* line 51, ../sass/custom/_slideshow.scss */
   .slideshow_wrapper .slick-slider button {
     bottom: -5px;
