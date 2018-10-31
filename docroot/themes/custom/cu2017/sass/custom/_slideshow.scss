@@ -1,10 +1,10 @@
 //specific to slideshow_wrapper, currently only used on front page
 .slideshow_wrapper {
-	// height:430px;
+	margin-top:-85px;
 	.slide_wrapper{
 		// .slide_image_wrapper {
 		// 	img {
-		// 		height: 430px;
+		// 		height: 515px;
 		// 	}
 		// }
 		.slide_text_wrapper {
@@ -16,6 +16,7 @@
 			top: -4%;
 			.slide_text{
 				background: transparent !important;
+				margin-left: -45px;
 			}
 			h1{
 				color: $yellow;
@@ -39,7 +40,6 @@
 				background-position: 100%;
 				background-repeat: no-repeat;
 				padding: 0px 20px 0px 0px;
-				margin-top: -10px;
 				font-size:1.6em;
 			}
 			p {
@@ -62,7 +62,7 @@
 				display: none;
 			}
 
-			@media all and (max-width: 940px) {
+			@media all and (max-width: 900px) {
 				bottom: -5px;
 			}
 		}

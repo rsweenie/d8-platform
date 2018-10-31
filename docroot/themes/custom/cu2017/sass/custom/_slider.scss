@@ -20,7 +20,7 @@
 	@media all and (min-width: 1251px) {
 		.slide,
 		.slick-slide {
-			height: 430px;
+			height: 430px; 
 		}
 	}
 	@media all and (max-width: 1050px) {
@@ -220,7 +220,7 @@
 			display: none;
 		}
 
-		@media all and (max-width: 940px) {
+		@media all and (max-width: 900px) {
 			bottom: -5px;
 		}
 	}

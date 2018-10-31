@@ -32,23 +32,23 @@ jQuery(document).ready(function() {
         checkWindowSize();
     });
 
-    // checkWindowSize();
-    // function checkWindowSize(){
-    // if ( jQuery(window).width() <= 480) {      
-    //     removeOldText();
-    //     changePosition(); 
-    //     jQuery('.slick-active .slideText').appendTo();
-    // } 
-    // else {
-    // }
-    // }
-    // function changePosition(){
-    //     var neededText = jQuery(".slick-active .slideText");
-    //     jQuery(neededText).addClass("active-text").insertAfter(row_1);
-    // }
-    // function removeOldText(){
-    //     jQuery('.active-text').detach();
-    // }
+    checkWindowSize();
+    function checkWindowSize(){
+    if ( jQuery(window).width() <= 480) {      
+        removeOldText();
+        changePosition(); 
+        jQuery('.slick-active .slideText').appendTo();
+    } 
+    else {
+    }
+    }
+    function changePosition(){
+        var neededText = jQuery(".slick-active .slideText");
+        jQuery(neededText).addClass("active-text").insertAfter(row_1);
+    }
+    function removeOldText(){
+        jQuery('.active-text').detach();
+    }
 
     // find the size of the header logo and assign classes accordingly
     var logo = jQuery('.cu2017_logo');
