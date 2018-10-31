@@ -260,7 +260,20 @@
                         height:350px !important;
                     }
                 }
+                .slide_text_wrapper {
+                    h2 {
+                        font-size: 30px;
+                    }
+                    h1 {
+                        font-size: 48px;
+                    }
+                    a {
+                        margin-top: 5px;
+                        font-size: 18px;
+                    }
+                }
             }
+
             .slide_text_wrapper {
                 position: relative;
                 top: -14px;

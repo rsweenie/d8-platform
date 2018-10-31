@@ -13731,13 +13731,26 @@ article.news .news_date {
     height: 350px !important;
   }
   /* line 264, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slideshow_wrapper .slide_wrapper .slide_text_wrapper h2 {
+    font-size: 30px;
+  }
+  /* line 267, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slideshow_wrapper .slide_wrapper .slide_text_wrapper h1 {
+    font-size: 48px;
+  }
+  /* line 270, ../sass/custom/_frontpage.scss */
+  .front-page-classic .slideshow_wrapper .slide_wrapper .slide_text_wrapper a {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  /* line 277, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_text_wrapper {
     position: relative;
     top: -14px;
     min-width: 768px;
     max-width: 1050px;
   }
-  /* line 271, ../sass/custom/_frontpage.scss */
+  /* line 284, ../sass/custom/_frontpage.scss */
   .front-page-classic .new-arrows {
     width: 100px;
     position: absolute;
@@ -13745,55 +13758,55 @@ article.news .news_date {
     bottom: 0px;
     height: 60px;
   }
-  /* line 279, ../sass/custom/_frontpage.scss */
+  /* line 292, ../sass/custom/_frontpage.scss */
   .front-page-classic .first-content.col-md-8 {
     width: 100%;
   }
-  /* line 282, ../sass/custom/_frontpage.scss */
+  /* line 295, ../sass/custom/_frontpage.scss */
   .front-page-classic .calls-to-action.col-md-4 {
     width: 100%;
     margin-left: -15px;
     padding: 0px;
   }
-  /* line 287, ../sass/custom/_frontpage.scss */
+  /* line 300, ../sass/custom/_frontpage.scss */
   .front-page-classic .calls-to-action.col-md-4 .block-region-ctas {
     padding: 50px 0px 30px 30px;
   }
-  /* line 293, ../sass/custom/_frontpage.scss */
+  /* line 306, ../sass/custom/_frontpage.scss */
   .front-page-classic #row_3 .middle-left, .front-page-classic #row_3 .middle-center, .front-page-classic #row_3 .middle-right {
     width: 33%;
     display: flex;
     float: left;
   }
-  /* line 300, ../sass/custom/_frontpage.scss */
+  /* line 313, ../sass/custom/_frontpage.scss */
   .front-page-classic .bottom_callout.col-md-3 {
     margin-top: -50px;
   }
 }
 @media (min-width: 1051px) and (max-width: 1300px) {
-  /* line 307, ../sass/custom/_frontpage.scss */
+  /* line 320, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper {
     height: 430px;
   }
-  /* line 309, ../sass/custom/_frontpage.scss */
+  /* line 322, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_wrapper {
     height: 430px;
   }
-  /* line 312, ../sass/custom/_frontpage.scss */
+  /* line 325, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_wrapper .slide_image_wrapper img {
     height: 430px !important;
   }
 }
 @media (min-width: 1300px) {
-  /* line 323, ../sass/custom/_frontpage.scss */
+  /* line 336, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper {
     height: 515px;
   }
-  /* line 325, ../sass/custom/_frontpage.scss */
+  /* line 338, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_wrapper {
     height: 515px;
   }
-  /* line 328, ../sass/custom/_frontpage.scss */
+  /* line 341, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_wrapper .slide_image_wrapper img {
     height: 515px !important;
     object-fit: cover;
