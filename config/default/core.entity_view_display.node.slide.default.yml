@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.slide.field_slide_caption
     - field.field.node.slide.field_slide_image
     - field.field.node.slide.field_slide_link
+    - image.style.rectangle_horizontal_front_slider_1440x480_
     - node.type.slide
   module:
     - media
@@ -36,7 +37,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: rectangle_horizontal_front_slider_1440x480_
       image_link: ''
     third_party_settings: {  }
     type: media_thumbnail
