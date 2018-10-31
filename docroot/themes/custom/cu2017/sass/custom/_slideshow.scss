@@ -1,6 +1,6 @@
 //specific to slideshow_wrapper, currently only used on front page
 .slideshow_wrapper {
-	@mixin respond-to (desktop-min, null) {
+	@include respond-to ( desktop-min, null) {
 		margin-top:-85px;
 	}
 	.slide_wrapper{
