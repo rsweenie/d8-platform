@@ -8,7 +8,6 @@ dependencies:
     - node.type.promo_box
   module:
     - content_moderation
-    - datetime
     - entity_browser_entity_form
     - inline_entity_form
     - scheduler

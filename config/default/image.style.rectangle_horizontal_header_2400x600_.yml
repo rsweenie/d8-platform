@@ -2,6 +2,8 @@ uuid: 14f40479-9a39-4de9-9713-509c3c89c82f
 langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.focal_point
   module:
     - crop
 name: rectangle_horizontal_header_2400x600_
@@ -20,3 +22,4 @@ effects:
     data:
       width: 2400
       height: 600
+      anchor: center-center

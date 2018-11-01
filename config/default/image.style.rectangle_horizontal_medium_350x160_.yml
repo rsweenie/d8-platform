@@ -2,6 +2,8 @@ uuid: 64e3d114-6733-4faa-9e65-4993047ff743
 langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.focal_point
   module:
     - crop
 name: rectangle_horizontal_medium_350x160_
@@ -20,3 +22,4 @@ effects:
     data:
       width: 350
       height: 160
+      anchor: center-center

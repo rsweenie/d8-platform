@@ -75,6 +75,7 @@ module:
   inline_entity_form: 0
   jsonapi: 0
   layout_discovery: 0
+  libraries: 0
   lightning_api: 0
   lightning_contact_form: 0
   lightning_core: 0
@@ -84,6 +85,7 @@ module:
   lightning_media_document: 0
   lightning_media_image: 0
   lightning_media_instagram: 0
+  lightning_media_slideshow: 0
   lightning_media_twitter: 0
   lightning_media_video: 0
   lightning_scheduler: 0
@@ -94,6 +96,7 @@ module:
   media: 0
   media_entity_instagram: 0
   media_entity_twitter: 0
+  media_library: 0
   menu_block: 0
   menu_ui: 0
   metatag: 0
@@ -102,7 +105,9 @@ module:
   name: 0
   node: 0
   openapi: 0
-  openapi_redoc: 0
+  openapi_ui: 0
+  openapi_ui_redoc: 0
+  openapi_ui_swagger: 0
   options: 0
   page_cache: 0
   panelizer: 0
@@ -139,6 +144,7 @@ module:
   simple_oauth: 0
   simple_oauth_extras: 0
   slick: 0
+  slick_entityreference: 0
   social_media_links: 0
   social_media_links_field: 0
   system: 0

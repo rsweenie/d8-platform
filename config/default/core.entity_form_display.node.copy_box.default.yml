@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.copy_box.field_copy_box_display_type
     - node.type.copy_box
   module:
+    - private_content
+    - scheduler
     - text
 _core:
   default_config_hash: mnLnMkLUuApLKsPnrUd9k5QcylskIc_Xv9FtKEXuuBM
@@ -45,6 +47,8 @@ content:
   scheduler_settings:
     weight: 20
     region: content
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0

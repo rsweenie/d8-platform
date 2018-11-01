@@ -22,3 +22,4 @@ effects:
     data:
       width: 1440
       height: 480
+      anchor: center-center

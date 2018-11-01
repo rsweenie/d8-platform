@@ -2,6 +2,8 @@ uuid: 7d88a6d8-6d13-4788-a95d-10464ef59b77
 langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.focal_point
   module:
     - crop
 name: rectangle_horizontal_small_200
@@ -20,3 +22,4 @@ effects:
     data:
       width: 200
       height: 165
+      anchor: center-center

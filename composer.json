@@ -8,10 +8,9 @@
     "require": {
         "acquia/acsf-tools": "dev-9.x-dev",
         "acquia/blt": "^9.1.0",
-        "acquia/lightning": "^3.1",
+        "acquia/lightning": "~3.2.2",
         "bower-asset/masonry": "^4.2",
         "bower-asset/slick-carousel": "^1.8",
-        "components/masonry": "^4.2",
         "drupal/acsf": "^2.47.0",
         "drupal/acsf_sso": "^2.47.0",
         "drupal/address": "^1.4",
@@ -47,7 +46,7 @@
         "drupal/image_style_quality": "^1.3",
         "drupal/imagemagick": "^2.3",
         "drupal/libraries": "^3.0@alpha",
-        "drupal/lightning_core": "^2.7",
+        "drupal/lightning_core": "^3.2",
         "drupal/mailsystem": "^4.1",
         "drupal/menu_admin_per_menu": "^1.0",
         "drupal/menu_block": "^1.5",
@@ -90,7 +89,8 @@
         "drupal/views_php": "1.x-dev",
         "drupal/views_slideshow": "^4.6",
         "drupal/webform": "^5.0@RC",
-        "drupal/xmlsitemap": "^1.0@alpha"
+        "drupal/xmlsitemap": "^1.0@alpha",
+        "onelogin/php-saml": "dev-remove_mcrypt as 2.11.0"
     },
     "require-dev": {
         "drupal/devel": "^1.2",
