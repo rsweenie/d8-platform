@@ -677,11 +677,11 @@ display:
           exposed: true
           expose:
             operator_id: bundle_op
-            label: Source
+            label: Type
             description: ''
             use_operator: false
             operator: bundle_op
-            identifier: source
+            identifier: type
             required: false
             remember: false
             multiple: false
@@ -827,7 +827,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -1662,7 +1662,7 @@ display:
         menu_name: main
       display_description: ''
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

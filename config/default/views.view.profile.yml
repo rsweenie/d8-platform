@@ -15,11 +15,6 @@ dependencies:
     - image.style.rectangle_vertical_small_175x200_
     - node.type.profile
     - taxonomy.vocabulary.profile_type
-  content:
-    - 'taxonomy_term:profile_type:07e973a3-824e-4f76-bbfb-9f570d9a0a6b'
-    - 'taxonomy_term:profile_type:7e126e62-20ca-44b3-9433-5713acc6e233'
-    - 'taxonomy_term:profile_type:dd73f292-f7fc-4b8e-8aa5-d8370daa6321'
-    - 'taxonomy_term:profile_type:e835b9bc-666b-4143-a804-ca8041fd13d0'
   module:
     - media
     - name

@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.links.field_links_file_link_upload
     - field.field.node.links.field_links_link
+    - field.field.node.links.field_links_link_text
+    - field.field.node.links.field_links_open_in_new_window
     - node.type.links
   module:
     - user
@@ -16,6 +19,8 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
   private:
     weight: 1
     region: content
