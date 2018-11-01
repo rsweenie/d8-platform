@@ -13579,7 +13579,7 @@ article.news .news_date {
   /* line 137, ../sass/custom/_frontpage.scss */
   .front-page-classic .slide_wrapper .slide_text_wrapper .slide_text {
     position: relative;
-    padding: 0;
+    padding-left: 40px;
   }
   /* line 140, ../sass/custom/_frontpage.scss */
   .front-page-classic .slide_wrapper .slide_text_wrapper .slide_text h2 {
