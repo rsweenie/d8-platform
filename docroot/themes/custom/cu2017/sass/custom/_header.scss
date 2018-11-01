@@ -56,14 +56,13 @@ header {
 		height: $headerTopBarHeight;
 		position: relative;
 		text-align: center;
+		@include respond-to(null , mobile-min) {
+			background-color: white;
+			height: auto;
+		}
 		@include respond-to(desktop-min , null) {
 			display: flex;
 		}
-		@include respond-to(null , tablet-max) {
-			background: $blue;
-			height: auto;
-		}
-
 		.tt-menu {
 			text-align: left;
 		}
@@ -83,7 +82,7 @@ header {
 			flex-direction: row;
 			margin: auto;
 
-			@include respond-to(null , tablet-max) {
+			@include respond-to(null , mobile-min) {
 				display: flex;
 				flex-direction: column;
 				height: 70px;
@@ -99,7 +98,7 @@ header {
 		background: $white;
 		order: 1;
 
-		@include respond-to(null , tablet-max) {
+		@include respond-to(null , mobile-min) {
 			order: 2;
 			width: 100%;
 		}
