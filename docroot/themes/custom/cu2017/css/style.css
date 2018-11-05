@@ -10142,7 +10142,7 @@ header .header_inner_wrapper {
     height: 85px;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1050px) {
+@media all and (min-width: 481px) and (max-width: 1050px) {
   /* line 29, ../sass/custom/_header.scss */
   header .header_inner_wrapper {
     align-items: center;
@@ -10150,7 +10150,7 @@ header .header_inner_wrapper {
     height: 125px;
   }
 }
-@media all and (min-width: 320px) and (max-width: 768px) {
+@media all and (min-width: 320px) and (max-width: 480px) {
   /* line 29, ../sass/custom/_header.scss */
   header .header_inner_wrapper {
     height: 115px;
@@ -10170,46 +10170,68 @@ header .header_top_section {
   position: relative;
   text-align: center;
 }
+@media all and (max-width: 480px) {
+  /* line 54, ../sass/custom/_header.scss */
+  header .header_top_section {
+    background-color: white;
+  }
+}
 @media all and (min-width: 1051px) {
   /* line 54, ../sass/custom/_header.scss */
   header .header_top_section {
     display: flex;
   }
 }
-/* line 66, ../sass/custom/_header.scss */
+/* line 65, ../sass/custom/_header.scss */
 header .header_top_section .tt-menu {
   text-align: left;
 }
-/* line 71, ../sass/custom/_header.scss */
+/* line 70, ../sass/custom/_header.scss */
 header .header_top_section_wrapper {
   margin: auto;
   max-width: 1300px;
   width: 100%;
 }
 @media all and (max-width: 1050px) {
-  /* line 71, ../sass/custom/_header.scss */
+  /* line 70, ../sass/custom/_header.scss */
   header .header_top_section_wrapper {
     padding-right: 0;
   }
 }
-/* line 80, ../sass/custom/_header.scss */
+/* line 79, ../sass/custom/_header.scss */
 header .header_top_section_wrapper .header_top_section_wrapper_inner {
   display: inline-flex;
   flex-direction: row;
   margin: auto;
 }
+@media all and (max-width: 480px) {
+  /* line 79, ../sass/custom/_header.scss */
+  header .header_top_section_wrapper .header_top_section_wrapper_inner {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100%;
+  }
+}
 @media all and (min-width: 1051px) {
-  /* line 80, ../sass/custom/_header.scss */
+  /* line 79, ../sass/custom/_header.scss */
   header .header_top_section_wrapper .header_top_section_wrapper_inner {
     float: right;
   }
 }
-/* line 97, ../sass/custom/_header.scss */
+/* line 96, ../sass/custom/_header.scss */
 header .header_top_section_search_wrapper {
   background: #FFF;
   order: 1;
 }
-/* line 106, ../sass/custom/_header.scss */
+@media all and (max-width: 480px) {
+  /* line 96, ../sass/custom/_header.scss */
+  header .header_top_section_search_wrapper {
+    order: 2;
+    width: 100%;
+  }
+}
+/* line 105, ../sass/custom/_header.scss */
 header .header_top_section_search_wrapper .cu-query {
   background: url(../images/search.svg);
   background-color: transparent;
@@ -10221,18 +10243,18 @@ header .header_top_section_search_wrapper .cu-query {
   width: 100%;
 }
 @media all and (min-width: 769px) {
-  /* line 106, ../sass/custom/_header.scss */
+  /* line 105, ../sass/custom/_header.scss */
   header .header_top_section_search_wrapper .cu-query {
     width: 250px;
   }
 }
-/* line 122, ../sass/custom/_header.scss */
+/* line 121, ../sass/custom/_header.scss */
 header .header_top_section_menu_wrapper {
   order: 3;
   z-index: 7;
 }
 @media all and (max-width: 768px) {
-  /* line 122, ../sass/custom/_header.scss */
+  /* line 121, ../sass/custom/_header.scss */
   header .header_top_section_menu_wrapper {
     align-self: flex-end;
     position: relative;
@@ -10240,7 +10262,7 @@ header .header_top_section_menu_wrapper {
   }
 }
 @media all and (max-width: 319px) {
-  /* line 122, ../sass/custom/_header.scss */
+  /* line 121, ../sass/custom/_header.scss */
   header .header_top_section_menu_wrapper {
     align-self: flex-end;
     position: relative;
@@ -10272,14 +10294,14 @@ header .header_logo_section {
   padding-left: 20px;
   width: 100%;
 }
-@media all and (min-width: 769px) and (max-width: 1050px) {
+@media all and (min-width: 481px) and (max-width: 1050px) {
   /* line 154, ../sass/custom/_header.scss */
   header .header_logo_section {
     justify-content: center;
     padding: 10px 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 481px) {
   /* line 154, ../sass/custom/_header.scss */
   header .header_logo_section {
     align-self: flex-end;
@@ -10304,13 +10326,13 @@ header .header_logo_section img {
     align-self: flex-end;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1050px) {
+@media all and (min-width: 481px) and (max-width: 1050px) {
   /* line 184, ../sass/custom/_header.scss */
   header .header_nav_section {
     align-self: center;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 480px) {
   /* line 184, ../sass/custom/_header.scss */
   header .header_nav_section {
     display: none;
@@ -10323,7 +10345,7 @@ header .header_nav {
   margin-bottom: 8px;
   padding-left: 0;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 480px) {
   /* line 196, ../sass/custom/_header.scss */
   header .header_nav {
     display: flex;
@@ -10357,7 +10379,7 @@ header .header_nav li a {
   text-decoration: none;
   white-space: nowrap;
 }
-@media all and (min-width: 769px) {
+@media all and (min-width: 481px) {
   /* line 220, ../sass/custom/_header.scss */
   header .header_nav li a {
     font-size: 21px;
