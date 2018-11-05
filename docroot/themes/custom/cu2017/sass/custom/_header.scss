@@ -37,12 +37,12 @@ header {
 		@include respond-to(desktop-min , null) {
 			height: $headerInnerDesktopHeight;
 		}
-		@include respond-to(lg-tablet-min , lg-tablet-max) {
+		@include respond-to(tablet-min , lg-tablet-max) {
 			align-items: center;
 			flex-direction: column;
 			height: $headerInnerLgTabletHeight;
 		}
-		@media all and (min-width: 320px) and (max-width: 768px) {
+		@media all and (min-width: 320px) and (max-width: 480px) {
 			height: $headerInnerTabletHeight;
 			padding: 0 20px;
 		}
@@ -56,14 +56,12 @@ header {
 		height: $headerTopBarHeight;
 		position: relative;
 		text-align: center;
+		@include respond-to(null , mobile-max) {
+			background-color: white;
+		}
 		@include respond-to(desktop-min , null) {
 			display: flex;
 		}
-		@include respond-to(null , tablet-max) {
-			background: $blue;
-			height: auto;
-		}
-
 		.tt-menu {
 			text-align: left;
 		}
@@ -83,7 +81,7 @@ header {
 			flex-direction: row;
 			margin: auto;
 
-			@include respond-to(null , tablet-max) {
+			@include respond-to(null , mobile-max) {
 				display: flex;
 				flex-direction: column;
 				height: 70px;
@@ -99,7 +97,7 @@ header {
 		background: $white;
 		order: 1;
 
-		@include respond-to(null , tablet-max) {
+		@include respond-to(null , mobile-max) {
 			order: 2;
 			width: 100%;
 		}
@@ -124,11 +122,12 @@ header {
 		order: 3;
 		z-index: 7;
 
-		@include respond-to(null , tablet-max) {
+		@include respond-to(null , mobile-max) {
 			align-self: flex-end;
 			position: relative;
 			top: 70px;
 		}
+	
 		@media all and (max-width: 319px) {
 			align-self: flex-end;
 			position: relative;
@@ -160,11 +159,11 @@ header {
 		padding-left: 20px;
 		width: 100%;
 
-		@include respond-to(lg-tablet-min , lg-tablet-max) {
+		@include respond-to(tablet-min , lg-tablet-max) {
 			justify-content: center;
 			padding: 10px 0;
 		}
-		@include respond-to(null , tablet-max) {
+		@include respond-to(null , tablet-min){
 			align-self: flex-end;
 			margin-bottom: 20px;
 			padding: 0;
@@ -186,10 +185,10 @@ header {
 		@include respond-to(desktop-min , null) {
 			align-self: flex-end;
 		}
-		@include respond-to(lg-tablet-min , lg-tablet-max) {
+		@include respond-to(tablet-min , lg-tablet-max) {
 			align-self: center;
 		}
-		@include respond-to(null , tablet-max) {
+		@include respond-to(null , mobile-max) {
 			display: none;
 		}
 	}
@@ -200,9 +199,12 @@ header {
 		margin-bottom: 8px;
 		padding-left: 0;
 
-		@include respond-to(null , tablet-max) {
+		@include respond-to(null , mobile-max) {
 			display: flex;
 			flex-direction: column;
+		}
+		@include respond-to(tablet-min , lg-tablet-max){
+			flex-wrap: wrap;
 		}
 
 		li {
@@ -214,7 +216,7 @@ header {
 			margin-top: 0;
 			padding: 2px 6px;
 
-			@include respond-to(null , tablet-max) {
+			@include respond-to(null , mobile-max) {
 				display: block;
 			}
 

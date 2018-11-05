@@ -1,6 +1,8 @@
 //specific to slideshow_wrapper, currently only used on front page
 .slideshow_wrapper {
-	margin-top:-85px;
+	@include respond-to ( desktop-min, null) {
+		margin-top:-85px;
+	}
 	.slide_wrapper{
 		// .slide_image_wrapper {
 		// 	img {
