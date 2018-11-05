@@ -72,6 +72,7 @@
         "drupal/robotstxt": "^1.1",
         "drupal/role_delegation": "^1.0@alpha",
         "drupal/rules": "^3.0@alpha",
+        "drupal/rules_conditional": "1.x-dev",
         "drupal/samlauth": "^2.0",
         "drupal/scheduled_updates": "^1.0@alpha",
         "drupal/scheduler": "^1.0",
