@@ -13712,7 +13712,7 @@ article.news .news_date {
   }
   /* line 207, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_wrapper .slide_text_wrapper .slide_text {
-    padding: 0;
+    padding-left: 40px;
   }
   /* line 209, ../sass/custom/_frontpage.scss */
   .front-page-classic .slideshow_wrapper .slide_wrapper .slide_text_wrapper .slide_text h2 {
