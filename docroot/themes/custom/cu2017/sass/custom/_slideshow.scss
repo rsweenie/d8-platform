@@ -1,5 +1,11 @@
 //specific to slideshow_wrapper, currently only used on front page
 .slideshow_wrapper {
+	//firefox adjustment
+	@-moz-document url-prefix() {
+		@include respond-to ( null, lg-tablet-max ) {
+			margin-top:-1px;
+		}
+	}
 	@include respond-to ( desktop-min, null) {
 		margin-top:-85px;
 	}
