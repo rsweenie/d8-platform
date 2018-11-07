@@ -136,7 +136,7 @@
                 padding-left: 20px;
                 .slide_text{
                     position: relative;
-                    padding: 0;
+                    padding-left: 40px;
                     h2{
                         margin-top: 0;
                         font-weight: 400;
@@ -205,7 +205,7 @@
                     min-width: $screen-mobile-max; 
 
                     .slide_text{
-                        padding: 0;
+                        padding-left:40px;
                         h2{
                             margin-bottom: 0;
                         }
@@ -252,6 +252,7 @@
         // slide info
         .slideshow_wrapper {
             height: 350px;
+            margin-top: -1px;
             .slide_wrapper {
                 height: 350px;
                 .slide_image_wrapper {
@@ -259,7 +260,20 @@
                         height:350px !important;
                     }
                 }
+                .slide_text_wrapper {
+                    h2 {
+                        font-size: 30px;
+                    }
+                    h1 {
+                        font-size: 48px;
+                    }
+                    a {
+                        margin-top: 5px;
+                        font-size: 18px;
+                    }
+                }
             }
+
             .slide_text_wrapper {
                 position: relative;
                 top: -14px;

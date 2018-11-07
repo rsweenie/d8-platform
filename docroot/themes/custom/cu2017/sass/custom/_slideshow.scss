@@ -1,6 +1,14 @@
 //specific to slideshow_wrapper, currently only used on front page
 .slideshow_wrapper {
-	margin-top:-85px;
+	//firefox adjustment
+	@-moz-document url-prefix() {
+		@include respond-to ( null, lg-tablet-max ) {
+			margin-top:-1px;
+		}
+	}
+	@include respond-to ( desktop-min, null) {
+		margin-top:-85px;
+	}
 	.slide_wrapper{
 		// .slide_image_wrapper {
 		// 	img {
@@ -26,6 +34,12 @@
 				font-family: $condensedFont;
 				margin-top: -10px;
 				margin-bottom: -10px;
+				@include respond-to( tablet-min , tablet-max){
+					font-size: 48px;
+				}
+				@include respond-to(null , mobile-max ){
+					font-size: 34px;
+				}
 			}
 	
 			h2 {
@@ -33,6 +47,12 @@
 				font-weight: $bold;
 				font-family: $condensedFont;
 				font-size:36px;
+				@include respond-to( tablet-min , tablet-max){
+					font-size: 30px;
+				}
+				@include respond-to(null , mobile-max ){
+					font-size: 24px;
+				}
 			}
 	
 			a {
@@ -41,6 +61,9 @@
 				background-repeat: no-repeat;
 				padding: 0px 20px 0px 0px;
 				font-size:1.6em;
+				@include respond-to(null , tablet-max ){
+					font-size: 18px;
+				}
 			}
 			p {
 				font-weight: $regular;
