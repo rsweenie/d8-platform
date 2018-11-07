@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50c4c65e1c912b387933b91a12e995c9",
+    "content-hash": "dd45c3ea4ce6eb2346dd8e1ebac11cff",
     "packages": [
         {
             "name": "acquia/acsf-tools",
@@ -10461,6 +10461,51 @@
             }
         },
         {
+            "name": "drupal/rules_conditional",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/rules_conditional",
+                "reference": "09f3b9c5a09b54dd8861241bb26e6603ed2a885c"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1534654081",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alansaviolobo",
+                    "homepage": "https://www.drupal.org/user/2190830"
+                },
+                {
+                    "name": "zhangtaihao",
+                    "homepage": "https://www.drupal.org/user/858312"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/rules_conditional",
+            "support": {
+                "source": "http://cgit.drupalcode.org/rules_conditional"
+            },
+            "time": "2018-08-16T05:13:56+00:00"
+        },
+        {
             "name": "drupal/samlauth",
             "version": "2.0.0-alpha1",
             "source": {
@@ -19689,6 +19734,17 @@
         {
             "name": "webflo/drupal-core-require-dev",
             "version": "8.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webflo/drupal-core-require-dev.git",
+                "reference": "3fa727e875f73906f7e9325619b540f7012876ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/3fa727e875f73906f7e9325619b540f7012876ee",
+                "reference": "3fa727e875f73906f7e9325619b540f7012876ee",
+                "shasum": ""
+            },
             "require": {
                 "behat/mink": "1.7.x-dev",
                 "behat/mink-goutte-driver": "^1.2",
@@ -19745,6 +19801,7 @@
         "drupal/quicktabs": 15,
         "drupal/role_delegation": 15,
         "drupal/rules": 15,
+        "drupal/rules_conditional": 20,
         "drupal/scheduled_updates": 15,
         "drupal/ultimate_cron": 15,
         "drupal/view_mode_selector": 20,
