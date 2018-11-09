@@ -6,6 +6,9 @@
 			margin-top:-1px;
 		}
 	}
+	&.logged-in-slideshow{
+		margin-top:0px;
+	}
 	@include respond-to ( desktop-min, null) {
 		margin-top:-85px;
 	}
