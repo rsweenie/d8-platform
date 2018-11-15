@@ -8,7 +8,7 @@
 .front-page-classic{
     %orange-h2{
         color: $orange;
-        font-family: $h2LargerFontSize;
+        font-size: $h2LargerFontSize;
         font-weight: $semiBold;
     } 
     p{
@@ -113,11 +113,64 @@
             font-size: $h3FontSize ;
         }
     }
+    
+    .desktop_vertical .field--items .featured_content_item_wrapper{
+        background-color: transparent;
+        max-width: 400px;
+        img{
+            max-width: 386px;
+        }
+        .featured_content_link {
+            li {
+                @extend %orange-h2;
+                text-decoration: none;	
+                text-transform: none;
+            }
+            a {
+                @extend %orange-h2;
+                text-decoration: none;
+                text-transform: none;
+                &:hover li{
+                    color:$darkBlue;
+                }
+            }
+        }
+        .featured_content_image{
+            img{
+                height: 176px;
+                // width: 386px;
+            }
+        }
+        .featured_content_content{
+            padding: 10px 0;
+        }
+        .featured_content_additional_links {
+            a {
+                font-family: $condensedFont;
+                font-weight: $bold;
+                color: $orange;
+                background-image: url(../images/png/orange-arrow.png);
+                background-position: 100%;
+                background-repeat: no-repeat;
+                padding: 0px 20px 0px 0px;
+                text-transform: uppercase;
+                text-decoration: none;
+                &:hover{
+                    color:$darkBlue;
+                    background-image: url(../images/png/dkblue-arrow.png);
+                }
+            }
+        }
+        .featured_content_body{
+            color: $black;
+        }
+    }
+    .featured_content_group_wrapper{
+        
+    }
 }
 
-// front page ALTERNATE
 //TODO pull out media put specific queries inside selectors, use breakpoint mixin
-// media queries will have both CLASSIC and ALTERNATE styles within
 @media (max-width: 480px){
     .front-page-classic{
         
@@ -348,3 +401,5 @@
         }
 }
 }
+
+// front page ALTERNATE
