@@ -31,6 +31,7 @@
         "drupal/disable_messages": "^1.1",
         "drupal/easy_install": "^10.1",
         "drupal/editor_advanced_link": "^1.4",
+        "drupal/entity_browser": "^2.0",
         "drupal/entity_clone": "^1.0@alpha",
         "drupal/entity_embed_link": "^1.0",
         "drupal/entity_embed_linkit": "^1.0@beta",
