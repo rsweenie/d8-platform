@@ -132,16 +132,12 @@ content:
       override_labels: true
       label_singular: Link
       label_plural: Links
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
       collapsible: false
       collapsed: false
-      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_link_bros
-    type: inline_entity_form_complex
+    type: inline_entity_form_simple
     region: content
   field_tabbed_accordion:
     weight: 4
