@@ -145,19 +145,25 @@
             padding: 10px 0;
         }
         .featured_content_additional_links {
-            a {
+            display: flex;
+            a{ 
                 font-family: $condensedFont;
                 font-weight: $bold;
                 color: $orange;
-                background-image: url(../images/png/orange-arrow.png);
-                background-position: 100%;
-                background-repeat: no-repeat;
-                padding: 0px 20px 0px 0px;
                 text-transform: uppercase;
                 text-decoration: none;
-                &:hover{
-                    color:$darkBlue;
-                    background-image: url(../images/png/dkblue-arrow.png);
+                    
+                li{
+                    
+                    background-image: url(../images/png/orange-arrow.png);
+                    background-position: 100%;
+                    
+                    background-repeat: no-repeat;
+                    padding: 0px 20px 0px 0px;
+                    &:hover{
+                        color:$darkBlue;
+                        background-image: url(../images/png/dkblue-arrow.png);
+                    }
                 }
             }
         }
