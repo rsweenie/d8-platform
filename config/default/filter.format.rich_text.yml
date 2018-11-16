@@ -89,6 +89,12 @@ filters:
       responsive_iframe_pattern: '#.*(youtube.|vimeo.).*#ui'
       responsive_table: '0'
       responsive_image: '0'
+  video_embed_wysiwyg:
+    id: video_embed_wysiwyg
+    provider: video_embed_wysiwyg
+    status: false
+    weight: -41
+    settings: {  }
   filter_responsive_table:
     id: filter_responsive_table
     provider: responsive_table_filter
@@ -100,10 +106,4 @@ filters:
     provider: responsive_tables_filter
     status: true
     weight: -45
-    settings: {  }
-  video_embed_wysiwyg:
-    id: video_embed_wysiwyg
-    provider: video_embed_wysiwyg
-    status: false
-    weight: -41
     settings: {  }

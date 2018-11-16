@@ -17,6 +17,7 @@ dependencies:
     - entity_browser_entity_form
     - inline_entity_form
     - name
+    - private_content
     - scheduler
 _core:
   default_config_hash: svDvMNN7TT1SRTyt5LEGUssYjXFtWMj6gQBXyHzUIrg
@@ -74,13 +75,12 @@ content:
       override_labels: true
       label_singular: Link
       label_plural: Links
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: browse_content
-    type: inline_entity_form_complex
+    type: inline_entity_form_simple
     region: content
   moderation_state:
     type: moderation_state_default
@@ -91,10 +91,9 @@ content:
   private:
     weight: 3
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: private
   publish_on:
     type: datetime_timestamp_no_default
     weight: 10
