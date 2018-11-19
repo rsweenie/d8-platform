@@ -150,7 +150,7 @@
                 margin-right: 30px;
                 width: 90vw;
                 @include respond-to(tablet-min, tablet-max){
-                    margin-left: 20px;
+                    margin-left: 40px;
                     width: 49vw;
                 }
                 @include respond-to(desktop-min, null){

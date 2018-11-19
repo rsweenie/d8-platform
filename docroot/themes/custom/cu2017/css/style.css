@@ -13886,7 +13886,7 @@ article.news .news_date {
 @media all and (min-width: 481px) and (max-width: 768px) {
   /* line 148, ../sass/custom/_frontpage.scss */
   .front-page-classic .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_content {
-    margin-left: 20px;
+    margin-left: 40px;
     width: 49vw;
   }
 }
