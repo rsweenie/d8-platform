@@ -105,6 +105,9 @@
             background-color: transparent;
             max-width: 600px;
             margin-bottom: 20px;
+            @include respond-to(null, mobile-max){
+                margin-bottom: 80px;
+            }
             @include respond-to(tablet-min, tablet-max){
                 margin-bottom: 80px;
             }
@@ -117,7 +120,6 @@
                 img {
                     object-fit: cover;
                     @include respond-to(null, mobile-max){
-                        border: solid 1px purple;
                         width: 92vw;
                         height: 203px;    
                     }
@@ -141,7 +143,7 @@
             .featured_content_content{
                 padding: 10px 0;
                 margin-right: 30px;
-                width: 100%;
+                width: 90vw;
                 @include respond-to(tablet-min, tablet-max){
                     margin-left: 20px;
                 }
