@@ -101,6 +101,7 @@
 //  FEATURED CONTENT AREA
     .desktop_vertical .field--items { 
         width: 393px;
+        
         .featured_content_item_wrapper{
             background-color: transparent;
             max-width: 600px;
@@ -111,17 +112,23 @@
             @include respond-to(tablet-min, tablet-max){
                 margin-bottom: 80px;
             }
-                
+            @include respond-to(lg-tablet-min, lg-tablet-max){
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }   
+            img{
+                @include respond-to(desktop-min, null){
+                    max-width: 386px;
+                }
+            } 
             .featured_content_image {
-                // @include respond-to(null, mobile-max){
-                //     border: dashed 2px purple;
-                //     width: 92vw;
-                // }
+               
                 img {
                     object-fit: cover;
                     @include respond-to(null, mobile-max){
                         width: 92vw;
-                        height: 203px;    
+                        height: 41vw;    
                     }
                     @include respond-to(tablet-min, tablet-max){
                         width: 38vw;
@@ -129,12 +136,12 @@
                     }
                     @include respond-to(lg-tablet-min, lg-tablet-max){
                         border: solid 1px blue;
-                        width: 386px;
-                        height: 176px;
+                        width: 56vw;
+                        height: 14vw;
                     }
                     @include respond-to(desktop-min, null){
-                        width: 386px;
-                        height: 176px;
+                        width: 30vw;
+                        height: 180px;
                     }
                 }
             }
@@ -145,6 +152,9 @@
                 @include respond-to(tablet-min, tablet-max){
                     margin-left: 20px;
                     width: 49vw;
+                }
+                @include respond-to(desktop-min, null){
+                    max-width: 395px;
                 }
 
                 .featured_content_link{
