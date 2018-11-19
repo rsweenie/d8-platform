@@ -124,7 +124,6 @@
                         height: 203px;    
                     }
                     @include respond-to(tablet-min, tablet-max){
-                        border: solid 1px orange;
                         width: 38vw;
                         height: 17vw;
                     }
