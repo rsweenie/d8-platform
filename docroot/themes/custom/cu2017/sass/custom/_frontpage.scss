@@ -116,7 +116,10 @@
                 display:flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-            }   
+            }  
+            @include respond-to(desktop-min, null){
+                // max-width: 386px;
+            } 
             img{
                 @include respond-to(desktop-min, null){
                     max-width: 386px;
