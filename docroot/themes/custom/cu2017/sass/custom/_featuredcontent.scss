@@ -32,6 +32,21 @@
 			font-weight: $bold;
 			list-style: none;
 			text-transform: uppercase;
+			text-decoration: none;	
+		}
+		a {
+			color: $yellow;
+			font-family: $condensedFont;
+			font-size: 24px;
+			font-weight: $bold;
+			list-style: none;
+			text-transform: uppercase;
+			text-decoration: none;
+		
+			&:hover {
+				color:$white;
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -211,3 +226,4 @@
 		}
 	}
 }
+

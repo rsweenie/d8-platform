@@ -128,3 +128,5 @@ front_page_classic:
       label: bottom callout
     bottom_feed:
       label: bottom feed
+    featured_content:
+      label: featured content
