@@ -24,6 +24,7 @@ dependencies:
     - inline_entity_form
     - name
     - path
+    - private_content
     - scheduler
     - text
 _core:
@@ -77,13 +78,12 @@ content:
       override_labels: true
       label_singular: Link
       label_plural: Links
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_link_bros
-    type: inline_entity_form_complex
+    type: inline_entity_form_simple
     region: content
   field_profile_name:
     weight: 0
@@ -140,6 +140,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_sidebar_items
@@ -162,6 +165,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_tabbed_accordion
@@ -176,10 +182,9 @@ content:
   private:
     weight: 1
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: private
   promote:
     type: boolean_checkbox
     settings:

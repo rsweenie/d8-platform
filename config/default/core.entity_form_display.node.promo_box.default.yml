@@ -8,8 +8,8 @@ dependencies:
     - node.type.promo_box
   module:
     - content_moderation
-    - entity_browser_entity_form
     - inline_entity_form
+    - private_content
     - scheduler
 _core:
   default_config_hash: AHtIJGFUtJNtQ6qSP5fGU8XLhWOBj4X7dnUHsllgsdY
@@ -41,13 +41,10 @@ content:
       override_labels: true
       label_singular: Link
       label_plural: Links
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-    third_party_settings:
-      entity_browser_entity_form:
-        entity_browser_id: creighton_link_bros
-    type: inline_entity_form_complex
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
     region: content
   moderation_state:
     type: moderation_state_default
@@ -58,10 +55,9 @@ content:
   private:
     weight: 3
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: private
   publish_on:
     type: datetime_timestamp_no_default
     weight: 6
