@@ -144,7 +144,6 @@
                         height: 17vw;
                     }
                     @include respond-to(lg-tablet-min, lg-tablet-max){
-                        border: solid 1px blue;
                         max-width: 282px;
                         height: 128px;
                     }
