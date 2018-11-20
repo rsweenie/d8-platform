@@ -160,6 +160,7 @@
                 @include respond-to(tablet-min, tablet-max){
                     margin-left: 40px;
                     width: 49vw;
+                    padding-right: 20px;
                 }
                 @include respond-to( lg-tablet-min, lg-tablet-max){
                     margin-left: 80px;
