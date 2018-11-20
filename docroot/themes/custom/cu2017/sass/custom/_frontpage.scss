@@ -144,7 +144,6 @@
                         height: 17vw;
                     }
                     @include respond-to(lg-tablet-min, lg-tablet-max){
-                        border: solid 1px blue;
                         max-width: 282px;
                         height: 128px;
                     }
@@ -161,6 +160,7 @@
                 @include respond-to(tablet-min, tablet-max){
                     margin-left: 40px;
                     width: 49vw;
+                    padding-right: 20px;
                 }
                 @include respond-to( lg-tablet-min, lg-tablet-max){
                     margin-left: 80px;
