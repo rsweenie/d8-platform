@@ -69,7 +69,7 @@ AddEncoding gzip svgz
 <IfModule mod_rewrite.c>
   RewriteEngine on
   # Redirect HTTP to HTTPS
-  RewriteCond %{ENV:AH_SITE_ENVIRONMENT} dev,test,prod [NC]  # dev test prod only
+  RewriteCond %{ENV:AH_SITE_ENVIRONMENT} dev [NC] # only dev
   RewriteCond %{HTTPS} off
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [NE,L,R=301]
