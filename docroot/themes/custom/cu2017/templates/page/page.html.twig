@@ -46,7 +46,18 @@
 * @ingroup themeable
 */
 #}
-<div class="layout-container">
+{################## add appropriate classes to main div ##################}
+{% set layout_attributes = create_attribute() %}
+{% set layout_classes = [] %}
+{% set layout_classes = layout_classes|merge(['layout-container']) %}
+
+{% if (node.panelizer.value) %}
+    {% set layout_classes = layout_classes|merge(['flex-layout']) %}
+{% else %}
+    {% set layout_classes = layout_classes|merge(['default-layout']) %}
+{% endif %}
+
+<div{{ layout_attributes.addClass(layout_classes) }}>
     {% if logged_in %}
         {% set toolbar_attribute = create_attribute() %}
         {% set admin = 'admin' %}
@@ -55,6 +66,7 @@
             {{ page.header_alert }}
         </div>
     <header{{ toolbar_attribute.addClass(admin).setAttribute('role', 'banner') }}>
+     
         {% block header %}
             {{ page.header_html }}
             {{ page.navigation }}
