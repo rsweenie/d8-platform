@@ -91,7 +91,7 @@
 	}
 }
 
-.flexbox_three_section_wrapper {
+.flex-layout {
 	.responsive_flex {
 		@include respond-to(null , mobile-max) {
 			display: flex;
@@ -103,10 +103,18 @@
 			}
 		}
 	}
-	#{$bootstrapColumns} {
-		@include respond-to(null , tablet-max) {
-			padding-left: 0;
-			padding-right: 0;
+	@include respond-to(null , tablet-max) {
+		.center_column {
+			&, #{$bootstrapColumns} {
+				padding-left: 0px;
+				padding-right: 0px;
+			}
 		}
 	}
+	// #{$bootstrapColumns} {
+	// 	@include respond-to(null , tablet-max) {
+	// 		padding-left: 5px;
+	// 		padding-right: 5px;
+	// 	}
+	// }
 }
