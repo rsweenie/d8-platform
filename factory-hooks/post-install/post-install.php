@@ -1,7 +1,8 @@
 <?php
 
+
 /**
- * @file
+* @file
  * Factory Hook: post-install.
  *
  * This hook enables you to execute PHP after a new website is created
@@ -10,7 +11,6 @@
  *
  * This is used so that an ACSF site install will match a local BLT site
  * install. After a local site install, the update functions are run.
- *
  */
 
 $site = $_ENV['AH_SITE_GROUP'];
@@ -25,3 +25,6 @@ $domain_fragments = explode('.', $_SERVER['HTTP_HOST']);
 $site_name = array_shift($domain_fragments);
 
 exec("/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt drupal:update --environment=$env --site=$site_name --define drush.uri=$domain --verbose --yes");
+echo "ENVIRONMENT: $env";
+// Run sso-config.sh to set sp_entity_id in config when a new site is created.
+exec("bash ../sso-config.sh $site_name $env");
