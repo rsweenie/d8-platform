@@ -103,18 +103,12 @@
 			}
 		}
 	}
-	@include respond-to(null , tablet-max) {
-		.center_column {
-			&, #{$bootstrapColumns} {
-				padding-left: 0px;
-				padding-right: 0px;
-			}
+}
+@include respond-to(null , desktop-min) {
+	.center_column {		
+		#{$bootstrapColumns} {
+			padding-left: 0px;
+			padding-right: 0px;
 		}
 	}
-	// #{$bootstrapColumns} {
-	// 	@include respond-to(null , tablet-max) {
-	// 		padding-left: 5px;
-	// 		padding-right: 5px;
-	// 	}
-	// }
 }

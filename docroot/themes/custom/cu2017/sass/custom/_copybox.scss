@@ -2,6 +2,9 @@
 	p {
 		font-family: $baseFont;
 		font-size: 1em;
+		margin-top: 1.5em;
+	}
+	p:first-of-type {
 		margin: 0;
 	}
 

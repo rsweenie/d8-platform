@@ -7,8 +7,14 @@
 <div{{ attributes.addClass('clearfix', 'featured_content_item_wrapper') }}>
     {{ title_suffix.contextual_links }}
 
-    <div class="featured_content_image">
-        {{ content.field_featured_content_image }}
+    <div class="featured_content_image">        
+        {% if paragraph.field_link.entity.field_links_link.0.uri %}
+            <a href= {{ paragraph.field_link.entity.field_links_link.0.url }} >
+                {{ content.field_featured_content_image }}
+            </a>
+        {% else %}
+            {{ content.field_featured_content_image }}
+        {% endif %}
     </div>
     <div class="featured_content_content">
         
