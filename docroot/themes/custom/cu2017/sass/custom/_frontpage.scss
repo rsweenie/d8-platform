@@ -107,10 +107,10 @@
             // max-width: 600px;
             margin-bottom: 20px;
             @include respond-to(null, mobile-max){
-                margin-bottom: 80px;
+                margin-bottom: 40px;
             }
             @include respond-to(tablet-min, tablet-max){
-                margin-bottom: 80px;
+                margin-bottom: 40px;
             }
             @include respond-to(lg-tablet-min, lg-tablet-max){
                 display:flex;
@@ -132,7 +132,9 @@
                 }
             } 
             .featured_content_image {
-               
+               @include respond-to(null, mobile-max){
+                   width:460px;
+               }
                 img {
                     object-fit: cover;
                     @include respond-to(null, mobile-max){
