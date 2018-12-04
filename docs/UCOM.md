@@ -9,3 +9,5 @@
 * [Views and Blocks](VIEWS_BLOCKS)
 
 * [Using the Front Page Classic Layout](FRONT_PAGE_CLASSIC)
+
+* [Creating a featured content group](FEATURED_CONTENT_GROUP)
