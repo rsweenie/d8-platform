@@ -90,20 +90,11 @@
                 margin-bottom: 40px;
             }
             @include respond-to(lg-tablet-min, lg-tablet-max){
-                // display:flex;
-                // flex-direction: row;
-                // width:95% !important;
-                // margin-bottom: 30px;
-                // flex-wrap: wrap;
                 max-width: 388px;
                
                 
             }  
             @include respond-to(lg-tablet-min, null){
-                // max-width: 340px;
-                //--- max-width: 600px;
-                // min-width: 336px;
-                
                 flex-flow: column nowrap;
                 height: 100%;
 
@@ -127,10 +118,9 @@
                         width: 38vw;
                         height: 17vw;
                     }
-                    // @include respond-to(lg-tablet-min, lg-tablet-max){
-                    //     max-width: 282px;
-                    //     height: 128px;
-                    // }
+                    @include respond-to(lg-tablet-min, lg-tablet-max){
+                        
+                    }
                     @include respond-to(lg-tablet-min, null){
                         width: 30vw;
                         height: 180px;
@@ -140,19 +130,16 @@
             .featured_content_content{
                 padding: 10px 0;
                 margin-right: 30px;
-                // width: 90vw;
                 @include respond-to(tablet-min, tablet-max){
                     margin-left: 40px;
                     width: 49vw;
                     padding-right: 20px;
                 }
                 @include respond-to( lg-tablet-min, lg-tablet-max){
-                    // margin-left: 80px;
-                    // margin-top: -15px;
+                    
                     
                 }
                 @include respond-to(desktop-min, null){
-                    // max-width: 395px;
                 }
 
                 .featured_content_link{
@@ -301,25 +288,7 @@
                 width: 42%;
             }
         }
-        // #row_3{
-        //     .middle-left, .middle-center, .middle-right{
-        //         margin-bottom: 20px;
-        //         img{
-        //             display: flex;
-        //             float: left;
-        //             width: 42%;
-        //         }
-        //         h2{
-        //             display: flex;
-        //             padding-left: 20px;
-        //         }
-                
-        //         p{
-        //             padding-left: 20px;
-        //             display: flex;
-        //         }
-        //     }
-        // }      
+             
         .block-region-ctas {
             padding: 50px 0 40px 0;
         }
@@ -387,15 +356,6 @@
                 padding: 50px 0px 30px 30px;
             }
         }
-        // ----FEATURED CONTENT
-        // .desktop_vertical .field--items{
-           
-        //     .featured_content_item_wrapper{
-        //         width: 33%;
-        //         display: flex;
-        //         float: left;
-        //     }
-        // }
 
         .bottom_callout.col-md-3 {
             margin-top: -50px;
