@@ -35,31 +35,6 @@
     > div:nth-child(3n), #row_5 {
         margin-bottom: 40px;
     }
-// old row 3 CAN REMOVE EVENTUALLY
-    #row_3{
-        .middle-left, .middle-center, .middle-right{
-            
-            h2{
-                @extend %orange-h2;
-            }
-            p{
-                font-size: $pLargerFontSize;
-                margin-bottom: 10px;
-            }
-            a{
-                font-family: $condensedFont;
-                font-weight: $bold;
-                color: $orange;
-                background-image: url(../images/png/orange-arrow.png);
-                background-position: 100%;
-                background-repeat: no-repeat;
-                padding: 0px 20px 0px 0px;
-                text-transform: uppercase;
-                text-decoration: none;
-            }
-        }
-    }
-// old row 3 CAN REMOVE EVENTUALLY
 
     .main .col-md-12 .center_column .front-page-classic .slide {
         height: 515px;
@@ -101,10 +76,12 @@
 //  FEATURED CONTENT AREA
     .desktop_vertical .field--items { 
         // width: 393px;
+        @include respond-to(lg-tablet-min, lg-tablet-max){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
         
         .featured_content_item_wrapper{
             background-color: transparent;
-            // max-width: 600px;
             margin-bottom: 20px;
             @include respond-to(null, mobile-max){
                 margin-bottom: 40px;
@@ -113,21 +90,26 @@
                 margin-bottom: 40px;
             }
             @include respond-to(lg-tablet-min, lg-tablet-max){
-                display:flex;
-                flex-direction: row;
-                width:95% !important;
-                margin-bottom: 30px;
+                // display:flex;
+                // flex-direction: row;
+                // width:95% !important;
+                // margin-bottom: 30px;
                 // flex-wrap: wrap;
+                max-width: 388px;
+               
                 
             }  
-            @include respond-to(desktop-min, null){
+            @include respond-to(lg-tablet-min, null){
                 // max-width: 340px;
-                max-width: 600px;
-                min-width: 336px;
+                //--- max-width: 600px;
+                // min-width: 336px;
                 
+                flex-flow: column nowrap;
+                height: 100%;
+
             } 
             img{
-                @include respond-to(desktop-min, null){
+                @include respond-to(lg-tablet-min, null){
                     max-width: 386px;
                 }
             } 
@@ -145,11 +127,11 @@
                         width: 38vw;
                         height: 17vw;
                     }
-                    @include respond-to(lg-tablet-min, lg-tablet-max){
-                        max-width: 282px;
-                        height: 128px;
-                    }
-                    @include respond-to(desktop-min, null){
+                    // @include respond-to(lg-tablet-min, lg-tablet-max){
+                    //     max-width: 282px;
+                    //     height: 128px;
+                    // }
+                    @include respond-to(lg-tablet-min, null){
                         width: 30vw;
                         height: 180px;
                     }
@@ -165,8 +147,8 @@
                     padding-right: 20px;
                 }
                 @include respond-to( lg-tablet-min, lg-tablet-max){
-                    margin-left: 80px;
-                    margin-top: -15px;
+                    // margin-left: 80px;
+                    // margin-top: -15px;
                     
                 }
                 @include respond-to(desktop-min, null){
@@ -276,30 +258,6 @@
             padding: 50px 0 40px 0;
         }
         
-        #row_3{
-            .middle-left, .middle-center, .middle-right{
-                margin-bottom: 25px;
-                img {
-                    width: 99%;
-                }
-                
-                p {
-                    font-size: $pLargerFontSize;
-                    margin-bottom: 10px;
-                }
-                a {
-                    font-family: $condensedFont;
-                    font-weight: $bold;
-                    color: $orange;
-                    background-image: url(../images/png/orange-arrow.png);
-                    background-position: 100%;
-                    background-repeat: no-repeat;
-                    padding: 0px 20px 0px 0px;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                }
-            }
-        }
         > div{
             padding-left: 0 !important;
         }
@@ -343,25 +301,25 @@
                 width: 42%;
             }
         }
-        #row_3{
-            .middle-left, .middle-center, .middle-right{
-                margin-bottom: 20px;
-                img{
-                    display: flex;
-                    float: left;
-                    width: 42%;
-                }
-                h2{
-                    display: flex;
-                    padding-left: 20px;
-                }
+        // #row_3{
+        //     .middle-left, .middle-center, .middle-right{
+        //         margin-bottom: 20px;
+        //         img{
+        //             display: flex;
+        //             float: left;
+        //             width: 42%;
+        //         }
+        //         h2{
+        //             display: flex;
+        //             padding-left: 20px;
+        //         }
                 
-                p{
-                    padding-left: 20px;
-                    display: flex;
-                }
-            }
-        }      
+        //         p{
+        //             padding-left: 20px;
+        //             display: flex;
+        //         }
+        //     }
+        // }      
         .block-region-ctas {
             padding: 50px 0 40px 0;
         }
@@ -429,22 +387,15 @@
                 padding: 50px 0px 30px 30px;
             }
         }
-        
-        .desktop_vertical .field--items{
+        // ----FEATURED CONTENT
+        // .desktop_vertical .field--items{
            
-            .featured_content_item_wrapper{
-                width: 33%;
-                display: flex;
-                float: left;
-            }
-        }
-        #row_3{
-            .middle-left, .middle-center, .middle-right{
-                width: 33%;
-                display: flex;
-                float: left;
-            }
-        }
+        //     .featured_content_item_wrapper{
+        //         width: 33%;
+        //         display: flex;
+        //         float: left;
+        //     }
+        // }
 
         .bottom_callout.col-md-3 {
             margin-top: -50px;
