@@ -97,6 +97,7 @@
             @include respond-to(lg-tablet-min, null){
                 flex-flow: column nowrap;
                 height: 100%;
+                max-width: 386px;
 
             } 
             img{
@@ -140,6 +141,7 @@
                     
                 }
                 @include respond-to(desktop-min, null){
+                    // width:380px;
                 }
 
                 .featured_content_link{
