@@ -13853,7 +13853,7 @@ article.news .news_date {
 @media all and (max-width: 480px) {
   /* line 109, ../sass/custom/_frontpage.scss */
   .front-page-classic .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_image {
-    width: 460px;
+    width: 100%;
   }
 }
 /* line 113, ../sass/custom/_frontpage.scss */

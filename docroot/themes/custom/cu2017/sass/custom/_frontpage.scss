@@ -108,7 +108,7 @@
             } 
             .featured_content_image {
                @include respond-to(null, mobile-max){
-                   width:460px;
+                   width:100%;
                }
                 img {
                     object-fit: cover;
