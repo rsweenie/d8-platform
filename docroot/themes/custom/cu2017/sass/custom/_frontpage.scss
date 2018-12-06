@@ -85,7 +85,7 @@
             margin-bottom: 20px;
             @include respond-to(null, mobile-max){
                 margin-bottom: 40px;
-                padding-right:1px;
+                max-width:348px;
             }
             @include respond-to(tablet-min, tablet-max){
                 margin-bottom: 40px;
