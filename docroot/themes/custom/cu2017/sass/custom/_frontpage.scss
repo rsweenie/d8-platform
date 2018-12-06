@@ -130,7 +130,7 @@
             }
             .featured_content_content{
                 padding: 10px 0;
-                margin-right: 30px;
+                margin-right: 10px;
                 @include respond-to(tablet-min, tablet-max){
                     margin-left: 40px;
                     width: 49vw;

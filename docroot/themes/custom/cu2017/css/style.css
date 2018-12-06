@@ -13883,7 +13883,7 @@ article.news .news_date {
 /* line 131, ../sass/custom/_frontpage.scss */
 .front-page-classic .desktop_vertical .field--items .featured_content_item_wrapper .featured_content_content {
   padding: 10px 0;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
   /* line 131, ../sass/custom/_frontpage.scss */
