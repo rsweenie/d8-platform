@@ -13821,7 +13821,7 @@ article.news .news_date {
   /* line 83, ../sass/custom/_frontpage.scss */
   .front-page-classic .desktop_vertical .field--items .featured_content_item_wrapper {
     margin-bottom: 40px;
-    padding-right: 1px;
+    max-width: 348px;
   }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
