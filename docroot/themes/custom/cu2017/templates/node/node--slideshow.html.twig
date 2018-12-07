@@ -11,9 +11,8 @@
         {{ title_suffix.contextual_links }}
         {{ content.field_slide }}
     </div>
-{% endif %}
 
-{% if logged_in %}
+{% elseif logged_in %}
     {% set attributes = attributes.setAttribute('id', 'slideshow_wrapper')%}
 
         <div{{ attributes.addClass('clearfix', 'slideshow_wrapper', 'logged-in-slideshow') }}>

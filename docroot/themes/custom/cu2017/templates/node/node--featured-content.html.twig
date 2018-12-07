@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Featured Content template.
+ * Featured Content template. THIS FILE IS NOT ACTUALLY USED
  */
 #}
 <div{{ attributes.addClass('clearfix', 'featured_content_wrapper') }}>
@@ -21,15 +21,14 @@
             {{ content.field_featured_content_image }}
         </div>
         <div class="featured_content_content">
+            <div class="featured_content_link">
+            <h1> testing a theory</h1>
             {% if node.field_featured_content_link.entity.field_links_link.0.uri %}
-                <div class="featured_content_link">
-                    {{ content.field_featured_content_link }}
-                </div>
+                    <li id="zero-uri">{{ content.field_featured_content_link }}</li>
             {% else %}
-                <div class="featured_content_link">
-                    <li>{{ node.field_featured_content_link.entity.field_links_link_text.0.value }}</li>
-                </div>
+                    <li id="link-text">{{ node.field_featured_content_link.entity.field_links_link_text.0.value }}</li>
             {% endif %}
+            </div>
             <div class="featured_content_body">
                 {{ content.body }}
             </div>
@@ -39,3 +38,5 @@
         </div>
     </div>
 </div>
+
+{# THIS FILE IS NOT ACTUALLY USED #}

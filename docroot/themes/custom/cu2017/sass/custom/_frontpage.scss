@@ -8,7 +8,7 @@
 .front-page-classic{
     %orange-h2{
         color: $orange;
-        font-family: $h2LargerFontSize;
+        font-size: $h2LargerFontSize;
         font-weight: $semiBold;
     } 
     p{
@@ -32,34 +32,8 @@
         padding: 30px; 
     }
 
-    > div:nth-child(3n) {
+    > div:nth-child(3n), #row_5 {
         margin-bottom: 40px;
-    }
-
-    #row_3{
-        .middle-left, .middle-center, .middle-right{
-            img{
-
-            }
-            h2{
-                @extend %orange-h2;
-            }
-            p{
-                font-size: $pLargerFontSize;
-                margin-bottom: 10px;
-            }
-            a{
-                font-family: $condensedFont;
-                font-weight: $bold;
-                color: $orange;
-                background-image: url(../images/png/orange-arrow.png);
-                background-position: 100%;
-                background-repeat: no-repeat;
-                padding: 0px 20px 0px 0px;
-                text-transform: uppercase;
-                text-decoration: none;
-            }
-        }
     }
 
     .main .col-md-12 .center_column .front-page-classic .slide {
@@ -99,25 +73,141 @@
     .bottom_callout{
         margin-top: -50px;        
     }
-    
-    .first-content {
-        h3 {
-            font-weight: $custom;
-            color: $mediumBlue; 
-            font-size: $h3LargerFontSize;
+//  FEATURED CONTENT AREA
+    .desktop_vertical .field--items { 
+        // width: 393px;
+        @include respond-to(lg-tablet-min, lg-tablet-max){
+            grid-template-columns: 1fr 1fr 1fr;
         }
-        p {
-            font-size: $pLargerFontSize;
-        }
-        a {
-            font-size: $h3FontSize ;
+        
+        .featured_content_item_wrapper{
+            background-color: transparent;
+            margin-bottom: 20px;
+            @include respond-to(null, mobile-max){
+                margin-bottom: 40px;
+                max-width:348px;
+            }
+            @include respond-to(tablet-min, tablet-max){
+                margin-bottom: 40px;
+            }
+            @include respond-to(lg-tablet-min, lg-tablet-max){
+                max-width: 388px;
+               
+                
+            }  
+            @include respond-to(lg-tablet-min, null){
+                flex-flow: column nowrap;
+                height: 100%;
+                max-width: 386px;
+
+            } 
+            img{
+                @include respond-to(lg-tablet-min, null){
+                    max-width: 386px;
+                }
+            } 
+            .featured_content_image {
+               @include respond-to(null, mobile-max){
+                   width:100%;
+               }
+                img {
+                    object-fit: cover;
+                    @include respond-to(null, mobile-max){
+                        width: 92vw;
+                        height: 41vw;    
+                    }
+                    @include respond-to(tablet-min, tablet-max){
+                        width: 38vw;
+                        height: 17vw;
+                    }
+                    @include respond-to(lg-tablet-min, lg-tablet-max){
+                        
+                    }
+                    @include respond-to(lg-tablet-min, null){
+                        width: 30vw;
+                        height: 180px;
+                    }
+                }
+            }
+            .featured_content_content{
+                padding: 10px 0;
+                margin-right: 10px;
+                @include respond-to(tablet-min, tablet-max){
+                    margin-left: 40px;
+                    width: 49vw;
+                    padding-right: 20px;
+                }
+                @include respond-to( lg-tablet-min, lg-tablet-max){
+                    
+                    
+                }
+                @include respond-to(desktop-min, null){
+                    // width:380px;
+                }
+
+                .featured_content_link{
+                    margin-bottom:10px;
+                    li {
+                        @extend %orange-h2;
+                        text-decoration: none;	
+                        text-transform: none;
+                        line-height: 1.0em;
+                        
+                        @include respond-to(desktop-min, nul){
+                            margin-top: 18px;
+                        }
+                    }
+                    .links_wrapper{
+                        a {
+                            @extend %orange-h2;
+                            text-decoration: none;
+                            text-transform: none;
+                            &:hover li{
+                                color:$darkBlue;
+                            }
+                        }
+                        li {
+
+                        }
+                    }
+                }
+                .featured_content_body{
+                    color: $baseGray;
+                }
+                .featured_content_additional_links {
+                    display: flex;
+                    .links_wrapper {
+                        a {
+                            font-family: $condensedFont;
+                            font-weight: $bold;
+                            color: $orange;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            li{
+                                background-image: url(../images/png/orange-arrow.png);
+                                background-position: 100%;
+                                font-size: $pLargerFontSize;
+                                background-repeat: no-repeat;
+                                padding: 0px 20px 0px 0px;
+                                margin-top:10px;
+                                display: inline-flex;
+                                &:hover {
+                                    color:$darkBlue;
+                                    background-image: url(../images/png/dkblue-arrow.png);
+                        }
+                            }
+                        }
+                        li {
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-// front page ALTERNATE
 //TODO pull out media put specific queries inside selectors, use breakpoint mixin
-// media queries will have both CLASSIC and ALTERNATE styles within
 @media (max-width: 480px){
     .front-page-classic{
         
@@ -153,33 +243,11 @@
         }
         // END slide info .. move?
         
+
         .block-region-ctas{
             padding: 50px 0 40px 0;
         }
-        #row_3{
-            .middle-left, .middle-center, .middle-right{
-                margin-bottom: 25px;
-                img {
-                    width: 99%;
-                }
-                
-                p {
-                    font-size: $pLargerFontSize;
-                    margin-bottom: 10px;
-                }
-                a {
-                    font-family: $condensedFont;
-                    font-weight: $bold;
-                    color: $orange;
-                    background-image: url(../images/png/orange-arrow.png);
-                    background-position: 100%;
-                    background-repeat: no-repeat;
-                    padding: 0px 20px 0px 0px;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                }
-            }
-        }
+        
         > div{
             padding-left: 0 !important;
         }
@@ -215,25 +283,15 @@
         }
         
         //END slide info
-        #row_3{
-            .middle-left, .middle-center, .middle-right{
-                margin-bottom: 20px;
-                img{
-                    display: flex;
-                    float: left;
-                    width: 42%;
-                }
-                h2{
-                    display: flex;
-                    padding-left: 20px;
-                }
-                
-                p{
-                    padding-left: 20px;
-                    display: flex;
-                }
+        
+        .featured_content_image {
+            img{
+                display: flex;
+                float: left;
+                width: 42%;
             }
-        }      
+        }
+             
         .block-region-ctas {
             padding: 50px 0 40px 0;
         }
@@ -301,14 +359,6 @@
                 padding: 50px 0px 30px 30px;
             }
         }
-        
-        #row_3{
-            .middle-left, .middle-center, .middle-right{
-                width: 33%;
-                display: flex;
-                float: left;
-            }
-        }
 
         .bottom_callout.col-md-3 {
             margin-top: -50px;
@@ -328,6 +378,7 @@
                     }
                 }
             }
+
     }
     
 }
@@ -346,5 +397,8 @@
                 }
             }
         }
+        
 }
 }
+
+// front page ALTERNATE

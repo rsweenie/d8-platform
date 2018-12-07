@@ -118,13 +118,10 @@ front_page_classic:
       label: First Content
     ctas:
       label: calls to action
-    middle_left:
-      label: middle left
-    middle_center:
-      label: middle center
-    middle_right:
-      label: middle right
+    featured_content:
+      label: featured content
     bottom_callout:
       label: bottom callout
     bottom_feed:
       label: bottom feed
+    

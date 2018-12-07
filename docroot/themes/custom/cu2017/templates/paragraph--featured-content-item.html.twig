@@ -7,19 +7,24 @@
 <div{{ attributes.addClass('clearfix', 'featured_content_item_wrapper') }}>
     {{ title_suffix.contextual_links }}
 
-    <div class="featured_content_image">
-        {{ content.field_featured_content_image }}
+    <div class="featured_content_image">        
+        {% if paragraph.field_link.entity.field_links_link.0.uri %}
+            <a href= {{ paragraph.field_link.entity.field_links_link.0.url }} >
+                {{ content.field_featured_content_image }}
+            </a>
+        {% else %}
+            {{ content.field_featured_content_image }}
+        {% endif %}
     </div>
     <div class="featured_content_content">
-        {% if paragraph.field_link.entity.field_links_link.0.uri %}
-            <div class="featured_content_link">
-                <li>{{ content.field_link }}</li>
-            </div>
-        {% else %}
-            <div class="featured_content_link">
+        
+        <div class="featured_content_link">
+            {% if paragraph.field_link.entity.field_links_link.0.uri %}
+                {{ content.field_link }}
+            {% else %}
                 <li>{{ paragraph.field_link.entity.field_links_link_text.0.value }}</li>
-            </div>
-        {% endif %}
+            {% endif %}
+        </div>
         <div class="featured_content_body">
             {{ content.field_body }}
         </div>
