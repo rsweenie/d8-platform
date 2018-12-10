@@ -1,36 +1,46 @@
 ```
-* Version: x.x
-* Created: mm/dd/yyyy
-* Last Updated: mm/dd/yyyy
-* Intended Audience: UCOM/DoIT
+* Version: 1.0
+* Created: 12/10/2018 KLM
+* Last Updated: 12/10/2018
+* Intended Audience: UCOM
 
 ## Summary
 
-Brief decription here
+Promo box is a blue box with white text that calls out information, it may or may not be linked to another page and is put in secondary content area of a page often.
+
 
 ## Prerequisites
+1. You'll need the text to show to the user
+2. link to send the user to if applicable
+3. page to put the promo box on
+4. Access to the site you need to produce this on.
 
- 1. First prerequisite
- 2. Second prerequisite
- 3. Third prerequisite
 
 ## Procedure
 
-1. Step one
-2. Step two
-3. Step 3
-    * bulleted item
-    * another bullet
-    * [Link to google](http://www.google.com)
+ 1. Title _required_ Should start PB - subject promo leads to, or text in the promo box
+ 2. Promo Text - an action sentance 
+ 3. Promo Link - place to send user to
+ -- Add new link
+    --- Link Text
+    --- Link, url to a page or site or a file link existing or new
+    --- *click create link*
+ -- Add existing link
+ --- search for the link you know you need or scroll through the list, click the checkbox to the left of it and hit submit  
+ 4. click save
 
-## See Also
+ optional placement on page
+ 5. visit the page the promo box is to be on
+ 6. manage content -> entity block -> content -> search for the title you named the promo box in entity feild -> choose location ->save file
+ OR
+ edit -> sidebar items -> select promo box, and add esxisting sidebar item -> type in title you chose -> click checkbox to left -> click add item
+ 7. save
 
-* thing 1
-* thing 2
+
 
 ## Keywords
 
-* this word is key
+* secondary content
 
 *** For UCOM Documentation Only ***
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
