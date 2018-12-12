@@ -11,3 +11,5 @@
 * [Using the Front Page Classic Layout](FRONT_PAGE_CLASSIC)
 
 * [Creating a featured content group](FEATURED_CONTENT_GROUP)
+
+* [Creating a promo box](PROMO_BOX.md)
