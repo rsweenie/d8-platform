@@ -14,7 +14,7 @@ field_name: body
 entity_type: node
 bundle: copy_box
 label: Body
-description: ''
+description: 'Please note: the content entered or edited here may appear on other pages. Any changes or deletions made here may impact other pages.'
 required: false
 translatable: true
 default_value: {  }
