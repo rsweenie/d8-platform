@@ -1,8 +1,8 @@
-```
-* Version: 1.0
-* Created: 12/10/2018 KLM
-* Last Updated: 12/10/2018
-* Intended Audience: UCOM
+#Creating a Promo Box
+ Version: 1.0
+ Created: 12/10/2018 KLM
+ Last Updated: 12/10/2018
+ Intended Audience: UCOM
 
 ## Summary
 

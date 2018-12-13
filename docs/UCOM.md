@@ -19,3 +19,11 @@
 * [Clearing Cache](CLEAR_CACHE.md)
 
 * [Social Media Links](SOCIAL_LINKS_FOOTER.md)
+
+* [Header Alert](HEADER_ALERT.md)
+
+* [Content Page](CONTENT_PAGE.md)
+
+* [Tabs or Accordion](TABBED_ACCORDION.md)
+
+* [Copy box](COPY_BOX.md)

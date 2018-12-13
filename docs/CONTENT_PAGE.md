@@ -1,8 +1,8 @@
-# Title of how to
-* Version: x.x
-* Created: xx/xx/xxxx
-* Last Updated: xx/xx/xxxx
-* Intended Audience: UCOM/ITILS
+# How to create and use a Content page
+* Version: 1.0
+* Created: 12/13/2018 KLM
+* Last Updated: 12/13/2018
+* Intended Audience: UCOM
 
 ## Summary
 
@@ -32,5 +32,6 @@ Brief decription here
 
 * this word is key
 
-*** For UCOM Documentation Only ***
+
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
+
