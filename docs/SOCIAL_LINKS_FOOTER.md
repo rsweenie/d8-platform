@@ -1,4 +1,4 @@
-```
+
 * Version: 1.0
 * Created: 12/13/2018 KLM
 * Last Updated: 12/13/2018
@@ -42,4 +42,4 @@ a. if change doesn't take effect try clearing cache
 
 *** For UCOM Documentation Only ***
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
-```
+
