@@ -1,0 +1,22 @@
+uuid: c404040e-a5b6-4858-8087-6ff8812cc046
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.related_links
+id: node.related_links.status
+field_name: status
+entity_type: node
+bundle: related_links
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
