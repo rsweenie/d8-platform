@@ -7,6 +7,7 @@
 ## Summary
 
 Promo box is a blue box with white text that calls out information, it may or may not be linked to another page and is put in secondary content area of a page often.
+! [promo box example] (images/promo_box_example.png "promo box example")
 
 
 ## Prerequisites
