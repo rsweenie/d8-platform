@@ -14,7 +14,7 @@ Clearing Cache often is needed when content has been updated but is not sowing l
  2. access to domain needing refresh
 
 ## Procedure
-
+**From subdomain**
 1. Visit subdomain.creighton.edu/user
 2. enter in blue creditials
 3. Hover over the drupal drop
@@ -22,6 +22,16 @@ Clearing Cache often is needed when content has been updated but is not sowing l
 - this is the best way to make sure everything is updated, however you can instead hover over this and then select a specific cache to clear.
 
 ![cache options](images/clear-cache_options.png "cache images")
+
+** from Aquia Cloud Site Factory **
+1. log in to ACSF
+2. select the environment the domain you need to update lives on, for example Dev, Test or live
+3. find the domain you need to update
+4. click the arrow to the left of login below the site
+5. select clear cache's
+6. confirm clear chaces
+![cache options](images/clear-cache_acsf.png "cache images")
+
 
 ## Keywords
 
