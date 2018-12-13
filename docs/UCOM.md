@@ -13,3 +13,5 @@
 * [Creating a featured content group](FEATURED_CONTENT_GROUP)
 
 * [Creating a promo box](PROMO_BOX.md)
+
+* [Creating a quote box](QUOTE_BOX.md)
