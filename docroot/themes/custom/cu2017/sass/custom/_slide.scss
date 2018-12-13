@@ -38,7 +38,7 @@
 	  }
 	}
 	.slick__arrow {
-		top: 90%;
+		top: 92%;
 		
 		.slick-prev {
 			left: 0;
@@ -178,7 +178,7 @@
 		.slick-prev:hover,
 		.slick-prev:focus {
 			background: url(/themes/custom/cu2017/images/png/left-white-arrows.png)no-repeat;
-			background-position: 14px 11px;
+			background-position: center;
 			border: 0;
 			// left: 0;
 			outline: none;
@@ -188,27 +188,50 @@
 		.slick-next:hover,
 		.slick-next:focus {
 			background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
-			background-position: 18px 11px;
+			background-position: center;
 			outline: none;
 			right: 0;
 		}
 	}
 	.slide__caption {
 		margin-top: -80px;
-		background-color: rgba(0,0,0,0.8); // TODO do we have base black variable?
-		color: white; // TODO do we have a base white variable?
+		background-color: $backgroundBlack; 
+		padding: 10px 45px;
+		position: absolute;
+		bottom: 0;
+		top: unset;
+		
 
-		@media (min-width: 64em) {
-			padding: 10px 40px;
-			position: absolute;
+		.slide_text {
+			color: $white;
+			font-family: $baseFont;
+			font-size: $baseFontSize;
+			font-weight: $bold;
 			bottom: 0;
-			top: unset;
+
+			a {
+				@include transition(color, 0.2s);
+				color: $white;
+				font-family: $condensedFont;
+				display: inline-block;
+				letter-spacing: 1px;
+				position: relative;
+				text-decoration: underline;
+	
+				&:hover {
+					color: $white;
+				}
+			}
+			p {
+				margin-bottom: 0;
+			}
+
 		}
+
 	}
 	.slick img  {
-		@media (min-width: 64em) {
-			height: 250px;
-		}
+		object-fit: cover;
+		height: 250px;
 	}
 	
 	.slide__media {
@@ -228,7 +251,6 @@
 		font-family: $baseFont;
 		font-size: $baseFontSize;
 		margin: auto;
-		padding: 10px 45px;
 		position: absolute;
 		width: 100%;
 		font-weight: $bold;
