@@ -15,3 +15,7 @@
 * [Creating a promo box](PROMO_BOX.md)
 
 * [Creating a quote box](QUOTE_BOX.md)
+
+* [Clearing Cache](CLEAR_CACHE.md)
+
+* [Social Media Links](SOCIAL_LINKS_FOOTER.md)
