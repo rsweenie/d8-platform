@@ -47,8 +47,11 @@ Quote box is a picture with text below often put on the sidebar of pages.
  - Quotes means there are blue quotes around the text and it is itallic. No quotes results in normal type.
 
 **Place the content**
-1.
-2.
+ 1. visit the page the promo box is to be on
+ 2. manage content -> entity block -> content -> search for the title you named the promo box in entity feild -> choose location ->save file
+ OR
+ 2. edit -> sidebar items -> select promo box, and add esxisting sidebar item -> type in title you chose -> click checkbox to left -> click add item
+ 3. save
 
 ## Keywords
 
