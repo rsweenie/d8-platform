@@ -11418,7 +11418,140 @@ li.active.last_active.great_grandchild_class a:before {
 }
 
 /* line 3, ../sass/custom/_slide.scss */
-.slick-slider button {
+#slick-views-slick-slideshow-block-1-1-slider img {
+  margin-bottom: 0;
+}
+/* line 7, ../sass/custom/_slide.scss */
+#slick-views-slick-slideshow-block-1-1-slider .slick__arrow .slick-arrow {
+  border: 0;
+  border-radius: 50%;
+  font-size: 0;
+  height: 42px;
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 42px;
+}
+/* line 20, ../sass/custom/_slide.scss */
+#slick-views-slick-slideshow-block-1-1-slider .slick__arrow .slick-prev {
+  left: -25px;
+}
+/* line 23, ../sass/custom/_slide.scss */
+#slick-views-slick-slideshow-block-1-1-slider .slick__arrow [dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+/* line 29, ../sass/custom/_slide.scss */
+#slick-views-slick-slideshow-block-1-1-slider .slick__arrow .slick-next {
+  right: -25px;
+}
+/* line 33, ../sass/custom/_slide.scss */
+#slick-views-slick-slideshow-block-1-1-slider .slick__arrow [dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+/* line 40, ../sass/custom/_slide.scss */
+.slick__arrow {
+  top: 90%;
+  /** Keeps decent fallback for when slick-theme.css is disabled, even if dup. */
+}
+/* line 43, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev {
+  left: 0;
+}
+/* line 47, ../sass/custom/_slide.scss */
+.slick__arrow .slick-next {
+  right: 0;
+}
+/* line 51, ../sass/custom/_slide.scss */
+.slick__arrow .slick__arrow {
+  bottom: auto;
+  height: 2px;
+  left: 0;
+  margin-top: -1px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 2;
+}
+/* line 66, ../sass/custom/_slide.scss */
+.slick__arrow .slick-arrow:active,
+.slick__arrow .slick-arrow:focus {
+  box-shadow: none;
+  outline: 0;
+}
+/* line 72, ../sass/custom/_slide.scss */
+.slick__arrow .slick-arrow::before,
+.slick__arrow .slick-arrow::after {
+  pointer-events: none;
+}
+/* line 77, ../sass/custom/_slide.scss */
+.slick__arrow .slick-arrow::before {
+  color: #ff6d2c;
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+/* line 83, ../sass/custom/_slide.scss */
+.slick__arrow .slick-arrow:hover::before {
+  color: #37465b;
+}
+/* line 87, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev, .slick__arrow .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/* line 111, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev:hover,
+.slick__arrow .slick-prev:focus,
+.slick__arrow .slick-next:hover,
+.slick__arrow .slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+/* line 120, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev:hover:before,
+.slick__arrow .slick-prev:focus:before,
+.slick__arrow .slick-next:hover:before,
+.slick__arrow .slick-next:focus:before {
+  opacity: 1;
+}
+/* line 127, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev.slick-disabled:before,
+.slick__arrow .slick-next.slick-disabled:before {
+  opacity: .25;
+}
+/* line 133, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev:before,
+.slick__arrow .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 152, ../sass/custom/_slide.scss */
+.slick__arrow button {
   background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
   bottom: 0;
   height: 44px;
@@ -11428,41 +11561,69 @@ li.active.last_active.great_grandchild_class a:before {
   width: 44px;
   z-index: 1;
 }
-/* line 13, ../sass/custom/_slide.scss */
-.slick-slider button::before {
+/* line 162, ../sass/custom/_slide.scss */
+.slick__arrow button::before {
   display: none;
 }
 @media all and (max-width: 900px) {
-  /* line 3, ../sass/custom/_slide.scss */
-  .slick-slider button {
+  /* line 152, ../sass/custom/_slide.scss */
+  .slick__arrow button {
     bottom: -5px;
   }
 }
-/* line 22, ../sass/custom/_slide.scss */
-.slick-slider .slick-prev,
-.slick-slider .slick-next {
+/* line 172, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev,
+.slick__arrow .slick-next {
   bottom: -21px;
 }
-/* line 27, ../sass/custom/_slide.scss */
-.slick-slider .slick-prev,
-.slick-slider .slick-prev:hover,
-.slick-slider .slick-prev:focus {
+/* line 177, ../sass/custom/_slide.scss */
+.slick__arrow .slick-prev,
+.slick__arrow .slick-prev:hover,
+.slick__arrow .slick-prev:focus {
   background: url(/themes/custom/cu2017/images/png/left-white-arrows.png) no-repeat;
   background-position: 14px 11px;
   border: 0;
   outline: none;
 }
-/* line 37, ../sass/custom/_slide.scss */
-.slick-slider .slick-next,
-.slick-slider .slick-next:hover,
-.slick-slider .slick-next:focus {
+/* line 187, ../sass/custom/_slide.scss */
+.slick__arrow .slick-next,
+.slick__arrow .slick-next:hover,
+.slick__arrow .slick-next:focus {
   background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
   background-position: 18px 11px;
   outline: none;
   right: 0;
 }
 
-/* line 49, ../sass/custom/_slide.scss */
+/* line 196, ../sass/custom/_slide.scss */
+.slide__caption {
+  margin-top: -80px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+@media (min-width: 64em) {
+  /* line 196, ../sass/custom/_slide.scss */
+  .slide__caption {
+    padding: 10px 40px;
+    position: absolute;
+    bottom: 0;
+    top: unset;
+  }
+}
+
+@media (min-width: 64em) {
+  /* line 208, ../sass/custom/_slide.scss */
+  .slick img {
+    height: 250px;
+  }
+}
+
+/* line 214, ../sass/custom/_slide.scss */
+.slide__media {
+  z-index: -1;
+}
+
+/* line 224, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text {
   background: rgba(0, 0, 0, 0.75);
   bottom: 0;
@@ -11475,7 +11636,7 @@ li.active.last_active.great_grandchild_class a:before {
   width: 100%;
   font-weight: 700;
 }
-/* line 61, ../sass/custom/_slide.scss */
+/* line 236, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text a {
   -webkit-transition: color, 0.2s;
   -o-transition: color, 0.2s;
@@ -11489,29 +11650,29 @@ li.active.last_active.great_grandchild_class a:before {
   position: relative;
   text-decoration: underline;
 }
-/* line 72, ../sass/custom/_slide.scss */
+/* line 247, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text a li {
   list-style: none;
 }
-/* line 77, ../sass/custom/_slide.scss */
+/* line 252, ../sass/custom/_slide.scss */
 .slide_wrapper .slide_text p {
   margin-bottom: 0;
 }
-/* line 82, ../sass/custom/_slide.scss */
+/* line 257, ../sass/custom/_slide.scss */
 .slide_wrapper .slick-list {
   width: 100%;
 }
 
-/* line 88, ../sass/custom/_slide.scss */
+/* line 263, ../sass/custom/_slide.scss */
 .inline_slide_wrapper .slide_image_wrapper img {
   margin-bottom: 0;
 }
-/* line 90, ../sass/custom/_slide.scss */
+/* line 265, ../sass/custom/_slide.scss */
 .col-md-12 .inline_slide_wrapper .slide_image_wrapper img, .col-md-9 .inline_slide_wrapper .slide_image_wrapper img {
   height: 350px;
   object-fit: cover;
 }
-/* line 94, ../sass/custom/_slide.scss */
+/* line 269, ../sass/custom/_slide.scss */
 .col-md-8 .inline_slide_wrapper .slide_image_wrapper img {
   height: 250px;
   object-fit: cover;
