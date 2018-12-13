@@ -13,7 +13,7 @@ field_name: field_tabbed_accordion
 entity_type: node
 bundle: content_page
 label: Tabbed/Accordion
-description: ''
+description: 'Please note: the content entered or edited here may appear on other pages. Any changes or deletions made here may impact other pages.'
 required: false
 translatable: false
 default_value: {  }

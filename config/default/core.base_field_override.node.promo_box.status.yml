@@ -1,0 +1,22 @@
+uuid: ee6e3a3e-3c43-4c26-8813-1fd6d40a7d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.promo_box
+id: node.promo_box.status
+field_name: status
+entity_type: node
+bundle: promo_box
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
