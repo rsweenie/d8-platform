@@ -1,15 +1,13 @@
-uuid: f250ed9e-58e4-41f7-b0ea-f7b855f77634
+uuid: ac6e7a30-23cd-4916-99cc-39497fcfa360
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.profile
-_core:
-  default_config_hash: o40KVssabrtVq07x-PbaMXihut6IQUwsKZdD-7Y2mJI
-id: node.profile.status
+    - node.type.quote_box
+id: node.quote_box.status
 field_name: status
 entity_type: node
-bundle: profile
+bundle: quote_box
 label: Published
 description: ''
 required: false

@@ -4,16 +4,31 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - private_content
+    - scheduler
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+  private_content:
+    private: 1
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
 _core:
   default_config_hash: 5AsDVqV6GJtouT9uzuCiEP0ELgVw3IolsOwGun54p8U
 name: Slide
 type: slide
 description: 'Slides works in combination with the slideshow content type.'
-help: ''
-new_revision: false
+help: 'Please note: the content entered or edited here may appear on other pages. Any changes or deletions made here may impact other pages.'
+new_revision: true
 preview_mode: 0
 display_submitted: false

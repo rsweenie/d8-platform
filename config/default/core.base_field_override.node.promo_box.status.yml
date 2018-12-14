@@ -1,15 +1,13 @@
-uuid: f250ed9e-58e4-41f7-b0ea-f7b855f77634
+uuid: ee6e3a3e-3c43-4c26-8813-1fd6d40a7d2e
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.profile
-_core:
-  default_config_hash: o40KVssabrtVq07x-PbaMXihut6IQUwsKZdD-7Y2mJI
-id: node.profile.status
+    - node.type.promo_box
+id: node.promo_box.status
 field_name: status
 entity_type: node
-bundle: profile
+bundle: promo_box
 label: Published
 description: ''
 required: false

@@ -28,7 +28,7 @@ _core:
 name: 'Copy Box'
 type: copy_box
 description: 'A basic text block that may have pre-defined styles applied to it.'
-help: ''
-new_revision: false
+help: 'Please note: the content entered or edited here may appear on other pages. Any changes or deletions made here may impact other pages.'
+new_revision: true
 preview_mode: 1
 display_submitted: false

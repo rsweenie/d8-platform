@@ -1,16 +1,14 @@
-uuid: f250ed9e-58e4-41f7-b0ea-f7b855f77634
+uuid: 0ec6c809-0773-4450-9baa-87d369600cad
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.profile
-_core:
-  default_config_hash: o40KVssabrtVq07x-PbaMXihut6IQUwsKZdD-7Y2mJI
-id: node.profile.status
-field_name: status
+    - node.type.featured_links
+id: node.featured_links.promote
+field_name: promote
 entity_type: node
-bundle: profile
-label: Published
+bundle: featured_links
+label: 'Promoted to front page'
 description: ''
 required: false
 translatable: true
