@@ -4,17 +4,32 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - private_content
+    - scheduler
 third_party_settings:
   menu_ui:
     available_menus:
       - main
     parent: 'main:'
+  private_content:
+    private: 1
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
 _core:
   default_config_hash: bWfIJ2EiqixR1yuhixGh_kWk8BqhaW2JvT5xqVjzkSQ
 name: Profile
 type: profile
-description: ''
+description: 'A profile is used to provide a brief summary of a person.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false
