@@ -1,4 +1,4 @@
-```
+
 * Version: 1.0
 * Created: 12/13/2018 KLM
 * Last Updated: 12/13/2018
@@ -59,4 +59,4 @@ Quote box is a picture with text below often put on the sidebar of pages.
 
 *** For UCOM Documentation Only ***
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
-```
+
