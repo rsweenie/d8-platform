@@ -1,9 +1,9 @@
 # Front Page Classic: How-To
 
-* Version: 1.0
-* Created: 08/30/2018
-* Last Updated: 11/28/2018
-* Intended Audience: UCOM
+ Version: 1.0
+ Created: 08/30/2018
+ Last Updated: 11/28/2018
+ Intended Audience: UCOM
 
 ## Summary
 

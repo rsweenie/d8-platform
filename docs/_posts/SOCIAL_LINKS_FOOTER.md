@@ -1,4 +1,4 @@
-
+#Add or Edit social links in the footer
 * Version: 1.0
 * Created: 12/13/2018 KLM
 * Last Updated: 12/13/2018
