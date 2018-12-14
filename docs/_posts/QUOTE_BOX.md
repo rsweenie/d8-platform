@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
 #Create a Quote Box
 * Version: 1.0
 * Created: 12/13/2018 KLM
