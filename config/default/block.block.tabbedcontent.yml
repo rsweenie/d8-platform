@@ -9,7 +9,7 @@ _core:
 id: tabbedcontent
 theme: cu2017
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'entity_field:node:field_profile_tabbed_content'
 settings:

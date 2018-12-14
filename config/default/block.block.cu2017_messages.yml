@@ -11,7 +11,7 @@ _core:
 id: cu2017_messages
 theme: cu2017
 region: content
-weight: -50
+weight: -10
 provider: null
 plugin: system_messages_block
 settings:

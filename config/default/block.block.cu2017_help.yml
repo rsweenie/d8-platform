@@ -10,8 +10,8 @@ _core:
   default_config_hash: 0trM1yXNDM2LUbbIQQOlqOTm2mWjrFY8hR9wYHygAd8
 id: cu2017_help
 theme: cu2017
-region: help
-weight: -30
+region: content
+weight: -11
 provider: null
 plugin: help_block
 settings:
