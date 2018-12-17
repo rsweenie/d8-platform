@@ -19,3 +19,17 @@
 * [Clearing Cache](CLEAR_CACHE.md)
 
 * [Social Media Links](SOCIAL_LINKS_FOOTER.md)
+
+* [Header Alert](HEADER_ALERT.md)
+
+* [Content Page](CONTENT_PAGE.md)
+
+* [Tabs or Accordion](TABBED_ACCORDION.md)
+
+* [Copy box](COPY_BOX.md)
+
+
+{% for post in site.posts %}	
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>			
+{% endfor %}

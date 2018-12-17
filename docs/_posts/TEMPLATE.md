@@ -1,8 +1,8 @@
-```
+# Title of how to
 * Version: x.x
-* Created: mm/dd/yyyy
-* Last Updated: mm/dd/yyyy
-* Intended Audience: UCOM/DoIT
+* Created: xx/xx/xxxx
+* Last Updated: xx/xx/xxxx
+* Intended Audience: UCOM/ITILS
 
 ## Summary
 
@@ -34,4 +34,3 @@ Brief decription here
 
 *** For UCOM Documentation Only ***
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
-```

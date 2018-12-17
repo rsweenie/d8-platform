@@ -1,8 +1,8 @@
-```
-* Version: 1.0
-* Created: 11/27/2018 - KLM
-* Last Updated: Created: 11/27/2018
-* Intended Audience: UCOM
+#Create a featured content group
+ Version: 1.0
+ Created: 11/27/2018 - KLM
+ Last Updated: Created: 11/27/2018
+ Intended Audience: UCOM
 
 ## Summary
 
