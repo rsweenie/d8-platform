@@ -76,7 +76,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: PB-Placeholder-Story-Title
+      placeholder: ''
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
