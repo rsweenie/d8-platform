@@ -214,30 +214,39 @@
         .block-region-top{
             margin-top: -32px;
         }
+    }
+    #slick-views-slick-slideshow-block-1-1.slick.front_page_slide_wrapper {
         //START Slide info TODO..move?
-        .slide_wrapper{
                 height:100%;
-            .slide_image_wrapper{
+                
+                .slide__caption{
+                padding: 0;
+                margin-top: 0;
+                position: static;
                 height: 155px;
                 overflow: hidden;
-            }
-            .slide_text_wrapper{
                 background-color:#616161 !important;
                 padding-left: 20px;
-                .slide_text{
-                    position: relative;
-                    padding-left: 40px;
-                    h2{
-                        margin-top: 0;
-                        font-weight: 400;
-                    }
-                    a{
-                        font-weight: 400;
-                        font-weight: normal; 
+                .slide_text_wrapper{
+                    position: static;
+                    padding-top: 20px;
+                    padding-left: 0;
+                    .slide_text{
+                        margin-left: 0;
+                        position: relative;
+                        padding-left: 0;
+                        h2{
+                            margin-top: 0;
+                            font-weight: 400;
+                        }
+                        a{
+                            font-weight: 400;
+                            font-weight: normal; 
                     }
                 }
             }
         }
+    
         .new-arrows, .slick-arrow{
             display:none !important;
         }
@@ -254,10 +263,9 @@
     }   
 }
 
+
 @media (min-width: 481px) and (max-width: 768px){
-    .front-page-classic { 
-        //Slide info
-        .slideshow_wrapper {
+    #slick-views-slick-slideshow-block-1-1.slick.front_page_slide_wrapper {
             height: 256px;
             .slide_wrapper {
                 height: 256px;
@@ -269,11 +277,12 @@
                     }
                 }
                 .slide_text_wrapper {
+                    padding-left: 0;
                     max-width: $screen-tablet-max;
                     min-width: $screen-mobile-max; 
 
                     .slide_text{
-                        padding-left:40px;
+                        padding-left: 0;
                         h2{
                             margin-bottom: 0;
                         }
@@ -283,7 +292,7 @@
         }
         
         //END slide info
-        
+    .front-page-classic{   
         .featured_content_image {
             img{
                 display: flex;
@@ -306,9 +315,7 @@
 }
 
 @media (min-width:769px) and (max-width: 1050px){    
-    .front-page-classic {
-        // slide info
-        .slideshow_wrapper {
+    #slick-views-slick-slideshow-block-1-1.slick.front_page_slide_wrapper {
             height: 350px;
             margin-top: -1px;
             .slide_wrapper {
@@ -347,6 +354,7 @@
             height: 60px;
         }
         // END slide info
+    .front-page-classic{
         .first-content.col-md-8 {
             width: 100%;
         }
@@ -366,8 +374,7 @@
     }     
 }
 @media (min-width:1051px) and (max-width: 1300px){
-    .front-page-classic{
-            .slideshow_wrapper{
+    .front_page_slide_wrapper{
                 height:430px;
                 .slide_wrapper{
                     height:430px;
@@ -381,24 +388,19 @@
 
     }
     
-}
+
 @media (min-width:1300px){
-    .front-page-classic {
-        .slideshow_wrapper{
-            height:515px;
-            .slide_wrapper{
-                height:515px;
-                .slide_image_wrapper{
+    .slick.front_page_slide_wrapper{
                     img{
-                        height:515px !important;
+                        height:515px;
                         object-fit: cover;
                         width: 100%;
                     }
                 }
             }
-        }
+
         
-}
-}
+
+
 
 // front page ALTERNATE

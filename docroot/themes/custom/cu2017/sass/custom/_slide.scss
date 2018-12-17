@@ -1,7 +1,10 @@
 //slide size, slide text, typically inline slider use
-#slick-views-slick-slideshow-block-1-1-slider {
+#slick-views-slick-slideshow-block-1-1.slick.inline_slide_wrapper {
 	img {
 		margin-bottom: 0; // resets the margin bottom from "main article img"
+		object-fit: cover;
+		height: 250px;
+			
 	}
 	.slick__arrow {
 		.slick-arrow {
@@ -36,7 +39,7 @@
 			left: -25px;
 		}
 	  }
-	}
+	
 	.slick__arrow {
 		top: 92%;
 		
@@ -144,11 +147,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
-		  
-
 		button {
 			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
 			bottom: 0;
@@ -229,10 +227,8 @@
 		}
 
 	}
-	.slick img  {
-		object-fit: cover;
-		height: 250px;
-	}
+	
+
 	
 	.slide__media {
 		z-index: -1;
@@ -280,7 +276,7 @@
 		width: 100%;
 	}
 }
-.inline_slide_wrapper{
+
 	.slide_image_wrapper { 
 		img {
 			margin-bottom:0;
@@ -296,4 +292,28 @@
 	
 	}
 }
+.slide_text_wrapper{
+	
+	.slide_text {
 
+		a {
+			@include transition(color, 0.2s);
+			color: $white;
+			display: inline-block;
+			font-family: $condensedFont;
+			font-size: $baseFontSize;
+			font-weight: $bold;
+			letter-spacing: 1px;
+			position: relative;
+			text-decoration: underline;
+
+			li {
+				list-style: none;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
