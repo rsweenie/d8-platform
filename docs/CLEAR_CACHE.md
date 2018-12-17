@@ -1,8 +1,8 @@
-```
-* Version: 1.0
-* Created: 12/13/2018 KLM
-* Last Updated: 12/13/2018
-* Intended Audience: UCOM
+# Clearing Cache
+Version: 1.0
+Created: 12/13/2018 KLM
+Last Updated: 12/13/2018
+Intended Audience: UCOM
 
 ## Summary
 
@@ -37,6 +37,6 @@ Clearing Cache often is needed when content has been updated but is not sowing l
 
 * debugging
 
-*** For UCOM Documentation Only ***
+
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
-```
+
