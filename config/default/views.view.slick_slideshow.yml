@@ -64,15 +64,15 @@ display:
         type: slick
         options:
           vanilla: false
-          optionset: default
+          optionset: creighton_default
           skin: fullwidth
           layout: ''
           caption:
-            field_slide_caption: field_slide_caption
-            field_slide_link: field_slide_link
+            nothing: nothing
             title: '0'
+            field_slide_caption: '0'
+            field_slide_link: '0'
             field_slide_image: '0'
-            nothing: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_caption: ''
@@ -369,7 +369,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if is_front %}\r\n<div{{ attributes.addClass('clearfix', 'front_page_slide_wrapper') }}>\r\n{% else %}\r\n<div{{ attributes.addClass('clearfix', 'inline_slide_wrapper') }}>\r\n{% endif %}\r\n\r\n    {{ title_suffix.contextual_links }}\r\n    <div class=\"slide_wrapper\">\r\n        <div class=\"slide_image_wrapper\">  \r\n         {{ field_slide_image }}\r\n        </div>\r\n        <div class=\"slide_text_wrapper\">\r\n                <div class=\"slide_text\">\r\n                    {{ field_slide_caption }}\r\n                    {{ field_slide_link }}\r\n                </div>\r\n        </div>\r\n    </div>\r\n</div>"
+            text: "            <div class=\"slide_text_wrapper\">\r\n                <div class=\"slide_text\">\r\n                    {{ field_slide_caption }}\r\n                    {{ field_slide_link }}\r\n                </div>\r\n        </div>\r\n"
             make_link: false
             path: ''
             absolute: false
