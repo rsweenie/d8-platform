@@ -2,9 +2,7 @@
 #slick-views-slick-slideshow-block-1-1.slick.front_page_slide_wrapper {
 	//firefox adjustment
 	@-moz-document url-prefix() {
-		@include respond-to ( null, lg-tablet-max ) {
-			margin-top:-1px;
-		}
+		margin-top:-1px;
 	}
 	&.logged-in-slideshow{
 		margin-top:0px;
@@ -141,6 +139,7 @@
 		top: 90%;
 		.slick-arrow {
 			position: static;
+			margin-right: 20px;
 		}
 	}
 }
