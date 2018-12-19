@@ -1,3 +1,10 @@
+---
+layout: default
+title:  "Front Page Classic"
+categories: [Content]
+---
+
+{% include home.html %}
 # Front Page Classic: How-To
 
  Version: 1.0
@@ -87,5 +94,3 @@ The front page classic layout handles the styling without specific content types
 * front page
 * layout
 * panelizer
-
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)

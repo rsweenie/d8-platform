@@ -1,7 +1,13 @@
+---
+layout: default
+title:  "Content Page"
+categories: [Content]
+---
+{% include home.html %}
 # How to create and use a Content page
 * Version: 1.0
-* Created: 12/13/2018 KLM
-* Last Updated: 12/13/2018
+* Created: 12/19/2018 KLM
+* Last Updated: 12/19/2018
 * Intended Audience: UCOM
 
 ## Summary
@@ -32,6 +38,4 @@ Brief decription here
 
 * this word is key
 
-
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)
 

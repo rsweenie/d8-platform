@@ -1,7 +1,14 @@
-# Create and place copy box
+---
+layout: default
+title:  "Header Alert"
+categories: [Content]
+---
+{% include home.html %}
+
+# How to create and place a header alert
 * Version: 1.0
-* Created: 12/13/2018 KLM
-* Last Updated: 12/13/2018
+* Created: 12/19/2018 KLM
+* Last Updated: 12/19/2018
 * Intended Audience: UCOM
 
 ## Summary
@@ -31,7 +38,3 @@ Brief decription here
 ## Keywords
 
 * this word is key
-
-*** For UCOM Documentation Only ***
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)
-#Title of how to

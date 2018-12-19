@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Featured Content Group"
+categories: [Content]
+---
+{% include home.html %}
 #Create a featured content group
  Version: 1.0
  Created: 11/27/2018 - KLM
@@ -54,5 +60,4 @@ Brief decription here
 * featured content group
 * content
 
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)
-```
+

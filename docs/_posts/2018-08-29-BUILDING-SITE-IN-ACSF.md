@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "New Site in Acquia Cloud Site Factory"
+categories: [ACSF]
+---
+{% include home.html %}
 # Creating New Sites in Acquia Cloud Site Factory
 
 * Version: 1.1
@@ -20,4 +26,3 @@ Production: creighton.acsitefactory.com
 
 4. Click the `Create site` button at the bottom of the screen. `!caution` Coordinate with devs on this step: The site should now be staged to the dev and test environments for testing prior to launch, but care should be taken. Staging sites down to dev or test can wipe all sites currently in those environments and only copy down the sites selected for staging. More info on staging sites to non-production environments [here](https://docs.acquia.com/site-factory/workflow/staging/).
 
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)
