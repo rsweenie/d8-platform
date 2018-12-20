@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Views &amp; Blocks</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Views &amp; Blocks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Home" />
+<meta property="og:description" content="Home" />
+<link rel="canonical" href="http://localhost:4000/views-blocks" />
+<meta property="og:url" content="http://localhost:4000/views-blocks" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-29T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Home","@type":"BlogPosting","url":"http://localhost:4000/views-blocks","headline":"Views &amp; Blocks","dateModified":"2018-08-29T00:00:00-05:00","datePublished":"2018-08-29T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/views-blocks"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="">View on GitHub</a>
+
+          <h1 id="project_title"></h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <nav>
+  <a href="/">Home</a>  
+  
+</nav>
+
+<h1 id="views--blocks">Views &amp; Blocks</h1>
+
+<ul>
+  <li>Version: 1.0</li>
+  <li>Created: 08/29/2018</li>
+  <li>Last Updated: 08/29/2018</li>
+  <li>Intended Audience: UCOM/DoIT</li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+
+<p>Configuration management procedures for creating and modifying views and blocks in D8</p>
+
+<h2 id="procedure">Procedure</h2>
+
+<h3 id="ucom">UCOM</h3>
+
+<ol>
+  <li>Create/modify view or block.</li>
+  <li>Determine if it should be available on a single site, or should be made available to all sites on the D8 platform.</li>
+  <li>Coordinate with web developers. They will need to know the name of the view or block, and whether it should be made available on all sites, or should only be available on a single site.</li>
+</ol>
+
+<h3 id="doit">DoIT</h3>
+
+<h4 id="if-the-blockview-should-only-be-available-to-a-single-site">If the block/view should only be available to a single site</h4>
+
+<ol>
+  <li>Go to Configuration &gt; Development &gt; Configuration Synchronization.</li>
+  <li>Go to the Ignore tab.</li>
+  <li>If config_ignore.settings is not already in the list of ignored configuration files, add it.</li>
+  <li>Add the view/block configuration file to the list of ignored configuration files.</li>
+  <li>Save.</li>
+</ol>
+
+<h4 id="if-the-blockview-should-be-available-to-all-sites-on-the-d8-platform">If the block/view should be available to all sites on the D8 platform</h4>
+
+<ol>
+  <li>Run <code class="highlighter-rouge">drush @[siteName].[env] config:status</code> to ensure that the config export won’t be exporting file changes we don’t want to apply to the entire platform.</li>
+  <li>Keep any unwanted files listed in the config status from being exported by putting the file names on the Ignore tab under Configuration &gt; Development &gt; Configuration Synchronization.</li>
+  <li>Run <code class="highlighter-rouge">drush @[siteName].[env] cex</code>.</li>
+  <li>Pull the changes to your local environment using <code class="highlighter-rouge">drush cpull @[siteName].[env] @self</code>.</li>
+  <li>Commit the changes to version control.</li>
+</ol>
+
+<h2 id="keywords">Keywords</h2>
+
+<ul>
+  <li>view</li>
+  <li>block</li>
+  <li>configuration</li>
+</ul>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>

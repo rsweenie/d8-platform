@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Social Links"
+categories: [Block]
+---
+{% include home.html %}
 #Add or Edit social links in the footer
 * Version: 1.0
 * Created: 12/13/2018 KLM
@@ -40,6 +46,4 @@ a. if change doesn't take effect try clearing cache
 
 * this word is key
 
-*** For UCOM Documentation Only ***
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)
 

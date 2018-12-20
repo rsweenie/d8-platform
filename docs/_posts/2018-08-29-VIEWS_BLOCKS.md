@@ -1,3 +1,10 @@
+---
+layout: default
+title:  "Views & Blocks"
+categories: [Views, Block]
+---
+{% include home.html %}
+
 # Views & Blocks
 
 * Version: 1.0
@@ -35,15 +42,8 @@ Configuration management procedures for creating and modifying views and blocks 
 4. Pull the changes to your local environment using `drush cpull @[siteName].[env] @self`.
 5. Commit the changes to version control.
 
-<!-- ## See Also
-
-* thing 1
-* thing 2 -->
-
 ## Keywords
 
 * view
 * block
 * configuration
-
-[Home](https://cu-webteam.github.io/d8-platform/UCOM)
