@@ -7,18 +7,20 @@ categories: [Content]
 #Create a featured content group
  Version: 1.0
  Created: 11/27/2018 - KLM
- Last Updated: Created: 11/27/2018
+ Last Updated: Created: 12/20/2018
  Intended Audience: UCOM
 
 ## Summary
 
-Brief decription here
+Featured content group is often three items that each contain an image a blue background content and sub links.
+![Featured Content example](images/featured_content_example.png "Featured Content Example")
 
 ## Prerequisites
 
- 1. First prerequisite
- 2. Second prerequisite
- 3. Third prerequisite
+ 1. access to subdomain
+ 2. Content
+ 3. Images
+ 4. links
 
 ## Procedure
 
@@ -49,11 +51,6 @@ Brief decription here
     >> Create Node _required_ saves your input
     * you can then add featured content item to create more and fill them out, or click save.
 
-    * [Link to google](http://www.google.com)
-
-## See Also
-
-* N/A
 
 ## Keywords
 
