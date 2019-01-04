@@ -52,6 +52,7 @@ content:
       field_widget_display_settings:
         view_mode: default
       open: false
+      field_widget_replace: false
     region: content
     third_party_settings: {  }
   field_quote_box_quote_text:
@@ -77,10 +78,14 @@ content:
       label_plural: Links
       collapsible: false
       collapsed: false
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: browse_content
-    type: inline_entity_form_simple
+    type: inline_entity_form_complex
     region: content
   moderation_state:
     type: moderation_state_default
