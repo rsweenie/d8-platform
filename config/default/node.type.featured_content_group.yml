@@ -29,6 +29,6 @@ name: 'Featured Content Group'
 type: featured_content_group
 description: 'One or more featured content items that will have the same orientation and display in a group.'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false
