@@ -28,6 +28,7 @@ dependencies:
     - inline_entity_form
     - metatag
     - path
+    - private_content
     - scheduler
     - text
 _core:
@@ -70,6 +71,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_sidebar_items
@@ -96,6 +100,7 @@ content:
       field_widget_display_settings:
         view_mode: thumbnail
       open: false
+      field_widget_replace: false
     region: content
     third_party_settings: {  }
   field_meta_tags:
@@ -114,6 +119,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_slideshow
@@ -129,6 +137,9 @@ content:
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_tabbed_accordion
@@ -149,10 +160,9 @@ content:
   private:
     weight: 10
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: private
   publish_on:
     type: datetime_timestamp_no_default
     weight: 16
@@ -177,7 +187,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'CP - Title of content page'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

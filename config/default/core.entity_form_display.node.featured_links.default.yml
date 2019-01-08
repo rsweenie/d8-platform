@@ -73,7 +73,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: 'What do you want to call this featured link?'
+      placeholder: 'FL - Title of featured link'
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

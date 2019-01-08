@@ -135,7 +135,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'HA - Title of header alert'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
