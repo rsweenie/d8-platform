@@ -1,5 +1,5 @@
-status: '3'
-pattern: HA-
+status: '0'
+pattern: ''
 php: 0
 escape: 0
 dependencies:
