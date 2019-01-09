@@ -31,7 +31,7 @@ third_party_settings:
     enable: true
     custom: true
     allow: true
-    default: default
+    default: slick_slider
     displays:
       default:
         blocks:
@@ -48,7 +48,7 @@ third_party_settings:
               weight: 0
               region: left
             region: main
-            weight: 1
+            weight: 0
             context_mapping:
               entity: '@panelizer.entity_context:entity'
           17c65162-1305-4bf9-9c25-f49d7272b1f6:
@@ -64,7 +64,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: main
-            weight: 2
+            weight: 1
             context_mapping:
               entity: '@panelizer.entity_context:entity'
           3b5e7f6c-c81b-4e23-973f-abb04c965fdf:
@@ -80,9 +80,21 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: main
-            weight: -1
+            weight: 2
             context_mapping:
               entity: '@panelizer.entity_context:entity'
+          c68b519d-884a-40f8-a7fa-fe3e7781a73e:
+            id: 'views_block:slick_slideshow-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: main
+            weight: -1
+            uuid: c68b519d-884a-40f8-a7fa-fe3e7781a73e
+            context_mapping:
+              nid: '@panelizer.entity_context:entity'
         id: panels_variant
         label: Default
         weight: 0
@@ -95,6 +107,65 @@ third_party_settings:
         pattern: panelizer
         static_context: {  }
         uuid: 94ccb712-41ca-4b30-9266-727f614efcab
+      slick_slider:
+        blocks:
+          29dfb971-b168-4612-8a78-27d9967cb492:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: content
+            weight: 0
+            uuid: 29dfb971-b168-4612-8a78-27d9967cb492
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          5d5d8583-eb3b-42a2-9dcf-689f7bd7e91d:
+            id: 'views_block:slick_slideshow-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: content
+            weight: -1
+            uuid: 5d5d8583-eb3b-42a2-9dcf-689f7bd7e91d
+            context_mapping:
+              nid: '@panelizer.entity_context:entity'
+          20089067-a37a-4004-ae8a-02e58bc7de66:
+            id: 'entity_field:node:field_tabbed_accordion'
+            label: Tabbed/Accordion
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: entity_reference_entity_view
+              settings:
+                view_mode: default
+              third_party_settings: {  }
+              weight: 0
+            region: content
+            weight: 1
+            uuid: 20089067-a37a-4004-ae8a-02e58bc7de66
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        uuid: 37211fa3-0a5d-40c6-af44-3e38786579fe
+        label: 'Slick Slider'
+        weight: 0
+        layout: layout_onecol
+        layout_settings: {  }
+        page_title: ''
+        storage_type: panelizer_default
+        storage_id: 'node:content_page:default:slick_slider'
+        pattern: panelizer
+        builder: ipe
+        static_context: {  }
 _core:
   default_config_hash: QWXZglEMUYMMNNdDX3qkoDJjRdlxHtNEeHiYzb0WKIk
 id: node.content_page.default

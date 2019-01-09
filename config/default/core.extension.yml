@@ -85,7 +85,6 @@ module:
   lightning_media_document: 0
   lightning_media_image: 0
   lightning_media_instagram: 0
-  lightning_media_slideshow: 0
   lightning_media_twitter: 0
   lightning_media_video: 0
   lightning_scheduler: 0
@@ -145,6 +144,8 @@ module:
   simple_oauth_extras: 0
   slick: 0
   slick_entityreference: 0
+  slick_ui: 0
+  slick_views: 0
   social_media_links: 0
   social_media_links_field: 0
   system: 0

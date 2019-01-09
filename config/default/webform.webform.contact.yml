@@ -34,6 +34,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -123,6 +124,10 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  form_login: false
+  form_login_message: ''
+  submission_login: false
+  submission_login_message: ''
 access:
   create:
     roles:
@@ -166,6 +171,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_confirmation:
     id: email
@@ -191,7 +200,6 @@ handlers:
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
-      exclude_empty_checkbox: false
       html: true
       attachments: false
       twig: false
@@ -200,7 +208,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme_name: ''
+      exclude_empty_checkbox: false
   email_notification:
     id: email
     label: 'Email notification'
@@ -225,7 +233,6 @@ handlers:
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
-      exclude_empty_checkbox: false
       html: true
       attachments: false
       twig: false

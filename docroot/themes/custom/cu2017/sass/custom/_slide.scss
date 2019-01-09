@@ -1,5 +1,163 @@
 //slide size, slide text, typically inline slider use
-	.slick-slider {
+#slick-views-slick-slideshow-block-1-1{
+	.slide__constrained{
+		margin-left: unset;
+		width: 100%;
+		left: unset;
+		height: unset;
+		min-height: unset;
+		padding-top: 0;
+		position: static;
+	}
+}
+#slick-views-slick-slideshow-block-1-1.slick.inline_slide_wrapper {
+	img {
+		margin-bottom: 0; // resets the margin bottom from "main article img"
+		object-fit: cover;
+		height: 250px;
+			
+	}
+	.slick__arrow {
+		.slick-arrow {
+		border: 0;
+		border-radius: 50%;
+		font-size: 0;
+		height: 42px;
+		pointer-events: auto;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		width: 42px;
+		}
+
+		.slick-prev {
+			left: -25px;
+		}
+		[dir='rtl'] .slick-prev {
+			right: -25px;
+			left: auto;
+		}
+	
+
+		.slick-next
+		{
+			right: -25px;
+		}
+		[dir='rtl'] .slick-next
+		{
+			right: auto;
+			left: -25px;
+		}
+	  }
+	
+	.slick__arrow {
+		top: 92%;
+		
+		.slick-prev {
+			left: 0;
+		  }
+		  
+		  .slick-next {
+			right: 0;
+		  }
+		  
+		  .slick__arrow {
+			bottom: auto;
+			height: 2px;
+			left: 0;
+			margin-top: -1px;
+			pointer-events: none;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			z-index: 2;
+		  }
+		  
+		  /** Keeps decent fallback for when slick-theme.css is disabled, even if dup. */
+		  
+		  
+		  .slick-arrow:active,
+		  .slick-arrow:focus {
+			box-shadow: none;
+			outline: 0;
+		  }
+		  
+		  .slick-arrow::before,
+		  .slick-arrow::after {
+			pointer-events: none;
+		  }
+		  
+		  .slick-arrow::before {
+			color: #ff6d2c;
+			font-size: 36px;
+			font-size: 2.25rem;
+		  }
+		  
+		  .slick-arrow:hover::before {
+			color: #37465b;
+		  }
+		  
+		  .slick-prev, .slick-next
+			{
+				font-size: 0;
+				line-height: 0;
+
+				position: absolute;
+				top: 50%;
+
+				display: block;
+
+				width: 50px;
+				height: 50px;
+				padding: 0;
+				-webkit-transform: translate(0, -50%);
+				-ms-transform: translate(0, -50%);
+				transform: translate(0, -50%);
+
+				cursor: pointer;
+
+				color: transparent;
+				border: none;
+				outline: none;
+				background: transparent;
+			}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 		button {
 			background: url(/themes/custom/cu2017/images/front-page/slider-arrows.png) no-repeat;
 			bottom: 0;
@@ -18,6 +176,7 @@
 				bottom: -5px;
 			}
 		}
+
 		
 		.slick-prev,
 		.slick-next {
@@ -27,8 +186,8 @@
 		.slick-prev,
 		.slick-prev:hover,
 		.slick-prev:focus {
-			background: url(/themes/custom/cu2017/images/png/left-white-arrows.png) no-repeat;
-			background-position: 14px 11px;
+			background: url(/themes/custom/cu2017/images/png/left-white-arrows.png)no-repeat;
+			background-position: center;
 			border: 0;
 			// left: 0;
 			outline: none;
@@ -38,10 +197,56 @@
 		.slick-next:hover,
 		.slick-next:focus {
 			background: url(/themes/custom/cu2017/images/png/white-arrow.png) no-repeat;
-			background-position: 18px 11px;
+			background-position: center;
 			outline: none;
 			right: 0;
 		}
+	}
+	.slide__caption {
+		margin-top: -80px;
+		background-color: $backgroundBlack; 
+		padding: 10px 45px;
+		position: absolute;
+		bottom: 0;
+		top: unset;
+		
+
+		.slide_text {
+			color: $white;
+			font-family: $baseFont;
+			font-size: $baseFontSize;
+			font-weight: $bold;
+			bottom: 0;
+
+			a {
+				@include transition(color, 0.2s);
+				color: $white;
+				font-family: $condensedFont;
+				display: inline-block;
+				letter-spacing: 1px;
+				position: relative;
+				text-decoration: underline;
+	
+				&:hover {
+					color: $white;
+				}
+			}
+			p {
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+	
+
+	
+	.slide__media {
+		z-index: -1;
+	}
+.slick__slide {
+		
+
 	}
 
 .slide_wrapper{
@@ -53,7 +258,6 @@
 		font-family: $baseFont;
 		font-size: $baseFontSize;
 		margin: auto;
-		padding: 10px 45px;
 		position: absolute;
 		width: 100%;
 		font-weight: $bold;
@@ -83,7 +287,7 @@
 		width: 100%;
 	}
 }
-.inline_slide_wrapper{
+
 	.slide_image_wrapper { 
 		img {
 			margin-bottom:0;
@@ -97,5 +301,31 @@
 			}
 		}
 	
+	}
+	
+}
+.slide_text_wrapper{
+	
+	.slide_text {
+
+		a {
+			@include transition(color, 0.2s);
+			color: $white;
+			display: inline-block;
+			font-family: $condensedFont;
+			font-size: $baseFontSize;
+			font-weight: $bold;
+			letter-spacing: 1px;
+			position: relative;
+			text-decoration: underline;
+
+			li {
+				list-style: none;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+		}
 	}
 }
