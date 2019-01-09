@@ -9,7 +9,7 @@ _core:
 id: cu2017_local_tasks
 theme: cu2017
 region: content
-weight: -11
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

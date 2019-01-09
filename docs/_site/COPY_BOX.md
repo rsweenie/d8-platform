@@ -1,8 +1,8 @@
-```
-* Version: x.x
-* Created: mm/dd/yyyy
-* Last Updated: mm/dd/yyyy
-* Intended Audience: UCOM/DoIT
+# Create and place copy box
+* Version: 1.0
+* Created: 12/13/2018 KLM
+* Last Updated: 12/13/2018
+* Intended Audience: UCOM
 
 ## Summary
 
@@ -34,4 +34,4 @@ Brief decription here
 
 *** For UCOM Documentation Only ***
 [Home](https://cu-webteam.github.io/d8-platform/UCOM)
-```
+#Title of how to

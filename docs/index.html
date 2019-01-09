@@ -1,0 +1,15 @@
+---
+layout: default
+title:  "home"
+---
+<h1>Home</h1>
+<p>Below is an ongoing list of How to's for the d8 platform.  To ease in finding there are category buckets, but some documentation fits multiple buckets.</p>
+
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}

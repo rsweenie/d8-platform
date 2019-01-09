@@ -2,8 +2,8 @@
 
 This project encompasses the Drupal 8 multisite platform for Creighton University marketing sites.
 
-* [End User Documentation](https://cu-webteam.github.io/d8-platform/)
-* [Web Team Documentation](https://github.com/cu-webteam/d8-platform/wiki)
+* [UCOM focused Documentation](https://cu-webteam.github.io/d8-platform/)
+* [Dev Team Documentation](https://github.com/cu-webteam/d8-platform/wiki)
 
 [![Travis (.com)](https://img.shields.io/travis/cu-webteam/d8-platform.svg)](https://travis-ci.com/cu-webteam/d8-platform)
 

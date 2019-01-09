@@ -1,0 +1,22 @@
+uuid: e23b8fee-6622-4d05-a782-a6501fc5c175
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.copy_box
+id: node.copy_box.status
+field_name: status
+entity_type: node
+bundle: copy_box
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

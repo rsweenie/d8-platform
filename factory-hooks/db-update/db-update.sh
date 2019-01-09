@@ -18,30 +18,33 @@ db_role="$3"
 domain="$4"
 
 # BLT executable:
-blt="/var/www/html/$site.$env/vendor/acquia/blt/bin/blt"
+blt="/mnt/www/html/$site.$env/vendor/acquia/blt/bin/blt"
 
 # You need the URI of the site factory website in order for drush to target that
 # site. Without it, the drush command will fail. Use the uri.php file provided by the acsf module to
 # locate the URI based on the site, environment and db role arguments.
 uri=`/usr/bin/env php /mnt/www/html/$site.$env/hooks/acquia/uri.php $site $env $db_role`
 
-# Print a statement to the cloud log.
-echo "$site.$target_env: Running BLT deploy tasks on $uri domain in $env environment on the $site subscription."
-
+# Create array with site name fragments from ACSF uri.
 IFS='.' read -a name <<< "${uri}"
 
-# Set Drush cache to local ephemeral storage to avoid race conditions. This is
-# done on a per site basis to completely avoid race conditions.
-# @see https://github.com/acquia/blt/pull/2922
-export DRUSH_PATHS_CACHE_DIRECTORY=/tmp/.drush/${db_role}
+# Create and set Drush cache to unique local temporary storage per site.
+# This approach isolates drush processes to completely avoid race conditions
+# that persist after initial attempts at addressing in BLT: https://github.com/acquia/blt/pull/2922
 
-$blt drupal:update --environment=$env --site=${name[0]} --define drush.uri=$domain --verbose --yes
+cacheDir=`/usr/bin/env php /mnt/www/html/$site.$env/vendor/acquia/blt/scripts/blt/drush/cache.php $site $env $uri`
 
-siteName="${uri%%.*}"
+# Print to cloud task log.
+echo "Generated temporary drush cache directory: $cacheDir."
 
-# Config import any changes just pushed to the code base
-echo "Running config import on $siteName"
-eval /mnt/www/html/creighton$env/vendor/bin/drush @self cim -y --uri=$siteName.creighton.acsitefactory.com --no-interaction -v --ansi
+# Print to cloud task log.
+echo "Running BLT deploy tasks on $uri domain in $env environment on the $site subscription."
 
-# Push a notification to the #d8_site_updates channel on slack
-curl -X POST -H "Content-type: application/json" --data "{\"text\":\"Code updated on $siteName.$env\"}" https://hooks.slack.com/services/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
+# Replace all "/" characters with ".", because as of Drush 9.5, Drush will
+# truncate the string at "/". This Drush behavior prevents ACSF sites from defining
+# domains with site path suffixes. E.g., "www.example.com/site-path" which
+# would be translated a sites.php entry with the key "www.example.com.site-path"
+# in a browser-based request, cannot be used via drush without first replacing the "/".
+drush_uri=$(echo ${domain} | sed -r 's/[/]+/./g')
+
+DRUSH_PATHS_CACHE_DIRECTORY=$cacheDir $blt drupal:update --environment=$env --site=${name[0]} --define drush.uri=$drush_uri --verbose --yes --no-interaction

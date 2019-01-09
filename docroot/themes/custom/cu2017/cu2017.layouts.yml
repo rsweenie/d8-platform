@@ -124,4 +124,24 @@ front_page_classic:
       label: bottom callout
     bottom_feed:
       label: bottom feed
-    
+four_grid:
+  label: Four Grid page
+  category: Creighton Layouts
+  template: templates/four-grid
+  path: templates/layouts/icons
+  icon: 9-three-section-split-preview.png
+  regions:
+    top:
+      label: Top
+    first_content:
+      label: First Content
+    ctas:
+      label: Calls to Action
+    column_one_content:
+      label: first column content
+    column_two_content:
+      label: second column content
+    column_three_content:
+      label: third column content
+    column_four_content:
+      label: fourth column content

@@ -55,7 +55,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'CB - Title of copy box'
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
