@@ -26,10 +26,17 @@
         max-width: $maxContentWidth;
         margin: 0 auto;
         padding-left: 28px;
+        @include respond-to(null, mobile-max){
+            padding-left:10px;
+        }
     }
+
 
     .block-region-ctas {
         padding: 30px; 
+        @include respond-to(null, mobile-max){
+            padding-top:30px;
+        }
     }
 
     > div:nth-child(3n), #row_5 {
