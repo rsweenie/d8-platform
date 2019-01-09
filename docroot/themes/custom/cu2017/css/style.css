@@ -13988,7 +13988,7 @@ article.news .news_date {
 @media all and (max-width: 480px) {
   /* line 25, ../sass/custom/_frontpage.scss */
   .front-page-classic > div:not(:first-child) {
-    padding-left: 10px;
+    padding-left: 0;
   }
 }
 /* line 35, ../sass/custom/_frontpage.scss */

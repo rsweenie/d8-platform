@@ -27,7 +27,7 @@
         margin: 0 auto;
         padding-left: 28px;
         @include respond-to(null, mobile-max){
-            padding-left:10px;
+            padding-left:0;
         }
     }
 
