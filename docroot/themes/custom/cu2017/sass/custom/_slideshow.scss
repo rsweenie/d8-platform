@@ -82,11 +82,14 @@
 			background: transparent !important;
 			max-width: $maxContentWidth;
 			margin: 0 auto;
-			padding-left: 42px;
 			position: relative;
 			top: -4%;
+			
+			}
 			.slide_text{
 				background: transparent !important;
+				@include respond-to( slider-1390-hack , null){
+					margin-left:42px;
 			}
 			h1{
 				color: $yellow;
