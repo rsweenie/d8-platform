@@ -26,10 +26,17 @@
         max-width: $maxContentWidth;
         margin: 0 auto;
         padding-left: 28px;
+        @include respond-to(null, mobile-max){
+            padding-left:0;
+        }
     }
+
 
     .block-region-ctas {
         padding: 30px; 
+        @include respond-to(null, mobile-max){
+            padding: 30px 0 0 0;
+        }
     }
 
     > div:nth-child(3n), #row_5 {
@@ -226,7 +233,7 @@
             height: 155px;
             overflow: hidden;
             background-color:#616161 !important;
-            padding-left: 20px;
+            padding-left: 15px;
             .slide_text_wrapper{
                 position: static;
                 padding-top: 20px;
