@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "How to create and use a Slideshow"
+title:  "Slideshow"
 categories: [Content] 
 ---
 {% include home.html %}
