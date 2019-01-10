@@ -4,6 +4,8 @@ $screen-tablet-max: 768px;
 $screen-lg-tablet-min: ($screen-tablet-max + 1);
 $screen-lg-tablet-max: 1050px;
 $screen-desktop-min: ($screen-lg-tablet-max + 1);
+$slider-1300: 1300px;
+$slider-1390-hack: 1390px;
 
 $breakpoints: (
 	'mobile-max': $screen-mobile-max,
@@ -11,7 +13,9 @@ $breakpoints: (
 	'tablet-max': $screen-tablet-max,
 	'lg-tablet-min': $screen-lg-tablet-min,
 	'lg-tablet-max': $screen-lg-tablet-max,
-	'desktop-min': $screen-desktop-min
+	'desktop-min': $screen-desktop-min,
+	'slider-1300': $slider-1300,
+	'slider-1390-hack': $slider-1390-hack,
 );
 
 @mixin respond-to($min-breakpoint, $max-breakpoint) {
