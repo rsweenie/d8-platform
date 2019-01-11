@@ -1,41 +1,63 @@
 ---
 layout: default
-title:  "what content covers ex: Copy Box"
-categories: [Content, ACSF, Block, Process, Views] 
+title:  "Spotlight"
+categories: [Content] 
 <!-- delete catigories that don't apply -->
 ---
 {% include home.html %}
-# Title of how to
-* Version: x.x
-* Created: xx/xx/xxxx
-* Last Updated: xx/xx/xxxx
-* Intended Audience: UCOM/ITILS
+# How to create a spotlight
+* Version: 1.0
+* Created: 01/11/2019 klm
+* Last Updated: 01/11/2019
+* Intended Audience: UCOM
 
 ## Summary
 
-Brief decription here
+
 
 ## Prerequisites
 
- 1. First prerequisite
- 2. Second prerequisite
- 3. Third prerequisite
+ 1. Access to subdomain
+ 2. picture
+ 3. position
+ 4. content
 
 ## Procedure
 
-1. Step one
-2. Step two
-3. Step 3
-    * bulleted item
-    * another bullet
-    * [Link to google](http://www.google.com)
+1. login
+2. content > add content >  news/ spotlight
+3. Insert Title, recomended SP-person's name
+4. select display type > spotlight
+5. headline > Spotlight's name
+6. insert Body text > spotlight's story
+7. insert Tabbed/Accordion, new or existing as needed
+8. insert Sidebar Items, new or existing as needed
+9. add content taxonomy as needed
+10. Click advanced options for
+    1. display publish on date
+    2. image, upload new or add existing
+10. right hand side of the page has configuration options to do the following as you desire
+    a. Menu Settings, where the page lies in navigation
+    b. metatags
+    d. scheduling, when the page is live to viewers or not *New Feature*
+    e. URL Alias
+    f. Authoring information
+    g. promotion options
+    h. xml sitemap
+11. click tickmark by published if you want it to go live on save
+12. click save
+
 
 ## See Also
-
-* thing 1
-* thing 2
+* [Tabbed Accordion](/TABBED_ACCORDION)
+sidebar items
+* [Copy Box](/Copy_BOX)
+* [Featured Links](/Featured_LINKS)
+* [Promo Box](/PROMO_BOX)
+* [Quote Box](/QUOTE_BOX)
+* [Related Links](/RELATED_LINKS)
 
 ## Keywords
 
-* this word is key
+* content
 
