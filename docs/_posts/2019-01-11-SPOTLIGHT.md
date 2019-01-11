@@ -19,7 +19,6 @@ categories: [Content]
 
  1. Access to subdomain
  2. picture
- 3. position
  4. content
 
 ## Procedure
