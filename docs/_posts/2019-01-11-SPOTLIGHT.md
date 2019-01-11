@@ -2,7 +2,6 @@
 layout: default
 title:  "Spotlight"
 categories: [Content] 
-<!-- delete catigories that don't apply -->
 ---
 {% include home.html %}
 # How to create a spotlight
