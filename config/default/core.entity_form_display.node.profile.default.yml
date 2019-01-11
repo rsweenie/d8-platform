@@ -69,6 +69,7 @@ content:
       field_widget_display_settings:
         view_mode: thumbnail
       open: false
+      field_widget_replace: false
     region: content
     third_party_settings: {  }
   field_profile_link:
@@ -78,12 +79,16 @@ content:
       override_labels: true
       label_singular: Link
       label_plural: Links
+      allow_new: true
+      match_operator: CONTAINS
       collapsible: false
       collapsed: false
+      allow_existing: false
+      allow_duplicate: false
     third_party_settings:
       entity_browser_entity_form:
         entity_browser_id: creighton_link_bros
-    type: inline_entity_form_simple
+    type: inline_entity_form_complex
     region: content
   field_profile_name:
     weight: 0
