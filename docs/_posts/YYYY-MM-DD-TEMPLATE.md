@@ -2,7 +2,7 @@
 layout: default
 title:  "what content covers ex: Copy Box"
 categories: [Content, ACSF, Block, Process, Views] 
-<!-- delete catigories that don't apply -->
+<!-- delete catigories that don't apply and this line -->
 ---
 {% include home.html %}
 # Title of how to
