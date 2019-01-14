@@ -1,14 +1,14 @@
 ---
 layout: default
-title:  "Related Links"
-categories: [Content, ACSF, Block, Process, Views] 
+title:  "Featured Links"
+categories: [Content] 
 ---
 {% include home.html %}
-# How to create Related links
+# How to create Featured links
 * Version: x.x
 * Created: xx/xx/xxxx
 * Last Updated: xx/xx/xxxx
-* Intended Audience: UCOM/ITILS
+* Intended Audience: UCOM
 
 ## Summary
 
