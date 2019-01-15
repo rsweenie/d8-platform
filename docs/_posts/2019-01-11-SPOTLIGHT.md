@@ -49,7 +49,7 @@ categories: [Content]
 ## See Also
 * [Tabbed Accordion](/TABBED_ACCORDION)
 sidebar items
-* [Copy Box](/Copy_BOX)
+* [Copy Box](/COPY_BOX)
 * [Featured Links](/Featured_LINKS)
 * [Promo Box](/PROMO_BOX)
 * [Quote Box](/QUOTE_BOX)
