@@ -11,8 +11,8 @@ categories: [Content]
 * Intended Audience: UCOM
 
 ## Summary
-
-Brief decription here
+featured links are the orange and blue buttons on the site.
+![Featured Links Example](images/featured-links_example.png "Featured Links Example")
 
 ## Prerequisites
 
@@ -25,17 +25,20 @@ Brief decription here
 
 1. log in to subdomain
 2. content > add content > Featured Content
-3. Step 3
-    * bulleted item
-    * another bullet
-    * [Link to google](http://www.google.com)
+3. title, recomeneded FL - color - destination
+4. featured link > add new link
+5. link text, what the button should say
+6. link, page/destination to go to or use file link
+7. choose if open in new link if want
+8. click create link
+9. select button color
+10. click save
+
 
 ## See Also
 
-* thing 1
-* thing 2
 
 ## Keywords
 
-* this word is key
+* content
 

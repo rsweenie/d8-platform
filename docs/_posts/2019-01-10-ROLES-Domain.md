@@ -1,10 +1,10 @@
 ---
 layout: default
-title:  "add and remove roles"
+title:  "add and remove roles on subdomain"
 categories: [Process] 
 ---
 {% include home.html %}
-# How to add or remove roles from a user account.
+# How to add or remove roles from a user account on subdomain.
 * Version: 1.0
 * Created: 1/10/2019 NJS
 * Last Updated: 1/10/2019
