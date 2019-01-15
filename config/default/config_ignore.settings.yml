@@ -4,5 +4,6 @@ ignored_config_entities:
   4: filter.format.rich_text
   6: samlauth.authentication
   8: block.block.socialmedialinks
+  10: webform.webform.contact
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
