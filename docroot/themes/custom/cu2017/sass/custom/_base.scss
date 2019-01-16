@@ -58,10 +58,14 @@ html {
 		line-height: 1.25em;
 		padding-bottom: 0.8em;
 	}
-
+	// TODO: remove as much of the custom breakbpoints as possible
 	.center_column {
 		@media all and (min-width: 992px) {
 			padding-left: 0;
+		} 
+		// TODO Fix the center column for md-col-12 (not centered without left padding)
+		@include respond-to(null , mobile-max) {
+			margin-bottom: 20px;
 		}
 	}
 
