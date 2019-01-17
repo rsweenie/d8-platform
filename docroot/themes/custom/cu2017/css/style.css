@@ -11839,7 +11839,7 @@ li.active.last_active.great_grandchild_class a:before {
   margin-top: -80px;
   padding: 10px 45px;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   top: unset;
 }
 /* line 81, ../sass/custom/_slideshow.scss */
