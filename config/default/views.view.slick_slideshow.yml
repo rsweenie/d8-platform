@@ -214,9 +214,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
-          hide_alter_empty: true
+          hide_alter_empty: false
           click_sort_column: value
           type: slick_text
           settings: {  }
@@ -369,7 +369,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "            <div class=\"slide_text_wrapper\">\r\n                <div class=\"slide_text\">\r\n                    {{ field_slide_caption }}\r\n                    {{ field_slide_link }}\r\n                </div>\r\n        </div>\r\n"
+            text: "{% if (field_slide_caption is not empty) or (field_slide_link is not empty)  %}\r\n<div class=\"slide_text_wrapper\">\r\n                <div class=\"slide_text\">\r\n                    {{ field_slide_caption }}\r\n                    {{ field_slide_link }}\r\n                </div>\r\n        </div>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -403,7 +403,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
