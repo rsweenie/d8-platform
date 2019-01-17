@@ -9,6 +9,7 @@
 		padding-top: 0;
 		position: static;
 	}
+	margin-bottom: 20px;
 }
 #slick-views-slick-slideshow-block-1-1.slick.inline_slide_wrapper {
 	img {
@@ -53,6 +54,9 @@
 	
 	.slick__arrow {
 		top: 92%;
+		@include respond-to(null , mobile-max) {
+			top: 92%;
+		}
 		
 		.slick-prev {
 			left: 0;
@@ -303,6 +307,17 @@
 	
 	}
 	
+}
+.col-md-12 #slick-views-slick-slideshow-block-1-1.slick.inline_slide_wrapper {
+	img {
+		height: 350px;
+		@include respond-to(null , mobile-max) {
+			height: 250px;
+		}
+	}
+	.slick__arrow {
+		top: 94%;
+	}
 }
 .slide_text_wrapper{
 	
