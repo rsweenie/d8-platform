@@ -230,14 +230,12 @@
             padding: 0;
             margin-top: 0;
             position: static;
-            height: 155px;
-            overflow: hidden;
+            height: auto;
             background-color:#616161 !important;
             padding-left: 15px;
             .slide_text_wrapper{
                 position: static;
-                padding-top: 20px;
-                padding-left: 0;
+                padding: 20px 0;
                 .slide_text{
                     margin-left: 0;
                     position: relative;
