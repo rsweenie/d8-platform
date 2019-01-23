@@ -2,7 +2,6 @@
 layout: default
 title:  "Duplicating and Modifying Views"
 categories: [Block] 
-<!-- delete catigories that don't apply and this line -->
 ---
 {% include home.html %}
 # How to use Views
