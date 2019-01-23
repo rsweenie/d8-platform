@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Duplicating and Modifying Views"
-categories: [Block] 
+categories: [Blocks,Views] 
 <!-- delete catigories that don't apply and this line -->
 ---
 {% include home.html %}
@@ -22,7 +22,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## Procedure for Duplicating and Modifying a View (of a list of Content)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
-<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+[Bluecast: Modifying views in Drupal 8](https://bluecast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782)
 
 1. log in to domain
 2. structure > views
