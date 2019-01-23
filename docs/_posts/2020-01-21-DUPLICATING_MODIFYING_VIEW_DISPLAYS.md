@@ -2,7 +2,6 @@
 layout: default
 title:  "Duplicating and Modifying View Displays"
 categories: [Block] 
-<!-- delete catigories that don't apply and this line -->
 ---
 {% include home.html %}
 # How to duplicate and modify a view display and add the block to a panelized page

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Duplicating and Modifying Views</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Duplicating and Modifying Views" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Home How to use Views Version: 1.0 Created: 01/18/2019 Last Updated: 01/18/2009 Intended Audience: UCOM/ITLS" />
+<meta property="og:description" content="Home How to use Views Version: 1.0 Created: 01/18/2019 Last Updated: 01/18/2009 Intended Audience: UCOM/ITLS" />
+<link rel="canonical" href="http://localhost:4000/duplicating-modifying-views" />
+<meta property="og:url" content="http://localhost:4000/duplicating-modifying-views" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-01-18T00:00:00-06:00" />
+<script type="application/ld+json">
+{"headline":"Duplicating and Modifying Views","url":"http://localhost:4000/duplicating-modifying-views","dateModified":"2019-01-18T00:00:00-06:00","datePublished":"2019-01-18T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/duplicating-modifying-views"},"description":"Home How to use Views Version: 1.0 Created: 01/18/2019 Last Updated: 01/18/2009 Intended Audience: UCOM/ITLS","@type":"BlogPosting","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="">View on GitHub</a>
+
+          <h1 id="project_title"></h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <nav>
+  <a href="/d8-platform">Home</a>  
+  
+</nav>
+
+<h1 id="how-to-use-views">How to use Views</h1>
+<ul>
+  <li>Version: 1.0</li>
+  <li>Created: 01/18/2019</li>
+  <li>Last Updated: 01/18/2009</li>
+  <li>Intended Audience: UCOM/ITLS</li>
+</ul>
+
+<h2 id="summary">Summary</h2>
+<p>Views are used for creating lists of content such as profiles, content pages, news, and spotlights. One such list is on the “/admin/content/” screen of a Drupal 8 site, which shows a list of all the content. You can modify how this list looks with the following steps.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ol>
+  <li>manager access to domain</li>
+  <li>content pre-created of the type being listed in a given view</li>
+</ol>
+
+<h2 id="procedure-for-duplicating-and-modifying-a-view-of-a-list-of-content">Procedure for Duplicating and Modifying a View (of a list of Content)</h2>
+<p>[Note: the steps for this procedure are taken from the screencast below. <em>There are many other modifications you can make to a view, depending on your needs.</em>]</p>
+<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&amp;v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen="" allow="autoplay"></iframe>
+
+<ol>
+  <li>log in to domain</li>
+  <li>structure &gt; views</li>
+  <li>on the view to duplicate and modify, click the dropdown arrow of the “Edit” button under “Operations” and choose “Duplicate”</li>
+  <li>enter a title and click the “Duplicate” button</li>
+  <li>click title link to change it and click “Apply”</li>
+  <li>under “Fields” click “Add”</li>
+  <li>a. on the “Add fields” overlay, search “Headline” by typing in form field
+b. click the checkbox of the “Headline” field and click “Add and configure fields”</li>
+  <li>on the “Configure Field: Content: Headline” overlay, click “Apply”</li>
+  <li>in the “Fields” area, click the dropdown arrow and choose “Rearrange”</li>
+  <li>a. on the “Rearrange fields” overlay, click on the four-way arrow on the right to move the “Content: Headline Headline” field up under “Content: Title Title”
+b. click “Apply”</li>
+  <li>use the “Preview” to verify the change</li>
+  <li>to remove a type of content from the current list, click the “Add” button in the Filter Criteria area
+13.
+a. Search for “content type” on the “Add filter criteria” overlay 
+b. click the checkbox of the “Content type” result and click “Add and configure filter criteria”
+14.
+a. on the “Configure filter criterion: Content: Content type” overlay, click the checkbox for “Expose this filter to visitors, to allow them to change it”
+b. click the “Is not one of” radio button under “Operator”
+c. click the “Links” checkbox under “Content types”
+d. click the “Expose operator” checkbox
+e. click “Apply”</li>
+  <li>Verify the results in “Preview”</li>
+</ol>
+
+<h2 id="see-also">See Also</h2>
+
+<ul>
+  <li><a href="/VIEWS_BLOCKS">Views &amp; Blocks</a>)</li>
+  <li><a href="DUPLICATING_MODIFYING_VIEW_DISPLAYS">Duplicating and Modifying View Displays</a></li>
+</ul>
+
+<h2 id="keywords">Keywords</h2>
+
+<ul>
+  <li>view</li>
+  <li>block</li>
+  <li>configuration</li>
+</ul>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
