@@ -9671,7 +9671,10 @@ html .headline {
   }
 }
 /* line 78, ../sass/custom/_base.scss */
-html .featured_links_wrapper,
+html .featured_links_wrapper {
+  margin-bottom: 16px;
+}
+/* line 81, ../sass/custom/_base.scss */
 html .copy_box_wrapper,
 html .quote_box_wrapper,
 html .related_links_wrapper,
@@ -11123,7 +11126,7 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
 }
 /* line 52, ../sass/custom/_featuredlinks.scss */
 .featured_links_wrapper .field--item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 /* line 58, ../sass/custom/_featuredlinks.scss */
 .featured_links_wrapper .featured_links_blue li {
