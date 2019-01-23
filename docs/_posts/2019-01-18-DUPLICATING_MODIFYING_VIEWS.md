@@ -1,12 +1,7 @@
 ---
 layout: default
 title:  "Duplicating and Modifying Views"
-<<<<<<< HEAD
-categories: [Blocks,Views] 
-<!-- delete catigories that don't apply and this line -->
-=======
-categories: [Block] 
->>>>>>> master
+categories: [Block,Views] 
 ---
 {% include home.html %}
 # How to use Views
@@ -39,21 +34,22 @@ Views are used for creating lists of content such as profiles, content pages, ne
     b. click the checkbox of the "Headline" field and click "Add and configure fields"
 8. on the "Configure Field: Content: Headline" overlay, click "Apply"
 9. in the "Fields" area, click the dropdown arrow and choose "Rearrange"
-10. 
+10. to rearrange:
     a. on the "Rearrange fields" overlay, click on the four-way arrow on the right to move the "Content: Headline Headline" field up under "Content: Title Title"
     b. click "Apply"
 11. use the "Preview" to verify the change
 12. to remove a type of content from the current list, click the "Add" button in the Filter Criteria area
-13.
+13. to add:
     a. Search for "content type" on the "Add filter criteria" overlay 
     b. click the checkbox of the "Content type" result and click "Add and configure filter criteria"
-14.
+14. to configure the filter:
     a. on the "Configure filter criterion: Content: Content type" overlay, click the checkbox for "Expose this filter to visitors, to allow them to change it"
     b. click the "Is not one of" radio button under "Operator"
     c. click the "Links" checkbox under "Content types"
     d. click the "Expose operator" checkbox
     e. click "Apply"
-15. Verify the results in "Preview"
+15. verify the results in "Preview"
+16. click "Save" when done
 
 
 
