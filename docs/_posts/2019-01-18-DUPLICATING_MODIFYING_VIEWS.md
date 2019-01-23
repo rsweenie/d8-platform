@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Duplicating and Modifying Views"
-categories: [Block] 
+categories: [Block,Views] 
 ---
 {% include home.html %}
 # How to use Views
@@ -21,7 +21,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## Procedure for Duplicating and Modifying a View (of a list of Content)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
-<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+[Bluecast: Modifying views in Drupal 8](https://bluecast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782)
 
 1. log in to domain
 2. structure > views
@@ -34,21 +34,22 @@ Views are used for creating lists of content such as profiles, content pages, ne
     b. click the checkbox of the "Headline" field and click "Add and configure fields"
 8. on the "Configure Field: Content: Headline" overlay, click "Apply"
 9. in the "Fields" area, click the dropdown arrow and choose "Rearrange"
-10. 
+10. to rearrange:
     a. on the "Rearrange fields" overlay, click on the four-way arrow on the right to move the "Content: Headline Headline" field up under "Content: Title Title"
     b. click "Apply"
 11. use the "Preview" to verify the change
 12. to remove a type of content from the current list, click the "Add" button in the Filter Criteria area
-13.
+13. to add:
     a. Search for "content type" on the "Add filter criteria" overlay 
     b. click the checkbox of the "Content type" result and click "Add and configure filter criteria"
-14.
+14. to configure the filter:
     a. on the "Configure filter criterion: Content: Content type" overlay, click the checkbox for "Expose this filter to visitors, to allow them to change it"
     b. click the "Is not one of" radio button under "Operator"
     c. click the "Links" checkbox under "Content types"
     d. click the "Expose operator" checkbox
     e. click "Apply"
-15. Verify the results in "Preview"
+15. verify the results in "Preview"
+16. click "Save" when done
 
 
 
