@@ -17,7 +17,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
  1. manager access to domain
  2. content pre-created of the type being listed in a given view
- 3. knowledge of creating a [panelized page](/PANELIZED_PAGE)
+ 3. knowledge of creating a [panelized page](panelized-page.html)
 
 ## Procedure for Duplicating and Modifying a View Display (of a list of Profiles)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
@@ -46,7 +46,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
    2. click "Apply (this display)"
 10. review results in Preview
 11. click "Save"
-12. create a Content Page, [following the instructions](/CONTENT_PAGE) (if necessary)
+12. create a Content Page, [following the instructions](content-page.html) (if necessary)
 13. while viewing the newly created Content Page, click the "Manage Content" in the Panelizer menu at the bottom
 14. click "List (Views)"
 15. click on the views display you created, based on the Administrative name you gave it.
@@ -70,8 +70,8 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## See Also
 
-* [Views & Blocks](/VIEWS_BLOCKS)
-* [Duplicating and Modifying View Displays](DUPLICATING_MODIFYING_VIEWS)
+* [Views & Blocks](views-blocks.html)
+* [Duplicating and Modifying Views](duplicating-modifying-views.html)
 
 ## Keywords
 
