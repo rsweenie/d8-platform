@@ -1,13 +1,13 @@
 ---
 layout: default
 title:  "Duplicating and Modifying View Displays"
-categories: [Block] 
+categories: [Views,Block] 
 ---
 {% include home.html %}
 # How to duplicate and modify a view display and add the block to a panelized page
 * Version: 1.0
-* Created: 01/21/2019
-* Last Updated: 01/21/2009
+* Created: 01/21/2019 cmb
+* Last Updated: 01/23/2019 
 * Intended Audience: UCOM/ITLS
 
 ## Summary
@@ -19,36 +19,50 @@ Views are used for creating lists of content such as profiles, content pages, ne
  2. content pre-created of the type being listed in a given view
  3. knowledge of creating a [panelized page](/PANELIZED_PAGE)
 
-## Procedure for Duplicating and Modifying a View (of a list of Content)
+## Procedure for Duplicating and Modifying a View Display (of a list of Profiles)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
 <iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 
 1. log in to domain
 2. structure > views
-3. on the view to duplicate and modify, click the dropdown arrow of the "Edit" button under "Operations" and choose "Duplicate"
-4. enter a title and click the "Duplicate" button
-5. click title link to change it and click "Apply"
-6. under "Fields" click "Add"
-7. 
-    a. on the "Add fields" overlay, search "Headline" by typing in form field
-    b. click the checkbox of the "Headline" field and click "Add and configure fields"
-8. on the "Configure Field: Content: Headline" overlay, click "Apply"
-9. in the "Fields" area, click the dropdown arrow and choose "Rearrange"
-10. 
-    a. on the "Rearrange fields" overlay, click on the four-way arrow on the right to move the "Content: Headline Headline" field up under "Content: Title Title"
-    b. click "Apply"
-11. use the "Preview" to verify the change
-12. to remove a type of content from the current list, click the "Add" button in the Filter Criteria area
-13.
-    a. Search for "content type" on the "Add filter criteria" overlay 
-    b. click the checkbox of the "Content type" result and click "Add and configure filter criteria"
-14.
-    a. on the "Configure filter criterion: Content: Content type" overlay, click the checkbox for "Expose this filter to visitors, to allow them to change it"
-    b. click the "Is not one of" radio button under "Operator"
-    c. click the "Links" checkbox under "Content types"
-    d. click the "Expose operator" checkbox
-    e. click "Apply"
-15. Verify the results in "Preview"
+3. click the "Edit" button on the Profiles view
+4. click the "Duplicate [Display Name]" button (where [Display Name] is actually the name of the current display)
+5. to duplicate:
+   1. type in a new Administrative name
+   2. change the Administrative description
+   3. click "Apply"
+6. Click "Add" under Filter Criteria to add a tag
+7. in the "Add filter criteria" overlay
+   1. type "tag" in the search field
+   2. click on the "Profile Tag (field_profile_type)" checkbox
+   3. click the "For" dropdown button and choose "This block (overide)"
+   4. click the "Apply (this display)" button
+8. in the "Configure extra settings for filter criterion Content: Profile Tag (field_profile_type)" overlay
+   1. under "Vocabulary," click "Profile Type" radio button
+   2. under "Selection type," click on the "Dropdown" radio button
+   3. click "Apply and continue"
+9. in the "Configure filter criterion Content: Profile Tag (field_profile_type)" overlay
+   1. under "Select terms from vocabulary Profile Type," select the tag for your filter
+   2. click "Apply (this display)"
+10. review results in Preview
+11. click "Save"
+12. create a Content Page, [following the instructions](/CONTENT_PAGE) (if necessary)
+13. while viewing the newly created Content Page, click the "Manage Content" in the Panelizer menu at the bottom
+14. click "List (Views)"
+15. click on the views display you created, based on the Administrative name you gave it.
+16. click "Add"
+17. review the result on the page
+18. if satisfied, click "Save" in the Panelizer menu
+19. view the block on the page
+20. to hide the title of the block, click "Edit" in the Panelizer menu
+21. click the gear icon on the block you placed
+22. click the "DISPLAY TITLE" checkbox to de-select it
+23. click "Update"
+24. click "Save" in the Panelizer menu
+24. view the block on the page
+
+*Note: there are additional steps in the video tutorial to filter views with multiple tags and adding new blocks to the same Content Page. Watch the video to see these additional options.*
+
 
 
 
@@ -56,10 +70,12 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## See Also
 
-* thing 1
-* thing 2
+* [Views & Blocks](/VIEWS_BLOCKS)
+* [Duplicating and Modifying View Displays](DUPLICATING_MODIFYING_VIEWS)
 
 ## Keywords
 
-* this word is key
+* view
+* block
+* configuration
 
