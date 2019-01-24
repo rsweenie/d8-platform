@@ -57,8 +57,8 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## See Also
 
-* [Views & Blocks](/VIEWS_BLOCKS)
-* [Duplicating and Modifying View Displays](DUPLICATING_MODIFYING_VIEW_DISPLAYS)
+* [Views & Blocks](views-blocks.html)
+* [Duplicating and Modifying View Displays](duplicating-modifying-view-displays.html)
 
 ## Keywords
 
