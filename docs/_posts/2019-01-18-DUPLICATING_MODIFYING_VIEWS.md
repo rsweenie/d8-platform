@@ -4,10 +4,10 @@ title:  "Duplicating and Modifying Views"
 categories: [Views,Blocks] 
 ---
 {% include home.html %}
-# How to use Views
+# How duplicate and modify views
 * Version: 1.0
-* Created: 01/18/2019
-* Last Updated: 01/18/2009
+* Created: 01/18/2019 cmb
+* Last Updated: 01/23/2019
 * Intended Audience: UCOM/ITLS
 
 ## Summary
@@ -29,7 +29,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 4. enter a title and click the "Duplicate" button
 5. click title link to change it and click "Apply"
 6. under "Fields" click "Add"
-7. 
+7. to add fields:
     1. on the "Add fields" overlay, search "Headline" by typing in form field
     2. click the checkbox of the "Headline" field and click "Add and configure fields"
 8. on the "Configure Field: Content: Headline" overlay, click "Apply"
@@ -57,7 +57,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## See Also
 
-* [Views & Blocks](/VIEWS_BLOCKS))
+* [Views & Blocks](/VIEWS_BLOCKS)
 * [Duplicating and Modifying View Displays](DUPLICATING_MODIFYING_VIEW_DISPLAYS)
 
 ## Keywords
