@@ -21,7 +21,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## Procedure for Duplicating and Modifying a View Display (of a list of Profiles)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
-<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1a7c24da-a3cc-4d18-81ad-a9d201189628&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 
 1. log in to domain
 2. structure > views
