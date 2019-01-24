@@ -17,7 +17,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
  1. manager access to domain
  2. content pre-created of the type being listed in a given view
- 3. knowledge of creating a [panelized page](/d8-platform/PANELIZED_PAGE)
+ 3. knowledge of creating a [panelized page](panelized-page.html)
 
 ## Procedure for Duplicating and Modifying a View Display (of a list of Profiles)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
