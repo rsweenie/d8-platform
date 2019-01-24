@@ -46,7 +46,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
    2. click "Apply (this display)"
 10. review results in Preview
 11. click "Save"
-12. create a Content Page, [following the instructions](CONTENT_PAGE) (if necessary)
+12. create a Content Page, [following the instructions](content-page.html) (if necessary)
 13. while viewing the newly created Content Page, click the "Manage Content" in the Panelizer menu at the bottom
 14. click "List (Views)"
 15. click on the views display you created, based on the Administrative name you gave it.
@@ -70,8 +70,8 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## See Also
 
-* [Views & Blocks](/d8-platform/VIEWS_BLOCKS)
-* [Duplicating and Modifying View Displays](/d8-platform/DUPLICATING_MODIFYING_VIEWS)
+* [Views & Blocks](views-blocks.html)
+* [Duplicating and Modifying Views](duplicating-modifying-views.html)
 
 ## Keywords
 
