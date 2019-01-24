@@ -17,11 +17,11 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
  1. manager access to domain
  2. content pre-created of the type being listed in a given view
- 3. knowledge of creating a [panelized page](panelized-page.html)
+ 3. knowledge of creating a [panelized page](/PANELIZED_PAGE)
 
 ## Procedure for Duplicating and Modifying a View Display (of a list of Profiles)
 [Note: the steps for this procedure are taken from the screencast below. *There are many other modifications you can make to a view, depending on your needs.*]
-<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1a7c24da-a3cc-4d18-81ad-a9d201189628&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 
 1. log in to domain
 2. structure > views
@@ -46,7 +46,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
    2. click "Apply (this display)"
 10. review results in Preview
 11. click "Save"
-12. create a Content Page, [following the instructions](content-page.html) (if necessary)
+12. create a Content Page, [following the instructions](/CONTENT_PAGE) (if necessary)
 13. while viewing the newly created Content Page, click the "Manage Content" in the Panelizer menu at the bottom
 14. click "List (Views)"
 15. click on the views display you created, based on the Administrative name you gave it.
@@ -61,7 +61,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 24. click "Save" in the Panelizer menu
 24. view the block on the page
 
-*Note: there are additional steps in the video tutorial to filter views with multiple tags and to add new blocks to the same Content Page. Watch the video to see these additional options.*
+*Note: there are additional steps in the video tutorial to filter views with multiple tags and adding new blocks to the same Content Page. Watch the video to see these additional options.*
 
 
 
@@ -70,8 +70,8 @@ Views are used for creating lists of content such as profiles, content pages, ne
 
 ## See Also
 
-* [Views & Blocks](views-blocks.html)
-* [Duplicating and Modifying Views](duplicating-modifying-views.html)
+* [Views & Blocks](/VIEWS_BLOCKS)
+* [Duplicating and Modifying View Displays](DUPLICATING_MODIFYING_VIEWS)
 
 ## Keywords
 
