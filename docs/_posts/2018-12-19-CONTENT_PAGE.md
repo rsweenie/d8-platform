@@ -44,7 +44,7 @@ Content pages have several sub content types built in to make creating easier, y
 * [Slideshow](/SLIDESHOW)
 * [Tabbed Accordion](/TABBED_ACCORDION)
 sidebar items
-* [Copy Box](/Copy_BOX)
+* [Copy Box](/d8-platform/copy-box)
 * [Featured Links](/Featured_LINKS)
 * [Promo Box](/PROMO_BOX)
 * [Quote Box](/QUOTE_BOX)

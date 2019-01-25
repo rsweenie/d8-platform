@@ -12660,20 +12660,27 @@ article figcaption {
   line-height: normal;
   margin-left: 0;
   padding: 8px 0;
+  text-decoration: none;
 }
-/* line 93, ../sass/custom/_megamenu.scss */
+@media all and (max-width: 480px) {
+  /* line 80, ../sass/custom/_megamenu.scss */
+  .header_top_section_mega_menu ul li a {
+    padding: 6px 0;
+  }
+}
+/* line 98, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_top_wrapper {
   margin: auto;
   max-width: 1300px;
   padding: 40px 0 20px;
 }
 @media all and (min-width: 769px) {
-  /* line 93, ../sass/custom/_megamenu.scss */
+  /* line 98, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .mega_menu_top_wrapper {
     padding: 20px 0 40px;
   }
 }
-/* line 102, ../sass/custom/_megamenu.scss */
+/* line 107, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_top_wrapper a[title='Make a Gift'], .header_top_section_mega_menu .mega_menu_top_wrapper a[title='Campus Maps'], .header_top_section_mega_menu .mega_menu_top_wrapper a[title='A-Z Index'] {
   -webkit-transition: background 0.2s ease;
   -o-transition: background 0.2s ease;
@@ -12689,46 +12696,46 @@ article figcaption {
   text-transform: uppercase;
   width: 106px;
 }
-/* line 116, ../sass/custom/_megamenu.scss */
+/* line 121, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_top_wrapper a[title='Make a Gift']:hover, .header_top_section_mega_menu .mega_menu_top_wrapper a[title='Campus Maps']:hover, .header_top_section_mega_menu .mega_menu_top_wrapper a[title='A-Z Index']:hover {
   background-position: 0 -48px;
 }
-/* line 122, ../sass/custom/_megamenu.scss */
+/* line 127, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_top_wrapper a[title='Make a Gift'] {
   background: transparent url(../images/megamenu-icons/mega-menu-gift.png) no-repeat top left;
   padding: 5px 0 0 54px;
 }
-/* line 128, ../sass/custom/_megamenu.scss */
+/* line 133, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_top_wrapper a[title='Campus Maps'] {
   background: transparent url(../images/megamenu-icons/mega-menu-map.png) no-repeat top left;
   padding: 5px 0 0 44px;
 }
-/* line 134, ../sass/custom/_megamenu.scss */
+/* line 139, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_top_wrapper a[title='A-Z Index'] {
   background: transparent url(../images/megamenu-icons/mega-menu-azindex.png) no-repeat top left;
   padding: 5px 0 0 57px;
 }
-/* line 142, ../sass/custom/_megamenu.scss */
+/* line 147, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .information_for_menu_body {
   border-top: 1px solid #FFF;
 }
 @media all and (min-width: 769px) {
-  /* line 142, ../sass/custom/_megamenu.scss */
+  /* line 147, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .information_for_menu_body {
     border-top: 0;
   }
 }
-/* line 150, ../sass/custom/_megamenu.scss */
+/* line 155, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .schools_and_colleges_menu_body {
   border-top: 1px solid #FFF;
 }
 @media all and (min-width: 769px) {
-  /* line 150, ../sass/custom/_megamenu.scss */
+  /* line 155, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .schools_and_colleges_menu_body {
     border-top: 0;
   }
 }
-/* line 158, ../sass/custom/_megamenu.scss */
+/* line 163, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns {
   display: flex;
   flex-flow: column wrap;
@@ -12737,19 +12744,19 @@ article figcaption {
   max-width: 1300px;
 }
 @media all and (min-width: 769px) {
-  /* line 158, ../sass/custom/_megamenu.scss */
+  /* line 163, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns {
     flex-flow: row wrap;
   }
 }
-/* line 169, ../sass/custom/_megamenu.scss */
+/* line 174, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2 {
   border-bottom: 1px solid #FFF;
   margin: 20px 0 0;
   padding: 0 80px 10px 5px;
   text-transform: uppercase;
 }
-/* line 175, ../sass/custom/_megamenu.scss */
+/* line 180, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2::after {
   background-image: url(../images/png/white-arrow.png);
   background-position: 95% 0;
@@ -12762,28 +12769,34 @@ article figcaption {
   width: 50px;
 }
 @media all and (min-width: 769px) {
-  /* line 169, ../sass/custom/_megamenu.scss */
+  /* line 174, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns h2 {
     border-bottom: 0;
     font-size: 21px;
     margin: 0;
     text-decoration: none;
   }
-  /* line 193, ../sass/custom/_megamenu.scss */
+  /* line 198, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns h2::after {
     background: 0;
   }
 }
-/* line 198, ../sass/custom/_megamenu.scss */
+@media all and (max-width: 480px) {
+  /* line 174, ../sass/custom/_megamenu.scss */
+  .header_top_section_mega_menu .two_menu_columns h2 {
+    font-size: 16px;
+  }
+}
+/* line 206, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2.rotate_arrow {
   border-bottom: 0;
 }
-/* line 201, ../sass/custom/_megamenu.scss */
+/* line 209, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2.rotate_arrow::after {
   transform: rotate(90deg);
   transform-origin: 50% 0;
 }
-/* line 208, ../sass/custom/_megamenu.scss */
+/* line 216, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left {
   border-right: 0;
   flex-basis: 100%;
@@ -12791,85 +12804,85 @@ article figcaption {
   padding-left: 0;
 }
 @media all and (min-width: 769px) {
-  /* line 208, ../sass/custom/_megamenu.scss */
+  /* line 216, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left {
     border-right: 3px dotted #95D2F3;
     flex-basis: 50%;
   }
 }
-/* line 220, ../sass/custom/_megamenu.scss */
+/* line 228, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left .schools_and_colleges_menu_wrapper.hidden {
   display: none;
 }
 @media all and (min-width: 769px) {
-  /* line 219, ../sass/custom/_megamenu.scss */
+  /* line 227, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left .schools_and_colleges_menu_wrapper {
     display: block;
   }
 }
-/* line 230, ../sass/custom/_megamenu.scss */
+/* line 238, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right {
   flex-basis: 100%;
   padding-right: 0;
 }
 @media all and (min-width: 769px) {
-  /* line 230, ../sass/custom/_megamenu.scss */
+  /* line 238, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right {
     flex-basis: 50%;
   }
 }
 @media all and (min-width: 769px) {
-  /* line 238, ../sass/custom/_megamenu.scss */
+  /* line 246, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right .mega_menu_information_for_wrapper {
     margin-left: 20px;
   }
 }
-/* line 244, ../sass/custom/_megamenu.scss */
+/* line 252, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right .mega_menu_information_for_wrapper .information_for_menu_wrapper.hidden {
   display: none;
 }
 @media all and (min-width: 769px) {
-  /* line 243, ../sass/custom/_megamenu.scss */
+  /* line 251, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right .mega_menu_information_for_wrapper .information_for_menu_wrapper {
     display: block;
   }
 }
-/* line 255, ../sass/custom/_megamenu.scss */
+/* line 263, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .two_col_menu {
   display: flex;
   flex-flow: column wrap;
 }
 @media all and (min-width: 1101px) {
-  /* line 255, ../sass/custom/_megamenu.scss */
+  /* line 263, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu {
     max-height: 220px;
   }
 }
 @media all and (min-width: 901px) and (max-width: 1100px) {
-  /* line 255, ../sass/custom/_megamenu.scss */
+  /* line 263, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu {
     max-height: 240px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 900px) {
-  /* line 255, ../sass/custom/_megamenu.scss */
+  /* line 263, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu {
     max-height: 260px;
   }
 }
-/* line 269, ../sass/custom/_megamenu.scss */
+/* line 277, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .two_col_menu li {
   padding: 0;
   width: 100%;
 }
 @media all and (min-width: 769px) {
-  /* line 269, ../sass/custom/_megamenu.scss */
+  /* line 277, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu li {
     padding: 0 20px 0 0;
     width: 50%;
   }
 }
-/* line 281, ../sass/custom/_megamenu.scss */
+/* line 289, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper {
   clear: both;
   margin: auto;
@@ -12877,33 +12890,44 @@ article figcaption {
   padding-top: 20px;
   width: 100%;
 }
-/* line 288, ../sass/custom/_megamenu.scss */
+/* line 296, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .mega_menu_bottom_wrapper_label {
   float: left;
   margin-bottom: 10px;
   width: 100%;
 }
-/* line 293, ../sass/custom/_megamenu.scss */
+/* line 301, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .mega_menu_bottom_wrapper_label p {
   color: #FFF;
   font-size: 14px;
 }
-/* line 300, ../sass/custom/_megamenu.scss */
+@media all and (max-width: 480px) {
+  /* line 306, ../sass/custom/_megamenu.scss */
+  .header_top_section_mega_menu .mega_menu_bottom_wrapper .mega_menu_bottom_wrapper_label h2 {
+    font-size: 16px;
+  }
+}
+/* line 314, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu .inline_menu {
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-bottom: 25px;
   max-width: 1300px;
   padding: 15px;
   width: 100%;
 }
-/* line 310, ../sass/custom/_megamenu.scss */
+@media all and (max-width: 480px) {
+  /* line 314, ../sass/custom/_megamenu.scss */
+  .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu .inline_menu {
+    padding-top: 0px;
+  }
+}
+/* line 328, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li {
   padding-bottom: 40px;
   width: 75px;
 }
-/* line 314, ../sass/custom/_megamenu.scss */
+/* line 332, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a {
   border: 0;
   font-size: 12px;
@@ -12911,47 +12935,47 @@ article figcaption {
   margin: auto;
   width: 50px;
 }
-/* line 321, ../sass/custom/_megamenu.scss */
+/* line 339, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a:hover {
   background-position: -50px;
 }
-/* line 325, ../sass/custom/_megamenu.scss */
+/* line 343, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Directory'] {
   background-image: url(../images/megamenu-icons/mega-menu-directory.png);
 }
-/* line 329, ../sass/custom/_megamenu.scss */
+/* line 347, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Office365'] {
   background-image: url(../images/megamenu-icons/mega-menu-email.png);
 }
-/* line 333, ../sass/custom/_megamenu.scss */
+/* line 351, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='BlueLine'] {
   background-image: url(../images/megamenu-icons/mega-menu-blueline.png);
 }
-/* line 337, ../sass/custom/_megamenu.scss */
+/* line 355, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='NEST'] {
   background-image: url(../images/megamenu-icons/mega-menu-nest.png);
 }
-/* line 341, ../sass/custom/_megamenu.scss */
+/* line 359, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Libraries'] {
   background-image: url(../images/megamenu-icons/mega-menu-libraries.png);
 }
-/* line 345, ../sass/custom/_megamenu.scss */
+/* line 363, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Bookstore'] {
   background-image: url(../images/megamenu-icons/mega-menu-bookstore.png);
 }
-/* line 349, ../sass/custom/_megamenu.scss */
+/* line 367, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Calendar'] {
   background-image: url(../images/megamenu-icons/mega-menu-calendar.png);
 }
-/* line 353, ../sass/custom/_megamenu.scss */
+/* line 371, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='myCreighton'] {
   background-image: url(../images/megamenu-icons/mega-menu-mycreighton.png);
 }
-/* line 357, ../sass/custom/_megamenu.scss */
+/* line 375, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Media'] {
   background-image: url(../images/megamenu-icons/mega-menu-media.png);
 }
-/* line 361, ../sass/custom/_megamenu.scss */
+/* line 379, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a span {
   position: relative;
   top: 50px;
