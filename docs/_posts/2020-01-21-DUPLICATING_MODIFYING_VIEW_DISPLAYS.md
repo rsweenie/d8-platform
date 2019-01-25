@@ -64,10 +64,6 @@ Views are used for creating lists of content such as profiles, content pages, ne
 *Note: there are additional steps in the video tutorial to filter views with multiple tags and adding new blocks to the same Content Page. Watch the video to see these additional options.*
 
 
-
-
-
-
 ## See Also
 
 * [Views & Blocks](views-blocks.html)

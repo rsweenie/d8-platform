@@ -40,20 +40,20 @@ Content pages have several sub content types built in to make creating easier, y
     h. xml sitemap
 ## See Also
 
-* [Slide](/SLIDE)
-* [Slideshow](/SLIDESHOW)
-* [Tabbed Accordion](/TABBED_ACCORDION)
-sidebar items
-* [Copy Box](/Copy_BOX)
-* [Featured Links](/Featured_LINKS)
-* [Promo Box](/PROMO_BOX)
-* [Quote Box](/QUOTE_BOX)
-* [Related Links](/RELATED_LINKS)
+* [Slide](slide.html)
+* [Tabbed Accordion](tabbed-accordion.html)
+
+### Sidebar items
+* [Copy Box](copy-box.html)
+* [Featured Links](featured-links.html)
+* [Promo Box](promo-box.html)
+* [Quote Box](quote-box.html)
+* [Related Links](related-links.html)
 
 
 ## Keywords
 
-* content Page
+* Content Page
 * Content Type
 
 

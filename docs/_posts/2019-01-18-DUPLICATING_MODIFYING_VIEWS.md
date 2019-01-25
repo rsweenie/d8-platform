@@ -52,9 +52,6 @@ Views are used for creating lists of content such as profiles, content pages, ne
 16. click "Save" when done
 
 
-
-
-
 ## See Also
 
 * [Views & Blocks](views-blocks.html)
