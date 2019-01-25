@@ -12669,7 +12669,7 @@ article figcaption {
 @media all and (max-width: 480px) {
   /* line 80, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu ul li a {
-    padding: 6px 0;
+    padding: 4px 0;
   }
 }
 /* line 102, ../sass/custom/_megamenu.scss */
