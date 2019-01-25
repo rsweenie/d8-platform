@@ -88,6 +88,10 @@
 				padding: 8px 0;
 				text-decoration: none;
 
+				&:hover{
+					text-decoration:underline;
+				}
+
 				@include respond-to(null , mobile-max){
 					padding: 6px 0;
 				}
