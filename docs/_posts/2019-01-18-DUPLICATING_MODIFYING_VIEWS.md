@@ -1,7 +1,8 @@
 ---
 layout: default
 title:  "Duplicating and Modifying Views"
-categories: [Views,Blocks] 
+categories: [Views, Block] 
+
 ---
 {% include home.html %}
 # How duplicate and modify views
