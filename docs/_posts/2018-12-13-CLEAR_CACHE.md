@@ -27,7 +27,7 @@ Clearing Cache often is needed when content has been updated but is not sowing l
 4. click flush all cache's
 - this is the best way to make sure everything is updated, however you can instead hover over this and then select a specific cache to clear.
 
-![cache options](images/clear-cache_options.png "cache images")
+![cache options](images/clear_cache_options.png "cache images")
 
 ** from Aquia Cloud Site Factory **
 1. log in to ACSF
@@ -36,7 +36,7 @@ Clearing Cache often is needed when content has been updated but is not sowing l
 4. click the arrow to the left of login below the site
 5. select clear cache's
 6. confirm clear chaces
-![cache options](images/clear-cache_acsf.png "cache images")
+![cache options](images/clear_cache_acsf.png "cache images")
 
 
 ## Keywords
