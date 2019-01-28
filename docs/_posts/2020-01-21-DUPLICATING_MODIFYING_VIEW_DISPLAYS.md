@@ -27,7 +27,7 @@ Views are used for creating lists of content such as profiles, content pages, ne
 2. structure > views
 3. click the "Edit" button on the Profiles view
 4. click the "Duplicate [Display Name]" button (where [Display Name] is actually the name of the current display)
-5. to duplicate:
+5. to change the name of the duplicate, click the linked text after "Display name":
    1. type in a new Administrative name
    2. change the Administrative description
    3. click "Apply"
