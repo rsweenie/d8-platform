@@ -41,11 +41,13 @@ Tabbed accordion means that the content can be entered and displayed as side tab
 
 ## See Also
 
-* thing 1
-* thing 2
+* [Content Page](content-page.html)
+* [Profile](profile.html)
+* [News](news.html)
+* [Spotlight](spotlight.html)
 
 ## Keywords
 
-* this word is key
+* Content Type
 
 
