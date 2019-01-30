@@ -10166,7 +10166,7 @@ header .header_inner_wrapper {
 @media all and (min-width: 320px) and (max-width: 768px) {
   /* line 29, ../sass/custom/_header.scss */
   header .header_inner_wrapper {
-    height: 115px;
+    height: 110px;
     padding: 0 20px;
   }
 }
