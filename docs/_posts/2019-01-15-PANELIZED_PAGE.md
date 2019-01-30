@@ -22,7 +22,7 @@ Panlizer is a tool that allows you to arrange content on a page using layouts. T
  3. layout needed
 
 ## Procedure
-<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ce8de2ec-ae7c-428f-af2c-a95401330782&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://bluecast.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=694b3836-8230-4ed4-afdd-a900012164ad&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 
 
 ## See Also

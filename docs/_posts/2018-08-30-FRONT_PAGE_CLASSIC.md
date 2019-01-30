@@ -31,7 +31,7 @@ The front page classic layout handles the styling without specific content types
 
 3. For featured content items: create content > content > featured content group
 
-    * Add needed information, Body, Title and images. Front pages typically have three featured content items. If you need further assistance there is a [featured content group how to.](FEATURED_CONTENT_GROUP)
+    * Add needed information, Body, Title and images. Front pages typically have three featured content items. If you need further assistance there is a [featured content group how to.](featured-content-group.html)
 
     * Save
 

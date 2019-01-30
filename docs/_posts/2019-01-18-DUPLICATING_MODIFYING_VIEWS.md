@@ -2,12 +2,13 @@
 layout: default
 title:  "Duplicating and Modifying Views"
 categories: [Views, Block] 
+
 ---
 {% include home.html %}
-# How to use Views
+# How duplicate and modify views
 * Version: 1.0
-* Created: 01/18/2019
-* Last Updated: 01/18/2009
+* Created: 01/18/2019 cmb
+* Last Updated: 01/23/2019
 * Intended Audience: UCOM/ITLS
 
 ## Summary
@@ -29,35 +30,33 @@ Views are used for creating lists of content such as profiles, content pages, ne
 4. enter a title and click the "Duplicate" button
 5. click title link to change it and click "Apply"
 6. under "Fields" click "Add"
-7. 
-    a. on the "Add fields" overlay, search "Headline" by typing in form field
-    b. click the checkbox of the "Headline" field and click "Add and configure fields"
+7. to add fields:
+    1. on the "Add fields" overlay, search "Headline" by typing in form field
+    2. click the checkbox of the "Headline" field and click "Add and configure fields"
 8. on the "Configure Field: Content: Headline" overlay, click "Apply"
 9. in the "Fields" area, click the dropdown arrow and choose "Rearrange"
-10. 
-    a. on the "Rearrange fields" overlay, click on the four-way arrow on the right to move the "Content: Headline Headline" field up under "Content: Title Title"
-    b. click "Apply"
+10. to rearrange:
+    1. on the "Rearrange fields" overlay, click on the four-way arrow on the right to move the "Content: Headline Headline" field up under "Content: Title Title"
+    2. click "Apply"
 11. use the "Preview" to verify the change
 12. to remove a type of content from the current list, click the "Add" button in the Filter Criteria area
-13.
-    a. Search for "content type" on the "Add filter criteria" overlay 
-    b. click the checkbox of the "Content type" result and click "Add and configure filter criteria"
-14.
-    a. on the "Configure filter criterion: Content: Content type" overlay, click the checkbox for "Expose this filter to visitors, to allow them to change it"
-    b. click the "Is not one of" radio button under "Operator"
-    c. click the "Links" checkbox under "Content types"
-    d. click the "Expose operator" checkbox
-    e. click "Apply"
-15. Verify the results in "Preview"
-
-
-
+13. to add:
+    1. Search for "content type" on the "Add filter criteria" overlay 
+    2. click the checkbox of the "Content type" result and click "Add and configure filter criteria"
+14. to configure the filter:
+    1. on the "Configure filter criterion: Content: Content type" overlay, click the checkbox for "Expose this filter to visitors, to allow them to change it"
+    2. click the "Is not one of" radio button under "Operator"
+    3. click the "Links" checkbox under "Content types"
+    4. click the "Expose operator" checkbox
+    5. click "Apply"
+15. verify the results in "Preview"
+16. click "Save" when done
 
 
 ## See Also
 
-* [Views & Blocks](/VIEWS_BLOCKS))
-* [Duplicating and Modifying View Displays](DUPLICATING_MODIFYING_VIEW_DISPLAYS)
+* [Views & Blocks](views-blocks.html)
+* [Duplicating and Modifying View Displays](duplicating-modifying-view-displays.html)
 
 ## Keywords
 
