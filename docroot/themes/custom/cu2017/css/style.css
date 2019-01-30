@@ -10166,7 +10166,7 @@ header .header_inner_wrapper {
 @media all and (min-width: 320px) and (max-width: 768px) {
   /* line 29, ../sass/custom/_header.scss */
   header .header_inner_wrapper {
-    height: 115px;
+    height: 110px;
     padding: 0 20px;
   }
 }
@@ -10446,24 +10446,35 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
 }
 
 /* line 279, ../sass/custom/_header.scss */
+ul#megamenu_icon_menu {
+  padding-left: 0px;
+}
+@media all and (max-width: 480px) {
+  /* line 279, ../sass/custom/_header.scss */
+  ul#megamenu_icon_menu {
+    margin-left: -2px;
+  }
+}
+
+/* line 287, ../sass/custom/_header.scss */
 .transaction_menu_wrapper {
   margin: 0 4px;
   order: 3;
   padding-left: 4px;
 }
 @media all and (max-width: 768px) {
-  /* line 279, ../sass/custom/_header.scss */
+  /* line 287, ../sass/custom/_header.scss */
   .transaction_menu_wrapper {
     order: 1;
   }
 }
 @media all and (max-width: 320px) {
-  /* line 279, ../sass/custom/_header.scss */
+  /* line 287, ../sass/custom/_header.scss */
   .transaction_menu_wrapper {
     height: 70px;
   }
 }
-/* line 291, ../sass/custom/_header.scss */
+/* line 299, ../sass/custom/_header.scss */
 .transaction_menu_wrapper li {
   background: #019CDB;
   display: inline-block;
@@ -10473,22 +10484,22 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   margin-left: -5px;
   opacity: 1;
 }
-/* line 300, ../sass/custom/_header.scss */
+/* line 308, ../sass/custom/_header.scss */
 .transaction_menu_wrapper li:hover {
   background: #019CDB;
 }
-/* line 304, ../sass/custom/_header.scss */
+/* line 312, ../sass/custom/_header.scss */
 .transaction_menu_wrapper li::after {
   color: #FFF;
   content: '|';
   position: absolute;
   right: -4px;
 }
-/* line 312, ../sass/custom/_header.scss */
+/* line 320, ../sass/custom/_header.scss */
 .transaction_menu_wrapper li:last-child::after {
   content: '';
 }
-/* line 317, ../sass/custom/_header.scss */
+/* line 325, ../sass/custom/_header.scss */
 .transaction_menu_wrapper li a {
   -webkit-transition-property: color;
   transition-property: color;
@@ -10503,20 +10514,20 @@ header .mega_menu_internal_main_nav .header_nav_section li a.active {
   text-transform: uppercase;
 }
 @media all and (max-width: 768px) {
-  /* line 317, ../sass/custom/_header.scss */
+  /* line 325, ../sass/custom/_header.scss */
   .transaction_menu_wrapper li a {
     font-size: 18px;
     padding: 6px 15px 2px;
   }
 }
 @media all and (max-width: 375px) {
-  /* line 317, ../sass/custom/_header.scss */
+  /* line 325, ../sass/custom/_header.scss */
   .transaction_menu_wrapper li a {
     font-size: 18px;
     padding: 6px 10px 2px;
   }
 }
-/* line 337, ../sass/custom/_header.scss */
+/* line 345, ../sass/custom/_header.scss */
 .transaction_menu_wrapper li a:hover {
   background: #019CDB;
   color: #002E6D;
