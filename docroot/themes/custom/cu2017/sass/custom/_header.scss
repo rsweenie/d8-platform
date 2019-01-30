@@ -276,6 +276,14 @@ header {
 	}
 }
 
+ul#megamenu_icon_menu{
+	padding-left: 0px;
+
+	@include respond-to(null , mobile-max) {
+		margin-left: -2px;
+	}
+}
+
 .transaction_menu_wrapper {
 	margin: 0 4px;
 	order: 3;
