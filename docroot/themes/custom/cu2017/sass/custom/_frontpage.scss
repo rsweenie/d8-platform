@@ -1,11 +1,13 @@
 
-//Hiding breadcrumb is needed on both front page layouts 
-.row.breadcrumb_region{
-    display:none !important; 
-}
+
 
 // front page CLASSIC
-.front-page-classic{
+.front-page-classic{pdw
+    //Hiding breadcrumb is needed on both front page layouts 
+    .row.breadcrumb_region{
+        display:none !important; 
+    }
+
     %orange-h2{
         color: $orange;
         font-size: $h2LargerFontSize;
