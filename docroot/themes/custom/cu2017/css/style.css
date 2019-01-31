@@ -10166,7 +10166,7 @@ header .header_inner_wrapper {
 @media all and (min-width: 320px) and (max-width: 768px) {
   /* line 29, ../sass/custom/_header.scss */
   header .header_inner_wrapper {
-    height: 110px;
+    height: 100px;
     padding: 0 20px;
   }
 }
@@ -10271,7 +10271,7 @@ header .header_top_section_menu_wrapper {
   header .header_top_section_menu_wrapper {
     align-self: flex-end;
     position: relative;
-    top: 70px;
+    top: 65px;
   }
 }
 @media all and (max-width: 319px) {
