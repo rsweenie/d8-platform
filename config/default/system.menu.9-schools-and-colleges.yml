@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: pIhrc2ixbeyie5JkP_TiWt50JwH93xn9XMwoUedONMA
 id: 9-schools-and-colleges
-label: '10 Schools and Colleges'
+label: '9 Schools and Colleges'
 description: 'A listing of the 9 Schools and Colleges at Creighton University'
 locked: false
