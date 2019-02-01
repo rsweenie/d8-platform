@@ -9,7 +9,7 @@ categories: [Content, ACSF, Block, Process, Views]
 * Version: x.x
 * Created: xx/xx/xxxx
 * Last Updated: xx/xx/xxxx
-* Intended Audience: UCOM/ITILS
+* Intended Audience: UCOM/ITLS
 
 ## Summary
 
