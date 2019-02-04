@@ -14047,9 +14047,8 @@ article.news .news_date {
   list-style: none;
 }
 
-/* line 5, ../sass/custom/_frontpage.scss */
-.front-page-classic pdw
-.row.breadcrumb_region {
+/* line 7, ../sass/custom/_frontpage.scss */
+.front-page-classic .row.breadcrumb_region {
   display: none !important;
 }
 /* line 11, ../sass/custom/_frontpage.scss */
