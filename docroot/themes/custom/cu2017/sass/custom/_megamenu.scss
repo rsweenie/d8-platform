@@ -213,6 +213,16 @@
 				&::after {
 					transform: rotate(90deg);
 					transform-origin: 50% 0;
+
+					@include respond-to(null , mobile-max){
+						transform: rotate(90deg);
+						transform-origin: 83% 26%;
+					}
+
+					@include respond-to(mobile-max, tablet-max){
+						transform: rotate(90deg);
+						transform-origin: 83% 26%;
+					}
 				}
 			}
 		}
