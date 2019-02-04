@@ -9,8 +9,11 @@
 	width: 100%;
 	z-index: 1000;
 
-	@include respond-to(null , tablet-max)  {
-		top: $headerInnerMobileHeight + $headerTopBarHeight + $headerMobileSearchHeight;
+	@include respond-to(null , mobile-max)  {
+		top: 167px;
+	}
+	@include respond-to(tablet-min , tablet-max)  {
+		top: 173px;
 	}
 	@include respond-to(lg-tablet-min , lg-tablet-max) {
 		top: $headerInnerLgTabletHeight + $headerTopBarHeight;
@@ -214,12 +217,7 @@
 					transform: rotate(90deg);
 					transform-origin: 50% 0;
 
-					@include respond-to(null , mobile-max){
-						transform: rotate(90deg);
-						transform-origin: 83% 26%;
-					}
-
-					@include respond-to(mobile-max, tablet-max){
+					@include respond-to(null , tablet-max){
 						transform: rotate(90deg);
 						transform-origin: 83% 26%;
 					}
