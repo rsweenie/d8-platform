@@ -1,0 +1,22 @@
+<?php
+use Drupal\file\Entity\File;
+use Drupal\embed\Entity\EmbedButton;
+
+
+/**
+ * Sets the icon for the media browser's embed button.
+ */
+function cu_media_icon_update_8001() {
+  $icon = \Drupal::moduleHandler()->getModule('cu_media_icon')->getPath() . '/images/icon.gif';
+  $fs = \Drupal::service('file_system');
+  $destination = file_unmanaged_copy($icon, 'public://' . $fs->basename($icon));
+
+  if ($destination) {
+    $file = File::create(['uri' => $destination]);
+    $file->save();
+
+    EmbedButton::load('media_browser')
+      ->set('icon_uuid', $file->uuid())
+      ->save();
+  }
+}

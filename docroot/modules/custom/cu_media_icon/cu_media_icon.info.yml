@@ -1,0 +1,8 @@
+name: 'CU WYSIWYG Media Icon'
+description: 'Changes the WYSIWYG media embed '
+type: module
+core: 8.x
+version: 8.x-1.0a
+package: Creighton
+dependencies:
+  - block_content
