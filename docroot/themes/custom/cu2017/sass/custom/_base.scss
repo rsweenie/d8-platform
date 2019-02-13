@@ -21,7 +21,9 @@ html {
 				text-decoration: underline;
 			}
 		}
-
+		h1.col-md-12.headline {
+			padding-left: 0px
+		}
 		h2 {
 			color: $darkBlue;
 			font-family: $condensedFont;
