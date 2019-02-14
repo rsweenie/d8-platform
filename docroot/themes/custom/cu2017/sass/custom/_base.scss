@@ -21,9 +21,7 @@ html {
 				text-decoration: underline;
 			}
 		}
-		h1.col-md-12.headline {
-			padding-left: 0px
-		}
+		
 		h2 {
 			color: $darkBlue;
 			font-family: $condensedFont;
@@ -85,5 +83,8 @@ html {
 	.related_links_wrapper,
 	.promo_box_wrapper {
 		margin-bottom: 20px;
+	}
+	.default-layout > .layout-content > [role="main"] > .main.container > .row > * > .headline		{
+		padding-left:0px;
 	}
 }
