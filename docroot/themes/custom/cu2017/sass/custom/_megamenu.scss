@@ -194,6 +194,10 @@
 				position: absolute;
 				right: 30px;
 				width: 50px;
+
+				@include respond-to(null , mobile-max){
+					background-position: 95% -6%;
+				}
 			}
 
 			@include respond-to(lg-tablet-min , null) {
