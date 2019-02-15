@@ -15,7 +15,7 @@ footer {
 	}
 
 	.transaction_menu_wrapper {
-		text-align: center;
+		text-align: right;
 
 		@include respond-to(null , mobile-max) {
 			background-color: $blue;

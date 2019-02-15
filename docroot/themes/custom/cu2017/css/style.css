@@ -9898,7 +9898,7 @@ footer {
 }
 /* line 17, ../sass/custom/_footer.scss */
 footer .transaction_menu_wrapper {
-  text-align: center;
+  text-align: right;
 }
 @media all and (max-width: 480px) {
   /* line 17, ../sass/custom/_footer.scss */
