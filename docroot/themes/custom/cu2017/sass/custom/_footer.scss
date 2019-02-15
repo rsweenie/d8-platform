@@ -20,7 +20,13 @@ footer {
 		@include respond-to(null , mobile-max) {
 			background-color: $blue;
 			margin: 0;
+			font-size: 16px;
+			text-align: left;
+			padding-left: 10px;
 		}
+		@include respond-to( tablet-min, lg-tablet-max){
+			text-align: center;
+		}	
 	}
 
 	.footer_wrapper {
@@ -83,6 +89,8 @@ footer {
 			@include respond-to(null , mobile-max) {
 				flex-basis: 100%;
 				width: 100%;
+				margin-top: 30px;
+				margin-bottom:-10px;
 			}
 			@include respond-to(tablet-min , tablet-max) {
 				flex-basis: 15%;
