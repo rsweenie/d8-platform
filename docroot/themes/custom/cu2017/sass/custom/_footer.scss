@@ -121,6 +121,8 @@ footer {
 				list-style-type: none;
 				margin:0px;
 				padding: 0px;
+				// margin top aligns baseline with the address block
+				margin-top: 4px;
 			}
 
 			@include respond-to(null , mobile-max) {
