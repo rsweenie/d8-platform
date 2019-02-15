@@ -15,12 +15,18 @@ footer {
 	}
 
 	.transaction_menu_wrapper {
-		text-align: center;
+		text-align: right;
 
 		@include respond-to(null , mobile-max) {
 			background-color: $blue;
 			margin: 0;
+			font-size: 16px;
+			text-align: left;
+			padding-left: 10px;
 		}
+		@include respond-to( tablet-min, lg-tablet-max){
+			text-align: center;
+		}	
 	}
 
 	.footer_wrapper {
@@ -31,6 +37,7 @@ footer {
 		margin: auto;
 		max-width: $maxContentWidth;
 		padding: 20px;
+		font-size: 14px;
 
 		@include respond-to(null , mobile-max) {
 			flex-flow: column nowrap;
@@ -82,6 +89,8 @@ footer {
 			@include respond-to(null , mobile-max) {
 				flex-basis: 100%;
 				width: 100%;
+				margin-top: 30px;
+				margin-bottom:-10px;
 			}
 			@include respond-to(tablet-min , tablet-max) {
 				flex-basis: 15%;
@@ -93,10 +102,10 @@ footer {
 
 				li {
 					background-color: $white;
-					height: 45px;
+					height: 40px;
 					margin: 0px 2px;
 					padding-top: 7px;
-					width: 45px;
+					width: 40px;
 				}
 
 				li:hover {
@@ -116,6 +125,14 @@ footer {
 			padding-top: 8px;
 			width: 35%;
 
+			ul {
+				list-style-type: none;
+				margin:0px;
+				padding: 0px;
+				// margin top aligns baseline with the address block
+				margin-top: 4px;
+			}
+
 			@include respond-to(null , mobile-max) {
 				flex-basis: 100%;
 				width: 100%;
@@ -127,12 +144,15 @@ footer {
 			a {
 				color: $white;
 				padding: 2px 0px;
-			}
-
-			a:hover {
-				background-color: $mediumBlue;
-				color: $white;
-				text-decoration: underline;
+				text-decoration: none;
+				line-height:1.75em;
+				font-weight: $semiBold;
+				
+				&:hover {
+					background-color: $mediumBlue;
+					color: $white;
+					text-decoration: underline;
+				}
 			}
 		}
 
