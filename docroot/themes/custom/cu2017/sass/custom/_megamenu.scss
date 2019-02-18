@@ -194,7 +194,7 @@
 				position: absolute;
 				right: 30px;
 
-				@include respond-to(null , mobile-max){
+				@include respond-to(null , tablet-max){
 					background-position: 96% 0px;
 					width:50px;
 					margin-top:-4px;

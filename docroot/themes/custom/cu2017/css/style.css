@@ -12814,7 +12814,7 @@ article figcaption {
   position: absolute;
   right: 30px;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
   /* line 187, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns h2::after {
     background-position: 96% 0px;
