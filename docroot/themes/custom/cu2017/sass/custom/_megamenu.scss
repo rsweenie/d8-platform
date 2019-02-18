@@ -180,8 +180,8 @@
 
 		h2 {
 			border-bottom: 1px solid $white;
-			margin: 20px 0 0;
-			padding: 0 80px 10px 5px;
+			margin: 10px 0 0;
+			padding: 10px 80px 10px 5px;
 			text-transform: uppercase;
 
 			&::after {
@@ -193,10 +193,11 @@
 				height: 50px;
 				position: absolute;
 				right: 30px;
-				width: 50px;
 
 				@include respond-to(null , mobile-max){
-					background-position: 95% -6%;
+					background-position: 96% 0px;
+					width:50px;
+					margin-top:-4px;
 				}
 			}
 
