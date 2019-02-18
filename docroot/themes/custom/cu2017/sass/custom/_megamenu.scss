@@ -193,11 +193,13 @@
 				height: 50px;
 				position: absolute;
 				right: 30px;
-
-				@include respond-to(null , tablet-max){
-					background-position: 96% 0px;
+				@include respond-to(null , mobile-max){
 					width:50px;
 					margin-top:-4px;
+				}
+				@include respond-to(tablet-min , tablet-max){
+					width:50px;
+					margin-top: 1px;
 				}
 			}
 
