@@ -1,0 +1,20 @@
+uuid: 4b9596a6-fa04-44e5-a032-33aa1d3d6e72
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cu8
+id: breadcrumbs
+theme: cu8
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
