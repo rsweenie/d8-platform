@@ -12801,8 +12801,8 @@ article figcaption {
 /* line 181, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2 {
   border-bottom: 1px solid #FFF;
-  margin: 20px 0 0;
-  padding: 0 80px 10px 5px;
+  margin: 10px 0 0;
+  padding: 10px 80px 10px 5px;
   text-transform: uppercase;
 }
 /* line 187, ../sass/custom/_megamenu.scss */
@@ -12815,7 +12815,20 @@ article figcaption {
   height: 50px;
   position: absolute;
   right: 30px;
-  width: 50px;
+}
+@media all and (max-width: 480px) {
+  /* line 187, ../sass/custom/_megamenu.scss */
+  .header_top_section_mega_menu .two_menu_columns h2::after {
+    width: 50px;
+    margin-top: -4px;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  /* line 187, ../sass/custom/_megamenu.scss */
+  .header_top_section_mega_menu .two_menu_columns h2::after {
+    width: 50px;
+    margin-top: 1px;
+  }
 }
 @media all and (min-width: 769px) {
   /* line 181, ../sass/custom/_megamenu.scss */
@@ -12825,7 +12838,7 @@ article figcaption {
     margin: 0;
     text-decoration: none;
   }
-  /* line 205, ../sass/custom/_megamenu.scss */
+  /* line 212, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns h2::after {
     background: 0;
   }
@@ -12836,23 +12849,23 @@ article figcaption {
     font-size: 16px;
   }
 }
-/* line 213, ../sass/custom/_megamenu.scss */
+/* line 220, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2.rotate_arrow {
   border-bottom: 0;
 }
-/* line 216, ../sass/custom/_megamenu.scss */
+/* line 223, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns h2.rotate_arrow::after {
   transform: rotate(90deg);
   transform-origin: 50% 0;
 }
 @media all and (max-width: 768px) {
-  /* line 216, ../sass/custom/_megamenu.scss */
+  /* line 223, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns h2.rotate_arrow::after {
     transform: rotate(90deg);
     transform-origin: 83% 26%;
   }
 }
-/* line 228, ../sass/custom/_megamenu.scss */
+/* line 235, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left {
   border-right: 0;
   flex-basis: 100%;
@@ -12860,85 +12873,85 @@ article figcaption {
   padding-left: 0;
 }
 @media all and (min-width: 769px) {
-  /* line 228, ../sass/custom/_megamenu.scss */
+  /* line 235, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left {
     border-right: 3px dotted #95D2F3;
     flex-basis: 50%;
   }
 }
-/* line 240, ../sass/custom/_megamenu.scss */
+/* line 247, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left .schools_and_colleges_menu_wrapper.hidden {
   display: none;
 }
 @media all and (min-width: 769px) {
-  /* line 239, ../sass/custom/_megamenu.scss */
+  /* line 246, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_left .schools_and_colleges_menu_wrapper {
     display: block;
   }
 }
-/* line 250, ../sass/custom/_megamenu.scss */
+/* line 257, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right {
   flex-basis: 100%;
   padding-right: 0;
 }
 @media all and (min-width: 769px) {
-  /* line 250, ../sass/custom/_megamenu.scss */
+  /* line 257, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right {
     flex-basis: 50%;
   }
 }
 @media all and (min-width: 769px) {
-  /* line 258, ../sass/custom/_megamenu.scss */
+  /* line 265, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right .mega_menu_information_for_wrapper {
     margin-left: 20px;
   }
 }
-/* line 264, ../sass/custom/_megamenu.scss */
+/* line 271, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right .mega_menu_information_for_wrapper .information_for_menu_wrapper.hidden {
   display: none;
 }
 @media all and (min-width: 769px) {
-  /* line 263, ../sass/custom/_megamenu.scss */
+  /* line 270, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .mega_menu_column_right .mega_menu_information_for_wrapper .information_for_menu_wrapper {
     display: block;
   }
 }
-/* line 275, ../sass/custom/_megamenu.scss */
+/* line 282, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .two_col_menu {
   display: flex;
   flex-flow: column wrap;
 }
 @media all and (min-width: 1101px) {
-  /* line 275, ../sass/custom/_megamenu.scss */
+  /* line 282, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu {
     max-height: 220px;
   }
 }
 @media all and (min-width: 901px) and (max-width: 1100px) {
-  /* line 275, ../sass/custom/_megamenu.scss */
+  /* line 282, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu {
     max-height: 240px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 900px) {
-  /* line 275, ../sass/custom/_megamenu.scss */
+  /* line 282, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu {
     max-height: 260px;
   }
 }
-/* line 289, ../sass/custom/_megamenu.scss */
+/* line 296, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .two_menu_columns .two_col_menu li {
   padding: 0;
   width: 100%;
 }
 @media all and (min-width: 769px) {
-  /* line 289, ../sass/custom/_megamenu.scss */
+  /* line 296, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .two_menu_columns .two_col_menu li {
     padding: 0 20px 0 0;
     width: 50%;
   }
 }
-/* line 301, ../sass/custom/_megamenu.scss */
+/* line 308, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper {
   clear: both;
   margin: auto;
@@ -12946,24 +12959,24 @@ article figcaption {
   padding-top: 20px;
   width: 100%;
 }
-/* line 308, ../sass/custom/_megamenu.scss */
+/* line 315, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .mega_menu_bottom_wrapper_label {
   float: left;
   margin-bottom: 10px;
   width: 100%;
 }
-/* line 313, ../sass/custom/_megamenu.scss */
+/* line 320, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .mega_menu_bottom_wrapper_label p {
   color: #FFF;
   font-size: 14px;
 }
 @media all and (max-width: 480px) {
-  /* line 318, ../sass/custom/_megamenu.scss */
+  /* line 325, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .mega_menu_bottom_wrapper .mega_menu_bottom_wrapper_label h2 {
     font-size: 16px;
   }
 }
-/* line 326, ../sass/custom/_megamenu.scss */
+/* line 333, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu .inline_menu {
   display: inline-flex;
   flex-flow: row wrap;
@@ -12973,17 +12986,17 @@ article figcaption {
   width: 100%;
 }
 @media all and (max-width: 480px) {
-  /* line 326, ../sass/custom/_megamenu.scss */
+  /* line 333, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu .inline_menu {
     padding-top: 0px;
   }
 }
-/* line 340, ../sass/custom/_megamenu.scss */
+/* line 347, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li {
   padding-bottom: 40px;
   width: 75px;
 }
-/* line 344, ../sass/custom/_megamenu.scss */
+/* line 351, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a {
   border: 0;
   font-size: 12px;
@@ -12991,47 +13004,47 @@ article figcaption {
   margin: auto;
   width: 50px;
 }
-/* line 351, ../sass/custom/_megamenu.scss */
+/* line 358, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a:hover {
   background-position: -50px;
 }
-/* line 355, ../sass/custom/_megamenu.scss */
+/* line 362, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Directory'] {
   background-image: url(../images/megamenu-icons/mega-menu-directory.png);
 }
-/* line 359, ../sass/custom/_megamenu.scss */
+/* line 366, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Office365'] {
   background-image: url(../images/megamenu-icons/mega-menu-email.png);
 }
-/* line 363, ../sass/custom/_megamenu.scss */
+/* line 370, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='BlueLine'] {
   background-image: url(../images/megamenu-icons/mega-menu-blueline.png);
 }
-/* line 367, ../sass/custom/_megamenu.scss */
+/* line 374, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='NEST'] {
   background-image: url(../images/megamenu-icons/mega-menu-nest.png);
 }
-/* line 371, ../sass/custom/_megamenu.scss */
+/* line 378, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Libraries'] {
   background-image: url(../images/megamenu-icons/mega-menu-libraries.png);
 }
-/* line 375, ../sass/custom/_megamenu.scss */
+/* line 382, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Bookstore'] {
   background-image: url(../images/megamenu-icons/mega-menu-bookstore.png);
 }
-/* line 379, ../sass/custom/_megamenu.scss */
+/* line 386, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Calendar'] {
   background-image: url(../images/megamenu-icons/mega-menu-calendar.png);
 }
-/* line 383, ../sass/custom/_megamenu.scss */
+/* line 390, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='myCreighton'] {
   background-image: url(../images/megamenu-icons/mega-menu-mycreighton.png);
 }
-/* line 387, ../sass/custom/_megamenu.scss */
+/* line 394, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a[title='Media'] {
   background-image: url(../images/megamenu-icons/mega-menu-media.png);
 }
-/* line 391, ../sass/custom/_megamenu.scss */
+/* line 398, ../sass/custom/_megamenu.scss */
 .header_top_section_mega_menu .mega_menu_bottom_wrapper .resources_menu li a span {
   position: relative;
   top: 50px;
