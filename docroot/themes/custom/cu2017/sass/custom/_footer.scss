@@ -201,14 +201,16 @@ footer {
 			p {
 				margin: 0 0 5px;
 
-				a {
+				a {	
+					text-decoration: none;
+					font-weight: $semiBold;
 					color: $white;
-					white-space: nowrap;
-
-					&:hover {
-						color: $white;
-						text-decoration: underline;
-					}
+				
+				&:hover {
+					background-color: $mediumBlue;
+					color: $white;
+					text-decoration: underline;
+				}
 				}
 			}
 		}

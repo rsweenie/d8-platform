@@ -10128,11 +10128,13 @@ footer .footer_wrapper .footer_contact_wrapper p {
 }
 /* line 204, ../sass/custom/_footer.scss */
 footer .footer_wrapper .footer_contact_wrapper p a {
+  text-decoration: none;
+  font-weight: 600;
   color: #FFF;
-  white-space: nowrap;
 }
-/* line 208, ../sass/custom/_footer.scss */
+/* line 209, ../sass/custom/_footer.scss */
 footer .footer_wrapper .footer_contact_wrapper p a:hover {
+  background-color: #0054A6;
   color: #FFF;
   text-decoration: underline;
 }
