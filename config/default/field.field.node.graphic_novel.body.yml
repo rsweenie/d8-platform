@@ -1,0 +1,22 @@
+uuid: 4de50afa-5cc5-41f4-b7ae-a6130bf8f09f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.graphic_novel
+  module:
+    - text
+id: node.graphic_novel.body
+field_name: body
+entity_type: node
+bundle: graphic_novel
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

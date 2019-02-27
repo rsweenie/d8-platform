@@ -1,0 +1,46 @@
+uuid: 1e1546c3-9a51-4508-b4ee-b41f9d82b095
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.graphic_novel.body
+    - field.field.node.graphic_novel.field_page_count
+    - node.type.graphic_novel
+  module:
+    - private_content
+    - text
+    - user
+id: node.graphic_novel.default
+targetEntityType: node
+bundle: graphic_novel
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_page_count:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden: {  }

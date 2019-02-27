@@ -1,0 +1,22 @@
+uuid: 3861b843-7eb4-49f6-bda8-52c4e259c2d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.graphic_novel
+id: node.graphic_novel.promote
+field_name: promote
+entity_type: node
+bundle: graphic_novel
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

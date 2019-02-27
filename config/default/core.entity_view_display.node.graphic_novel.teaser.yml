@@ -1,0 +1,38 @@
+uuid: cc0cab14-e65c-4f6d-8008-694201a1b1ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.graphic_novel.body
+    - node.type.graphic_novel
+  module:
+    - private_content
+    - text
+    - user
+id: node.graphic_novel.teaser
+targetEntityType: node
+bundle: graphic_novel
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden: {  }
