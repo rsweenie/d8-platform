@@ -35,4 +35,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: private
-hidden: {  }
+hidden:
+  field_isbn: true
