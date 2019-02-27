@@ -21,19 +21,25 @@ class CUBreadcrumbsBreadcrumbBuilder implements BreadcrumbBuilderInterface {
      * Checks content type of current node to determine if it gets a breadcrumb.
      */
     public function applies(RouteMatchInterface $attributes) {
-      $parameters = $attributes->getParameters()->all();
-      if (!empty($parameters['node'])) {
-        if ($parameters['node']->getType() == 'content_page') {
-          $item = $parameters['node']->getType() == 'content_page';
-        }
-        elseif ($parameters['node']->getType() == 'news_spotlight') {
-          $item = $parameters['node']->getType() == 'news_spotlight';
-        }
-        else {
-          $item = $parameters['node']->getType() == 'profile';
-        }
-        return $item;
+      $node = $attributes->getParameter('node');
+      //get node object, node revisions are not the same as nodes and are not passed as objects
+      if(gettype($node)==='string')
+        $node = \Drupal\node\Entity\Node::load($attributes->getParameter('node'));
+      //if there's a node, do the code
+      if (!empty($node)) {
+        /** 
+         * these are the types of nodes that breadcrums will be applied to.
+         * (I'm just following the old code here)
+         * needs to be user defined instead of hard coded most likely
+         */
+        $applicable_node_types = ['content_page'
+                                  ,'news_spotlight'
+                                  ,'profile'];
+        //look to see if the node type is in $applicable_node_types, if it is true, else false
+        return in_array($node->getType(),$applicable_node_types);
       }
+      // not super certain if something needs to happen if the node is empty
+      // again following old code, I'll look into it.
     }
 
     /**
@@ -78,6 +84,7 @@ class CUBreadcrumbsBreadcrumbBuilder implements BreadcrumbBuilderInterface {
       }
       // Create breadcrumbs from current node and parents in main nav menu.
       $node = \Drupal::routeMatch()->getParameter('node');
+
       if ($node instanceof \Drupal\node\NodeInterface) {
         $nid = $node->id();
       }
