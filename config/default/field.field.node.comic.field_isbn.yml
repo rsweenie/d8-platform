@@ -1,0 +1,19 @@
+uuid: 673fc4b1-1d09-4ba9-9947-fd9e011553a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isbn
+    - node.type.comic
+id: node.comic.field_isbn
+field_name: field_isbn
+entity_type: node
+bundle: comic
+label: isbn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

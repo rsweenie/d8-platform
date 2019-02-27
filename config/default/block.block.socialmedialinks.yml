@@ -21,83 +21,83 @@ settings:
     rss:
       value: ''
       description: ''
-      weight: '-10'
+      weight: '-30'
     email:
       value: ''
       description: ''
-      weight: '-9'
+      weight: '-29'
     youtube_channel:
       value: ''
       description: ''
-      weight: '-8'
-    instagram:
-      value: ''
-      description: ''
-      weight: '-7'
+      weight: '-28'
     vimeo:
       value: ''
       description: ''
-      weight: '-6'
+      weight: '-27'
     github:
       value: ''
       description: ''
-      weight: '-5'
+      weight: '-26'
     bitbucket:
       value: ''
       description: ''
-      weight: '-4'
+      weight: '-25'
     drupal:
       value: ''
       description: ''
-      weight: '-3'
+      weight: '-24'
     tumblr:
       value: ''
       description: ''
-      weight: '-2'
+      weight: '-23'
     contact:
       value: ''
       description: ''
-      weight: '-1'
+      weight: '-22'
     behance:
       value: ''
       description: ''
-      weight: '0'
+      weight: '-21'
     flickr:
       value: ''
       description: ''
-      weight: '1'
-    linkedin:
-      value: ''
+      weight: '-20'
+    facebook:
+      value: creightonuniversity
       description: ''
-      weight: '2'
+      weight: '-19'
     twitter:
-      value: ''
+      value: /creighton
       description: ''
-      weight: '3'
+      weight: '-18'
+    linkedin:
+      value: school/creighton-university/
+      description: ''
+      weight: '-17'
     youtube:
-      value: ''
+      value: user/Creighton1878
       description: ''
-      weight: '4'
+      weight: '-16'
+    instagram:
+      value: creighton1878/
+      description: ''
+      weight: '-15'
     pinterest:
       value: ''
       description: ''
-      weight: '5'
+      weight: '-14'
     vkontakte:
       value: ''
       description: ''
-      weight: '6'
-    facebook:
-      value: creightonuniversity/
-      description: ''
-      weight: '7'
+      weight: '-13'
     googleplus:
       value: ''
       description: ''
-      weight: '8'
+      weight: '-12'
     slideshare:
       value: ''
       description: ''
-      weight: '9'
+      weight: '-11'
   appearance:
     orientation: h
     show_name: 0

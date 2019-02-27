@@ -1,0 +1,22 @@
+uuid: 3e79df8c-1e29-48cd-b04c-24a3f92c2cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.comic
+id: node.comic.promote
+field_name: promote
+entity_type: node
+bundle: comic
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

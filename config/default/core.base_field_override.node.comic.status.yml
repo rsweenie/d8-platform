@@ -1,0 +1,22 @@
+uuid: e3a422cd-99b3-4518-a44e-b32bf77c2a29
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.comic
+id: node.comic.status
+field_name: status
+entity_type: node
+bundle: comic
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

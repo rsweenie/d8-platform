@@ -1,0 +1,38 @@
+uuid: d2858f57-66a3-4123-b07d-fb37f618605e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.comic.body
+    - node.type.comic
+  module:
+    - private_content
+    - text
+    - user
+id: node.comic.teaser
+targetEntityType: node
+bundle: comic
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden: {  }

@@ -1,0 +1,45 @@
+uuid: b0d827fb-299c-4629-9e44-7b19b38e42ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.comic.body
+    - field.field.node.comic.field_isbn
+    - node.type.comic
+  module:
+    - private_content
+    - text
+    - user
+id: node.comic.default
+targetEntityType: node
+bundle: comic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_isbn:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  private:
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: private
+hidden: {  }
