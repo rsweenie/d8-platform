@@ -15,6 +15,9 @@ header {
 		background-color: $headerBackground;
 		width: 100%;
 		z-index: 6;
+		@include respond-to(null , tablet-max){
+			margin-top: 40px;
+		}
 	}
 
 	&.header_opacity {
@@ -57,7 +60,7 @@ header {
 		position: relative;
 		text-align: center;
 		@include respond-to(null , mobile-max) {
-			background-color: white;
+			background-color:$blue;
 		}
 		@include respond-to(desktop-min , null) {
 			display: flex;
@@ -97,7 +100,7 @@ header {
 		background: $white;
 		order: 1;
 
-		@include respond-to(null , mobile-max) {
+		@include respond-to(null , tablet-max) {
 			order: 2;
 			width: 100%;
 		}
@@ -288,14 +291,22 @@ ul#megamenu_icon_menu{
 	margin: 0 4px;
 	order: 3;
 	padding-left: 4px;
-
+	
 	@include respond-to(null , tablet-max) {
 		order: 1;
 	}
 	@media all and (max-width: 320px) {
 		height: 70px;
 	}
-
+	.menu--transaction-menu{
+		@include respond-to(null , mobile-max){
+			display: flex;
+		
+			li:not(:last-child){
+				border-right:4px solid white;
+			}
+		}
+	}
 	li {
 		background: $blue;
 		display: inline-block;
@@ -320,6 +331,9 @@ ul#megamenu_icon_menu{
 			&::after {
 				content: '';
 			}
+		}
+		@include respond-to(null , mobile-max){
+			flex-grow: 1;
 		}
 
 		a {
