@@ -12630,13 +12630,13 @@ article figcaption {
 @media all and (max-width: 480px) {
   /* line 1, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu {
-    top: 130px;
+    top: 165px;
   }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
   /* line 1, ../sass/custom/_megamenu.scss */
   .header_top_section_mega_menu {
-    top: 130px;
+    top: 165px;
   }
 }
 @media all and (min-width: 769px) and (max-width: 1050px) {
